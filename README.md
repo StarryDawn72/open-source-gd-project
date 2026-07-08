@@ -1,5 +1,4 @@
-# Manually verified reconstructions of Geometry Dash functions for modders
-## (work in progress)
+# Manually verified reconstructions of Geometry Dash functions for modders (work in progress)
 
 Basically, I like wasting hours of my spare time and making myself suffer just so I can help the GD modding community. You're welcome 😉.
 
