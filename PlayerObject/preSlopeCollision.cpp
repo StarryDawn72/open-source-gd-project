@@ -11,6 +11,7 @@
 	- detects collisions against the flat edges of the slope object
 	- reroutes collision to collidedWithObject if there was a collision
 	- otherwise returns false and collision continues through collidedWithSlopeInternal
+	
 */
 bool PlayerObject::preSlopeCollision(float dt, GameObject *object)
 {

@@ -6,12 +6,13 @@
 	This function is the core speed engine of Geometry Dash. it takes
 	the "speed" parameter to decide which of the five particle effects to play,
 	then updates the jump velocity, gravity, and time mod (m_speedMultplier).
+	
 */
 void PlayerObject::updateTimeMod(float speed, bool noEffects)
 {
 
-	auto playLayerExists = m_playEffects;
-    if (!m_maybeReducedEffects && playLayerExists && !noEffects && m_playerSpeed != speed) {
+	bool hasPlayLayer = m_playEffects;
+    if (!m_maybeReducedEffects && hasPlayLayer && !noEffects && m_playerSpeed != speed) {
         GM->playSpeedParticle(speed);
     }
 
