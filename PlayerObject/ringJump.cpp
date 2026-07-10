@@ -278,14 +278,14 @@ void PlayerObject::ringJump(RingObject *object, bool skipCheck)
 				case GameObjectType::GravityRing: effectColor = ccc3(0, 255, 255); break;          // cyan
 				case GameObjectType::GreenRing:
 				case GameObjectType::DashRing: effectColor = ccc3(0, 255, 0); break;               // green
-				case GameObjectType::DropRing: {                                                     // light background color
+				case GameObjectType::DropRing: {                                                   // light background color
 					int lightBgIndex = 1007;
 					ccColor3B lightBgColor = PL->m_effectManager->activeColorForIndex(lightBgIndex);
 					effectColor = lightBgColor;
 					break;					
 				}                                                    
 				case GameObjectType::RedJumpRing: effectColor = ccc3(255, 100, 0); break;          // orange
-				case GameObjectType::CustomRing:                                                     // color inherited from object
+				case GameObjectType::CustomRing:                                                   // color inherited from object
 					if (object->m_colorSprite != NULL)
 						effectColor = object->m_colorSprite->getColor();
 					else 
