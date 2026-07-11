@@ -16,4 +16,4 @@ Basically, I like wasting hours of my spare time and making myself suffer just s
 ---
 
 ### **Number of entries**
-PlayerObject: **20**
+PlayerObject: **22**

@@ -17,16 +17,16 @@ void PlayerObject::runBallRotation2()
 
 	float playerSpeed = m_playerSpeed;
 	if (playerSpeed == 0.7f) {
-		duration = 1.2405638;
+		duration = 1.2405638f; // 311.5801 / 251.16
 	}
 	else if (playerSpeed == 1.1f) {
-		duration = 0.80424345;
+		duration = 0.80424345f; // 311.5801 / 387.4201
 	}
 	else if (playerSpeed == 1.3f) {
-		duration = 0.6657693;
+		duration = 0.6657693f; // 311.5801 / 468.0002
 	}
 	else if (playerSpeed == 1.6f) {
-		duration = 0.5409375;
+		duration = 0.5409375f; // 311.5801 / 576.0002
 	}
 
 	m_isBallRotating2 = true;
