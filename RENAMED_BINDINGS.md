@@ -23,6 +23,8 @@ Some nasty variables I had to rename, either because they were completely incorr
 - m_stateRingJump -> isJumpUnused
 - m_stateRingJump2 -> canRingJump
 - m_vehicleSize -> playerScale
+- m_isBallRotating -> ballRotationMultiplierActive
+- m_rotateSpeed -> ballRotationMultiplier
 
 
 **GameObject**
