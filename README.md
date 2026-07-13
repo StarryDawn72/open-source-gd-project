@@ -1,3 +1,4 @@
+
 # Open Source GD Project (work in progress)
 
 <p align="center">
@@ -22,4 +23,4 @@ If you are in need of a function's code, or want to simply request an addition, 
 ---
 
 ### **Number of entries per class**
-PlayerObject: **22**
+PlayerObject: **28**
