@@ -10,9 +10,7 @@
 void PlayerObject::checkSnapJumpToObject(GameObject *object)
 {
     
-    if (object == NULL) {
-        return;
-    }
+    if (!object) return;
 
     GameObject* previousObject = m_objectSnappedTo;
     GameObject* currentObject = object;
@@ -73,12 +71,11 @@ void PlayerObject::checkSnapJumpToObject(GameObject *object)
 			double playerX = getPosition().x;
 
 			if (fabs(finalX - playerX) > (double)tolerance) {
-				if (finalX <= playerX) {
+
+				if (finalX <= playerX)
 					finalX = playerX - (double)tolerance;
-				}
-				else {
-					finalX = (double)tolerance + playerX;
-				}
+				else
+					finalX = playerX + (double)tolerance;
 			}
 
 			setPosition(ccp(finalX, getPosition().y));			

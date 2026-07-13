@@ -26,6 +26,8 @@ Some nasty variables I had to rename, either because they were completely incorr
 - m_isBallRotating -> ballRotationMultiplierActive
 - m_rotateSpeed -> ballRotationMultiplier
 
-
 **GameObject**
 - m_editorEnabled -> isInEditor
+
+**GJGameState**
+- m_levelFlipping -> levelFlipProgress
