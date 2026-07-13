@@ -93,7 +93,7 @@ bool PlayerObject::preSlopeCollision(float dt, GameObject *object)
 	else {
 
 		float rectWidth = slopeRect.size.width - (xPadding * 2.0f);
-		CCRect bottomRect = CCRect(slopeRect.origin.x + xPadding, slopeRect.origin.y, rectWidth, 1.0f);
+		CCRect bottomRect = CCRectMake(slopeRect.origin.x + xPadding, slopeRect.origin.y, rectWidth, 1.0f);
 		
 		if (getPosition().y <= bottomRect.getMaxY()) {
 			if (playerRect.intersectsRect(bottomRect)) {
@@ -107,7 +107,7 @@ bool PlayerObject::preSlopeCollision(float dt, GameObject *object)
 	// add it to the list of slopes that we are near
 	// and update the current one.
 	if (!collided) {
-		m_unk669 = false;
+		m_unk669 = false; // TODO: find real name
 
 		if (!m_isOnSlope) {
 			m_potentialSlopeMap[object->m_uniqueID] = object;
