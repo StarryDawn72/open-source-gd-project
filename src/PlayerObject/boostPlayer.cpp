@@ -1,5 +1,5 @@
 /*
-	====== PLAYEROBJECT::BOOSTPLAYER ======
+	====== PlayerObject::boostPlayer ======
 	
 	Applies a boost to the player by setting upward velocity and handling
 	rotation, animation, and grounded state changes.

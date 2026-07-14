@@ -1,5 +1,5 @@
 /*
-	====== PLAYEROBJECT::LEVELFLIPFINISHED ======
+	====== PlayerObject::levelFlipFinished ======
 	
 	Handles the visual effects after the completion of
 	a mirror portal animation.

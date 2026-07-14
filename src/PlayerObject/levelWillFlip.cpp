@@ -1,5 +1,5 @@
 /*
-	====== PLAYEROBJECT::LEVELWILLFLIP ======
+	====== PlayerObject::levelWillFlip ======
 	
 	Activates once when the player hits a mirror portal,
 	right before the level horizontal flip animation occurs.

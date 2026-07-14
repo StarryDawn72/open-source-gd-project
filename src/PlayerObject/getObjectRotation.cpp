@@ -1,5 +1,5 @@
 /*
-	====== PLAYEROBJECT::GETOBJECTROTATION ======
+	====== PlayerObject::getObjectRotation ======
 	
 	Simple wrapper around CCNode::getRotation.
 	

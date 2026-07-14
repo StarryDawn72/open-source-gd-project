@@ -1,5 +1,5 @@
 /*
-	====== PLAYEROBJECT::ADDTOYVELOCITY ======
+	====== PlayerObject::addToYVelocity ======
 
 	A simple helper to incremen/decrement the Y velocity by
 	an amount. The parameter gets fed into setYVelocity

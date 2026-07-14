@@ -1,5 +1,5 @@
 /*
-	====== PLAYEROBJECT::PUSHDOWN ======
+	====== PlayerObject::pushDown ======
 	
 	Cancels vertical velocity, resets grounded state
 	and physically prevents the player from jumping.

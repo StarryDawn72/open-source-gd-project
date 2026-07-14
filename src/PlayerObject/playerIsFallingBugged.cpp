@@ -1,5 +1,5 @@
 /*
-	====== PLAYEROBJECT::PLAYERISFALLINGBUGGED ======
+	====== PlayerObject::playerIsFallingBugged ======
 	
 	Determines if the player is falling. Returns true if the player's vertical 
 	velocity exceeds the double the current gravity value (usually around ~1.9).

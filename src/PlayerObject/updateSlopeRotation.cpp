@@ -1,5 +1,5 @@
 /*
-	====== PLAYEROBJECT::UPDATESLOPEROTATION ======
+	====== PlayerObject::updateSlopeRotation ======
 	
 	This function runs every frame that the player is
 	riding a slope's edge. It makes the player smoothly

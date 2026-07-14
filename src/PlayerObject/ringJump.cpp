@@ -2,7 +2,7 @@
 #define PL GameManager::sharedState()->getPlayLayer()
 
 /*
-	====== PLAYEROBJECT::RINGJUMP ======
+	====== PlayerObject::ringJump ======
 	
 	Ahh, good ol' ringJump...
 

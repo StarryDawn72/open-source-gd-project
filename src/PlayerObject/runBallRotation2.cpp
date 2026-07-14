@@ -1,5 +1,5 @@
 /*
-	====== PLAYEROBJECT::RUNBALLROTATION2 ======
+	====== PlayerObject::runBallRotation2 ======
 	
 	Alternate version of runBallRotation with slower
 	rotation speed and inverted rotation direction. Called

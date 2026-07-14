@@ -1,6 +1,6 @@
 #define GM GameManager::sharedState()
 /*
-	====== PLAYEROBJECT::PLAYSPAWNEFFECT ======
+	====== PlayerObject::playSpawnEffect ======
 	
 	This function handles the player blink and ripple
 	effects when respawning.

@@ -1,5 +1,5 @@
 /*
-	====== PLAYEROBJECT::STOPROTATION ======
+	====== PlayerObject::stopRotation ======
 	
 	Resets all rotation flags and freezes the player spin
 	instantly.

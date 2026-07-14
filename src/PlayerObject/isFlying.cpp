@@ -1,5 +1,5 @@
 /*
-	====== PLAYEROBJECT::ISFLYING ======
+	====== PlayerObject::isFlying ======
 	
 	Returns true if the player is in one of the flying game modes
 	(Ship, Bird, Dart, or Swing).

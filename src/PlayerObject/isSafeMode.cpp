@@ -1,5 +1,5 @@
 /*
-	====== PLAYEROBJECT::ISSAFEMODE ======
+	====== PlayerObject::isSafeMode ======
 	
 	Returns true if the time since the game mode
 	change is less than the given time.

@@ -1,5 +1,5 @@
 /*
-	====== PLAYEROBJECT::REDIRECTDASH ======
+	====== PlayerObject::redirectDash ======
 	
 	This feature is part of the "Redirect Dash" option in the
 	Edit Special menu for teleport portals. In platformer mode,

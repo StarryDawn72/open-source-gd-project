@@ -1,7 +1,7 @@
 #define GM GameManager::sharedState()
 
 /*
-	====== PLAYEROBJECT::UPDATETIMEMOD ======
+	====== PlayerObject::updateTimeMod ======
 
 	This function is the core speed engine of Geometry Dash. it takes
 	the "speed" parameter to decide which of the five particle effects to play,

@@ -1,6 +1,6 @@
 #define PL GameManager::sharedState()->getPlayLayer()
 /*
-	====== PLAYEROBJECT::LEVELFLIPPING ======
+	====== PlayerObject::levelFlipping ======
 	
 	Returns true if you are playing the level in PlayLayer
 	and the mirror portal animation is active.

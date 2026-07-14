@@ -1,5 +1,5 @@
 /*
-	====== PLAYEROBJECT::PRESLOPECOLLISION ======
+	====== PlayerObject::preSlopeCollision ======
 
 	This function acts as the pre-validator for slope collisions before 
 	the actual slope logic runs inside collidedWithSlopeInternal.
