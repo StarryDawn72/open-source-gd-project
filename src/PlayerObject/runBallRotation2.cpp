@@ -12,8 +12,8 @@ void PlayerObject::runBallRotation2()
 	if (m_isDashing) return;
 
 	float duration = 1.0f;
-	float playerScale = m_vehicleSize;
-	float scaleMod = (playerScale == 1.0f) ? 1.0f : 0.8f;
+	float& m_playerScale = m_vehicleSize;
+	float scaleMod = (m_playerScale == 1.0f) ? 1.0f : 0.8f;
 
 	float playerSpeed = m_playerSpeed;
 	if (playerSpeed == 0.7f) {

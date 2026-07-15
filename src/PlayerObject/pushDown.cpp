@@ -10,9 +10,9 @@ void PlayerObject::pushDown()
     setYVelocity(0.0f, 0);
 
 	// rename misnamed member variables
-	bool& onGround = m_isOnGround2;
-	bool& canJump = m_isOnGround;
+	bool& m_onGround = m_isOnGround2;
+	bool& m_canJump = m_isOnGround;
 
-	onGround = false;
-	canJump = false;
+	m_onGround = false;
+	m_canJump = false;
 }

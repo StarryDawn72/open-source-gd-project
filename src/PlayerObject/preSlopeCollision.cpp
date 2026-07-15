@@ -16,6 +16,8 @@
 bool PlayerObject::preSlopeCollision(float dt, GameObject *object)
 {
 
+	std::unordered_map<int, GameObject*>& m_preSlopeObjects = m_potentialSlopeMap;
+
     if (object->m_uniqueID == m_collidingWithSlopeId) {
         return false;
     }
@@ -110,7 +112,7 @@ bool PlayerObject::preSlopeCollision(float dt, GameObject *object)
 		m_unk669 = false; // TODO: find real name
 
 		if (!m_isOnSlope) {
-			m_potentialSlopeMap[object->m_uniqueID] = object;
+			preSlopeObjects[object->m_uniqueID] = object;
 			GameObject* currentPotentialSlope = m_currentPotentialSlope;
 
 			bool shouldUpdateSlope = true;

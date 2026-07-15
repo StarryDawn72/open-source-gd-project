@@ -21,41 +21,41 @@ void PlayerObject::ringJump(RingObject *object, bool skipCheck)
 
 	// rename misnamed member variables
 	std::unordered_set<int>& activatedRingIDs = m_ringRelatedSet;
-	bool& canRingJump = m_stateRingJump2;
-	bool& ringJumpingThisTick = m_ringJumpRelated;
-	bool& holdingJump = m_jumpBuffered;
-	bool holdingJumpReleaseDelayed = (bool)m_stateJumpBuffered;
-	bool& touchedTeleportRing = m_touchedGravityPortal;
-	bool& canDisableAutoJump = m_padRingRelated;
-	bool& isJumpUnused = m_stateRingJump;
-	bool& isJumping = m_maybeIsBoosted;
-	bool& isVelocityUncapped = m_isAccelerating;
-	bool& onGround = m_isOnGround2;
-	bool& canJump = m_isOnGround;
-	bool& isInPlayLayer = m_playEffects;
-	bool& isRespawning = m_maybeReducedEffects;
-	bool& isInEditor = m_editorEnabled;
-	float playerScale = m_vehicleSize;
-	bool& _2p2ChangesDisabled = m_enable22Changes;
+	bool& m_canRingJump = m_stateRingJump2;
+	bool& m_ringJumpingThisTick = m_ringJumpRelated;
+	bool& m_holdingJump = m_jumpBuffered;
+	bool m_holdingJumpReleaseDelayed = (bool)m_stateJumpBuffered;
+	bool& m_touchedTeleportRing = m_touchedGravityPortal;
+	bool& m_canDisableAutoJump = m_padRingRelated;
+	bool& m_isJumpUnused = m_stateRingJump;
+	bool& m_isJumping = m_maybeIsBoosted;
+	bool& m_isVelocityUncapped = m_isAccelerating;
+	bool& m_onGround = m_isOnGround2;
+	bool& m_canJump = m_isOnGround;
+	bool& m_isInPlayLayer = m_playEffects;
+	bool& m_isRespawning = m_maybeReducedEffects;
+	bool& m_isInEditor = m_editorEnabled;
+	float m_playerScale = m_vehicleSize;
+	bool& m_2p2ChangesDisabled = m_enable22Changes;
 
 	if (activatedRingIDs.find(object->m_uniqueID) != activatedRingIDs.end())
 		return;
 
     bool ringHasNoEffects = object->m_hasNoEffects;
     GameObjectType ringObjectType = object->getType();
-	bool isJumpingRing = (ringObjectType != GameObjectType::CustomRing) && (ringObjectType != GameObjectType::TeleportOrb);
+	bool m_isJumpingRing = (ringObjectType != GameObjectType::CustomRing) && (ringObjectType != GameObjectType::TeleportOrb);
 
-    if (!canRingJump || m_isDashing)
+    if (!m_canRingJump || m_isDashing)
         return;
 
-	// A ringJump exclusive flag that mirrors holdingJump (m_jumpBuffered) with
+	// A ringJump exclusive flag that mirrors m_holdingJump (m_jumpBuffered) with
 	// a one frame delay only on release... weird.
-    if (!holdingJumpReleaseDelayed) {
+    if (!m_holdingJumpReleaseDelayed) {
         return;
     }
 
-    if ((m_touchedRing || !isJumpingRing) && (m_touchedCustomRing || ringObjectType != GameObjectType::CustomRing)) {
-        if (touchedTeleportRing)
+    if ((m_touchedRing || !m_isJumpingRing) && (m_touchedCustomRing || ringObjectType != GameObjectType::CustomRing)) {
+        if (m_touchedTeleportRing)
             return;
 
         if (ringObjectType != GameObjectType::TeleportOrb)
@@ -64,7 +64,7 @@ void PlayerObject::ringJump(RingObject *object, bool skipCheck)
 
     if (object->m_isReverse) reversePlayer(object);
 
-    ringJumpingThisTick = true;
+    m_ringJumpingThisTick = true;
 
     int ringUniqueID = object->m_uniqueID;
     activatedRingIDs.insert(ringUniqueID);
@@ -84,18 +84,18 @@ void PlayerObject::ringJump(RingObject *object, bool skipCheck)
 
     m_touchingRings->removeObject(object, true);
 
-    if (isJumpingRing) {
-		canDisableAutoJump = true;
+    if (m_isJumpingRing) {
+		m_canDisableAutoJump = true;
     }
 
     if (ringObjectType == GameObjectType::CustomRing) {
 		m_gameLayer->activateCustomRing(object);
-        if (_2p2ChangesDisabled)
-            isJumpUnused = false;
+        if (m_2p2ChangesDisabled)
+            m_isJumpUnused = false;
     }
     else if (ringObjectType == GameObjectType::TeleportOrb) {
         m_gameLayer->teleportPlayer((TeleportPortalObject*)object, this);
-        isJumpUnused = false;
+        m_isJumpUnused = false;
     }
     else if (ringObjectType == GameObjectType::SpiderOrb) {
         if (!m_isSideways) {
@@ -117,7 +117,7 @@ void PlayerObject::ringJump(RingObject *object, bool skipCheck)
 		startDashing((DashRingObject*)object);
     }
 	else if (ringObjectType == GameObjectType::GravityDashRing) {
-		if (!isInPlayLayer) {
+		if (!m_isInPlayLayer) {
 			LevelEditorLayer* levelEditorLayer = GM->m_levelEditorLayer;
 
 			if (levelEditorLayer == NULL)
@@ -136,7 +136,7 @@ void PlayerObject::ringJump(RingObject *object, bool skipCheck)
 		startDashing((DashRingObject*)object);
 	}
 	else if (ringObjectType == GameObjectType::DropRing) {
-		isJumpUnused = false;
+		m_isJumpUnused = false;
 		float yVel = flipMod() * -15.0f;
 
 		if (!isFlying()) {
@@ -154,21 +154,21 @@ void PlayerObject::ringJump(RingObject *object, bool skipCheck)
 
 		activateStreak();
 		m_hasEverHitRing = true;
-		isVelocityUncapped = true;
+		m_isVelocityUncapped = true;
 
 		if ((m_isBall) || (m_isSwing)) {
-			holdingJump = false;
+			m_holdingJump = false;
 		}
 	}
 	else {
 		// Yellow, pink, red, green, and blue rings are handled here.
 
-		isJumpUnused = false;
-		isJumping = true;
-		onGround = false;
-		canJump = false;
+		m_isJumpUnused = false;
+		m_isJumping = true;
+		m_onGround = false;
+		m_canJump = false;
 
-		float scaleMod = (playerScale == 1.0f) ? 1.0f : 0.8f;
+		float scaleMod = (m_playerScale == 1.0f) ? 1.0f : 0.8f;
 		float finalYVelocity = m_yStart;
 
 		if (ringObjectType == GameObjectType::GravityRing) {
@@ -184,8 +184,8 @@ void PlayerObject::ringJump(RingObject *object, bool skipCheck)
 			else finalYVelocity *= 0.72f;
 		}
 		else if (ringObjectType == GameObjectType::RedJumpRing) {
-			if (m_isShip) finalYVelocity *= (playerScale == 1.0f) ? 1.0f : 1.4f;
-			else if (m_isBird) finalYVelocity *= (playerScale == 1.0f) ? 1.02f : 1.36f;
+			if (m_isShip) finalYVelocity *= (m_playerScale == 1.0f) ? 1.0f : 1.4f;
+			else if (m_isBird) finalYVelocity *= (m_playerScale == 1.0f) ? 1.02f : 1.36f;
 			else if (m_isBall) finalYVelocity *= 1.34f;
 			else if (m_isRobot) finalYVelocity *= 1.28f;
 			else if (m_isSpider) finalYVelocity *= 1.34f;
@@ -196,7 +196,7 @@ void PlayerObject::ringJump(RingObject *object, bool skipCheck)
 		}
 
 		if (ringObjectType == GameObjectType::GreenRing) {
-			if (!isInPlayLayer) {
+			if (!m_isInPlayLayer) {
 				LevelEditorLayer* levelEditorLayer = GM->m_levelEditorLayer;
 
 				if (levelEditorLayer == NULL)
@@ -226,15 +226,15 @@ void PlayerObject::ringJump(RingObject *object, bool skipCheck)
 
 		if (m_isBall || m_isSpider) {
 			m_yVelocity *= 0.7f;
-			holdingJump = false;
+			m_holdingJump = false;
 		}
 		else if (m_isSwing) {
 			m_yVelocity *= 0.6f;
-			holdingJump = false;
+			m_holdingJump = false;
 		}
 
 		if (ringObjectType == GameObjectType::GravityRing) {
-			if (!isInPlayLayer) {
+			if (!m_isInPlayLayer) {
 				LevelEditorLayer* levelEditorLayer = GM->m_levelEditorLayer;
 
 				if (levelEditorLayer == NULL)
@@ -258,16 +258,16 @@ void PlayerObject::ringJump(RingObject *object, bool skipCheck)
 		}
 
 		if (ringObjectType == GameObjectType::RedJumpRing) {
-			isVelocityUncapped = true;
+			m_isVelocityUncapped = true;
 		}
 	}
 
-    if (!isRespawning) {
+    if (!m_isRespawning) {
         int playerTouchToggleBlockID = 3643;
         if (
 			!GM->m_performanceMode &&
 			!object->hasBeenActivated() &&
-			isInPlayLayer &&
+			m_isInPlayLayer &&
 			!ringHasNoEffects &&
 			object->m_objectID != playerTouchToggleBlockID
 		) {
@@ -311,7 +311,7 @@ void PlayerObject::ringJump(RingObject *object, bool skipCheck)
         }
     }
 
-    if (!isInEditor)
+    if (!m_isInEditor)
         object->playTriggerEffect();
 
     object->activatedByPlayer(this);

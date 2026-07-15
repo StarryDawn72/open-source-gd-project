@@ -22,6 +22,11 @@ If you are in need of a function's code, or want to simply request an addition, 
 *Note: you often see me renaming member variables from bindings - thats' because some of them are incorrectly named. A list of renamed variables can be found in [the markdown file](./RENAMED_BINDINGS.md)*.
 
 ---
+**Info:**
+- Game version: 2.2081
+- Software used: [Hex-Rays IDA Professional 9.3 (With BromaIDA for symbols)](https://hex-rays.com/ida-pro)
+
+---
 
 ### **Number of entries per class**
-PlayerObject: **30**
+PlayerObject: **31**

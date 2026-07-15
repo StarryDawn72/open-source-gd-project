@@ -2,34 +2,46 @@ Some nasty variables I had to rename, either because they were completely incorr
 ---
 
 **PlayerObject**:
-- m_jumpBuffered -> holdingJump
-- m_stateJumpBuffered -> holdingJumpReleaseDelayed
-- m_isOnGround -> canJump
-- m_isOnGround2 -> onGround
-- m_maybeChangedDirectionAngle -> lastPlatformerSlopeAngle
-- m_platformerMovingRight -> slopeForceRight
-- m_platformerMovingLeft -> slopeForceLeft
-- m_playEffects -> isInPlayLayer
-- m_unkA99 -> isInDualMode
-- m_ringJumpRelated -> ringJumpingThisTick
-- m_padRingRelated -> canDisableAutoJump
-- m_ringRelatedSet -> activatedRingIDs? (maybe something to do with J blocks as well)
-- m_maybeIsBoosted -> isJumping (seen on-stream)
-- m_isAccelerating -> isVelocityUncapped
-- m_touchedGravityPortal -> touchedTeleportRing
-- m_maybeReducedEffects -> isRespawning
-- m_maybeSlopeForce -> slideBoostValue (from RobTop's stream)
-- m_stateRingJump -> isJumpUnused
-- m_stateRingJump2 -> canRingJump
-- m_vehicleSize -> playerScale
-- m_isBallRotating -> ballRotationMultiplierActive
-- m_rotateSpeed -> ballRotationMultiplier
+- m_jumpBuffered -> m_holdingJump
+- m_stateJumpBuffered -> m_holdingJumpReleaseDelayed
+- m_isOnGround -> m_canJump
+- m_isOnGround2 -> m_onGround
+- m_maybeChangedDirectionAngle -> m_lastPlatformerSlopeAngle
+- m_platformerMovingRight -> m_slopeForceRight
+- m_platformerMovingLeft -> m_slopeForceLeft
+- m_playEffects -> m_isInPlayLayer
+- m_unkA99 -> m_isInDualMode
+- m_ringJumpRelated -> m_ringJumpingThisTick
+- m_padRingRelated -> m_canDisableAutoJump
+- m_ringRelatedSet -> m_activatedRingIDs? (maybe something to do with J blocks as well)
+- m_maybeIsBoosted -> m_isJumping (seen on-stream)
+- m_isAccelerating -> m_isVelocityUncapped
+- m_touchedGravityPortal -> m_touchedTeleportRing
+- m_maybeReducedEffects -> m_isRespawning
+- m_maybeSlopeForce -> m_slideBoostValue (from RobTop's stream)
+- m_stateRingJump -> m_isJumpUnused
+- m_stateRingJump2 -> m_canRingJump
+- m_vehicleSize -> m_playerScale
+- m_isBallRotating -> m_ballRotationMultiplierActive
+- m_rotateSpeed -> m_ballRotationMultiplier
 - m_enable22Changes -> m_2p2ChangesDisabled (inverted lol)
-- m_maybeCanRunIntoBlocks -> ignoreDamagePlayLayer
-- m_ignoreDamage -> ignoreDamageEditor
+- m_maybeCanRunIntoBlocks -> m_ignoreDamagePlayLayer
+- m_ignoreDamage -> m_ignoreDamageEditor
+- m_maybeIsColliding -> m_tookDamage
+- m_unk3e0 -> m_slopeWasClampedMax
+- m_unk3e1 -> m_slopeWasClampedMin
+- m_slopeFlipGravityRelated -> m_isGoingDownSlope
+- unk_584 -> m_slopeYOffset
+- m_potentialSlopeMap -> m_preSlopeObjects
+- m_rotateObjectsRelated -> m_rotatedObjectDeltas
+- m_unk3d0 -> m_lastSlopeYPos
+- m_blackOrbRelated -> m_lastSlopeYPosRotated
+- m_maybeSlidingTime -> m_slopeSlideTimer
+- m_maybeUpsideDownSlope -> m_hitSlopeTop
+- m_slopeSlidingMaybeRotated -> m_isSlopeUphillRelative
 
 **GameObject**
-- m_editorEnabled -> isInEditor
+- m_editorEnabled -> m_isInEditor
 
 **GJGameState**
-- m_levelFlipping -> levelFlipProgress
+- m_levelFlipping -> m_levelFlipProgress

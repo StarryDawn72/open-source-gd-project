@@ -16,14 +16,14 @@ void PlayerObject::runBallRotation(float speed)
 	float duration = 1.0f;
 	
 	// rename incorrect member variable names
-	bool& ballRotationMultiplierActive = m_isBallRotating;
-	float& ballRotationMultiplier = m_rotateSpeed;
-	float& playerScale = m_vehicleSize;
+	bool& m_ballRotationMultiplierActive = m_isBallRotating;
+	float& m_ballRotationMultiplier = m_rotateSpeed;
+	float& m_playerScale = m_vehicleSize;
 
-	ballRotationMultiplierActive = speed != 1.0f;
-	ballRotationMultiplier = speed;
+	m_ballRotationMultiplierActive = speed != 1.0f;
+	m_ballRotationMultiplier = speed;
 
-	float scaleMod = (playerScale == 1.0f) ? 1.0f : 0.8f;
+	float scaleMod = (m_playerScale == 1.0f) ? 1.0f : 0.8f;
 	float playerSpeed = m_playerSpeed;
 
 	if (playerSpeed == 0.7f) {

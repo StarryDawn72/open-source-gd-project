@@ -12,10 +12,10 @@ void PlayerObject::updateTimeMod(float speed, bool noEffects)
 {
 
 	// rename incorrect community guesses
-	bool isInPlayLayer = m_playEffects;
-	bool isRespawning = m_maybeReducedEffects;
+	bool m_isInPlayLayer = m_playEffects;
+	bool m_isRespawning = m_maybeReducedEffects;
 
-    if (!isRespawning && isInPlayLayer && !noEffects && m_playerSpeed != speed) {
+    if (!m_isRespawning && m_isInPlayLayer && !noEffects && m_playerSpeed != speed) {
         GM->playSpeedParticle(speed);
     }
 

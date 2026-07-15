@@ -8,12 +8,10 @@
 */
 void PlayerObject::setYVelocity(double velocity, int type)
 {
-   double intPart = (int)velocity;
+    double intPart = (int)velocity;
 
-   if (velocity == intPart) {
-      m_yVelocity = velocity;
-      return;
-   }
+    if ( intPart != velocity )
+        velocity = intPart + std::round((velocity - intPart) * 1000.0) / 1000.0;
 
-   m_yVelocity = (double)std::round((velocity - intPart) * 1000.0) / 1000.0 + intPart;
+    m_yVelocity = velocity;
 }

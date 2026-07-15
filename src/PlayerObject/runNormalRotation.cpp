@@ -9,16 +9,17 @@
 */
 void PlayerObject::runNormalRotation(bool notNormalMode, float speed)
 {
-    float playerScale = m_vehicleSize;
-	bool slopeForceLeft = m_platformerMovingLeft;
-	bool slopeForceRight = m_platformerMovingRight;
+	// rename bindings
+    float& m_playerScale = m_vehicleSize;
+	bool& m_slopeForceLeft = m_platformerMovingLeft;
+	bool& m_slopeForceRight = m_platformerMovingRight;
     
     if (notNormalMode || (!isFlying() && !m_isRobot && !m_isSpider && !m_isDashing &&
-		(!m_isPlatformer || m_holdingLeft || m_holdingRight || slopeForceLeft || slopeForceRight))) {
+		(!m_isPlatformer || m_holdingLeft || m_holdingRight || m_slopeForceLeft || m_slopeForceRight))) {
 
 		m_isRotating = true;
 
-		float rotationDuration = (playerScale != 1.0f) ? (20.0f / 60.0f) : (26.0f / 60.0f);
+		float rotationDuration = (m_playerScale != 1.0f) ? (20.0f / 60.0f) : (26.0f / 60.0f);
 		int rotatedMod = m_isSideways ? -1 : 1;
 
         m_rotationSpeed = (180.0f * flipMod() * reverseMod() * rotatedMod * m_gravityMod * speed) / rotationDuration;
