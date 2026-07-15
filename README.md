@@ -31,7 +31,7 @@ If you are in need of a function's code, or want to simply request an addition, 
 
 ---
 
-### **Shortcuts links to entries per class**
+### **Shortcut links to entries per class**
 <details>
 	<summary>[ <b>GameObject</b> ] (1)</summary>
 	<ul>
