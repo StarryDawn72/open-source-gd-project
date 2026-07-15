@@ -116,7 +116,7 @@ void PlayerObject::collidedWithSlopeInternal(float dt, GameObject *object, bool 
 
     float playerRadius = playerRect.size.height * 0.5f;
 	
-    float cosTargetAngle = cos(m_slopeRotation);
+    float cosTargetAngle = cosf(m_slopeRotation);
     float playerH = playerRadius / cosTargetAngle;
 	float playerFeet = 0.0f;
 
@@ -150,7 +150,7 @@ void PlayerObject::collidedWithSlopeInternal(float dt, GameObject *object, bool 
 
 	float toleranceValue = 20;
 	float slopeAngle = object->getSlopeAngle();
-    float playerSlopeOffset = (playerRect.size.height / cos(slopeAngle)) * 0.5f;
+    float playerSlopeOffset = (playerRect.size.height / cosf(slopeAngle)) * 0.5f;
 
     float slopeTolerance = 0.0f;
 	bool slopeIntersection = m_wasOnSlope &&
@@ -163,7 +163,8 @@ void PlayerObject::collidedWithSlopeInternal(float dt, GameObject *object, bool 
     bool wasMin = false;
 	bool wasMax = false;
 	
-	// Clamp the slope Y position to extremities
+	// Add the player's Y offset to the slope Y and clamp
+	// to get the final position
     if (!isFloorTop) {
         float maxYPos = (playerRadius + slopeMaxY) - slopeTolerance;
 
@@ -206,12 +207,12 @@ void PlayerObject::collidedWithSlopeInternal(float dt, GameObject *object, bool 
 		if (forced && ! slidingDown) special = true;
 		if (!slidingDown && isMovingDown) special = true;
 
-		bool touchingSlope = m_isUpsideDown ? (playerPos.y > slopeYPos) : (playerPos.y < slopeYPos);
+		bool touchingNormally = m_isUpsideDown ? (playerPos.y > slopeYPos) : (playerPos.y < slopeYPos);
 
 		if (!m_isUpsideDown)
-			collide = touchingSlope || (special && playerPos.y < slopeYPos + slideStickiness && (!m_isBird || m_yVelocity <= 0.0f));
+			collide = touchingNormally || (special && playerPos.y < slopeYPos + slideStickiness && (!m_isBird || m_yVelocity <= 0.0f));
 		else
-			collide = touchingSlope || (special && playerPos.y > slopeYPos - slideStickiness && (!m_isBird || m_yVelocity >= 0.0f));
+			collide = touchingNormally || (special && playerPos.y > slopeYPos - slideStickiness && (!m_isBird || m_yVelocity >= 0.0f));
 
 		pushUp = m_holdingJump && isFlying() && (!slidingDown || m_isPlatformer);
 		dontHitGround = pushUp && (!m_isPlatformer || !slopeIntersection);
@@ -226,12 +227,12 @@ void PlayerObject::collidedWithSlopeInternal(float dt, GameObject *object, bool 
 		else if (isFlying() && m_holdingJump) slideStickiness = m_wasOnSlope ? 2.0f : 1.0f;
 
 		bool special = !slopeIntersection && (!isFlying() || !slidingDown || m_isPlatformer) && !m_isOnSlope;
-		bool touchingSlope = m_isUpsideDown ? (playerPos.y < slopeYPos) : (playerPos.y > slopeYPos);
+		bool touchingNormally = m_isUpsideDown ? (playerPos.y < slopeYPos) : (playerPos.y > slopeYPos);
 	
         if (!m_isUpsideDown)
-			collide = (playerPos.y > slopeYPos) || (special && playerPos.y > slopeYPos - slideStickiness);
+			collide = touchingNormally || (special && playerPos.y > slopeYPos - slideStickiness);
         else
-			collide = (playerPos.y < slopeYPos) || (special && playerPos.y < slopeYPos + slideStickiness);
+			collide = touchingNormally || (special && playerPos.y < slopeYPos + slideStickiness);
 
         dontHitGround = !m_holdingJump && !m_isPlatformer && (isFlying() || m_isBall) && slidingDown && m_wasOnSlope;
         if (isFlying() && !m_holdingJump && slidingDown) knockDown = true;
@@ -495,7 +496,7 @@ void PlayerObject::collidedWithSlopeInternal(float dt, GameObject *object, bool 
 			double currentTargetSlopeAngle = m_slopeRotation;
 			if (previousTargetSlopeAngle != currentTargetSlopeAngle) {
 
-				float rotationMultiplier = 1.0f / cos(currentTargetSlopeAngle);
+				float rotationMultiplier = 1.0f / cosf(currentTargetSlopeAngle);
 				float max = 2.0f;
 
 				if (rotationMultiplier > max) {
