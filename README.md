@@ -29,4 +29,5 @@ If you are in need of a function's code, or want to simply request an addition, 
 ---
 
 ### **Number of entries per class**
+GameObject: **1**
 PlayerObject: **31**
