@@ -55,7 +55,7 @@ def get_entry_string(directory):
             if (item.name != ".git"):
                 result.append(f"{item.name}: **{cpp_count}**")
 
-    return '\n'.join(result) if result else "[!ERR_2]"
+    return '\n\n'.join(result) if result else "[!ERR_2]"
 
 
 def update():
