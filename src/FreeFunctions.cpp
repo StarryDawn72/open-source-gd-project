@@ -21,9 +21,6 @@ void snapRotation360(float& rotation)
 		rotation -= 360.0f;
 	}
 }
-
-
-
 /*
 	====== SquareDistance ======
 	

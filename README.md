@@ -33,6 +33,22 @@ If you are in need of a function's code, or want to simply request an addition, 
 
 ### **Shortcut links to entries per class**
 <details>
+	<summary>[ <b>AnimatedShopKeeper (Complete)</b> ] (5)</summary>
+	<ul>
+		<li><a href="./src/AnimatedShopKeeper/animationFinished.cpp">animationFinished</a></li>
+		<li><a href="./src/AnimatedShopKeeper/create.cpp">create</a></li>
+		<li><a href="./src/AnimatedShopKeeper/init.cpp">init</a></li>
+		<li><a href="./src/AnimatedShopKeeper/playReactAnimation.cpp">playReactAnimation</a></li>
+		<li><a href="./src/AnimatedShopKeeper/startAnimating.cpp">startAnimating</a></li>
+	</ul>
+</details>
+<details>
+	<summary>[ <b>CCCircleWaveDelegate (Complete)</b> ] (1)</summary>
+	<ul>
+		<li><a href="./src/CCCircleWaveDelegate/circleWaveWillBeRemoved.cpp">circleWaveWillBeRemoved</a></li>
+	</ul>
+</details>
+<details>
 	<summary>[ <b>GameObject</b> ] (1)</summary>
 	<ul>
 		<li><a href="./src/GameObject/slopeYPos.cpp">slopeYPos</a></li>
@@ -72,6 +88,12 @@ If you are in need of a function's code, or want to simply request an addition, 
 		<li><a href="./src/PlayerObject/updateSlopeRotation.cpp">updateSlopeRotation</a></li>
 		<li><a href="./src/PlayerObject/updateSlopeYVelocity.cpp">updateSlopeYVelocity</a></li>
 		<li><a href="./src/PlayerObject/updateTimeMod.cpp">updateTimeMod</a></li>
+	</ul>
+</details>
+<details>
+	<summary>[ <b>PlayLayer</b> ] (1)</summary>
+	<ul>
+		<li><a href="./src/PlayLayer/circleWaveWillBeRemoved.cpp">circleWaveWillBeRemoved</a></li>
 	</ul>
 </details>
 <details>

@@ -489,6 +489,8 @@ void PlayerObject::collidedWithSlopeInternal(float dt, GameObject *object, bool 
         updateSlopeRotation(dt);
     }
     else {
+		// Ship, Bird, Dart, Swing, and Ball have
+		// decreased velocity when exiting the slope
 		m_slopeVelocity *= 0.75f;
 
 		if (m_isBall) {

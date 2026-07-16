@@ -61,6 +61,11 @@ OTHERS_STRING = """<details>
 </details>
 """
 
+FINISHED_CLASSES = [
+	"AnimatedShopKeeper",
+	"CCCircleWaveDelegate"
+]
+
 def get_entry_string(directory):
 	directory = Path(directory)
 	if not directory.exists() or not directory.is_dir():
@@ -77,7 +82,14 @@ def get_entry_string(directory):
 			)
 			
 			if (item.name != ".git"):
-				entry = HTML_START + SUMMARY_START + item.name + SUMMARY_MID + f"{cpp_count}" + SUMMARY_END + UL_START
+				complete = False
+				for finished_class in FINISHED_CLASSES:
+					if (finished_class == item.name):
+						complete = True
+						break
+
+				complete_string = " (Complete)" if complete else ""
+				entry = HTML_START + SUMMARY_START + item.name + complete_string + SUMMARY_MID + f"{cpp_count}" + SUMMARY_END + UL_START
 				li_strings = ""
 				
 				for cpp_file in item.iterdir():
