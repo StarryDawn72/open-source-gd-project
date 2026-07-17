@@ -15,9 +15,9 @@ void PlayerObject::playSpawnEffect()
 	float blinkDuration = 0.4f;
 	unsigned int blinks = 4;
 
-	CCBlink*    blinkAction = CCBlink::create(blinkDuration, blinks);
-	CCShow*     showAction = CCShow::create();
-	CCSequence* blinkSequence = CCSequence::create((CCFiniteTimeAction *)blinkAction, showAction, 0);
+	auto blinkAction = CCBlink::create(blinkDuration, blinks);
+	auto showAction = CCShow::create();
+	auto blinkSequence = CCSequence::create((CCFiniteTimeAction *)blinkAction, showAction, nullptr);
 	blinkSequence->setTag(11);
 	runAction(blinkSequence);
 
@@ -26,9 +26,9 @@ void PlayerObject::playSpawnEffect()
 		for (int i = 0; i < 4; i++) {
 			float rippleInterval = 0.1f;
 
-			CCCallFunc*  circleSpawnAction = CCCallFunc::create(this, callfunc_selector(PlayerObject::spawnCircle));
-			CCDelayTime* delayAction = CCDelayTime::create(i * rippleInterval);
-			CCSequence*  rippleSequence = CCSequence::create((CCFiniteTimeAction *)delayAction,circleSpawnAction,0);
+			auto circleSpawnAction = CCCallFunc::create(this, callfunc_selector(PlayerObject::spawnCircle));
+			auto delayAction = CCDelayTime::create(i * rippleInterval);
+			auto rippleSequence = CCSequence::create((CCFiniteTimeAction *)delayAction,circleSpawnAction, nullptr);
 
 			runAction(rippleSequence);	
 		}

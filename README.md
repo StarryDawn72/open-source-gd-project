@@ -43,6 +43,21 @@ If you are in need of a function's code, or want to simply request an addition, 
 	</ul>
 </details>
 <details>
+	<summary>[ <b>CCCircleWave (Complete)</b> ] (10)</summary>
+	<ul>
+		<li><a href="./src/CCCircleWave/baseSetup.cpp">baseSetup</a></li>
+		<li><a href="./src/CCCircleWave/create.cpp">create</a></li>
+		<li><a href="./src/CCCircleWave/draw.cpp">draw</a></li>
+		<li><a href="./src/CCCircleWave/followObject.cpp">followObject</a></li>
+		<li><a href="./src/CCCircleWave/init.cpp">init</a></li>
+		<li><a href="./src/CCCircleWave/removeMeAndCleanup.cpp">removeMeAndCleanup</a></li>
+		<li><a href="./src/CCCircleWave/setPosition.cpp">setPosition</a></li>
+		<li><a href="./src/CCCircleWave/updatePosition.cpp">updatePosition</a></li>
+		<li><a href="./src/CCCircleWave/updateTweenAction.cpp">updateTweenAction</a></li>
+		<li><a href="./src/CCCircleWave/~CCCircleWave.cpp">~CCCircleWave</a></li>
+	</ul>
+</details>
+<details>
 	<summary>[ <b>CCCircleWaveDelegate (Complete)</b> ] (1)</summary>
 	<ul>
 		<li><a href="./src/CCCircleWaveDelegate/circleWaveWillBeRemoved.cpp">circleWaveWillBeRemoved</a></li>
