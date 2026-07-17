@@ -70,7 +70,7 @@ If you are in need of a function's code, or want to simply request an addition, 
 	</ul>
 </details>
 <details>
-	<summary>[ <b>PlayerObject</b> ] (32)</summary>
+	<summary>[ <b>PlayerObject</b> ] (33)</summary>
 	<ul>
 		<li><a href="./src/PlayerObject/addToYVelocity.cpp">addToYVelocity</a></li>
 		<li><a href="./src/PlayerObject/boostPlayer.cpp">boostPlayer</a></li>
@@ -100,6 +100,7 @@ If you are in need of a function's code, or want to simply request an addition, 
 		<li><a href="./src/PlayerObject/runBallRotation2.cpp">runBallRotation2</a></li>
 		<li><a href="./src/PlayerObject/runNormalRotation.cpp">runNormalRotation</a></li>
 		<li><a href="./src/PlayerObject/setYVelocity.cpp">setYVelocity</a></li>
+		<li><a href="./src/PlayerObject/spawnPortalCircle.cpp">spawnPortalCircle</a></li>
 		<li><a href="./src/PlayerObject/stopRotation.cpp">stopRotation</a></li>
 		<li><a href="./src/PlayerObject/updateSlopeRotation.cpp">updateSlopeRotation</a></li>
 		<li><a href="./src/PlayerObject/updateSlopeYVelocity.cpp">updateSlopeYVelocity</a></li>
