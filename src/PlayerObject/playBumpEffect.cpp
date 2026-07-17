@@ -8,13 +8,15 @@
 */
 void PlayerObject::playBumpEffect(int objectType, GameObject *player)
 {
-	if (GM->m_performanceMode || !m_playEffects)
-		return;
-
 	// rename geode bindings
 	float& m_playerScale = m_vehicleSize;
 	GameObject* m_lastEffectObject = m_lastActivatedPortal;
 	CCPoint m_lastEffectObjectPos = m_lastPortalPos;
+	bool& m_isInPlayLayer = m_playEffects;
+
+	if (GM->m_performanceMode || !m_isInPlayLayer)
+		return;
+
 
 	GameObjectType type = static_cast<GameObjectType>(objectType);
 	ccColor3B effectColor;
