@@ -219,15 +219,15 @@ void PlayLayer::updateVisibility(float dt)
 		}
 		else if (finalEnterType != -15){
 			// Update objects fading in and out of the screen
-			float someFloat = 0.0f;
+			float fadeX = 0.0f;
 			float fadeWidth = 70.0f;
 
 			if (isRight)
-				someFloat = m_enterEffectPosition.x - obj->m_fadeMargin;
+				fadeX = m_enterEffectPosition.x - obj->m_fadeMargin;
 			else
-				someFloat = m_enterEffectPosition.x + obj->m_fadeMargin;
+				fadeX = m_enterEffectPosition.x + obj->m_fadeMargin;
 
-			CCPoint fadePos = ccp(someFloat, fadeWidth);
+			CCPoint fadePos = ccp(fadeX, fadeWidth);
 			
 			// Last parameter unused, despite the name in the bindings
 			float newOpacity = getRelativeModNew(fadePos, 0.0f, 0.0f, isRight, false) * 255.0f;

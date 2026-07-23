@@ -43,6 +43,12 @@ If you are in need of a function's code, or want to simply request an addition, 
 	</ul>
 </details>
 <details>
+	<summary>[ <b>AudioEffectsLayer</b> ] (1)</summary>
+	<ul>
+		<li><a href="./src/AudioEffectsLayer/audioStep.cpp">audioStep</a></li>
+	</ul>
+</details>
+<details>
 	<summary>[ <b>CCCircleWave (Complete)</b> ] (10)</summary>
 	<ul>
 		<li><a href="./src/CCCircleWave/baseSetup.cpp">baseSetup</a></li>

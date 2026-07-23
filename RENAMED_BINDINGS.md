@@ -49,3 +49,6 @@ Some nasty variables I had to rename, either because they were completely incorr
 
 **GJGameState**
 - m_levelFlipping -> m_levelFlipProgress
+
+**AudioEffectsLayer**
+- m_unk1c0 -> m_pulseQueue
