@@ -44,6 +44,8 @@ Some nasty variables I had to rename, either because they were completely incorr
 
 **GameObject**
 - m_editorEnabled -> m_isInEditor
+- m_unk367 -> m_isAnimatedGameObject
+- m_unk3F8 -> m_isEndPortal
 
 **GJGameState**
 - m_levelFlipping -> m_levelFlipProgress

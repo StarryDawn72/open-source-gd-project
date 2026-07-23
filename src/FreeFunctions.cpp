@@ -31,3 +31,25 @@ float SquareDistance(float x1, float y1, float x2, float y2)
 {
     return ((y2 - y1) * (y2 - y1)) + ((x2 - x1) * (x2 - x1));
 }
+/*
+	====== gen_random ======
+	
+	Generates a random string of letters and numbers.
+	
+*/
+gd::string gen_random(int length)
+{
+	static const char characters[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+
+	CCString* out = CCString::create("");
+
+	for (int i = 0; i < length; i++) {
+		out = CCString::createWithFormat(
+			"%s%c",
+			out->getCString(),
+			characters[rand() % 62]
+		);
+	}
+
+	return gd::string(out->getCString());	
+}

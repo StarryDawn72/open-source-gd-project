@@ -70,6 +70,12 @@ If you are in need of a function's code, or want to simply request an addition, 
 	</ul>
 </details>
 <details>
+	<summary>[ <b>GameLevelManager</b> ] (1)</summary>
+	<ul>
+		<li><a href="./src/GameLevelManager/downloadLevel.cpp">downloadLevel</a></li>
+	</ul>
+</details>
+<details>
 	<summary>[ <b>GameObject</b> ] (2)</summary>
 	<ul>
 		<li><a href="./src/GameObject/createAndAddParticle.cpp">createAndAddParticle</a></li>
@@ -121,14 +127,16 @@ If you are in need of a function's code, or want to simply request an addition, 
 	</ul>
 </details>
 <details>
-	<summary>[ <b>PlayLayer</b> ] (1)</summary>
+	<summary>[ <b>PlayLayer</b> ] (2)</summary>
 	<ul>
 		<li><a href="./src/PlayLayer/circleWaveWillBeRemoved.cpp">circleWaveWillBeRemoved</a></li>
+		<li><a href="./src/PlayLayer/updateVisibility.cpp">updateVisibility</a></li>
 	</ul>
 </details>
 <details>
-	<summary>[ <b>RingObject</b> ] (1)</summary>
+	<summary>[ <b>RingObject</b> ] (2)</summary>
 	<ul>
+		<li><a href="./src/RingObject/powerOnObject.cpp">powerOnObject</a></li>
 		<li><a href="./src/RingObject/spawnCircle.cpp">spawnCircle</a></li>
 	</ul>
 </details>
