@@ -12,7 +12,7 @@ start_string = """
 
 Welcome to the Open Source Geometry Dash Project. This is (hopefully) what I plan to be the most reliable source of information for reverse-engineered function implementations. Basically, I like wasting hours of my spare time and making myself suffer just so I can help the GD modding community. You're welcome 😉.
 
-**What makes my recontructions stand out from others**
+**About my work**
 - I rename incorrect or imprecise variables from bindings
 - I manually verify every function with minimal use of AI
 - I override the original and test my reconstruction in-game as proof
