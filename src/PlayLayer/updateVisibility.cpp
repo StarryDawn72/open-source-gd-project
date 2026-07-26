@@ -56,7 +56,6 @@ void PlayLayer::updateVisibility(float dt)
 
 	bool flipping = isFlipping();
 
-	// Loop through all of the objects visible on screen
 	for (int i = 0; i < m_activeObjectsCount; i++) {
 		GameObject* obj = m_activeObjects[i];
 
@@ -135,14 +134,12 @@ void PlayLayer::updateVisibility(float dt)
 		if (obj->getHasSyncedAnimation())
 			static_cast<AnimatedGameObject*>(obj)->updateSyncedAnimation(-1, m_gameState.m_totalTime);
 
-		// Update spinning objects such as saws
 		if (obj->getHasRotateAction())
 			static_cast<EnhancedGameObject*>(obj)->updateRotateAction(dt);
 
 		if (obj_m_isAnimatedGameObject)
             static_cast<AnimatedGameObject*>(obj)->updateChildSpriteColor(brightenedBGColor);
 
-		// Update the bobbing effect on collectible items	
         if (obj->getType() == GameObjectType::Collectible)
             static_cast<EffectGameObject*>(obj)->updateInteractiveHover(m_hoverNode->getPosition().y);
 
@@ -153,7 +150,6 @@ void PlayLayer::updateVisibility(float dt)
 		if (obj_m_isEndPortal)
 			continue;
 		
-		// Update pulsing objects
 		if (obj->m_usesAudioScale && !obj->m_hasNoAudioScale)
 		{
 			if (obj->m_customAudioScale)
@@ -173,12 +169,9 @@ void PlayLayer::updateVisibility(float dt)
 		
 		if (obj->m_isInvisibleBlock)
 		{
-			// Update the fading block
 
 			if ( m_player1->m_isDead ) {
 
-				// Immediately unhide all invisible blocks on death
-				// to show where the player died
 				obj->setGlowColor(m_lightBGColor);
 				obj->setOpacity(255);
 				obj->setGlowOpacity(255);
@@ -218,7 +211,7 @@ void PlayLayer::updateVisibility(float dt)
 			applyEnterEffect(obj, finalEnterType, isRight);
 		}
 		else if (finalEnterType != -15){
-			// Update objects fading in and out of the screen
+
 			float fadeX = 0.0f;
 			float fadeWidth = 70.0f;
 
@@ -241,7 +234,6 @@ void PlayLayer::updateVisibility(float dt)
 			applyCustomEnterEffect(obj, isRight);	
 
 
-		// Animate mirror portal flip animation
 		if (flipping) {			
 			screenFlipObject(obj);
 		}
@@ -259,7 +251,6 @@ void PlayLayer::updateVisibility(float dt)
 	m_resetActiveObjects = false;
 	m_blendingColors.clear();
 
-	// Draw hitboxes
 	if (shouldDebugDraw())
 		updateDebugDraw();
 }

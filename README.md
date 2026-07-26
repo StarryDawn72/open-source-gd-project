@@ -14,7 +14,6 @@ Welcome to the Open Source Geometry Dash Project. This is (hopefully) what I pla
 - I manually verify every function with minimal use of AI
 - I override the original and test my reconstruction in-game as proof
 - I recover the original intent behind the implementation
-- I provide a detailed description of at the top of every function
 - I don't post a bunch of slop
 
 *Note: you often see me renaming member variables from bindings - thats' because some of them are incorrectly named. A list of renamed variables can be found in [the markdown file](./RENAMED_BINDINGS.md)*.
@@ -89,9 +88,10 @@ If you are in need of a function's code, or want to simply request an addition, 
 	</ul>
 </details>
 <details>
-	<summary>[ <b>LevelEditorLayer</b> ] (1)</summary>
+	<summary>[ <b>LevelEditorLayer</b> ] (2)</summary>
 	<ul>
 		<li><a href="./src/LevelEditorLayer/addObjectFromVector.cpp">addObjectFromVector</a></li>
+		<li><a href="./src/LevelEditorLayer/updateVisibility.cpp">updateVisibility</a></li>
 	</ul>
 </details>
 <details>
