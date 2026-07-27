@@ -3,9 +3,12 @@ Some nasty variables I had to rename, either because they were completely incorr
 
 **PlayerObject**:
 - m_jumpBuffered -> m_holdingJump
+- m_wasJumpBuffered -> m_wasHoldingJump
+- m_jumpRelatedAC2 -> m_antiCheatValue
 - m_stateJumpBuffered -> m_holdingJumpReleaseDelayed
 - m_isOnGround -> m_canJump
 - m_isOnGround2 -> m_onGround
+- m_isOnGround3 -> m_isGroundTouchSideValid (I couldn't find a better name 😭)
 - m_maybeChangedDirectionAngle -> m_lastPlatformerSlopeAngle
 - m_platformerMovingRight -> m_slopeForceRight
 - m_platformerMovingLeft -> m_slopeForceLeft
@@ -41,6 +44,7 @@ Some nasty variables I had to rename, either because they were completely incorr
 - m_slopeSlidingMaybeRotated -> m_isSlopeUphillRelative
 - m_lastActivatedPortal -> m_lastEffectObject
 - m_lastPortalPos -> m_lastEffectObjectPos
+- m_maybeSlidingStartTime -> m_slopeForceEndTime
 
 **GameObject**
 - m_editorEnabled -> m_isInEditor
