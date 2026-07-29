@@ -1,0 +1,51 @@
+cube:
+  gravity:
+    slow: 0.940199
+    normal: 0.958199
+    fast: 0.957199
+    fastest: 0.961199
+  gravity_delta:
+    slow: 0.21154477
+    normal:	0.21559477
+    fast: 0.21559477
+    fastest: 0.2162697
+  jump_velocity:
+    non_buffered:
+      slow:	10.408
+      normal:	10.964
+      fast: 11.205
+      fastest: 11.014
+    buffered:
+      slow: 10.620
+      normal:	11.180
+      fast: 11.420
+      fastest: 11.230
+ship:
+  gravity: 0.958199
+  gravity_delta: 0.21559477
+ball:
+  gravity: 0.958199
+  gravity_delta: 0.21559477
+wave:
+  gravity: 0.958199
+  gravity_delta: 0.21559477
+robot:
+  gravity:
+    slow: 0.940199
+    normal: 0.958199
+    fast: 0.957199
+    fastest: 0.961199
+  gravity_delta:
+    slow: 0.21154477
+    normal:	0.21559477
+    fast: 0.21559477
+    fastest: 0.2162697
+spider:
+  gravity: 0.958199
+  gravity_delta: 0.21559477
+swing:
+  gravity: 0.958199
+  gravity_delta: 0.21559477
+physics_delta_time:
+  horizontal: 0.25
+  vertical: 0.225
