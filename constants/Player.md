@@ -26,7 +26,7 @@ For `PlayerObject::updateJump`: `0.225f`
 
 ---
 
-### Jump Velocity
+### Jump Velocity (not sure about float suffix)
 | Speed | Buffered Jump | Non-buffered Jump |
 |-------|---------------|-------------------|
 | 0.5x  | 10.620f       | 10.408f           |
