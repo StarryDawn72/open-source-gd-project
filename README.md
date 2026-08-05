@@ -95,11 +95,12 @@ If you are in need of a function's code, or want to simply request an addition, 
 	</ul>
 </details>
 <details>
-	<summary>[ <b>PlayerObject</b> ] (34)</summary>
+	<summary>[ <b>PlayerObject</b> ] (35)</summary>
 	<ul>
 		<li><a href="./src/PlayerObject/addToYVelocity.cpp">addToYVelocity</a></li>
 		<li><a href="./src/PlayerObject/boostPlayer.cpp">boostPlayer</a></li>
 		<li><a href="./src/PlayerObject/checkSnapJumpToObject.cpp">checkSnapJumpToObject</a></li>
+		<li><a href="./src/PlayerObject/collidedWithSlope.cpp">collidedWithSlope</a></li>
 		<li><a href="./src/PlayerObject/collidedWithSlopeInternal.cpp">collidedWithSlopeInternal</a></li>
 		<li><a href="./src/PlayerObject/flipMod.cpp">flipMod</a></li>
 		<li><a href="./src/PlayerObject/getModifiedSlopeYVel.cpp">getModifiedSlopeYVel</a></li>
