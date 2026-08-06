@@ -7,13 +7,11 @@
 
 ### **Manually verified reconstructions of Geometry Dash functions for modders**
 
-Welcome to the Open Source Geometry Dash Project. This is (hopefully) what I plan to be the most reliable source of information for reverse-engineered function implementations. Basically, I like wasting hours of my spare time and making myself suffer just so I can help the GD modding community. You're welcome 😉.
+Welcome to the Open Source Geometry Dash Project. This is (hopefully) what I plan to be the most reliable source of information for reverse-engineered function implementations. Basically, I like wasting hours of my spare time and making myself suffer just so I can help the GD modding community.
 
 **About my work**
-- I rename incorrect or imprecise variables from bindings
 - I manually verify every function with minimal use of AI
 - I override the original and test my reconstruction in-game as proof
-- I recover the original intent behind the implementation
 - I don't post a bunch of slop
 
 *Note: you often see me renaming member variables from bindings - thats' because some of them are incorrectly named. A list of renamed variables can be found in [the markdown file](./RENAMED_BINDINGS.md)*.
@@ -95,17 +93,27 @@ If you are in need of a function's code, or want to simply request an addition, 
 	</ul>
 </details>
 <details>
-	<summary>[ <b>PlayerObject</b> ] (35)</summary>
+	<summary>[ <b>PlayerObject</b> ] (64)</summary>
 	<ul>
+		<li><a href="./src/PlayerObject/addAllParticles.cpp">addAllParticles</a></li>
 		<li><a href="./src/PlayerObject/addToYVelocity.cpp">addToYVelocity</a></li>
 		<li><a href="./src/PlayerObject/boostPlayer.cpp">boostPlayer</a></li>
 		<li><a href="./src/PlayerObject/checkSnapJumpToObject.cpp">checkSnapJumpToObject</a></li>
 		<li><a href="./src/PlayerObject/collidedWithSlope.cpp">collidedWithSlope</a></li>
 		<li><a href="./src/PlayerObject/collidedWithSlopeInternal.cpp">collidedWithSlopeInternal</a></li>
+		<li><a href="./src/PlayerObject/deactivateParticle.cpp">deactivateParticle</a></li>
+		<li><a href="./src/PlayerObject/exitPlatformerAnimateJump.cpp">exitPlatformerAnimateJump</a></li>
 		<li><a href="./src/PlayerObject/flipMod.cpp">flipMod</a></li>
+		<li><a href="./src/PlayerObject/gameEventTriggered.cpp">gameEventTriggered</a></li>
+		<li><a href="./src/PlayerObject/getActiveMode.cpp">getActiveMode</a></li>
+		<li><a href="./src/PlayerObject/getCurrentXVelocity.cpp">getCurrentXVelocity</a></li>
 		<li><a href="./src/PlayerObject/getModifiedSlopeYVel.cpp">getModifiedSlopeYVel</a></li>
 		<li><a href="./src/PlayerObject/getObjectRotation.cpp">getObjectRotation</a></li>
+		<li><a href="./src/PlayerObject/getOrientedBox.cpp">getOrientedBox</a></li>
+		<li><a href="./src/PlayerObject/getYVelocity.cpp">getYVelocity</a></li>
+		<li><a href="./src/PlayerObject/incrementJumps.cpp">incrementJumps</a></li>
 		<li><a href="./src/PlayerObject/isFlying.cpp">isFlying</a></li>
+		<li><a href="./src/PlayerObject/isInBasicMode.cpp">isInBasicMode</a></li>
 		<li><a href="./src/PlayerObject/isSafeFlip.cpp">isSafeFlip</a></li>
 		<li><a href="./src/PlayerObject/isSafeMode.cpp">isSafeMode</a></li>
 		<li><a href="./src/PlayerObject/levelFlipFinished.cpp">levelFlipFinished</a></li>
@@ -120,14 +128,33 @@ If you are in need of a function's code, or want to simply request an addition, 
 		<li><a href="./src/PlayerObject/pushDown.cpp">pushDown</a></li>
 		<li><a href="./src/PlayerObject/pushPlayer.cpp">pushPlayer</a></li>
 		<li><a href="./src/PlayerObject/redirectDash.cpp">redirectDash</a></li>
+		<li><a href="./src/PlayerObject/removeAllParticles.cpp">removeAllParticles</a></li>
+		<li><a href="./src/PlayerObject/resetAllParticles.cpp">resetAllParticles</a></li>
+		<li><a href="./src/PlayerObject/resetCollisionValues.cpp">resetCollisionValues</a></li>
+		<li><a href="./src/PlayerObject/resetStreak.cpp">resetStreak</a></li>
 		<li><a href="./src/PlayerObject/reverseMod.cpp">reverseMod</a></li>
 		<li><a href="./src/PlayerObject/ringJump.cpp">ringJump</a></li>
 		<li><a href="./src/PlayerObject/runBallRotation.cpp">runBallRotation</a></li>
 		<li><a href="./src/PlayerObject/runBallRotation2.cpp">runBallRotation2</a></li>
 		<li><a href="./src/PlayerObject/runNormalRotation.cpp">runNormalRotation</a></li>
+		<li><a href="./src/PlayerObject/setColor.cpp">setColor</a></li>
+		<li><a href="./src/PlayerObject/setFlipX.cpp">setFlipX</a></li>
+		<li><a href="./src/PlayerObject/setOpacity.cpp">setOpacity</a></li>
+		<li><a href="./src/PlayerObject/setRotation.cpp">setRotation</a></li>
+		<li><a href="./src/PlayerObject/setScaleX.cpp">setScaleX</a></li>
+		<li><a href="./src/PlayerObject/setScaleY.cpp">setScaleY</a></li>
+		<li><a href="./src/PlayerObject/setVisible.cpp">setVisible</a></li>
 		<li><a href="./src/PlayerObject/setYVelocity.cpp">setYVelocity</a></li>
+		<li><a href="./src/PlayerObject/spawnCircle.cpp">spawnCircle</a></li>
+		<li><a href="./src/PlayerObject/spawnCircle2.cpp">spawnCircle2</a></li>
 		<li><a href="./src/PlayerObject/spawnPortalCircle.cpp">spawnPortalCircle</a></li>
+		<li><a href="./src/PlayerObject/spawnScaleCircle.cpp">spawnScaleCircle</a></li>
+		<li><a href="./src/PlayerObject/spiderTestJump.cpp">spiderTestJump</a></li>
+		<li><a href="./src/PlayerObject/stopBurstEffect.cpp">stopBurstEffect</a></li>
+		<li><a href="./src/PlayerObject/stopParticles.cpp">stopParticles</a></li>
 		<li><a href="./src/PlayerObject/stopRotation.cpp">stopRotation</a></li>
+		<li><a href="./src/PlayerObject/togglePlatformerMode.cpp">togglePlatformerMode</a></li>
+		<li><a href="./src/PlayerObject/updateEffects.cpp">updateEffects</a></li>
 		<li><a href="./src/PlayerObject/updateJump.cpp">updateJump</a></li>
 		<li><a href="./src/PlayerObject/updateSlopeRotation.cpp">updateSlopeRotation</a></li>
 		<li><a href="./src/PlayerObject/updateSlopeYVelocity.cpp">updateSlopeYVelocity</a></li>
