@@ -1,10 +1,3 @@
-/*
-	====== PlayerObject::levelFlipFinished ======
-	
-	Handles the visual effects after the completion of
-	a mirror portal animation.
-	
-*/
 void levelFlipFinished()
 {
     m_trailingParticles->setLife(m_trailingParticleLife);

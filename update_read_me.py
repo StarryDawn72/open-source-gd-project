@@ -22,7 +22,7 @@ Welcome to the Open Source Geometry Dash Project. This is (hopefully) what I pla
 ---
 **Contribution:**
 
-If you are in need of a function's code, or want to simply request an addition, please open a PR or message me on discord at @starrydawn72. All pull requests will go through manual confirmation before being added to the repository.
+If you are in need of a function's code that isn't already on this list, or want to simply request an addition, please open a PR or message me on discord at @starrydawn72. All pull requests will go through manual confirmation before being added to the repository.
 
 ---
 **Info:**
