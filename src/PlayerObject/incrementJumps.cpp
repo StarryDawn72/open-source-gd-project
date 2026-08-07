@@ -1,3 +1,5 @@
+#define PL GameManager::sharedState()->getPlayLayer()
+
 void PlayerObject::incrementJumps()
 {
 	bool m_isInPlayLayer = m_playEffects;
