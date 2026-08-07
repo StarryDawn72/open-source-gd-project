@@ -1,11 +1,3 @@
-/*
-	====== CCCircleWave::baseSetup ======
-	
-	Initializes the circle effect with default
-	values and a given start radius.
-	
-*/
-
 void CCCircleWave::baseSetup(float radius)
 {
     m_color.r = 255;

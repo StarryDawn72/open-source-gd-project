@@ -1,12 +1,6 @@
 #define GM GameManager::sharedState()
 #define PL GameManager::sharedState()->getPlayLayer()
-/*
-	====== PlayerObject::spawnPortalCircle ======
-	
-	Spawns a circle effect with a given color and start radius.
-	Triggered when activating a portal (duh).
-	
-*/
+
 void PlayerObject::spawnPortalCircle(ccColor3B color, float startRadius)
 {
 	// rename bindings

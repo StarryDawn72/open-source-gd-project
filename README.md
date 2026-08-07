@@ -46,9 +46,10 @@ If you are in need of a function's code that isn't already on this list, or want
 	</ul>
 </details>
 <details>
-	<summary>[ <b>CCCircleWave (Complete)</b> ] (10)</summary>
+	<summary>[ <b>CCCircleWave (Complete)</b> ] (11)</summary>
 	<ul>
 		<li><a href="./src/CCCircleWave/baseSetup.cpp">baseSetup</a></li>
+		<li><a href="./src/CCCircleWave/CCCircleWave.cpp">CCCircleWave</a></li>
 		<li><a href="./src/CCCircleWave/create.cpp">create</a></li>
 		<li><a href="./src/CCCircleWave/draw.cpp">draw</a></li>
 		<li><a href="./src/CCCircleWave/followObject.cpp">followObject</a></li>
@@ -99,7 +100,7 @@ If you are in need of a function's code that isn't already on this list, or want
 	</ul>
 </details>
 <details>
-	<summary>[ <b>PlayerObject</b> ] (106)</summary>
+	<summary>[ <b>PlayerObject</b> ] (111)</summary>
 	<ul>
 		<li><a href="./src/PlayerObject/activateStreak.cpp">activateStreak</a></li>
 		<li><a href="./src/PlayerObject/addAllParticles.cpp">addAllParticles</a></li>
@@ -109,14 +110,17 @@ If you are in need of a function's code that isn't already on this list, or want
 		<li><a href="./src/PlayerObject/boostPlayer.cpp">boostPlayer</a></li>
 		<li><a href="./src/PlayerObject/canStickToGround.cpp">canStickToGround</a></li>
 		<li><a href="./src/PlayerObject/checkSnapJumpToObject.cpp">checkSnapJumpToObject</a></li>
+		<li><a href="./src/PlayerObject/collidedWithObject.cpp">collidedWithObject</a></li>
 		<li><a href="./src/PlayerObject/collidedWithSlope.cpp">collidedWithSlope</a></li>
 		<li><a href="./src/PlayerObject/collidedWithSlopeInternal.cpp">collidedWithSlopeInternal</a></li>
+		<li><a href="./src/PlayerObject/create.cpp">create</a></li>
 		<li><a href="./src/PlayerObject/deactivateParticle.cpp">deactivateParticle</a></li>
 		<li><a href="./src/PlayerObject/deactivateStreak.cpp">deactivateStreak</a></li>
 		<li><a href="./src/PlayerObject/destroyFromHitHead.cpp">destroyFromHitHead</a></li>
 		<li><a href="./src/PlayerObject/didHitHead.cpp">didHitHead</a></li>
 		<li><a href="./src/PlayerObject/exitPlatformerAnimateJump.cpp">exitPlatformerAnimateJump</a></li>
 		<li><a href="./src/PlayerObject/fadeOutStreak2.cpp">fadeOutStreak2</a></li>
+		<li><a href="./src/PlayerObject/flipGravity.cpp">flipGravity</a></li>
 		<li><a href="./src/PlayerObject/flipMod.cpp">flipMod</a></li>
 		<li><a href="./src/PlayerObject/gameEventTriggered.cpp">gameEventTriggered</a></li>
 		<li><a href="./src/PlayerObject/getActiveMode.cpp">getActiveMode</a></li>
@@ -198,11 +202,13 @@ If you are in need of a function's code that isn't already on this list, or want
 		<li><a href="./src/PlayerObject/updateInternalActions.cpp">updateInternalActions</a></li>
 		<li><a href="./src/PlayerObject/updateJump.cpp">updateJump</a></li>
 		<li><a href="./src/PlayerObject/updatePlayerScale.cpp">updatePlayerScale</a></li>
+		<li><a href="./src/PlayerObject/updateRobotAnimationSpeed.cpp">updateRobotAnimationSpeed</a></li>
 		<li><a href="./src/PlayerObject/updateRotation.cpp">updateRotation</a></li>
 		<li><a href="./src/PlayerObject/updateSlopeRotation.cpp">updateSlopeRotation</a></li>
 		<li><a href="./src/PlayerObject/updateSlopeYVelocity.cpp">updateSlopeYVelocity</a></li>
 		<li><a href="./src/PlayerObject/updateStreakBlend.cpp">updateStreakBlend</a></li>
 		<li><a href="./src/PlayerObject/updateStreaks.cpp">updateStreaks</a></li>
+		<li><a href="./src/PlayerObject/updateSwingFire.cpp">updateSwingFire</a></li>
 		<li><a href="./src/PlayerObject/updateTimeMod.cpp">updateTimeMod</a></li>
 		<li><a href="./src/PlayerObject/usingWallLimitedMode.cpp">usingWallLimitedMode</a></li>
 		<li><a href="./src/PlayerObject/yStartDown.cpp">yStartDown</a></li>

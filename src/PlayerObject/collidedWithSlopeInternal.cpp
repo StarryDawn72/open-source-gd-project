@@ -374,7 +374,7 @@ void PlayerObject::collidedWithSlopeInternal(float dt, GameObject *object, bool 
 	int sidewaysMod = m_isSideways ? -xDirMod : xDirMod;
 
 	// Why did RobTop not just do sidewaysMod * slopeAngle...
-    m_slopeRotation = (sidewaysMod * CC_DEGREES_TO_RADIANS(CC_RADIANS_TO_DEGREES(slopeAngle)));//   uh idk ↓
+    m_slopeRotation = (sidewaysMod * CC_DEGREES_TO_RADIANS(CC_RADIANS_TO_DEGREES(slopeAngle)));
 
     this->setPosition(ccp(this->getPosition().x, slopeYPos));
 
