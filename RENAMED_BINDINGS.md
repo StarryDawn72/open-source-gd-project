@@ -45,6 +45,7 @@ Some nasty variables I had to rename, either because they were completely incorr
 - m_lastActivatedPortal -> m_lastEffectObject
 - m_lastPortalPos -> m_lastEffectObjectPos
 - m_maybeSlidingStartTime -> m_slopeForceEndTime
+- m_reverseRelated -> m_reverseTimer
 
 **GameObject**
 - m_editorEnabled -> m_isInEditor
