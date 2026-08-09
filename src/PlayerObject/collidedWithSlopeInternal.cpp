@@ -1,3 +1,6 @@
+#define kStickDistance 5.0f
+#define kStickDistancePlatformer 10.0f
+#define PL GameManager::sharedState()->getPlayLayer()
 /*
 	====== PlayerObject::collidedWithSlopeInternal ======
 	
@@ -39,7 +42,7 @@ void PlayerObject::collidedWithSlopeInternal(float dt, GameObject *object, bool 
 	bool& m_isSlopeUphillRelative = m_slopeSlidingMaybeRotated;
 	std::unordered_map<int, GameObject*>& m_preSlopeObjects = m_potentialSlopeMap;
 	std::unordered_map<int, GJPointDouble>& m_rotatedObjectDeltas = m_rotateObjectsRelated;
-	
+	GameObject*& m_preSlopeObject = m_currentPotentialSlope;
 
 	CCRect playerRect = getObjectRect();
 	CCRect slopeRect = object->getObjectRect();
@@ -356,7 +359,7 @@ void PlayerObject::collidedWithSlopeInternal(float dt, GameObject *object, bool 
 
     m_currentSlope = object;
     m_slopeAngleRadians = object->getSlopeAngle();
-    m_currentPotentialSlope = m_currentSlope;
+    m_preSlopeObject = m_currentSlope;
 	m_preSlopeObjects[object->m_uniqueID] = object;
     m_slopeYOffset = playerSlopeOffset - playerRadius;
     m_isCurrentSlopeTop = isFloorTop;

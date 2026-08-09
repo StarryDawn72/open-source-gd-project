@@ -21,7 +21,6 @@ Some nasty variables I had to rename, either because they were completely incorr
 - m_isAccelerating -> m_isVelocityUncapped
 - m_touchedGravityPortal -> m_touchedTeleportRing
 - m_maybeReducedEffects -> m_isRespawning
-- m_maybeSlopeForce -> m_slideBoostValue (from RobTop's stream)
 - m_stateRingJump -> m_isJumpUnused
 - m_stateRingJump2 -> m_canRingJump
 - m_vehicleSize -> m_playerScale
@@ -36,6 +35,7 @@ Some nasty variables I had to rename, either because they were completely incorr
 - m_slopeFlipGravityRelated -> m_isGoingDownSlope
 - unk_584 -> m_slopeYOffset
 - m_potentialSlopeMap -> m_preSlopeObjects
+- m_currentPotentialSlope -> m_preSlopeObject (from RobTop's stream)
 - m_rotateObjectsRelated -> m_rotatedObjectDeltas
 - m_unk3d0 -> m_lastSlopeYPos
 - m_blackOrbRelated -> m_lastSlopeYPosRotated
@@ -46,6 +46,14 @@ Some nasty variables I had to rename, either because they were completely incorr
 - m_lastPortalPos -> m_lastEffectObjectPos
 - m_maybeSlidingStartTime -> m_slopeForceEndTime
 - m_reverseRelated -> m_reverseTimer
+- m_stateUnk -> m_lastSpecialEffect (confirmed from robtop's stream)
+- m_maybeSlopeForce -> m_slideBoostValue (confirmed from robtop's stream)
+- m_isMoving -> m_forceLowFriction (confirmed from robtop's stream)
+- m_isSliding -> m_applySlideBoost (confirmed from robtop's stream)
+- m_maybeIsColliding -> m_tookDamage (confirmed from robtop's stream)
+- m_physDeltaRelated -> m_stickXTime (confirmed from robtop's stream)
+- m_preLastGroundObject -> m_lastSlopeObjectExtended (confirmed from robtop's stream)
+- m_unk669 -> m_shouldDisconnectSlope (confirmed from robtop's stream)
 
 **GameObject**
 - m_editorEnabled -> m_isInEditor
@@ -57,3 +65,6 @@ Some nasty variables I had to rename, either because they were completely incorr
 
 **AudioEffectsLayer**
 - m_unk1c0 -> m_pulseQueue
+
+**GJGarageLayer**
+- m_iconSelection -> m_trailPage
