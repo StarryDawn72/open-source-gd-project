@@ -100,7 +100,7 @@ If you are in need of a function's code that isn't already on this list, or want
 	</ul>
 </details>
 <details>
-	<summary>[ <b>PlayerObject</b> ] (111)</summary>
+	<summary>[ <b>PlayerObject</b> ] (116)</summary>
 	<ul>
 		<li><a href="./src/PlayerObject/activateStreak.cpp">activateStreak</a></li>
 		<li><a href="./src/PlayerObject/addAllParticles.cpp">addAllParticles</a></li>
@@ -118,8 +118,10 @@ If you are in need of a function's code that isn't already on this list, or want
 		<li><a href="./src/PlayerObject/deactivateStreak.cpp">deactivateStreak</a></li>
 		<li><a href="./src/PlayerObject/destroyFromHitHead.cpp">destroyFromHitHead</a></li>
 		<li><a href="./src/PlayerObject/didHitHead.cpp">didHitHead</a></li>
+		<li><a href="./src/PlayerObject/disablePlayerControls.cpp">disablePlayerControls</a></li>
 		<li><a href="./src/PlayerObject/exitPlatformerAnimateJump.cpp">exitPlatformerAnimateJump</a></li>
 		<li><a href="./src/PlayerObject/fadeOutStreak2.cpp">fadeOutStreak2</a></li>
+		<li><a href="./src/PlayerObject/flashPlayer.cpp">flashPlayer</a></li>
 		<li><a href="./src/PlayerObject/flipGravity.cpp">flipGravity</a></li>
 		<li><a href="./src/PlayerObject/flipMod.cpp">flipMod</a></li>
 		<li><a href="./src/PlayerObject/gameEventTriggered.cpp">gameEventTriggered</a></li>
@@ -152,6 +154,7 @@ If you are in need of a function's code that isn't already on this list, or want
 		<li><a href="./src/PlayerObject/modeDidChange.cpp">modeDidChange</a></li>
 		<li><a href="./src/PlayerObject/playBumpEffect.cpp">playBumpEffect</a></li>
 		<li><a href="./src/PlayerObject/playBurstEffect.cpp">playBurstEffect</a></li>
+		<li><a href="./src/PlayerObject/playerDestroyed.cpp">playerDestroyed</a></li>
 		<li><a href="./src/PlayerObject/playerIsFalling.cpp">playerIsFalling</a></li>
 		<li><a href="./src/PlayerObject/playerIsFallingBugged.cpp">playerIsFallingBugged</a></li>
 		<li><a href="./src/PlayerObject/playerIsMovingUp.cpp">playerIsMovingUp</a></li>
@@ -159,6 +162,7 @@ If you are in need of a function's code that isn't already on this list, or want
 		<li><a href="./src/PlayerObject/playingEndEffect.cpp">playingEndEffect</a></li>
 		<li><a href="./src/PlayerObject/playSpawnEffect.cpp">playSpawnEffect</a></li>
 		<li><a href="./src/PlayerObject/preSlopeCollision.cpp">preSlopeCollision</a></li>
+		<li><a href="./src/PlayerObject/propellPlayer.cpp">propellPlayer</a></li>
 		<li><a href="./src/PlayerObject/pushDown.cpp">pushDown</a></li>
 		<li><a href="./src/PlayerObject/pushPlayer.cpp">pushPlayer</a></li>
 		<li><a href="./src/PlayerObject/redirectDash.cpp">redirectDash</a></li>
@@ -194,6 +198,7 @@ If you are in need of a function's code that isn't already on this list, or want
 		<li><a href="./src/PlayerObject/stopParticles.cpp">stopParticles</a></li>
 		<li><a href="./src/PlayerObject/stopRotation.cpp">stopRotation</a></li>
 		<li><a href="./src/PlayerObject/stopStreak2.cpp">stopStreak2</a></li>
+		<li><a href="./src/PlayerObject/toggleGhostEffect.cpp">toggleGhostEffect</a></li>
 		<li><a href="./src/PlayerObject/togglePlatformerMode.cpp">togglePlatformerMode</a></li>
 		<li><a href="./src/PlayerObject/toggleVisibility.cpp">toggleVisibility</a></li>
 		<li><a href="./src/PlayerObject/unrotatePreSlopeObjects.cpp">unrotatePreSlopeObjects</a></li>

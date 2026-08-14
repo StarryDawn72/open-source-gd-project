@@ -29,7 +29,6 @@ Some nasty variables I had to rename, either because they were completely incorr
 - m_enable22Changes -> m_2p2ChangesDisabled (inverted lol)
 - m_maybeCanRunIntoBlocks -> m_ignoreDamagePlayLayer
 - m_ignoreDamage -> m_ignoreDamageEditor
-- m_maybeIsColliding -> m_tookDamage
 - m_unk3e0 -> m_slopeWasClampedMax
 - m_unk3e1 -> m_slopeWasClampedMin
 - m_slopeFlipGravityRelated -> m_isGoingDownSlope
@@ -52,8 +51,10 @@ Some nasty variables I had to rename, either because they were completely incorr
 - m_isSliding -> m_applySlideBoost (confirmed from robtop's stream)
 - m_maybeIsColliding -> m_tookDamage (confirmed from robtop's stream)
 - m_physDeltaRelated -> m_stickXTime (confirmed from robtop's stream)
-- m_preLastGroundObject -> m_lastSlopeObjectExtended (confirmed from robtop's stream)
+- m_preLastGroundObject -> m_lastSlopeExtended (confirmed from robtop's stream)
 - m_unk669 -> m_shouldDisconnectSlope (confirmed from robtop's stream)
+- m_currentSlope2 -> m_lastSlope (confirmed from robtop's stream)
+- m_scaleXRelated -> m_lastBlockXVelocityApplied (confirmed from robtop's stream)
 
 **GameObject**
 - m_editorEnabled -> m_isInEditor

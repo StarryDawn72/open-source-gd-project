@@ -43,6 +43,7 @@ void PlayerObject::collidedWithSlopeInternal(float dt, GameObject *object, bool 
 	std::unordered_map<int, GameObject*>& m_preSlopeObjects = m_potentialSlopeMap;
 	std::unordered_map<int, GJPointDouble>& m_rotatedObjectDeltas = m_rotateObjectsRelated;
 	GameObject*& m_preSlopeObject = m_currentPotentialSlope;
+	GameObject*& m_lastSlope = m_currentSlope2;
 
 	CCRect playerRect = getObjectRect();
 	CCRect slopeRect = object->getObjectRect();
@@ -412,10 +413,10 @@ void PlayerObject::collidedWithSlopeInternal(float dt, GameObject *object, bool 
             updateCollide(PlayerCollisionDirection::Bottom, object);
 
 			
-            m_currentSlope2 = object; // Unsure about name
+            m_lastSlope = object;
 
             m_slopeAngle = object->getSlopeAngle();
-			bool uphill = m_currentSlope2->m_slopeUphill;
+			bool uphill = m_lastSlope->m_slopeUphill;
 
             m_isSlopeUphillRelative = uphill;
 
