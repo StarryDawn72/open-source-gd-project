@@ -7,3 +7,4 @@
 #define kBlockInset 0.3f
 #define kGVRandomOption001 "0095"
 #define kTagScaleSpider 10
+#define bgOpacity 100
