@@ -79,11 +79,11 @@ void GJBaseGameLayer::collisionCheckObjects(PlayerObject* object, std::vector<Ga
 
 		if (obj->m_shouldUseOuterOb && (!m_levelSettings->m_fixRadiusCollision || obj->m_objectRadius <= 0.0f))
 		{
-			OBB2D* oldOB = obj->getOrientedBox();
+			OBB2D* objectOB = obj->getOrientedBox();
 			player->updateOrientedBox();
-			OBB2D* newOB = player->getOrientedBox();
+			OBB2D* playerOB = player->getOrientedBox();
 
-			colliding = oldOB->overlaps1Way(newOB) && newOB->overlaps1Way(oldOB);
+			colliding = objectOB->overlaps1Way(playerOB) && playerOB->overlaps1Way(objectOB);
 		}
 
 		if (obj->getType() == GameObjectType::Slope)
