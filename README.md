@@ -80,9 +80,13 @@ If you are in need of a function's code that isn't already on this list, or want
 	</ul>
 </details>
 <details>
-	<summary>[ <b>GameObject</b> ] (2)</summary>
+	<summary>[ <b>GameObject</b> ] (6)</summary>
 	<ul>
 		<li><a href="./src/GameObject/createAndAddParticle.cpp">createAndAddParticle</a></li>
+		<li><a href="./src/GameObject/getObjectRect.cpp">getObjectRect</a></li>
+		<li><a href="./src/GameObject/getObjectRect2.cpp">getObjectRect2</a></li>
+		<li><a href="./src/GameObject/getObjectRectDirty.cpp">getObjectRectDirty</a></li>
+		<li><a href="./src/GameObject/getObjectRectPointer.cpp">getObjectRectPointer</a></li>
 		<li><a href="./src/GameObject/slopeYPos.cpp">slopeYPos</a></li>
 	</ul>
 </details>

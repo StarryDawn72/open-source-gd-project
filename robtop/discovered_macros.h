@@ -5,6 +5,6 @@
 #define GM GameManager::sharedState()
 #define PL GameManager::sharedState()->getPlayLayer()
 #define kBlockInset 0.3f
-#define kGVRandomOption001 "0095"
-#define kTagScaleSpider 10
-#define bgOpacity 100
+#define kGVRandomOption001 "0095" // In EndLevelLayer
+#define kTagScaleSpider 10 // In PlayerObject::resetObject
+#define bgOpacity 100 // In EndLevelLayer
