@@ -91,9 +91,12 @@ If you are in need of a function's code that isn't already on this list, or want
 	</ul>
 </details>
 <details>
-	<summary>[ <b>GJBaseGameLayer</b> ] (1)</summary>
+	<summary>[ <b>GJBaseGameLayer</b> ] (4)</summary>
 	<ul>
 		<li><a href="./src/GJBaseGameLayer/collisionCheckObjects.cpp">collisionCheckObjects</a></li>
+		<li><a href="./src/GJBaseGameLayer/objectIntersectsCircle.cpp">objectIntersectsCircle</a></li>
+		<li><a href="./src/GJBaseGameLayer/playerCircleCollision.cpp">playerCircleCollision</a></li>
+		<li><a href="./src/GJBaseGameLayer/playerIntersectsCircle.cpp">playerIntersectsCircle</a></li>
 	</ul>
 </details>
 <details>
