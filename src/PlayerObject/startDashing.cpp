@@ -130,16 +130,12 @@ void PlayerObject::startDashing(DashRingObject* object)
         dashBoomSprite->runAction(fadeOutSequence);
 
         int greenDashRingId = 1704;
+        
+        ccColor3B tint = object->m_objectID == greenDashRingId
+            ? ccc3(0, 255, 0)
+            : ccc3(255, 0, 255);
 
-        GLubyte tintRedBlue = object->m_objectID == greenDashRingId
-            ? 0
-            : 255;
-
-        GLubyte tintGreen = object->m_objectID == greenDashRingId
-            ? 255
-            : 0;
-
-        CCTintTo* tintAction = CCTintTo::create(0.3f, tintRedBlue, tintGreen, tintRedBlue);
+        CCTintTo* tintAction = CCTintTo::create(0.3f, tint.r, tint.g, tint.b);
         dashBoomSprite->runAction(tintAction);
 
         flashPlayer(0.2f, 0.1f, ccc3(255, 255, 255), ccc3(255, 255, 255));
