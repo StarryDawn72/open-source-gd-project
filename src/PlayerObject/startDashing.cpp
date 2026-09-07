@@ -48,6 +48,7 @@ void PlayerObject::startDashing(DashRingObject* object)
 
         CCPoint dashVector = ccpForAngle(CC_DEGREES_TO_RADIANS(finalDashAngle));
         float speedMod = m_isPlatformer ? object->m_dashSpeed * 5.770002f : 1.0f;
+        // 5.770002f is the player's global speed multiplier at 1x speed. See updateTimeMod.
 
         CCPoint dashPos = dashVector * speedMod;
 

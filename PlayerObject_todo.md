@@ -84,7 +84,6 @@
     void updateCollideRight(float x, GameObject* object)
     void updateCollideTop(float y, GameObject* object)
     void updateDashAnimation()
-    void updateDashArt()
     void updateGlowColor()
     void updateJumpVariables()
     void updateLastGroundObject(GameObject* object)

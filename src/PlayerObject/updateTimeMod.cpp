@@ -19,6 +19,9 @@ void PlayerObject::updateTimeMod(float speed, bool noEffects)
         GM->playSpeedParticle(speed);
     }
 
+	// Values here look messy because they were almost certainly the result
+	// of tuning by hand and pasting the result from the console, not chosen manually.
+	// There is a high likelyhood that these are macros in RobTop's source (e.g. kTimeModSlow)
     m_playerSpeed = speed;
     if (speed == 0.9f) {
         m_yStart = 11.180032f;

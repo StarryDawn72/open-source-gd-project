@@ -65,12 +65,16 @@ void PlayerObject::updateDashArt()
 
         if (m_isPlatformer) {
 
-            float maxSpeed = 17.310005f;
+            // 5.770002f is the player's global speed multiplier at 1x speed.
+            // See updateTimeMod.
+            float kTimeModNormal = 5.770002f;
+            
+            float maxSpeed = 3.0f;
             float min = 0.3f;
             float max = 2.0f;
 
             float dashLength = ccp(m_dashX, m_dashY).getLength();
-            float normalizedSpeed = std::min(dashLength / maxSpeed, 1.0f);
+            float normalizedSpeed = std::min(dashLength / (maxSpeed * kTimeModNormal), 1.0f);
 
             float mod = (normalizedSpeed * (max - min)) + min; // lerp
 
