@@ -107,7 +107,7 @@ If you are in need of a function's code that isn't already on this list, or want
 	</ul>
 </details>
 <details>
-	<summary>[ <b>PlayerObject</b> ] (116)</summary>
+	<summary>[ <b>PlayerObject</b> ] (117)</summary>
 	<ul>
 		<li><a href="./src/PlayerObject/activateStreak.cpp">activateStreak</a></li>
 		<li><a href="./src/PlayerObject/addAllParticles.cpp">addAllParticles</a></li>
@@ -201,6 +201,7 @@ If you are in need of a function's code that isn't already on this list, or want
 		<li><a href="./src/PlayerObject/speedDown.cpp">speedDown</a></li>
 		<li><a href="./src/PlayerObject/speedUp.cpp">speedUp</a></li>
 		<li><a href="./src/PlayerObject/spiderTestJump.cpp">spiderTestJump</a></li>
+		<li><a href="./src/PlayerObject/startDashing.cpp">startDashing</a></li>
 		<li><a href="./src/PlayerObject/stopBurstEffect.cpp">stopBurstEffect</a></li>
 		<li><a href="./src/PlayerObject/stopParticles.cpp">stopParticles</a></li>
 		<li><a href="./src/PlayerObject/stopRotation.cpp">stopRotation</a></li>
