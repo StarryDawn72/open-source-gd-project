@@ -77,7 +77,7 @@ void PlayerObject::updateDashArt()
             deltaAngle *= mod;
         }
 
-        // Final player dash spin: 960 degrees/sec under normal conditions
+        // Final player dash spin: 960 degrees/sec in classic mode under normal conditions
         CCRotateBy* iconRotate = CCRotateBy::create(0.3f, deltaAngle);
         CCRepeatForever* iconDashSpin = CCRepeatForever::create(iconRotate);
         iconDashSpin->setTag(kTagDashRotate);
