@@ -107,7 +107,7 @@ If you are in need of a function's code that isn't already on this list, or want
 	</ul>
 </details>
 <details>
-	<summary>[ <b>PlayerObject</b> ] (117)</summary>
+	<summary>[ <b>PlayerObject</b> ] (118)</summary>
 	<ul>
 		<li><a href="./src/PlayerObject/activateStreak.cpp">activateStreak</a></li>
 		<li><a href="./src/PlayerObject/addAllParticles.cpp">addAllParticles</a></li>
@@ -211,6 +211,7 @@ If you are in need of a function's code that isn't already on this list, or want
 		<li><a href="./src/PlayerObject/toggleVisibility.cpp">toggleVisibility</a></li>
 		<li><a href="./src/PlayerObject/unrotatePreSlopeObjects.cpp">unrotatePreSlopeObjects</a></li>
 		<li><a href="./src/PlayerObject/updateCollide.cpp">updateCollide</a></li>
+		<li><a href="./src/PlayerObject/updateDashArt.cpp">updateDashArt</a></li>
 		<li><a href="./src/PlayerObject/updateEffects.cpp">updateEffects</a></li>
 		<li><a href="./src/PlayerObject/updateInternalActions.cpp">updateInternalActions</a></li>
 		<li><a href="./src/PlayerObject/updateJump.cpp">updateJump</a></li>
