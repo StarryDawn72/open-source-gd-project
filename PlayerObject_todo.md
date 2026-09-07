@@ -59,7 +59,6 @@
     void spiderTestJumpInternal(bool dynamic)
     void spiderTestJumpX(bool dynamic)
     void spiderTestJumpY(bool dynamic)
-    void startDashing(DashRingObject* object)
     void stopDashing()
     void stopPlatformerJumpAnimation()
     void storeCollision(PlayerCollisionDirection direction, int id)

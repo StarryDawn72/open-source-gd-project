@@ -1,3 +1,5 @@
+#define PL GameManager::sharedState()->getPlayLayer()
+
 void PlayerObject::startDashing(DashRingObject* object)
 {
     // Rename incorrect Geode binding names
