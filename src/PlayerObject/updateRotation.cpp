@@ -40,6 +40,7 @@ void PlayerObject::updateRotation(float dt)
 	// Rename bindings
 	bool m_onGround = m_isOnGround2;
 	float m_ballRotationMultiplier = m_rotateSpeed;
+    bool& m_ballRotationMultiplierActive = m_isBallRotating;
 
     if (!m_isBall) {
 
@@ -68,7 +69,7 @@ void PlayerObject::updateRotation(float dt)
     }
 	
     if (m_rotationSpeed != 0.0f) {
-		float multiplier = (m_isBallRotating && m_isBall)
+		float multiplier = (m_ballRotationMultiplierActive && m_isBall)
 			? m_ballRotationMultiplier
 			: 1.0f;
 

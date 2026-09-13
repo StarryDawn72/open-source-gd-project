@@ -107,7 +107,7 @@ If you are in need of a function's code that isn't already on this list, or want
 	</ul>
 </details>
 <details>
-	<summary>[ <b>PlayerObject</b> ] (119)</summary>
+	<summary>[ <b>PlayerObject</b> ] (120)</summary>
 	<ul>
 		<li><a href="./src/PlayerObject/activateStreak.cpp">activateStreak</a></li>
 		<li><a href="./src/PlayerObject/addAllParticles.cpp">addAllParticles</a></li>
@@ -219,6 +219,7 @@ If you are in need of a function's code that isn't already on this list, or want
 		<li><a href="./src/PlayerObject/updatePlayerScale.cpp">updatePlayerScale</a></li>
 		<li><a href="./src/PlayerObject/updateRobotAnimationSpeed.cpp">updateRobotAnimationSpeed</a></li>
 		<li><a href="./src/PlayerObject/updateRotation.cpp">updateRotation</a></li>
+		<li><a href="./src/PlayerObject/updateShipRotation.cpp">updateShipRotation</a></li>
 		<li><a href="./src/PlayerObject/updateSlopeRotation.cpp">updateSlopeRotation</a></li>
 		<li><a href="./src/PlayerObject/updateSlopeYVelocity.cpp">updateSlopeYVelocity</a></li>
 		<li><a href="./src/PlayerObject/updateStreakBlend.cpp">updateStreakBlend</a></li>
