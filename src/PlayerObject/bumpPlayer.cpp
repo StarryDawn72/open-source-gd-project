@@ -1,43 +1,42 @@
-void PlayerObject::bumpPlayer(float bumpMod, int objectTypeRaw, bool noEffects, GameObject* object) {
-    // converting to enum version so we can use enum names
-    GameObjectType objectType = (GameObjectType)objectTypeRaw;
+void PlayerObject::bumpPlayer(float bumpMod, int objectType, bool noEffects, GameObject* object) {
+
+    GameObjectType type = (GameObjectType)objectType;
+
+    // Rename incorrect bindings
+    bool& m_isVelocityUncapped = m_isAccelerating;
     
-    if (m_isPlatformer && !m_fixRobotJump)
-        m_touchedPad = true;
+    if (m_isPlatformer || !m_fixRobotJump)
+        m_touchedPad = true; // TODO: name is probably incorrect, might need a rename
 
-    if (objectType != GameObjectType::SpiderPad) {
-        propellPlayer(bumpMod, noEffects, objectTypeRaw);
-
-        if (m_isPlatformer && !m_isRotating) {
-            float scale;
-            if (objectType == GameObjectType::RedJumpPad)
-                scale = 1.2;
-            else
-                scale = 1.0;
-
-            animatePlatformerJump(scale);
+    if (type == GameObjectType::SpiderPad) {
+        if (object) {
+            if (
+                (!m_isSideways && object->isFacingDown() != m_isUpsideDown) ||
+                (m_isSideways && object->isFacingLeft() != m_isUpsideDown)
+            ) {
+                flipGravity(!m_isUpsideDown, true);
+            }
         }
 
-        if (objectType != GameObjectType::RedJumpPad) {
-            m_isAccelerating = false;
-            return;
-        }
-
-        m_isAccelerating = true;
-        m_lastGroundedPos = CCPointZero;
+        spiderTestJump(false);
+        playBumpEffect((int)GameObjectType::SpiderPad, object);
         return;
     }
 
-    if (object != nullptr) {
-        // could be the other way around
-        if (
-            (!m_isSideways && object->isFacingDown() != m_isUpsideDown) ||
-            (m_isSideways && object->isFacingLeft() != m_isUpsideDown)
-        ) {
-            flipGravity(!m_isUpsideDown, true);
-        }
+    propellPlayer(bumpMod, noEffects, objectType);
+
+    if (m_isPlatformer && !m_isRotating) {
+        float scale = (type == GameObjectType::RedJumpPad)
+                    ? 1.2f
+                    : 1.0f;
+
+        animatePlatformerJump(scale);
     }
 
-    spiderTestJump(false);
-    playBumpEffect(44, object);
+    if (type == GameObjectType::RedJumpPad) {
+        m_isVelocityUncapped = true;
+        m_lastGroundedPos = CCPointZero;
+    }
+    else
+        m_isVelocityUncapped = false;
 }
