@@ -56,6 +56,8 @@ Some nasty variables I had to rename, either because they were completely incorr
 - m_currentSlope2 -> m_lastSlope (confirmed from robtop's stream)
 - m_scaleXRelated -> m_lastBlockXVelocityApplied (confirmed from robtop's stream)
 - m_stateForce -> m_forceTimer
+- m_maybeReverseSpeed -> m_reverseSyncOffset 
+- m_maybeReverseAcceleration -> m_reverseSyncStep
 
 **GameObject**
 - m_editorEnabled -> m_isInEditor

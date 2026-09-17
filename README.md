@@ -108,7 +108,7 @@ If you are in need of a function's code that isn't already on this list, or want
 	</ul>
 </details>
 <details>
-	<summary>[ <b>PlayerObject</b> ] (121)</summary>
+	<summary>[ <b>PlayerObject</b> ] (122)</summary>
 	<ul>
 		<li><a href="./src/PlayerObject/activateStreak.cpp">activateStreak</a></li>
 		<li><a href="./src/PlayerObject/addAllParticles.cpp">addAllParticles</a></li>
@@ -181,6 +181,7 @@ If you are in need of a function's code that isn't already on this list, or want
 		<li><a href="./src/PlayerObject/resetCollisionValues.cpp">resetCollisionValues</a></li>
 		<li><a href="./src/PlayerObject/resetStreak.cpp">resetStreak</a></li>
 		<li><a href="./src/PlayerObject/reverseMod.cpp">reverseMod</a></li>
+		<li><a href="./src/PlayerObject/reversePlayer.cpp">reversePlayer</a></li>
 		<li><a href="./src/PlayerObject/ringJump.cpp">ringJump</a></li>
 		<li><a href="./src/PlayerObject/runBallRotation.cpp">runBallRotation</a></li>
 		<li><a href="./src/PlayerObject/runBallRotation2.cpp">runBallRotation2</a></li>
