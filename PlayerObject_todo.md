@@ -5,7 +5,6 @@
     virtual void setPosition(CCPoint const& position)
     virtual void resetObject()
     void animatePlatformerJump(float scale)
-    void bumpPlayer(float bumpMod, int objectType, bool noEffects, GameObject* object)
     bool buttonDown(PlayerButton button)
     bool collidedWithObjectInternal(float dt, GameObject* object, CCRect rect, bool skipCheck)
     void copyAttributes(PlayerObject* player)
