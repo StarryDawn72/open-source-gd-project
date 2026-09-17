@@ -9,13 +9,15 @@
 */
 void PlayerObject::runNormalRotation(bool notNormalMode, float speed)
 {
-	// rename bindings
+	// rename incorrect community guesses
     float& m_playerScale = m_vehicleSize;
 	bool& m_slopeForceLeft = m_platformerMovingLeft;
 	bool& m_slopeForceRight = m_platformerMovingRight;
+    bool isNormalMode = notNormalMode; // normal mode means Cube
+
+    bool isBall = !isFlying() && !m_isRobot && !m_isSpider;
     
-    if (notNormalMode || (!isFlying() && !m_isRobot && !m_isSpider && !m_isDashing &&
-		(!m_isPlatformer || m_holdingLeft || m_holdingRight || m_slopeForceLeft || m_slopeForceRight))) {
+    if (isNormalMode || (isBall && !m_isDashing && (!m_isPlatformer || m_holdingLeft || m_holdingRight || m_slopeForceLeft || m_slopeForceRight))) {
 
 		m_isRotating = true;
 

@@ -55,6 +55,7 @@ Some nasty variables I had to rename, either because they were completely incorr
 - m_unk669 -> m_shouldDisconnectSlope (confirmed from robtop's stream)
 - m_currentSlope2 -> m_lastSlope (confirmed from robtop's stream)
 - m_scaleXRelated -> m_lastBlockXVelocityApplied (confirmed from robtop's stream)
+- m_stateForce -> m_forceTimer
 
 **GameObject**
 - m_editorEnabled -> m_isInEditor

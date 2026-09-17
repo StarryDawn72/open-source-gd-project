@@ -143,7 +143,7 @@ void PlayerObject::updateJump(float dt)
 							double max = m_yVelocity * 1.4f;
 
 							addToYVelocity(m_slopeVelocity * 0.5f, 8);
-							setYVelocity(std::min(m_yVelocity, max), 9);
+							setYVelocity(MIN(m_yVelocity, max), 9);
 						}
 					}
 				}
@@ -201,12 +201,12 @@ void PlayerObject::updateJump(float dt)
 		// terminal velocity clamping for ship, UFO, and swing
         if (!m_isVelocityUncapped && !m_isDart) {
 			if (!m_isUpsideDown) {
-				setYVelocity(std::max(m_yVelocity, static_cast<double>(modeScale * -8.0f / scaleMod)), 13);
-				setYVelocity(std::min(m_yVelocity, static_cast<double>(8.0f / scaleMod)), 14);
+				setYVelocity(MAX(m_yVelocity, static_cast<double>(modeScale * -8.0f / scaleMod)), 13);
+				setYVelocity(MIN(m_yVelocity, static_cast<double>(8.0f / scaleMod)), 14);
 			}
 			else {
-				setYVelocity(std::max(m_yVelocity, static_cast<double>(-8.0f / scaleMod)), 15);
-				setYVelocity(std::min(m_yVelocity, static_cast<double>(modeScale * 8.0f / scaleMod)), 16);
+				setYVelocity(MAX(m_yVelocity, static_cast<double>(-8.0f / scaleMod)), 15);
+				setYVelocity(MIN(m_yVelocity, static_cast<double>(modeScale * 8.0f / scaleMod)), 16);
 			}
 		}
 		
@@ -300,9 +300,9 @@ void PlayerObject::updateJump(float dt)
 							addToYVelocity(modifiedSlopeYVel * 0.25f, 60);
 
 							if (!m_isUpsideDown)
-								setYVelocity(std::min(m_yVelocity, threshold), 3);
+								setYVelocity(MIN(m_yVelocity, threshold), 3);
 							else
-								setYVelocity(std::max(m_yVelocity, threshold), 4);
+								setYVelocity(MAX(m_yVelocity, threshold), 4);
 						}
 					}
 				}
@@ -396,9 +396,9 @@ void PlayerObject::updateJump(float dt)
 
 				// terminal velocity clamping for cube, ball, robot, and spider
 				if (!m_isUpsideDown)
-					setYVelocity(std::max(m_yVelocity, -15.0), 5);
+					setYVelocity(MAX(m_yVelocity, -15.0), 5);
 				else
-					setYVelocity(std::min(m_yVelocity, 15.0), 6);
+					setYVelocity(MIN(m_yVelocity, 15.0), 6);
 
 				if (playerIsFalling(-0.25f)
 				&& !m_isBall

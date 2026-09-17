@@ -91,8 +91,9 @@ If you are in need of a function's code that isn't already on this list, or want
 	</ul>
 </details>
 <details>
-	<summary>[ <b>GJBaseGameLayer</b> ] (4)</summary>
+	<summary>[ <b>GJBaseGameLayer</b> ] (5)</summary>
 	<ul>
+		<li><a href="./src/GJBaseGameLayer/bumpPlayer.cpp">bumpPlayer</a></li>
 		<li><a href="./src/GJBaseGameLayer/collisionCheckObjects.cpp">collisionCheckObjects</a></li>
 		<li><a href="./src/GJBaseGameLayer/objectIntersectsCircle.cpp">objectIntersectsCircle</a></li>
 		<li><a href="./src/GJBaseGameLayer/playerCircleCollision.cpp">playerCircleCollision</a></li>
@@ -107,7 +108,7 @@ If you are in need of a function's code that isn't already on this list, or want
 	</ul>
 </details>
 <details>
-	<summary>[ <b>PlayerObject</b> ] (120)</summary>
+	<summary>[ <b>PlayerObject</b> ] (121)</summary>
 	<ul>
 		<li><a href="./src/PlayerObject/activateStreak.cpp">activateStreak</a></li>
 		<li><a href="./src/PlayerObject/addAllParticles.cpp">addAllParticles</a></li>
@@ -115,6 +116,7 @@ If you are in need of a function's code that isn't already on this list, or want
 		<li><a href="./src/PlayerObject/addToYVelocity.cpp">addToYVelocity</a></li>
 		<li><a href="./src/PlayerObject/animationFinished.cpp">animationFinished</a></li>
 		<li><a href="./src/PlayerObject/boostPlayer.cpp">boostPlayer</a></li>
+		<li><a href="./src/PlayerObject/bumpPlayer.cpp">bumpPlayer</a></li>
 		<li><a href="./src/PlayerObject/canStickToGround.cpp">canStickToGround</a></li>
 		<li><a href="./src/PlayerObject/checkSnapJumpToObject.cpp">checkSnapJumpToObject</a></li>
 		<li><a href="./src/PlayerObject/collidedWithObject.cpp">collidedWithObject</a></li>
