@@ -91,8 +91,9 @@ If you are in need of a function's code that isn't already on this list, or want
 	</ul>
 </details>
 <details>
-	<summary>[ <b>GJBaseGameLayer</b> ] (4)</summary>
+	<summary>[ <b>GJBaseGameLayer</b> ] (5)</summary>
 	<ul>
+		<li><a href="./src/GJBaseGameLayer/bumpPlayer.cpp">bumpPlayer</a></li>
 		<li><a href="./src/GJBaseGameLayer/collisionCheckObjects.cpp">collisionCheckObjects</a></li>
 		<li><a href="./src/GJBaseGameLayer/objectIntersectsCircle.cpp">objectIntersectsCircle</a></li>
 		<li><a href="./src/GJBaseGameLayer/playerCircleCollision.cpp">playerCircleCollision</a></li>
@@ -107,7 +108,7 @@ If you are in need of a function's code that isn't already on this list, or want
 	</ul>
 </details>
 <details>
-	<summary>[ <b>PlayerObject</b> ] (120)</summary>
+	<summary>[ <b>PlayerObject</b> ] (124)</summary>
 	<ul>
 		<li><a href="./src/PlayerObject/activateStreak.cpp">activateStreak</a></li>
 		<li><a href="./src/PlayerObject/addAllParticles.cpp">addAllParticles</a></li>
@@ -115,6 +116,7 @@ If you are in need of a function's code that isn't already on this list, or want
 		<li><a href="./src/PlayerObject/addToYVelocity.cpp">addToYVelocity</a></li>
 		<li><a href="./src/PlayerObject/animationFinished.cpp">animationFinished</a></li>
 		<li><a href="./src/PlayerObject/boostPlayer.cpp">boostPlayer</a></li>
+		<li><a href="./src/PlayerObject/bumpPlayer.cpp">bumpPlayer</a></li>
 		<li><a href="./src/PlayerObject/canStickToGround.cpp">canStickToGround</a></li>
 		<li><a href="./src/PlayerObject/checkSnapJumpToObject.cpp">checkSnapJumpToObject</a></li>
 		<li><a href="./src/PlayerObject/collidedWithObject.cpp">collidedWithObject</a></li>
@@ -179,6 +181,7 @@ If you are in need of a function's code that isn't already on this list, or want
 		<li><a href="./src/PlayerObject/resetCollisionValues.cpp">resetCollisionValues</a></li>
 		<li><a href="./src/PlayerObject/resetStreak.cpp">resetStreak</a></li>
 		<li><a href="./src/PlayerObject/reverseMod.cpp">reverseMod</a></li>
+		<li><a href="./src/PlayerObject/reversePlayer.cpp">reversePlayer</a></li>
 		<li><a href="./src/PlayerObject/ringJump.cpp">ringJump</a></li>
 		<li><a href="./src/PlayerObject/runBallRotation.cpp">runBallRotation</a></li>
 		<li><a href="./src/PlayerObject/runBallRotation2.cpp">runBallRotation2</a></li>
@@ -199,6 +202,7 @@ If you are in need of a function's code that isn't already on this list, or want
 		<li><a href="./src/PlayerObject/spawnDualCircle.cpp">spawnDualCircle</a></li>
 		<li><a href="./src/PlayerObject/spawnPortalCircle.cpp">spawnPortalCircle</a></li>
 		<li><a href="./src/PlayerObject/spawnScaleCircle.cpp">spawnScaleCircle</a></li>
+		<li><a href="./src/PlayerObject/specialGroundHit.cpp">specialGroundHit</a></li>
 		<li><a href="./src/PlayerObject/speedDown.cpp">speedDown</a></li>
 		<li><a href="./src/PlayerObject/speedUp.cpp">speedUp</a></li>
 		<li><a href="./src/PlayerObject/spiderTestJump.cpp">spiderTestJump</a></li>
@@ -211,6 +215,7 @@ If you are in need of a function's code that isn't already on this list, or want
 		<li><a href="./src/PlayerObject/togglePlatformerMode.cpp">togglePlatformerMode</a></li>
 		<li><a href="./src/PlayerObject/toggleVisibility.cpp">toggleVisibility</a></li>
 		<li><a href="./src/PlayerObject/unrotatePreSlopeObjects.cpp">unrotatePreSlopeObjects</a></li>
+		<li><a href="./src/PlayerObject/update.cpp">update</a></li>
 		<li><a href="./src/PlayerObject/updateCollide.cpp">updateCollide</a></li>
 		<li><a href="./src/PlayerObject/updateDashArt.cpp">updateDashArt</a></li>
 		<li><a href="./src/PlayerObject/updateEffects.cpp">updateEffects</a></li>

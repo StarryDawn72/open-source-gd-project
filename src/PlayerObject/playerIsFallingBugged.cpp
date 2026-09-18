@@ -9,7 +9,7 @@
 	and force the game to use the new physics.
 	
 */
-bool playerIsFallingBugged()
+bool PlayerObject::playerIsFallingBugged()
 {
     if (m_isSideways || m_isPlatformer || m_isSwing || m_fixGravityBug) {
 		// Use new physics

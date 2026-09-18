@@ -1,7 +1,6 @@
     ```cpp
 	PlayerObject::PlayerObject()
 	PlayerObject::~PlayerObject()
-    virtual void update(float dt)
     virtual void setPosition(CCPoint const& position)
     virtual void resetObject()
     void animatePlatformerJump(float scale)

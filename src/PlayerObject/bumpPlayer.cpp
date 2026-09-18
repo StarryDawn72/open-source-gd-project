@@ -4,9 +4,12 @@ void PlayerObject::bumpPlayer(float bumpMod, int objectType, bool noEffects, Gam
 
     // Rename incorrect bindings
     bool& m_isVelocityUncapped = m_isAccelerating;
+    bool& m_robotBoostInvalidated = m_touchedPad;
     
     if (m_isPlatformer || !m_fixRobotJump)
-        m_touchedPad = true; // TODO: name is probably incorrect, might need a rename
+        m_robotBoostInvalidated = true; // This line prevents the robot from
+                                        // boosting abnormally high when holding to jump
+                                        // at the edge of a jump pad.
 
     if (type == GameObjectType::SpiderPad) {
         if (object) {
