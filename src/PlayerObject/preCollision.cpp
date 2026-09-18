@@ -1,3 +1,4 @@
+// UNTESTED
 void PlayerObject::preCollision() {
     bool& m_onGround = m_isOnGround2;
     bool& m_ringJumpingThisTick = m_ringJumpRelated;
