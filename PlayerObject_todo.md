@@ -32,7 +32,6 @@
     void playDynamicSpiderRun()
     void playSpiderDashEffect(CCPoint from, CCPoint to)
     void postCollision(float dt)
-    void preCollision()
     bool pushButton(PlayerButton button)
     void redirectPlayerForce(float rotation, float modifier, float minimum, float maximum)
     void releaseAllButtons()
