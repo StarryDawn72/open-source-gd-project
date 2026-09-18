@@ -24,6 +24,10 @@ void PlayerObject::updateJump(float dt)
 	bool& m_isGroundTouchSideValid = m_isOnGround3;
 	double& m_slopeForceEndTime = m_maybeSlidingStartTime;
 	geode::SeedValueRSV& m_antiCheatValue = m_jumpRelatedAC2;
+    double& m_robotBoostCharge = m_accelerationOrSpeed;
+    bool& m_robotBoostInvalidated = m_touchedPad;
+    bool& m_wasRobotBoostInvalidated = m_wasRobotJump;
+    bool& m_didSpecialGroundHit = m_maybeSpriteRelated;
 
 	bool holdingLeft = m_holdingLeft;
 	bool holdingRight = m_holdingRight;
@@ -248,8 +252,8 @@ void PlayerObject::updateJump(float dt)
 				m_onGround = false;
 				m_canJump = false;
 				m_isJumpUnused = false;
-				m_touchedPad = false; // this too
-				m_accelerationOrSpeed = 0.0; // TODO: find real name...
+				m_robotBoostInvalidated = false; // this too
+				m_robotBoostCharge = 0.0;
 
 				if (!m_slopeForceLeft && !m_slopeForceRight && m_slopeSlideTimer > 0)
 				{
@@ -352,17 +356,17 @@ void PlayerObject::updateJump(float dt)
 		else {
 			if (m_isJumping) {
 
-				if (m_isRobot && m_holdingJump && !m_touchedPad) {
-					if ( m_accelerationOrSpeed < 1.5f ) {
-						m_accelerationOrSpeed += dt * 0.1f;
+				if (m_isRobot && m_holdingJump && !m_robotBoostInvalidated) {
+					if (m_robotBoostCharge < 1.5f) {
+						m_robotBoostCharge += dt * 0.1f;
 						addToYVelocity(modifiedGravity * dt * flipMod() * groundModeGravityScale, 61);
 					}
 				}
 
 				addToYVelocity(-(groundModeGravityScale * modifiedGravity * dt * flipMod()), 62);
 
-				if (m_isRobot && m_touchedPad && !m_wasRobotJump && m_gameLayer)
-					gameEventTriggered(static_cast<int>(GJGameEvent::RobotBoostStop), m_wasRobotJump);
+				if (m_isRobot && m_robotBoostInvalidated && !m_wasRobotBoostInvalidated && m_gameLayer)
+					gameEventTriggered(static_cast<int>(GJGameEvent::RobotBoostStop), m_wasRobotBoostInvalidated);
 
 				if (playerIsFallingBugged() || m_isPlatformer && !playerIsMovingUp() )
 				{
@@ -374,8 +378,8 @@ void PlayerObject::updateJump(float dt)
 					if (m_isRobot) {
 
 						m_robotSprite->tweenToAnimation("fall_loop", 0.1f);
-						if (!m_touchedPad && m_gameLayer)
-						gameEventTriggered(static_cast<int>(GJGameEvent::RobotBoostStop), m_touchedPad);
+						if (!m_robotBoostInvalidated && m_gameLayer)
+						gameEventTriggered(static_cast<int>(GJGameEvent::RobotBoostStop), m_robotBoostInvalidated);
 					}
 					else if (m_isSpider) {
 
@@ -414,12 +418,12 @@ void PlayerObject::updateJump(float dt)
 
 				if (playerIsFallingBugged()) {
 
-					if (m_isUpsideDown ? m_yVelocity > 4.0f : m_yVelocity < -4.0f)
-					{                              // TODO: find name ↓
-						if (m_isRobot && m_onGround && !m_maybeSpriteRelated) {
+					if (m_isUpsideDown ? m_yVelocity > 4.0f : m_yVelocity < -4.0f) {
+                        
+						if (m_isRobot && m_onGround && !m_didSpecialGroundHit) {
 							m_robotSprite->tweenToAnimation("fall_loop", 0.1f);
 						}
-						else if (m_isSpider && m_onGround && !m_maybeSpriteRelated)
+						else if (m_isSpider && m_onGround && !m_didSpecialGroundHit)
 							m_spiderSprite->tweenToAnimation("fall_loop", 0.1f);
 						m_onGround = false;
 					} 
@@ -429,5 +433,5 @@ void PlayerObject::updateJump(float dt)
 	}
 
 	m_wasHoldingJump = m_holdingJump;
-    m_wasRobotJump = m_touchedPad; // TODO: rename these
+    m_wasRobotBoostInvalidated = m_robotBoostInvalidated;
 }

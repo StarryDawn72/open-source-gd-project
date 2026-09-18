@@ -58,6 +58,11 @@ Some nasty variables I had to rename, either because they were completely incorr
 - m_stateForce -> m_forceTimer
 - m_maybeReverseSpeed -> m_reverseSyncOffset 
 - m_maybeReverseAcceleration -> m_reverseSyncStep
+- m_yVelocityRelated3 -> m_positionDeltaY
+- m_accelerationOrSpeed -> m_robotBoostCharge
+- m_touchedPad -> m_robotBoostInvalidated
+- m_wasRobotJump -> m_wasRobotBoostInvalidated
+- m_maybeSpriteRelated -> m_didSpecialGroundHit
 
 **GameObject**
 - m_editorEnabled -> m_isInEditor

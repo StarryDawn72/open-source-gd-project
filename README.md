@@ -108,7 +108,7 @@ If you are in need of a function's code that isn't already on this list, or want
 	</ul>
 </details>
 <details>
-	<summary>[ <b>PlayerObject</b> ] (122)</summary>
+	<summary>[ <b>PlayerObject</b> ] (124)</summary>
 	<ul>
 		<li><a href="./src/PlayerObject/activateStreak.cpp">activateStreak</a></li>
 		<li><a href="./src/PlayerObject/addAllParticles.cpp">addAllParticles</a></li>
@@ -202,6 +202,7 @@ If you are in need of a function's code that isn't already on this list, or want
 		<li><a href="./src/PlayerObject/spawnDualCircle.cpp">spawnDualCircle</a></li>
 		<li><a href="./src/PlayerObject/spawnPortalCircle.cpp">spawnPortalCircle</a></li>
 		<li><a href="./src/PlayerObject/spawnScaleCircle.cpp">spawnScaleCircle</a></li>
+		<li><a href="./src/PlayerObject/specialGroundHit.cpp">specialGroundHit</a></li>
 		<li><a href="./src/PlayerObject/speedDown.cpp">speedDown</a></li>
 		<li><a href="./src/PlayerObject/speedUp.cpp">speedUp</a></li>
 		<li><a href="./src/PlayerObject/spiderTestJump.cpp">spiderTestJump</a></li>
@@ -214,6 +215,7 @@ If you are in need of a function's code that isn't already on this list, or want
 		<li><a href="./src/PlayerObject/togglePlatformerMode.cpp">togglePlatformerMode</a></li>
 		<li><a href="./src/PlayerObject/toggleVisibility.cpp">toggleVisibility</a></li>
 		<li><a href="./src/PlayerObject/unrotatePreSlopeObjects.cpp">unrotatePreSlopeObjects</a></li>
+		<li><a href="./src/PlayerObject/update.cpp">update</a></li>
 		<li><a href="./src/PlayerObject/updateCollide.cpp">updateCollide</a></li>
 		<li><a href="./src/PlayerObject/updateDashArt.cpp">updateDashArt</a></li>
 		<li><a href="./src/PlayerObject/updateEffects.cpp">updateEffects</a></li>
