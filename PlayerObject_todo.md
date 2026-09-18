@@ -59,7 +59,6 @@
     void stopPlatformerJumpAnimation()
     void storeCollision(PlayerCollisionDirection direction, int id)
     bool switchedDirTo(PlayerButton button)
-    void switchedToMode(GameObjectType type)
     bool testForMoving(float dt, GameObject* object)
     void toggleBirdMode(bool enable, bool noEffects)
     void toggleDartMode(bool enable, bool noEffects)
