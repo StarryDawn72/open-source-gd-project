@@ -25,7 +25,6 @@
     bool isSafeSpiderFlip(float flipTime)
     void loadFromCheckpoint(PlayerCheckpoint* object)
     void performSlideCheck()
-    void placeStreakPoint()
     void playCompleteEffect(bool noEffects, bool instant)
     void playDeathEffect()
     void playDynamicSpiderRun()
@@ -98,5 +97,4 @@
     void updateShipSpriteExtra(gd::string frameName)
     void updateSpecial(float dt)
     void updateStateVariables()
-    void updateStaticForce(float rotation, float staticForce, bool additive)
 	```

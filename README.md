@@ -118,7 +118,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary>[ <b>PlayerObject</b> ] (126)</summary>
+	<summary>[ <b>PlayerObject</b> ] (128)</summary>
 	<ul>
 		<li><a href="./src/PlayerObject/activateStreak.cpp">activateStreak</a></li>
 		<li><a href="./src/PlayerObject/addAllParticles.cpp">addAllParticles</a></li>
@@ -172,6 +172,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/lockPlayer.cpp">lockPlayer</a></li>
 		<li><a href="./src/PlayerObject/logValues.cpp">logValues</a></li>
 		<li><a href="./src/PlayerObject/modeDidChange.cpp">modeDidChange</a></li>
+		<li><a href="./src/PlayerObject/placeStreakPoint.cpp">placeStreakPoint</a></li>
 		<li><a href="./src/PlayerObject/playBumpEffect.cpp">playBumpEffect</a></li>
 		<li><a href="./src/PlayerObject/playBurstEffect.cpp">playBurstEffect</a></li>
 		<li><a href="./src/PlayerObject/playerDestroyed.cpp">playerDestroyed</a></li>
@@ -239,6 +240,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/updateShipRotation.cpp">updateShipRotation</a></li>
 		<li><a href="./src/PlayerObject/updateSlopeRotation.cpp">updateSlopeRotation</a></li>
 		<li><a href="./src/PlayerObject/updateSlopeYVelocity.cpp">updateSlopeYVelocity</a></li>
+		<li><a href="./src/PlayerObject/updateStaticForce.cpp">updateStaticForce</a></li>
 		<li><a href="./src/PlayerObject/updateStreakBlend.cpp">updateStreakBlend</a></li>
 		<li><a href="./src/PlayerObject/updateStreaks.cpp">updateStreaks</a></li>
 		<li><a href="./src/PlayerObject/updateSwingFire.cpp">updateSwingFire</a></li>
