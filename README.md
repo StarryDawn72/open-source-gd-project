@@ -108,7 +108,7 @@ If you are in need of a function's code that isn't already on this list, or want
 	</ul>
 </details>
 <details>
-	<summary>[ <b>PlayerObject</b> ] (124)</summary>
+	<summary>[ <b>PlayerObject</b> ] (126)</summary>
 	<ul>
 		<li><a href="./src/PlayerObject/activateStreak.cpp">activateStreak</a></li>
 		<li><a href="./src/PlayerObject/addAllParticles.cpp">addAllParticles</a></li>
@@ -171,6 +171,7 @@ If you are in need of a function's code that isn't already on this list, or want
 		<li><a href="./src/PlayerObject/playerTeleported.cpp">playerTeleported</a></li>
 		<li><a href="./src/PlayerObject/playingEndEffect.cpp">playingEndEffect</a></li>
 		<li><a href="./src/PlayerObject/playSpawnEffect.cpp">playSpawnEffect</a></li>
+		<li><a href="./src/PlayerObject/preCollision.cpp">preCollision</a></li>
 		<li><a href="./src/PlayerObject/preSlopeCollision.cpp">preSlopeCollision</a></li>
 		<li><a href="./src/PlayerObject/propellPlayer.cpp">propellPlayer</a></li>
 		<li><a href="./src/PlayerObject/pushDown.cpp">pushDown</a></li>
@@ -211,6 +212,7 @@ If you are in need of a function's code that isn't already on this list, or want
 		<li><a href="./src/PlayerObject/stopParticles.cpp">stopParticles</a></li>
 		<li><a href="./src/PlayerObject/stopRotation.cpp">stopRotation</a></li>
 		<li><a href="./src/PlayerObject/stopStreak2.cpp">stopStreak2</a></li>
+		<li><a href="./src/PlayerObject/switchedToMode.cpp">switchedToMode</a></li>
 		<li><a href="./src/PlayerObject/toggleGhostEffect.cpp">toggleGhostEffect</a></li>
 		<li><a href="./src/PlayerObject/togglePlatformerMode.cpp">togglePlatformerMode</a></li>
 		<li><a href="./src/PlayerObject/toggleVisibility.cpp">toggleVisibility</a></li>

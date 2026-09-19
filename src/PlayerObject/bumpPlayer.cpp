@@ -1,4 +1,3 @@
-// UNTESTED
 void PlayerObject::bumpPlayer(float bumpMod, int objectType, bool noEffects, GameObject* object) {
 
     GameObjectType type = (GameObjectType)objectType;
