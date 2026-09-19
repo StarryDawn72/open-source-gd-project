@@ -10,8 +10,9 @@ void PlayerObject::preCollision()
     bool& m_slopeForceLeft = m_platformerMovingLeft;
     bool& m_slopeForceRight = m_platformerMovingRight;
     bool& m_shouldDisconnectSlope = m_unk669;
+    bool& m_wasOnGround = m_isOnGround4;
 
-    m_isOnGround4 = m_onGround; // TODO: rename m_isOnGround4
+    m_wasOnGround = m_onGround;
     m_ringJumpingThisTick = false;
     m_wasOnSlope = m_isOnSlope;
     m_isOnSlope = false;
