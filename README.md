@@ -33,6 +33,7 @@ If you are in need of a function's code that isn't already on this list, or want
 - Its behavior must be tested in-game by overriding the original using a Geode mod
 - Member variables featured in [RENAMED_BINDINGS.md](./RENAMED_BINDINGS.md) must be aliased at the top of the function with a comment saying "Renamed incorrect bindings" or similar
 - Its opening brace should be on the next line (for consistency)
+- Always prefer C-style casts over static_cast to match RobTop's coding style (e.g. `(RingObject*)m_touchingRings->objectAtIndex(i)`)
 
 You should view the existing reconstructions on this repo to get an idea of the style before submission.
 
