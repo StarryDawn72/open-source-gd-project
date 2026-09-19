@@ -17,14 +17,24 @@ Welcome to the Open Source Geometry Dash Project. This is (hopefully) what I pla
 *Note: you often see me renaming member variables from bindings - thats' because some of them are incorrectly named. A list of renamed variables can be found in [the markdown file](./RENAMED_BINDINGS.md)*.
 
 ---
-**Contribution:**
-
-If you are in need of a function's code that isn't already on this list, or want to simply request an addition, please open a PR or message me on discord at @starrydawn72. All pull requests will go through manual confirmation before being added to the repository.
-
----
 **Info:**
 - Game version: 2.2081
 - Software used for reversing: [Hex-Rays IDA Professional 9.3 (With BromaIDA for symbols)](https://hex-rays.com/ida-pro)
+
+---
+
+### **Contribution (please read)**
+
+If you are in need of a function's code that isn't already on this list, or want to simply request an addition, please open a PR or message me on discord at @starrydawn72. All pull requests will go through manual confirmation before being added to the repository.
+<br>
+<br>
+**Rules for submitting a function** through a pull request:
+- Decompilation must be done in IDA, reconstructions using Ghidra will not be accepted
+- Its behavior must be tested in-game by overriding the original using a Geode mod
+- Member variables featured in [RENAMED_BINDINGS.md](./RENAMED_BINDINGS.md) must be aliased at the top of the function with a comment saying "Renamed incorrect bindings" or similar
+- Its opening brace should be on the next line (for consistency)
+
+You should view the existing reconstructions on this repo to get an idea of the style before submission.
 
 ---
 
@@ -108,7 +118,7 @@ If you are in need of a function's code that isn't already on this list, or want
 	</ul>
 </details>
 <details>
-	<summary>[ <b>PlayerObject</b> ] (124)</summary>
+	<summary>[ <b>PlayerObject</b> ] (128)</summary>
 	<ul>
 		<li><a href="./src/PlayerObject/activateStreak.cpp">activateStreak</a></li>
 		<li><a href="./src/PlayerObject/addAllParticles.cpp">addAllParticles</a></li>
@@ -162,6 +172,7 @@ If you are in need of a function's code that isn't already on this list, or want
 		<li><a href="./src/PlayerObject/lockPlayer.cpp">lockPlayer</a></li>
 		<li><a href="./src/PlayerObject/logValues.cpp">logValues</a></li>
 		<li><a href="./src/PlayerObject/modeDidChange.cpp">modeDidChange</a></li>
+		<li><a href="./src/PlayerObject/placeStreakPoint.cpp">placeStreakPoint</a></li>
 		<li><a href="./src/PlayerObject/playBumpEffect.cpp">playBumpEffect</a></li>
 		<li><a href="./src/PlayerObject/playBurstEffect.cpp">playBurstEffect</a></li>
 		<li><a href="./src/PlayerObject/playerDestroyed.cpp">playerDestroyed</a></li>
@@ -171,6 +182,7 @@ If you are in need of a function's code that isn't already on this list, or want
 		<li><a href="./src/PlayerObject/playerTeleported.cpp">playerTeleported</a></li>
 		<li><a href="./src/PlayerObject/playingEndEffect.cpp">playingEndEffect</a></li>
 		<li><a href="./src/PlayerObject/playSpawnEffect.cpp">playSpawnEffect</a></li>
+		<li><a href="./src/PlayerObject/preCollision.cpp">preCollision</a></li>
 		<li><a href="./src/PlayerObject/preSlopeCollision.cpp">preSlopeCollision</a></li>
 		<li><a href="./src/PlayerObject/propellPlayer.cpp">propellPlayer</a></li>
 		<li><a href="./src/PlayerObject/pushDown.cpp">pushDown</a></li>
@@ -211,6 +223,7 @@ If you are in need of a function's code that isn't already on this list, or want
 		<li><a href="./src/PlayerObject/stopParticles.cpp">stopParticles</a></li>
 		<li><a href="./src/PlayerObject/stopRotation.cpp">stopRotation</a></li>
 		<li><a href="./src/PlayerObject/stopStreak2.cpp">stopStreak2</a></li>
+		<li><a href="./src/PlayerObject/switchedToMode.cpp">switchedToMode</a></li>
 		<li><a href="./src/PlayerObject/toggleGhostEffect.cpp">toggleGhostEffect</a></li>
 		<li><a href="./src/PlayerObject/togglePlatformerMode.cpp">togglePlatformerMode</a></li>
 		<li><a href="./src/PlayerObject/toggleVisibility.cpp">toggleVisibility</a></li>
@@ -227,6 +240,7 @@ If you are in need of a function's code that isn't already on this list, or want
 		<li><a href="./src/PlayerObject/updateShipRotation.cpp">updateShipRotation</a></li>
 		<li><a href="./src/PlayerObject/updateSlopeRotation.cpp">updateSlopeRotation</a></li>
 		<li><a href="./src/PlayerObject/updateSlopeYVelocity.cpp">updateSlopeYVelocity</a></li>
+		<li><a href="./src/PlayerObject/updateStaticForce.cpp">updateStaticForce</a></li>
 		<li><a href="./src/PlayerObject/updateStreakBlend.cpp">updateStreakBlend</a></li>
 		<li><a href="./src/PlayerObject/updateStreaks.cpp">updateStreaks</a></li>
 		<li><a href="./src/PlayerObject/updateSwingFire.cpp">updateSwingFire</a></li>

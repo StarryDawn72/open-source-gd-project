@@ -63,6 +63,7 @@ Some nasty variables I had to rename, either because they were completely incorr
 - m_touchedPad -> m_robotBoostInvalidated
 - m_wasRobotJump -> m_wasRobotBoostInvalidated
 - m_maybeSpriteRelated -> m_didSpecialGroundHit
+- m_isOnGround4 -> m_wasOnGround
 
 **GameObject**
 - m_editorEnabled -> m_isInEditor

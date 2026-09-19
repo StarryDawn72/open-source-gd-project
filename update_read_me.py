@@ -20,14 +20,24 @@ Welcome to the Open Source Geometry Dash Project. This is (hopefully) what I pla
 *Note: you often see me renaming member variables from bindings - thats' because some of them are incorrectly named. A list of renamed variables can be found in [the markdown file](./RENAMED_BINDINGS.md)*.
 
 ---
-**Contribution:**
-
-If you are in need of a function's code that isn't already on this list, or want to simply request an addition, please open a PR or message me on discord at @starrydawn72. All pull requests will go through manual confirmation before being added to the repository.
-
----
 **Info:**
 - Game version: 2.2081
 - Software used for reversing: [Hex-Rays IDA Professional 9.3 (With BromaIDA for symbols)](https://hex-rays.com/ida-pro)
+
+---
+
+### **Contribution (please read)**
+
+If you are in need of a function's code that isn't already on this list, or want to simply request an addition, please open a PR or message me on discord at @starrydawn72. All pull requests will go through manual confirmation before being added to the repository.
+<br>
+<br>
+**Rules for submitting a function** through a pull request:
+- Decompilation must be done in IDA, reconstructions using Ghidra will not be accepted
+- Its behavior must be tested in-game by overriding the original using a Geode mod
+- Member variables featured in [RENAMED_BINDINGS.md](./RENAMED_BINDINGS.md) must be aliased at the top of the function with a comment saying "Renamed incorrect bindings" or similar
+- Its opening brace should be on the next line (for consistency)
+
+You should view the existing reconstructions on this repo to get an idea of the style before submission.
 
 ---
 
