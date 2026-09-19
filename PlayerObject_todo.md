@@ -40,7 +40,6 @@
     void resetCollisionValues()
     void resetPlayerIcon()
     void resetStateVariables()
-    void resetTouchedRings(bool removeAll)
     void reversePlayer(EffectGameObject* object)
     void rotateGameplay(int moveDirection, int groundDirection, bool editVelocity, float velocityModX, float velocityModY, bool overrideVelocity, bool dontSlide)
     void rotateGameplayObject(GameObject* object)
