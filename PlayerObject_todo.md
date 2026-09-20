@@ -57,7 +57,6 @@
     void storeCollision(PlayerCollisionDirection direction, int id)
     bool switchedDirTo(PlayerButton button)
     bool testForMoving(float dt, GameObject* object)
-    void toggleBirdMode(bool enable, bool noEffects)
     void toggleDartMode(bool enable, bool noEffects)
     void toggleFlyMode(bool enable, bool noEffects)
     void togglePlatformerMode(bool val)
