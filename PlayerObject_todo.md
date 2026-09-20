@@ -58,7 +58,6 @@
     bool switchedDirTo(PlayerButton button)
     bool testForMoving(float dt, GameObject* object)
     void toggleDartMode(bool enable, bool noEffects)
-    void toggleFlyMode(bool enable, bool noEffects)
     void togglePlatformerMode(bool val)
     void togglePlayerScale(bool enable, bool noEffects)
     void toggleRobotMode(bool enable, bool noEffects)
