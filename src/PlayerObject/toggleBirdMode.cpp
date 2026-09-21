@@ -24,11 +24,11 @@ void PlayerObject::toggleBirdMode(bool enable, bool noEffects)
         updatePlayerBirdFrame(GameManager::sharedState()->m_playerBird.value());
         stopPlatformerJumpAnimation();
         
-        m_iconSprite->setScale(0.55);
-        m_iconSprite->setPosition(ccp(0.0, 5.0));
+        m_iconSprite->setScale(0.55f);
+        m_iconSprite->setPosition(ccp(0.0f, 5.0f));
 
         m_vehicleSprite->setVisible(true);
-        m_vehicleSprite->setPosition(ccp(0.0, -7.0));
+        m_vehicleSprite->setPosition(ccp(0.0f, -7.0f));
 
         updatePlayerGlow();
         
@@ -41,7 +41,7 @@ void PlayerObject::toggleBirdMode(bool enable, bool noEffects)
         deactivateParticle();
 
         if (!noEffects)
-            spawnPortalCircle({255, 200, 0}, 50.0);
+            spawnPortalCircle(ccc3(255, 200, 0), 50.0f);
 
         activateStreak();
         updatePlayerScale();
