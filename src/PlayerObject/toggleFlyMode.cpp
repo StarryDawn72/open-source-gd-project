@@ -1,4 +1,5 @@
-void PlayerObject::toggleFlyMode(bool enable, bool noEffects) {
+void PlayerObject::toggleFlyMode(bool enable, bool noEffects)
+{
     bool& m_canJump = m_isOnGround;
     bool& m_onGround = m_isOnGround2;
 
@@ -7,8 +8,10 @@ void PlayerObject::toggleFlyMode(bool enable, bool noEffects) {
 
     m_isShip = enable;
     m_gameModeChangedTime = m_totalTime;
+    
     if (enable)
         switchedToMode(GameObjectType::ShipPortal);
+    
     stopRotation(false, 7);
     m_yVelocity *= 0.5;
     setRotation(0.0);
@@ -25,17 +28,17 @@ void PlayerObject::toggleFlyMode(bool enable, bool noEffects) {
         if (m_isPlatformer)
         {
             updatePlayerJetpackFrame(GameManager::sharedState()->m_playerJetpack.value());
-            m_iconSprite->setScale(0.6);
-            m_iconSprite->setPosition(ccp(6.0, 4.0));
-            vehicleSpriteY = 0.0;
+            m_iconSprite->setScale(0.6f);
+            m_iconSprite->setPosition(ccp(6.0f, 4.0f));
+            vehicleSpriteY = 0.0f;
         } else {
             updatePlayerShipFrame(GameManager::sharedState()->m_playerShip.value());
-            m_iconSprite->setScale(0.55);
-            m_iconSprite->setPosition(ccp(0.0, 5.0));
-            vehicleSpriteY = -5.0;
+            m_iconSprite->setScale(0.55f);
+            m_iconSprite->setPosition(ccp(0.0f, 5.0f));
+            vehicleSpriteY = -5.0f;
         }
 
-        m_vehicleSprite->setPosition(ccp(0.0, vehicleSpriteY));
+        m_vehicleSprite->setPosition(ccp(0.0f, vehicleSpriteY));
         m_vehicleSprite->setVisible(true);
         updatePlayerGlow();
 
@@ -46,13 +49,15 @@ void PlayerObject::toggleFlyMode(bool enable, bool noEffects) {
         }
         m_shipClickParticles->stopSystem();
         m_hasShipParticles = false;
+        
         deactivateParticle();
 
         if (!noEffects)
-            spawnPortalCircle({255, 0, 255}, 50.0);
+            spawnPortalCircle(ccc3(255, 0, 255), 50.0f);
 
         activateStreak();
         updatePlayerScale();
+        
         if (m_shipStreak && !m_isPlatformer && !m_isHidden)
             m_shipStreak->setVisible(true);
     } else {
