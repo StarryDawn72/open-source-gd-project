@@ -19,7 +19,7 @@ Welcome to the Open Source Geometry Dash Project. This is (hopefully) what I pla
 ---
 **Info:**
 - Game version: 2.2081
-- Software used for reversing: [Hex-Rays IDA Professional 9.3 (With BromaIDA for symbols)](https://hex-rays.com/ida-pro)
+- Software used for reversing: [Hex-Rays IDA Professional 9.3](https://hex-rays.com/ida-pro) with [BromaIDA for symbols](https://github.com/Stazzical/BromaIDA)
 
 ---
 
