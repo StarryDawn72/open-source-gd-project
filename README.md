@@ -19,7 +19,7 @@ Welcome to the Open Source Geometry Dash Project. This is (hopefully) what I pla
 ---
 **Info:**
 - Game version: 2.2081
-- Software used for reversing: [Hex-Rays IDA Professional 9.3 (With BromaIDA for symbols)](https://hex-rays.com/ida-pro)
+- Software used for reversing: [Hex-Rays IDA Professional 9.3](https://hex-rays.com/ida-pro) with [BromaIDA for symbols](https://github.com/Stazzical/BromaIDA)
 
 ---
 
@@ -119,7 +119,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary>[ <b>PlayerObject</b> ] (129)</summary>
+	<summary>[ <b>PlayerObject</b> ] (131)</summary>
 	<ul>
 		<li><a href="./src/PlayerObject/activateStreak.cpp">activateStreak</a></li>
 		<li><a href="./src/PlayerObject/addAllParticles.cpp">addAllParticles</a></li>
@@ -226,6 +226,8 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/stopRotation.cpp">stopRotation</a></li>
 		<li><a href="./src/PlayerObject/stopStreak2.cpp">stopStreak2</a></li>
 		<li><a href="./src/PlayerObject/switchedToMode.cpp">switchedToMode</a></li>
+		<li><a href="./src/PlayerObject/toggleBirdMode.cpp">toggleBirdMode</a></li>
+		<li><a href="./src/PlayerObject/toggleFlyMode.cpp">toggleFlyMode</a></li>
 		<li><a href="./src/PlayerObject/toggleGhostEffect.cpp">toggleGhostEffect</a></li>
 		<li><a href="./src/PlayerObject/togglePlatformerMode.cpp">togglePlatformerMode</a></li>
 		<li><a href="./src/PlayerObject/toggleVisibility.cpp">toggleVisibility</a></li>
