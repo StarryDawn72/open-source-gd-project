@@ -61,7 +61,6 @@
     void togglePlatformerMode(bool val)
     void togglePlayerScale(bool enable, bool noEffects)
     void toggleRobotMode(bool enable, bool noEffects)
-    void toggleRollMode(bool enable, bool noEffects)
     void toggleSpiderMode(bool enable, bool noEffects)
     void toggleSwingMode(bool enable, bool noEffects)
     void touchedObject(GameObject* object)
