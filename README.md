@@ -119,9 +119,13 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary>[ <b>LevelInfoLayer</b> ] (2)</summary>
+	<summary>[ <b>LevelInfoLayer</b> ] (6)</summary>
 	<ul>
+		<li><a href="./src/LevelInfoLayer/loadLevelStep.cpp">loadLevelStep</a></li>
 		<li><a href="./src/LevelInfoLayer/onPlay.cpp">onPlay</a></li>
+		<li><a href="./src/LevelInfoLayer/playStep2.cpp">playStep2</a></li>
+		<li><a href="./src/LevelInfoLayer/playStep3.cpp">playStep3</a></li>
+		<li><a href="./src/LevelInfoLayer/playStep4.cpp">playStep4</a></li>
 		<li><a href="./src/LevelInfoLayer/showSongWarning.cpp">showSongWarning</a></li>
 	</ul>
 </details>

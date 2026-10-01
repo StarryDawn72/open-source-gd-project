@@ -1,3 +1,5 @@
+#define GM GameManager::sharedState()
+
 void LevelInfoLayer::onPlay(CCObject *sender)
 {
     // These were most likely macros in the source code
