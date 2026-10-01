@@ -1,3 +1,5 @@
+#define GM GameManager::sharedState()
+
 void PlayerObject::toggleRollMode(bool enable, bool noEffects) {
     if (m_isBall == enable)
         return;
@@ -12,14 +14,15 @@ void PlayerObject::toggleRollMode(bool enable, bool noEffects) {
             if (m_vehicleSize != 1.0 && m_defaultMiniIcon)
                 updatePlayerRollFrame(0);
             else
-                updatePlayerRollFrame(GameManager::sharedState()->m_playerBall.value());
+                updatePlayerRollFrame(GM->m_playerBall.value());
 
             if (!noEffects)
-                spawnPortalCircle({255, 50, 50}, 50.0f);
+                spawnPortalCircle(ccc3(255, 50, 50), 50.0f);
 
             stopRotation(true, 11);
         }
-    } else {
+    }
+    else {
         if (m_vehicleSize != 1.0 && m_defaultMiniIcon)
             updatePlayerFrame(0);
         else

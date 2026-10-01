@@ -1,6 +1,7 @@
 void PlayerObject::toggleDartMode(bool enable, bool noEffects) {
     bool& m_canJump = m_isOnGround;
     bool& m_onGround = m_isOnGround2;
+    float& m_playerScale = m_vehicleSize;
 
     if (m_isDart == enable)
         return;
@@ -29,7 +30,7 @@ void PlayerObject::toggleDartMode(bool enable, bool noEffects) {
         updatePlayerDartFrame(GameManager::sharedState()->m_playerDart.value());
 
         if (!noEffects)
-            spawnPortalCircle({255, 200, 0}, 50.0f);
+            spawnPortalCircle(ccc3(255, 200, 0), 50.0f);
 
         activateStreak();
         updatePlayerScale();
@@ -57,14 +58,14 @@ void PlayerObject::toggleDartMode(bool enable, bool noEffects) {
             m_parentLayer->addChild(circleWave, 0);
         }
     } else {
-        if (m_vehicleSize != 1.0 && m_defaultMiniIcon)
+        if (m_playerScale != 1.0f && m_defaultMiniIcon)
             updatePlayerFrame(0);
         else
-            updatePlayerFrame(m_maybeSavedPlayerFrame);
+            updatePlayerFrame(m_maybeSavedPlayerFrame); // TODO: find real name
         resetPlayerIcon();
     }
 
-    m_regularTrail->setStroke(m_streakStrokeWidth * m_vehicleSize * (m_isDart ? 0.8f : 1.0f));
+    m_regularTrail->setStroke(m_streakStrokeWidth * m_playerScale * (m_isDart ? 0.8f : 1.0f));
     if (enable)
         modeDidChange();
 }
