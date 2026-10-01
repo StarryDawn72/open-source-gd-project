@@ -11,7 +11,7 @@ void PlayerObject::toggleRobotMode(bool enable, bool noEffects)
 
     m_isRobot = enable;
     m_gameModeChangedTime = m_totalTime;
-    
+
     if (enable) {
         m_mainLayer->addChild(m_robotBatchNode, 2);
 

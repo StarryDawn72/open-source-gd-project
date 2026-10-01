@@ -6,6 +6,7 @@ void PlayerObject::toggleRollMode(bool enable, bool noEffects) {
 
     m_isBall = enable;
     m_gameModeChangedTime = m_totalTime;
+
     if (enable)
     {
         switchedToMode(GameObjectType::BallPortal);
