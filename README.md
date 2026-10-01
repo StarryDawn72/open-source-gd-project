@@ -119,8 +119,9 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary>[ <b>LevelInfoLayer</b> ] (1)</summary>
+	<summary>[ <b>LevelInfoLayer</b> ] (2)</summary>
 	<ul>
+		<li><a href="./src/LevelInfoLayer/onPlay.cpp">onPlay</a></li>
 		<li><a href="./src/LevelInfoLayer/showSongWarning.cpp">showSongWarning</a></li>
 	</ul>
 </details>
