@@ -130,7 +130,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary>[ <b>PlayerObject</b> ] (134)</summary>
+	<summary>[ <b>PlayerObject</b> ] (135)</summary>
 	<ul>
 		<li><a href="./src/PlayerObject/activateStreak.cpp">activateStreak</a></li>
 		<li><a href="./src/PlayerObject/addAllParticles.cpp">addAllParticles</a></li>
@@ -244,6 +244,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/togglePlatformerMode.cpp">togglePlatformerMode</a></li>
 		<li><a href="./src/PlayerObject/toggleRobotMode.cpp">toggleRobotMode</a></li>
 		<li><a href="./src/PlayerObject/toggleRollMode.cpp">toggleRollMode</a></li>
+		<li><a href="./src/PlayerObject/toggleSpiderMode.cpp">toggleSpiderMode</a></li>
 		<li><a href="./src/PlayerObject/toggleVisibility.cpp">toggleVisibility</a></li>
 		<li><a href="./src/PlayerObject/unrotatePreSlopeObjects.cpp">unrotatePreSlopeObjects</a></li>
 		<li><a href="./src/PlayerObject/update.cpp">update</a></li>

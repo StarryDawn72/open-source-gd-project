@@ -1,4 +1,4 @@
-#define GM GameManager::sharedState()
+#define GM (GameManager::sharedState())
 
 void PlayerObject::toggleRobotMode(bool enable, bool noEffects)
 {
