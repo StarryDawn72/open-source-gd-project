@@ -62,7 +62,7 @@ LI_END = "</a></li>\n"
 LI_SLASH = "/"
 
 OTHERS_STRING = """<details>
-    <summary><b>Other</b> (1)</summary>
+    <summary> <b>Other</b> (1)</summary>
     <ul>
         <li><a href="./src/FreeFunctions.cpp">Free Functions</a></li>
     </ul>

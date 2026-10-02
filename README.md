@@ -284,7 +284,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-    <summary><b>Other</b> (1)</summary>
+    <summary> <b>Other</b> (1)</summary>
     <ul>
         <li><a href="./src/FreeFunctions.cpp">Free Functions</a></li>
     </ul>
