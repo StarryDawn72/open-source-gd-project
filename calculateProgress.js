@@ -49,7 +49,9 @@ for (const [className, funcs] of Object.entries(sizes)) {
     console.log(`${className}: \x1b[1;37m${(finishedSize / totalSize * 100).toPrecision(3)}%\x1b[0m finished. (${finishedSize}b of ${totalSize}b)`);
 
     if (listCompleted) {
-        for (const file of fs.readdirSync(classDir)) {
+        const files = fs.readdirSync(classDir).sort((a, b) => a[0].localeCompare(b[0]));
+
+        for (const file of files) {
             if (!file.endsWith('.cpp'))
                 continue;
 
@@ -63,6 +65,7 @@ for (const [className, funcs] of Object.entries(sizes)) {
     }
 
     if (listRemaining) {
+
         for (const file of fs.readdirSync(classDir)) {
             if (!file.endsWith('.cpp'))
                 continue;
@@ -72,7 +75,11 @@ for (const [className, funcs] of Object.entries(sizes)) {
             delete funcs[name];
         }
 
-        for (const [name, size] of Object.entries(funcs)) {
+        let remFuncs = Object.entries(funcs);
+
+        remFuncs.sort((a, b) => a[0].localeCompare(b[0]));
+
+        for (const [name, size] of remFuncs) {
             console.log(`  - ${name} is \x1b[1;37m${(size / totalSize * 100).toPrecision(3)}%\x1b[0m of ${className} (${funcs[name]}b of ${totalSize}b)`);
         }
     }
