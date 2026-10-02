@@ -1,3 +1,5 @@
+#define GM (GameManager::sharedState())
+
 void PlayerObject::toggleSwingMode(bool enable, bool noEffects)
 {
     bool& m_canJump = m_isOnGround;
