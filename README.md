@@ -41,7 +41,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 
 ### **Shortcut links to entries per class**
 <details>
-	<summary>【 <b>AnimatedShopKeeper ✔️ <i>Complete</i></b> 】 (5)</summary>
+	<summary> <b>AnimatedShopKeeper ✔️</b>  (5)</summary>
 	<ul>
 		<li><a href="./src/AnimatedShopKeeper/animationFinished.cpp">animationFinished</a></li>
 		<li><a href="./src/AnimatedShopKeeper/create.cpp">create</a></li>
@@ -51,13 +51,13 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary>【 <b>AudioEffectsLayer</b> 】 (1)</summary>
+	<summary> <b>AudioEffectsLayer</b>  (1)</summary>
 	<ul>
 		<li><a href="./src/AudioEffectsLayer/audioStep.cpp">audioStep</a></li>
 	</ul>
 </details>
 <details>
-	<summary>【 <b>CCCircleWave ✔️ <i>Complete</i></b> 】 (11)</summary>
+	<summary> <b>CCCircleWave ✔️</b>  (11)</summary>
 	<ul>
 		<li><a href="./src/CCCircleWave/baseSetup.cpp">baseSetup</a></li>
 		<li><a href="./src/CCCircleWave/CCCircleWave.cpp">CCCircleWave</a></li>
@@ -73,25 +73,25 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary>【 <b>CCCircleWaveDelegate ✔️ <i>Complete</i></b> 】 (1)</summary>
+	<summary> <b>CCCircleWaveDelegate ✔️</b>  (1)</summary>
 	<ul>
 		<li><a href="./src/CCCircleWaveDelegate/circleWaveWillBeRemoved.cpp">circleWaveWillBeRemoved</a></li>
 	</ul>
 </details>
 <details>
-	<summary>【 <b>EditorUI</b> 】 (1)</summary>
+	<summary> <b>EditorUI</b>  (1)</summary>
 	<ul>
 		<li><a href="./src/EditorUI/deselectObject.cpp">deselectObject</a></li>
 	</ul>
 </details>
 <details>
-	<summary>【 <b>GameLevelManager</b> 】 (1)</summary>
+	<summary> <b>GameLevelManager</b>  (1)</summary>
 	<ul>
 		<li><a href="./src/GameLevelManager/downloadLevel.cpp">downloadLevel</a></li>
 	</ul>
 </details>
 <details>
-	<summary>【 <b>GameObject</b> 】 (6)</summary>
+	<summary> <b>GameObject</b>  (6)</summary>
 	<ul>
 		<li><a href="./src/GameObject/createAndAddParticle.cpp">createAndAddParticle</a></li>
 		<li><a href="./src/GameObject/getObjectRect.cpp">getObjectRect</a></li>
@@ -102,7 +102,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary>【 <b>GJBaseGameLayer</b> 】 (5)</summary>
+	<summary> <b>GJBaseGameLayer</b>  (5)</summary>
 	<ul>
 		<li><a href="./src/GJBaseGameLayer/bumpPlayer.cpp">bumpPlayer</a></li>
 		<li><a href="./src/GJBaseGameLayer/collisionCheckObjects.cpp">collisionCheckObjects</a></li>
@@ -112,14 +112,14 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary>【 <b>LevelEditorLayer</b> 】 (2)</summary>
+	<summary> <b>LevelEditorLayer</b>  (2)</summary>
 	<ul>
 		<li><a href="./src/LevelEditorLayer/addObjectFromVector.cpp">addObjectFromVector</a></li>
 		<li><a href="./src/LevelEditorLayer/updateVisibility.cpp">updateVisibility</a></li>
 	</ul>
 </details>
 <details>
-	<summary>【 <b>LevelInfoLayer</b> 】 (6)</summary>
+	<summary> <b>LevelInfoLayer</b>  (6)</summary>
 	<ul>
 		<li><a href="./src/LevelInfoLayer/loadLevelStep.cpp">loadLevelStep</a></li>
 		<li><a href="./src/LevelInfoLayer/onPlay.cpp">onPlay</a></li>
@@ -130,7 +130,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary>【 <b>PlayerObject</b> 】 (134)</summary>
+	<summary> <b>PlayerObject</b>  (134)</summary>
 	<ul>
 		<li><a href="./src/PlayerObject/activateStreak.cpp">activateStreak</a></li>
 		<li><a href="./src/PlayerObject/addAllParticles.cpp">addAllParticles</a></li>
@@ -269,7 +269,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary>【 <b>PlayLayer</b> 】 (3)</summary>
+	<summary> <b>PlayLayer</b>  (3)</summary>
 	<ul>
 		<li><a href="./src/PlayLayer/circleWaveWillBeRemoved.cpp">circleWaveWillBeRemoved</a></li>
 		<li><a href="./src/PlayLayer/getRelativeModNew.cpp">getRelativeModNew</a></li>
@@ -277,15 +277,15 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary>【 <b>RingObject</b> 】 (2)</summary>
+	<summary> <b>RingObject</b>  (2)</summary>
 	<ul>
 		<li><a href="./src/RingObject/powerOnObject.cpp">powerOnObject</a></li>
 		<li><a href="./src/RingObject/spawnCircle.cpp">spawnCircle</a></li>
 	</ul>
 </details>
 <details>
-	<summary>【 <b>Other</b> 】 (1)</summary>
-	<ul>
-		<li><a href="./src/FreeFunctions.cpp">Free Functions</a></li>
-	</ul>
+    <summary><b>Other</b> (1)</summary>
+    <ul>
+        <li><a href="./src/FreeFunctions.cpp">Free Functions</a></li>
+    </ul>
 </details>
