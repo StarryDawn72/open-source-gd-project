@@ -51,8 +51,8 @@ README_PATH = ROOT_DIR / "README.md"
 
 HTML_START = "<details>\n"
 HTML_END = "</details>\n"
-SUMMARY_START = "\t<summary>[ <b>"
-SUMMARY_MID = "</b> ] ("
+SUMMARY_START = "\t<summary>【 <b>"
+SUMMARY_MID = "</b> 】 ("
 SUMMARY_END = ")</summary>\n"
 UL_START = "\t<ul>\n"
 UL_END = "\t</ul>\n"
@@ -62,7 +62,7 @@ LI_END = "</a></li>\n"
 LI_SLASH = "/"
 
 OTHERS_STRING = """<details>
-	<summary>[ <b>Other</b> ] (1)</summary>
+	<summary>【 <b>Other</b> 】 (1)</summary>
 	<ul>
 		<li><a href="./src/FreeFunctions.cpp">Free Functions</a></li>
 	</ul>
@@ -97,7 +97,7 @@ def get_entry_string(directory):
 						complete = True
 						break
 
-				complete_string = " (Complete)" if complete else ""
+				complete_string = " ✔️ <i>Complete</i>" if complete else ""
 				entry = HTML_START + SUMMARY_START + item.name + complete_string + SUMMARY_MID + f"{cpp_count}" + SUMMARY_END + UL_START
 				li_strings = ""
 				
