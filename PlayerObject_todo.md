@@ -64,8 +64,6 @@
     void unrotateGameplayObject(GameObject* object)
     void updateCheckpointMode(bool enable)
     void updateCheckpointTest()
-    void updateCollideBottom(float y, GameObject* object)
-    void updateCollideTop(float y, GameObject* object)
     void updateDashAnimation()
     void updateGlowColor()
     void updateJumpVariables()
