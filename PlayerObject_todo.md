@@ -54,7 +54,6 @@
     void spiderTestJumpY(bool dynamic)
     void stopDashing()
     void stopPlatformerJumpAnimation()
-    void storeCollision(PlayerCollisionDirection direction, int id)
     bool switchedDirTo(PlayerButton button)
     bool testForMoving(float dt, GameObject* object)
     void togglePlatformerMode(bool val)

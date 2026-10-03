@@ -130,7 +130,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary>[ <b>PlayerObject</b> ] (140)</summary>
+	<summary>[ <b>PlayerObject</b> ] (141)</summary>
 	<ul>
 		<li><a href="./src/PlayerObject/activateStreak.cpp">activateStreak</a></li>
 		<li><a href="./src/PlayerObject/addAllParticles.cpp">addAllParticles</a></li>
@@ -236,6 +236,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/stopParticles.cpp">stopParticles</a></li>
 		<li><a href="./src/PlayerObject/stopRotation.cpp">stopRotation</a></li>
 		<li><a href="./src/PlayerObject/stopStreak2.cpp">stopStreak2</a></li>
+		<li><a href="./src/PlayerObject/storeCollision.cpp">storeCollision</a></li>
 		<li><a href="./src/PlayerObject/switchedToMode.cpp">switchedToMode</a></li>
 		<li><a href="./src/PlayerObject/toggleBirdMode.cpp">toggleBirdMode</a></li>
 		<li><a href="./src/PlayerObject/toggleDartMode.cpp">toggleDartMode</a></li>
