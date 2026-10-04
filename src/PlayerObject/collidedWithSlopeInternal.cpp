@@ -20,32 +20,7 @@ void PlayerObject::collidedWithSlopeInternal(float dt, GameObject *object, bool 
         return;
     }
 
-	// rename incorrect geode bindings
-	bool& m_holdingJump = m_jumpBuffered;
-	bool& m_isJumping = m_maybeIsBoosted;
-	bool& m_onGround = m_isOnGround2;
-	bool& m_canJump = m_isOnGround;
-	bool& m_isLastSlopeTop = m_isCurrentSlopeTop;
-	double& m_lastSlopeYVelocity = m_currentSlopeYVelocity;
-	float& m_playerScale = m_vehicleSize;
-	bool& m_ignoreDamagePlayLayer = m_maybeCanRunIntoBlocks;
-	bool& m_ignoreDamageEditor = m_ignoreDamage;
-	bool& m_tookDamage = m_maybeIsColliding;
-	bool& m_slopeWasClampedMax = m_unk3e0;
-	bool& m_slopeWasClampedMin = m_unk3e1;
-	bool& m_isGoingDownSlope = m_slopeFlipGravityRelated;
-	double& m_slopeYOffset = unk_584;
-	double& m_lastSlopeYPos = m_unk3d0;
-	double& m_lastSlopeYPosRotated = m_blackOrbRelated;
-	int& m_slopeSlideTimer = m_maybeSlidingTime;
-	bool& m_hitSlopeTop = m_maybeUpsideDownSlope;
-	bool& m_isSlopeUphillRelative = m_slopeSlidingMaybeRotated;
-	std::unordered_map<int, GameObject*>& m_preSlopeObjects = m_potentialSlopeMap;
-	std::unordered_map<int, GJPointDouble>& m_rotatedObjectDeltas = m_rotateObjectsRelated;
-	GameObject*& m_preSlopeObject = m_currentPotentialSlope;
-	GameObject*& m_lastSlope = m_currentSlope2;
-
-	CCRect playerRect = getObjectRect();
+    CCRect playerRect = getObjectRect();
 	CCRect slopeRect = object->getObjectRect();
 
     bool isUphill = object->m_slopeUphill;

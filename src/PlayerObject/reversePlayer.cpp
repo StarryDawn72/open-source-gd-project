@@ -4,8 +4,6 @@
 */
 void PlayerObject::reversePlayer(EffectGameObject* object)
 {
-    // Rename incorrect geode bindings
-    double& m_reverseSyncOffset = m_maybeReverseSpeed;
 
     if (!m_isPlatformer) {
         if (object && m_reverseSync) {

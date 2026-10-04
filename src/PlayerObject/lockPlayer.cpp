@@ -1,7 +1,5 @@
 void PlayerObject::lockPlayer()
 {
-	bool& m_onGround = m_isOnGround2; // Rename binding
-
 	if (m_isDart)
 		placeStreakPoint();
 

@@ -6,9 +6,6 @@ void GJBaseGameLayer::collisionCheckObjects(PlayerObject* object, std::vector<Ga
 {
 	PlayerObject* player = object;
 
-	GameObject*& player_m_lastEffectObject = player->m_lastActivatedPortal;
-	CCPoint& player_m_lastEffectObjectPos = player->m_lastPortalPos;
-
 	CCRect playerRect = player->getObjectRect();
 
 	float playerMaxX = playerRect.getMaxX();
@@ -100,8 +97,8 @@ void GJBaseGameLayer::collisionCheckObjects(PlayerObject* object, std::vector<Ga
 						if (!player->m_isUpsideDown && !obj->m_hasNoEffects)
 							playGravityEffect(true);
 						
-						player_m_lastEffectObjectPos = obj->getPosition();
-						player_m_lastEffectObject = obj;
+						player->m_lastEffectObjectPos = obj->getPosition();
+						player->m_lastEffectObject = obj;
 
 						if (!obj->m_hasNoEffects && obj->m_isHide)
 							noEffects = true;
@@ -124,8 +121,8 @@ void GJBaseGameLayer::collisionCheckObjects(PlayerObject* object, std::vector<Ga
 						if (player->m_isUpsideDown && !obj->m_hasNoEffects)
 							playGravityEffect(false);
 						
-						player_m_lastEffectObjectPos = obj->getPosition();
-						player_m_lastEffectObject = obj;
+						player->m_lastEffectObjectPos = obj->getPosition();
+						player->m_lastEffectObject = obj;
 
 						if (!obj->m_hasNoEffects && obj->m_isHide)
 							noEffects = true;
@@ -151,8 +148,8 @@ void GJBaseGameLayer::collisionCheckObjects(PlayerObject* object, std::vector<Ga
 					{
 						playerWillSwitchMode(player, obj);
 
-						player_m_lastEffectObjectPos = obj->getPosition();
-						player_m_lastEffectObject = obj;
+						player->m_lastEffectObjectPos = obj->getPosition();
+						player->m_lastEffectObject = obj;
 						player->switchedToMode(GameObjectType::CubePortal);
 						player->modeDidChange();
 
@@ -183,8 +180,8 @@ void GJBaseGameLayer::collisionCheckObjects(PlayerObject* object, std::vector<Ga
 					break;
 				case GameObjectType::InverseMirrorPortal:
 					if (!m_isEditor && canBeActivatedByPlayer(player, static_cast<EffectGameObject*>(obj))) {
-						player_m_lastEffectObjectPos = obj->getPosition();
-						player_m_lastEffectObject = obj;
+						player->m_lastEffectObjectPos = obj->getPosition();
+						player->m_lastEffectObject = obj;
 
 						toggleFlipped(true, obj->m_hasNoEffects);
 
@@ -196,8 +193,8 @@ void GJBaseGameLayer::collisionCheckObjects(PlayerObject* object, std::vector<Ga
 					break;
 				case GameObjectType::NormalMirrorPortal:
 					if (!m_isEditor && canBeActivatedByPlayer(player, static_cast<EffectGameObject*>(obj))) {
-						player_m_lastEffectObjectPos = obj->getPosition();
-						player_m_lastEffectObject = obj;
+						player->m_lastEffectObjectPos = obj->getPosition();
+						player->m_lastEffectObject = obj;
 
 						toggleFlipped(false, obj->m_hasNoEffects);
 						obj->playShineEffect();
@@ -216,8 +213,8 @@ void GJBaseGameLayer::collisionCheckObjects(PlayerObject* object, std::vector<Ga
 					break;
 				case GameObjectType::RegularSizePortal:
 					if (canBeActivatedByPlayer(player, static_cast<EffectGameObject*>(obj))) {
-						player_m_lastEffectObjectPos = obj->getPosition();
-						player_m_lastEffectObject = obj;
+						player->m_lastEffectObjectPos = obj->getPosition();
+						player->m_lastEffectObject = obj;
 
 						player->togglePlayerScale(false, obj->m_hasNoEffects);
 						obj->playShineEffect();
@@ -228,8 +225,8 @@ void GJBaseGameLayer::collisionCheckObjects(PlayerObject* object, std::vector<Ga
 					break;
 				case GameObjectType::MiniSizePortal:
 					if (canBeActivatedByPlayer(player, static_cast<EffectGameObject*>(obj))) {
-						player_m_lastEffectObjectPos = obj->getPosition();
-						player_m_lastEffectObject = obj;
+						player->m_lastEffectObjectPos = obj->getPosition();
+						player->m_lastEffectObject = obj;
 
 						player->togglePlayerScale(true, obj->m_hasNoEffects);
 						obj->playShineEffect();
@@ -266,8 +263,8 @@ void GJBaseGameLayer::collisionCheckObjects(PlayerObject* object, std::vector<Ga
 					break;
 				case GameObjectType::DualPortal:
 					if (canBeActivatedByPlayer(player, static_cast<EffectGameObject*>(obj))) {
-						player_m_lastEffectObjectPos = obj->getPosition();
-						player_m_lastEffectObject = obj;
+						player->m_lastEffectObjectPos = obj->getPosition();
+						player->m_lastEffectObject = obj;
 
 						m_player2->m_isBeingSpawnedByDualPortal = true;
 						toggleDualMode(obj, true, player, false);
@@ -281,8 +278,8 @@ void GJBaseGameLayer::collisionCheckObjects(PlayerObject* object, std::vector<Ga
 					break;
 				case GameObjectType::SoloPortal:
 					if (canBeActivatedByPlayer(player, static_cast<EffectGameObject*>(obj))) {
-						player_m_lastEffectObjectPos = obj->getPosition();
-						player_m_lastEffectObject = obj;
+						player->m_lastEffectObjectPos = obj->getPosition();
+						player->m_lastEffectObject = obj;
 
 						toggleDualMode(obj, false, player, false);
 						obj->playShineEffect();
@@ -400,8 +397,8 @@ void GJBaseGameLayer::collisionCheckObjects(PlayerObject* object, std::vector<Ga
 						if (!obj->m_hasNoEffects)
 							playGravityEffect(!player->m_isUpsideDown);
 
-						player_m_lastEffectObjectPos = obj->getPosition();
-						player_m_lastEffectObject = obj;
+						player->m_lastEffectObjectPos = obj->getPosition();
+						player->m_lastEffectObject = obj;
 
 						if (!obj->m_hasNoEffects && obj->m_isHide)
 							noEffects = true;

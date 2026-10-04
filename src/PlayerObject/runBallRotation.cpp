@@ -14,11 +14,6 @@ void PlayerObject::runBallRotation(float speed)
 	if (m_isDashing || m_isPlatformer) return;
 
 	float duration = 1.0f;
-	
-	// rename incorrect member variable names
-	bool& m_ballRotationMultiplierActive = m_isBallRotating;
-	float& m_ballRotationMultiplier = m_rotateSpeed;
-	float& m_playerScale = m_vehicleSize;
 
 	m_ballRotationMultiplierActive = speed != 1.0f;
 	m_ballRotationMultiplier = speed;

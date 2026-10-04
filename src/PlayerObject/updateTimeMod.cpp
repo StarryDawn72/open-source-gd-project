@@ -10,11 +10,6 @@
 */
 void PlayerObject::updateTimeMod(float speed, bool noEffects)
 {
-
-	// rename incorrect community guesses
-	bool m_isInPlayLayer = m_playEffects;
-	bool m_isRespawning = m_maybeReducedEffects;
-
     if (!m_isRespawning && m_isInPlayLayer && !noEffects && m_playerSpeed != speed) {
         GM->playSpeedParticle(speed);
     }
@@ -50,5 +45,5 @@ void PlayerObject::updateTimeMod(float speed, bool noEffects)
         runRotateAction(false, 0);
     }
 
-    if (m_shipStreak) m_shipStreak->updateStreakSettings(m_shipStreakType, this);
+    if (m_shipStreak) updateStreakSettings(m_shipStreak, m_shipStreakType, this);
 }

@@ -3,9 +3,6 @@
 */
 void PlayerObject::specialGroundHit()
 {
-    // rename bindings
-    bool& m_didSpecialGroundHit = m_maybeSpriteRelated;
-
     setYVelocity(double(-5 * flipMod()), 47);
 
     if (!m_isBall && !isFlying())

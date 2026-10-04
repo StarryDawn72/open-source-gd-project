@@ -1,4 +1,6 @@
 #define PL GameManager::sharedState()->getPlayLayer()
+#define kPlayerTouchToggleBlock 3643
+
 /*
 	====== RingObject::spawnCircle ======
 	
@@ -8,8 +10,7 @@
 */
 void RingObject::spawnCircle()
 {
-	int playerTouchToggleBlockID = 3643;
-	if ( PL && !m_hasNoEffects && m_objectID != playerTouchToggleBlockID )
+	if ( PL && !m_hasNoEffects && m_objectID != kPlayerTouchToggleBlock )
 	{
 		float startRadius = 5.0f;
 		float endRadius = 55.0f;

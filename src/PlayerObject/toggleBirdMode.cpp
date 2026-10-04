@@ -1,8 +1,5 @@
 void PlayerObject::toggleBirdMode(bool enable, bool noEffects)
 {
-    bool& m_canJump = m_isOnGround;
-    bool& m_onGround = m_isOnGround2;
-
     if (m_isBird == enable)
         return;
 

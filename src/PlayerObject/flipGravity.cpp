@@ -3,10 +3,6 @@
 void PlayerObject::flipGravity(bool flip, bool noEffects)
 {
     if (m_isUpsideDown != flip) {
-		bool& m_isGoingDownSlope = m_slopeFlipGravityRelated;
-		bool& m_isRespawning = m_maybeReducedEffects;
-		CCPoint& m_lastEffectObjectPos = m_lastPortalPos;
-		bool& m_canJump = m_isOnGround;
 
         placeStreakPoint();
         m_isUpsideDown = flip;
