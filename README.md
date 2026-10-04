@@ -270,6 +270,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/stopParticles.cpp">stopParticles</a></li>
 		<li><a href="./src/PlayerObject/stopRotation.cpp">stopRotation</a></li>
 		<li><a href="./src/PlayerObject/stopStreak2.cpp">stopStreak2</a></li>
+		<li><a href="./src/PlayerObject/storeCollision.cpp">storeCollision</a></li>
 		<li><a href="./src/PlayerObject/switchedToMode.cpp">switchedToMode</a></li>
 		<li><a href="./src/PlayerObject/toggleBirdMode.cpp">toggleBirdMode</a></li>
 		<li><a href="./src/PlayerObject/toggleDartMode.cpp">toggleDartMode</a></li>
@@ -278,10 +279,16 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/togglePlatformerMode.cpp">togglePlatformerMode</a></li>
 		<li><a href="./src/PlayerObject/toggleRobotMode.cpp">toggleRobotMode</a></li>
 		<li><a href="./src/PlayerObject/toggleRollMode.cpp">toggleRollMode</a></li>
+		<li><a href="./src/PlayerObject/toggleSpiderMode.cpp">toggleSpiderMode</a></li>
+		<li><a href="./src/PlayerObject/toggleSwingMode.cpp">toggleSwingMode</a></li>
 		<li><a href="./src/PlayerObject/toggleVisibility.cpp">toggleVisibility</a></li>
 		<li><a href="./src/PlayerObject/unrotatePreSlopeObjects.cpp">unrotatePreSlopeObjects</a></li>
 		<li><a href="./src/PlayerObject/update.cpp">update</a></li>
 		<li><a href="./src/PlayerObject/updateCollide.cpp">updateCollide</a></li>
+		<li><a href="./src/PlayerObject/updateCollideBottom.cpp">updateCollideBottom</a></li>
+		<li><a href="./src/PlayerObject/updateCollideLeft.cpp">updateCollideLeft</a></li>
+		<li><a href="./src/PlayerObject/updateCollideRight.cpp">updateCollideRight</a></li>
+		<li><a href="./src/PlayerObject/updateCollideTop.cpp">updateCollideTop</a></li>
 		<li><a href="./src/PlayerObject/updateDashArt.cpp">updateDashArt</a></li>
 		<li><a href="./src/PlayerObject/updateEffects.cpp">updateEffects</a></li>
 		<li><a href="./src/PlayerObject/updateInternalActions.cpp">updateInternalActions</a></li>
