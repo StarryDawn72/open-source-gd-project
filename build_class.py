@@ -9,40 +9,19 @@ FORBIDDEN_MACROS = [
 
 ########## SETTINGS ##########
 
-FOLDER     = "GJGroundLayer"
-CPP_NAME   = "GJGroundLayer"
+FOLDER     = "GJFlyGroundLayer"
+CPP_NAME   = "" # Optional, sometimes output folder need a different name (e.g. PlayLayer->PlayScene)
 INCLUDES   = [
-    "GJGroundLayer.h"
+    "GJFlyGroundLayer.h"
 ]
 CPP_ORDER  = [
-    "showGround",
-    "fadeOutGround",
-    "fadeInFinished",
-    "draw",
-    "fadeInGround",
-    "toggleVisible01",
-    "toggleVisible02",
-    "loadGroundSprites",
-    "updateGroundPos",
-    "updateGround01Color",
-    "updateGround02Color",
-    "createLine",
-    "init",
-    "create",
-    "updateGroundWidth",
-    "updateLineBlend",
-    "hideShadows",
-    "updateShadows",
-    "scaleGround",
-    "updateShadowXPos",
-    "deactivateGround",
-    "positionGround",
-    "getGroundY"
+    "init"
 ]
 
 ##############################
 
 def build_macros_string(macros) -> str:
+    if len(macros) == 0: return ""
     return "\n".join(macros) + "\n\n"
 
 def build_includes_string() -> str:
@@ -107,7 +86,7 @@ def main():
 
     for file in sorted(dir.iterdir()):
         if not file.is_file() or file.suffix.lower() != ".cpp": continue
-        func_name = file.name.rstrip(".cpp")
+        func_name = file.name.removesuffix(".cpp")
 
         raw = file.read_text("utf-8")
         raw_lines = raw.split("\n")
@@ -127,7 +106,7 @@ def main():
             elif in_function:
                 func_body += line + "\n"
 
-        func_body = func_body.lstrip()
+        func_body = func_body.strip()
 
         if func_body.strip() == "":
             print(f"[ERR] Unexpected error. Function \"{func_name}\" was somehow empty. Aborting.")
@@ -145,7 +124,8 @@ def main():
     func_string = func_string.strip()
     final_string = build_includes_string() + build_macros_string(macros) + func_string
 
-    name = CPP_NAME + ".cpp"
+    cpp_name = CPP_NAME if CPP_NAME != "" else FOLDER
+    name = cpp_name + ".cpp"
     file_path = SRC_DIR / name
 
     with open(file_path, "w", encoding="utf-8") as file:
