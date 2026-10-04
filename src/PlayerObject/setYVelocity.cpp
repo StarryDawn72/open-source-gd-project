@@ -6,7 +6,7 @@
 	unused. This function was added in update 2.2.
 	
 */
-void PlayerObject::setYVelocity(double velocity, int type)
+void PlayerObject::setYVelocity(double velocity, int unknown)
 {
     double intPart = (int)velocity;
 

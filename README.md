@@ -182,7 +182,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary> <b>PlayerObject</b>  (143)</summary>
+	<summary> <b>PlayerObject</b>  (146)</summary>
 	<ul>
 		<li><a href="./src/PlayerObject/activateStreak.cpp">activateStreak</a></li>
 		<li><a href="./src/PlayerObject/addAllParticles.cpp">addAllParticles</a></li>
@@ -198,11 +198,13 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/collidedWithSlopeInternal.cpp">collidedWithSlopeInternal</a></li>
 		<li><a href="./src/PlayerObject/convertToClosestRotation.cpp">convertToClosestRotation</a></li>
 		<li><a href="./src/PlayerObject/create.cpp">create</a></li>
+		<li><a href="./src/PlayerObject/createFadeOutDartStreak.cpp">createFadeOutDartStreak</a></li>
 		<li><a href="./src/PlayerObject/deactivateParticle.cpp">deactivateParticle</a></li>
 		<li><a href="./src/PlayerObject/deactivateStreak.cpp">deactivateStreak</a></li>
 		<li><a href="./src/PlayerObject/destroyFromHitHead.cpp">destroyFromHitHead</a></li>
 		<li><a href="./src/PlayerObject/didHitHead.cpp">didHitHead</a></li>
 		<li><a href="./src/PlayerObject/disablePlayerControls.cpp">disablePlayerControls</a></li>
+		<li><a href="./src/PlayerObject/doReversePlayer.cpp">doReversePlayer</a></li>
 		<li><a href="./src/PlayerObject/exitPlatformerAnimateJump.cpp">exitPlatformerAnimateJump</a></li>
 		<li><a href="./src/PlayerObject/fadeOutStreak2.cpp">fadeOutStreak2</a></li>
 		<li><a href="./src/PlayerObject/flashPlayer.cpp">flashPlayer</a></li>
@@ -239,6 +241,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/placeStreakPoint.cpp">placeStreakPoint</a></li>
 		<li><a href="./src/PlayerObject/playBumpEffect.cpp">playBumpEffect</a></li>
 		<li><a href="./src/PlayerObject/playBurstEffect.cpp">playBurstEffect</a></li>
+		<li><a href="./src/PlayerObject/playDynamicSpiderRun.cpp">playDynamicSpiderRun</a></li>
 		<li><a href="./src/PlayerObject/playerDestroyed.cpp">playerDestroyed</a></li>
 		<li><a href="./src/PlayerObject/playerIsFalling.cpp">playerIsFalling</a></li>
 		<li><a href="./src/PlayerObject/playerIsFallingBugged.cpp">playerIsFallingBugged</a></li>
