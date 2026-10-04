@@ -163,7 +163,7 @@ void GJGroundLayer::createLine(int lineType)
         m_lineSprite->setBlendFunc({GL_SRC_ALPHA, GL_ONE}); // Additive blending
         
     if (m_lineType == 3)
-        m_lineSprite->setScaleY(20.0f);
+        m_lineSprite->setScaleY(2.0f);
     else
         m_lineSprite->setScaleX((winSize.width + 10.0f) / m_lineSprite->m_obRect.size.width);
 }
