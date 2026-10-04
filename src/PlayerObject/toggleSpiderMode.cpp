@@ -1,4 +1,4 @@
-#define GM (GameManager::sharedState())
+#define GM GameManager::sharedState()
 
 void PlayerObject::toggleSpiderMode(bool enable, bool noEffects)
 {
