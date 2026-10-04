@@ -91,28 +91,28 @@ def get_entry_string(directory):
                 for file in item.iterdir()
                 if file.is_file() and file.suffix.lower() == ".cpp"
             )
+
+            if item.name == ".git": continue
             
-            if (item.name != ".git"):
-                complete = False
-                for finished_class in FINISHED_CLASSES:
-                    if (finished_class == item.name):
-                        complete = True
-                        break
+            complete = False
+            for finished_class in FINISHED_CLASSES:
+                if (finished_class == item.name):
+                    complete = True
+                    break
 
-                complete_string = " ✔️" if complete else ""
-                # complete_start_string = "✔️" if complete else ""
-                
-                entry = HTML_START + SUMMARY_START + item.name + complete_string + SUMMARY_MID + f"{cpp_count}" + SUMMARY_END + UL_START
-                li_strings = ""
-                
-                for cpp_file in item.iterdir():
-                    if cpp_file.is_file() and cpp_file.suffix.lower() == ".cpp":
-                        trimmed_name = cpp_file.name.replace(".cpp", "")
-                        current_li = LI_START + item.name + LI_SLASH + trimmed_name + LI_MID + trimmed_name + LI_END
-                        li_strings += current_li
+            complete_string = " ✔️" if complete else ""
+            
+            entry = HTML_START + SUMMARY_START + item.name + complete_string + SUMMARY_MID + f"{cpp_count}" + SUMMARY_END + UL_START
+            li_strings = ""
+            
+            for cpp_file in item.iterdir():
+                if cpp_file.is_file() and cpp_file.suffix.lower() == ".cpp":
+                    trimmed_name = cpp_file.name.replace(".cpp", "")
+                    current_li = LI_START + item.name + LI_SLASH + trimmed_name + LI_MID + trimmed_name + LI_END
+                    li_strings += current_li
 
-                entry += li_strings + UL_END + HTML_END
-                result.append(entry)
+            entry += li_strings + UL_END + HTML_END
+            result.append(entry)
 
     return ''.join(result) + OTHERS_STRING if result else "[!ERR_2]"
 
