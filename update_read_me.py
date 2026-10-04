@@ -72,7 +72,9 @@ OTHERS_STRING = """<details>
 FINISHED_CLASSES = [
     "AnimatedShopKeeper",
     "CCCircleWaveDelegate",
-    "CCCircleWave"
+    "CCCircleWave",
+    "GJFlyGroundLayer",
+    "GJGroundLayer"
 ]
 
 def get_entry_string(directory):

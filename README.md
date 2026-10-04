@@ -112,6 +112,40 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
+	<summary> <b>GJFlyGroundLayer ✔️</b>  (1)</summary>
+	<ul>
+		<li><a href="./src/GJFlyGroundLayer/init.cpp">init</a></li>
+	</ul>
+</details>
+<details>
+	<summary> <b>GJGroundLayer ✔️</b>  (23)</summary>
+	<ul>
+		<li><a href="./src/GJGroundLayer/create.cpp">create</a></li>
+		<li><a href="./src/GJGroundLayer/createLine.cpp">createLine</a></li>
+		<li><a href="./src/GJGroundLayer/deactivateGround.cpp">deactivateGround</a></li>
+		<li><a href="./src/GJGroundLayer/draw.cpp">draw</a></li>
+		<li><a href="./src/GJGroundLayer/fadeInFinished.cpp">fadeInFinished</a></li>
+		<li><a href="./src/GJGroundLayer/fadeInGround.cpp">fadeInGround</a></li>
+		<li><a href="./src/GJGroundLayer/fadeOutGround.cpp">fadeOutGround</a></li>
+		<li><a href="./src/GJGroundLayer/getGroundY.cpp">getGroundY</a></li>
+		<li><a href="./src/GJGroundLayer/hideShadows.cpp">hideShadows</a></li>
+		<li><a href="./src/GJGroundLayer/init.cpp">init</a></li>
+		<li><a href="./src/GJGroundLayer/loadGroundSprites.cpp">loadGroundSprites</a></li>
+		<li><a href="./src/GJGroundLayer/positionGround.cpp">positionGround</a></li>
+		<li><a href="./src/GJGroundLayer/scaleGround.cpp">scaleGround</a></li>
+		<li><a href="./src/GJGroundLayer/showGround.cpp">showGround</a></li>
+		<li><a href="./src/GJGroundLayer/toggleVisible01.cpp">toggleVisible01</a></li>
+		<li><a href="./src/GJGroundLayer/toggleVisible02.cpp">toggleVisible02</a></li>
+		<li><a href="./src/GJGroundLayer/updateGround01Color.cpp">updateGround01Color</a></li>
+		<li><a href="./src/GJGroundLayer/updateGround02Color.cpp">updateGround02Color</a></li>
+		<li><a href="./src/GJGroundLayer/updateGroundPos.cpp">updateGroundPos</a></li>
+		<li><a href="./src/GJGroundLayer/updateGroundWidth.cpp">updateGroundWidth</a></li>
+		<li><a href="./src/GJGroundLayer/updateLineBlend.cpp">updateLineBlend</a></li>
+		<li><a href="./src/GJGroundLayer/updateShadows.cpp">updateShadows</a></li>
+		<li><a href="./src/GJGroundLayer/updateShadowXPos.cpp">updateShadowXPos</a></li>
+	</ul>
+</details>
+<details>
 	<summary> <b>LevelEditorLayer</b>  (2)</summary>
 	<ul>
 		<li><a href="./src/LevelEditorLayer/addObjectFromVector.cpp">addObjectFromVector</a></li>
