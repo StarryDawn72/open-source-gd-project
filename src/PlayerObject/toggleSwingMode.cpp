@@ -2,9 +2,6 @@
 
 void PlayerObject::toggleSwingMode(bool enable, bool noEffects)
 {
-    bool& m_canJump = m_isOnGround;
-    bool& m_onGround = m_isOnGround2;
-
     if (m_isSwing == enable)
         return;
 
@@ -17,7 +14,7 @@ void PlayerObject::toggleSwingMode(bool enable, bool noEffects)
     stopRotation(false, 9);
     setRotation(0);
 
-    m_yVelocity *= 0.5;
+    m_yVelocity *= 0.5f;
 
     m_onGround = false;
     m_canJump = false;
