@@ -146,6 +146,24 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
+	<summary> <b>HardStreak</b>  (13)</summary>
+	<ul>
+		<li><a href="./src/HardStreak/addPoint.cpp">addPoint</a></li>
+		<li><a href="./src/HardStreak/clearAboveXPos.cpp">clearAboveXPos</a></li>
+		<li><a href="./src/HardStreak/clearBehindXPos.cpp">clearBehindXPos</a></li>
+		<li><a href="./src/HardStreak/firstSetup.cpp">firstSetup</a></li>
+		<li><a href="./src/HardStreak/HardStreak.cpp">HardStreak</a></li>
+		<li><a href="./src/HardStreak/init.cpp">init</a></li>
+		<li><a href="./src/HardStreak/normalizeAngle.cpp">normalizeAngle</a></li>
+		<li><a href="./src/HardStreak/quadCornerOffset.cpp">quadCornerOffset</a></li>
+		<li><a href="./src/HardStreak/reset.cpp">reset</a></li>
+		<li><a href="./src/HardStreak/resumeStroke.cpp">resumeStroke</a></li>
+		<li><a href="./src/HardStreak/scheduleAutoUpdate.cpp">scheduleAutoUpdate</a></li>
+		<li><a href="./src/HardStreak/stopStroke.cpp">stopStroke</a></li>
+		<li><a href="./src/HardStreak/updateStroke.cpp">updateStroke</a></li>
+	</ul>
+</details>
+<details>
 	<summary> <b>LevelEditorLayer</b>  (2)</summary>
 	<ul>
 		<li><a href="./src/LevelEditorLayer/addObjectFromVector.cpp">addObjectFromVector</a></li>
@@ -164,7 +182,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary> <b>PlayerObject</b>  (134)</summary>
+	<summary> <b>PlayerObject</b>  (141)</summary>
 	<ul>
 		<li><a href="./src/PlayerObject/activateStreak.cpp">activateStreak</a></li>
 		<li><a href="./src/PlayerObject/addAllParticles.cpp">addAllParticles</a></li>
