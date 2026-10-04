@@ -7,14 +7,8 @@
 	gravity scale.
 	
 */
-void PlayerObject::runNormalRotation(bool notNormalMode, float speed)
+void PlayerObject::runNormalRotation(bool isNormalMode, float speed)
 {
-	// rename incorrect community guesses
-    float& m_playerScale = m_vehicleSize;
-	bool& m_slopeForceLeft = m_platformerMovingLeft;
-	bool& m_slopeForceRight = m_platformerMovingRight;
-    bool isNormalMode = notNormalMode; // normal mode means Cube
-
     bool isBall = !isFlying() && !m_isRobot && !m_isSpider;
     
     if (isNormalMode || (isBall && !m_isDashing && (!m_isPlatformer || m_holdingLeft || m_holdingRight || m_slopeForceLeft || m_slopeForceRight))) {
@@ -27,6 +21,7 @@ void PlayerObject::runNormalRotation(bool notNormalMode, float speed)
         m_rotationSpeed = (180.0f * flipMod() * reverseMod() * rotatedMod * m_gravityMod * speed) / rotationDuration;
     }
 }
+
 /*
 	Function overload with default parameters.
 */

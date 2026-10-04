@@ -1,8 +1,5 @@
 CCRect GameObject::getObjectRect(float width, float height)
 {
-    // Rename incorrect bindings
-    bool m_hasSwappedDimensions = m_isRotationAligned;
-
     if (m_isMirroredByScale) {
         m_scaleX = fabs(m_scaleX);
         m_scaleY = fabs(m_scaleY);

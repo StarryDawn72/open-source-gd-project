@@ -1,4 +1,4 @@
-void PlayerObject::togglePlatformerMode(bool val)
+void PlayerObject::togglePlatformerMode(bool platformerMode)
 {
-    m_isPlatformer = val;
+    m_isPlatformer = platformerMode;
 }

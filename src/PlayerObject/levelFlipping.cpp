@@ -2,8 +2,6 @@
 
 bool PlayerObject::levelFlipping()
 {
-	bool& m_isInPlayLayer = m_playEffects;
-	
 	if (m_isInPlayLayer) {
 
 		float levelFlipProgress = PL->m_gameState.m_levelFlipping;

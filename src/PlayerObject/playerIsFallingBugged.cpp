@@ -17,8 +17,6 @@ bool PlayerObject::playerIsFallingBugged()
     }
 
 	// Use legacy physics
-
-	bool& m_isInDualMode = m_unkA99;
     double gravity = m_isInDualMode ? -m_gravity : m_gravity;
 	double threshold = gravity + gravity;
 

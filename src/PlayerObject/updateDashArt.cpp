@@ -1,10 +1,9 @@
+#define kTagDashRotate 12
+
 void PlayerObject::updateDashArt()
 {
     if (!m_isDashing)
         return;
-
-	// Probably a real RobTop macro, just like the confirmed 'kTagScaleSpider'
-	int kTagDashRotate = 12;
 
     m_iconSprite->stopActionByTag(kTagDashRotate);
     m_iconGlow->stopActionByTag(kTagDashRotate);

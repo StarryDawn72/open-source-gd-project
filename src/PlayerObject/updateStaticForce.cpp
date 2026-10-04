@@ -1,8 +1,5 @@
 void PlayerObject::updateStaticForce(float rotation, float staticForce, bool additive)
 {
-    // Rename incorrect geode bindings
-    bool& m_isVelocityUncapped = m_isAccelerating;
-
     if (staticForce != 0.0 || additive) {
 
         CCPoint vector = ccpForAngle(CC_DEGREES_TO_RADIANS(rotation));

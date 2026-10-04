@@ -1,8 +1,5 @@
 void PlayerObject::toggleFlyMode(bool enable, bool noEffects)
 {
-    bool& m_canJump = m_isOnGround;
-    bool& m_onGround = m_isOnGround2;
-
     if (m_isShip == enable)
         return;
 

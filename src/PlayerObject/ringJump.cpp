@@ -1,5 +1,6 @@
 #define GM GameManager::sharedState()
 #define PL GameManager::sharedState()->getPlayLayer()
+#define kPlayerTouchToggleBlock 3643
 
 /*
 	====== PlayerObject::ringJump ======
@@ -15,28 +16,8 @@
 */
 void PlayerObject::ringJump(RingObject *object, bool skipCheck)
 {
-
-    if (m_isDead || object == NULL)
+    if (m_isDead || !object)
         return;
-
-	// rename misnamed member variables
-	std::unordered_set<int>& activatedRingIDs = m_ringRelatedSet;
-	bool& m_canRingJump = m_stateRingJump2;
-	bool& m_ringJumpingThisTick = m_ringJumpRelated;
-	bool& m_holdingJump = m_jumpBuffered;
-	bool m_holdingJumpReleaseDelayed = (bool)m_stateJumpBuffered;
-	bool& m_touchedTeleportRing = m_touchedGravityPortal;
-	bool& m_canDisableAutoJump = m_padRingRelated;
-	bool& m_isJumpUnused = m_stateRingJump;
-	bool& m_isJumping = m_maybeIsBoosted;
-	bool& m_isVelocityUncapped = m_isAccelerating;
-	bool& m_onGround = m_isOnGround2;
-	bool& m_canJump = m_isOnGround;
-	bool& m_isInPlayLayer = m_playEffects;
-	bool& m_isRespawning = m_maybeReducedEffects;
-	bool& m_isInEditor = m_editorEnabled;
-	float m_playerScale = m_vehicleSize;
-	bool& m_2p2ChangesDisabled = m_enable22Changes;
 
 	if (activatedRingIDs.find(object->m_uniqueID) != activatedRingIDs.end())
 		return;
@@ -263,13 +244,12 @@ void PlayerObject::ringJump(RingObject *object, bool skipCheck)
 	}
 
     if (!m_isRespawning) {
-        int playerTouchToggleBlockID = 3643;
         if (
 			!GM->m_performanceMode &&
 			!object->hasBeenActivated() &&
 			m_isInPlayLayer &&
 			!ringHasNoEffects &&
-			object->m_objectID != playerTouchToggleBlockID
+			object->m_objectID != kPlayerTouchToggleBlock
 		) {
 			ccColor3B effectColor;
 			

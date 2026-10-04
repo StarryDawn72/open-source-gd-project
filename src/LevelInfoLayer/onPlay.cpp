@@ -1,11 +1,10 @@
 #define GM GameManager::sharedState()
+#define kGVDisableSongAlert "0083"
+#define kGVShownCoinDisclaimer "0063"
+#define kGVDisableHighObjectAlert "0082"
 
 void LevelInfoLayer::onPlay(CCObject *sender)
 {
-    // These were most likely macros in the source code
-    const char* kGVDisableSongAlert = "0083";
-    const char* kGVShownCoinDisclaimer = "0063";
-    const char* kGVDisableHighObjectAlert = "0082";
     int kMaxDailyID = 100000;
     int kTagAlertHighObjectCount = 10;
 

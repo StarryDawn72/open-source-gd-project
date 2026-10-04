@@ -3,8 +3,6 @@
 
 void PlayerObject::spawnDualCircle()
 {
-	bool m_isRespawning = m_maybeReducedEffects;
-
 	if (!m_isRespawning && !PL->m_skipArtReload) {
 		if (!GM->m_performanceMode) {
 

@@ -3,12 +3,6 @@
 
 void PlayerObject::spawnPortalCircle(ccColor3B color, float startRadius)
 {
-	// rename bindings
-	bool& m_isInPlayLayer = m_playEffects;
-	bool& m_isRespawning = m_maybeReducedEffects;
-	GameObject* m_lastEffectObject = m_lastActivatedPortal;
-	CCPoint m_lastEffectObjectPos = m_lastPortalPos;
-
 	if (
 		m_isInPlayLayer &&
 		!m_isRespawning &&

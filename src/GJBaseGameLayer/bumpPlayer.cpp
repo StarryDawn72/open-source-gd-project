@@ -1,17 +1,13 @@
 void GJBaseGameLayer::bumpPlayer(PlayerObject* player, EffectGameObject* object) {
 
     if (canBeActivatedByPlayer(player, object)) {
-        
-        // rename incorrect bindings
-        CCPoint& player_m_lastEffectObjectPos = player->m_lastPortalPos;
-        GameObject*& player_m_lastEffectObject = player->m_lastActivatedPortal;
 
-        player_m_lastEffectObjectPos = object->getPosition() + ccp(0, -10);
+        player->m_lastEffectObjectPos = object->getPosition() + ccp(0, -10);
         object->activatedByPlayer(player);
 
         float bumpMod = getBumpMod(player, (int)object->getType());
 
-        player_m_lastEffectObject = object;
+        player->m_lastEffectObject = object;
 
         if (object->m_isReverse)
             player->reversePlayer(object);

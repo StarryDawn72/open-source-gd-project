@@ -1,7 +1,5 @@
 void PlayerObject::updateRobotAnimationSpeed()
 {
-	float m_playerScale = m_vehicleSize;
-
     float baseSpeed = 1.0f;
 
     if      (m_playerSpeed == 0.9f) baseSpeed = 1.0f;

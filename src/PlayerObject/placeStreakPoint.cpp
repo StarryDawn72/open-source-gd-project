@@ -1,8 +1,5 @@
-void PlayeObject::placeStreakPoint()
+void PlayerObject::placeStreakPoint()
 {
-    // Rename bindings
-    bool& m_isRespawning = m_maybeReducedEffects;
-
     if ( !m_isRespawning
       && m_isDart
       && !m_isLocked

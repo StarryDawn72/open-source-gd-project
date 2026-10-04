@@ -2,9 +2,6 @@
 
 void PlayerObject::startDashing(DashRingObject* object)
 {
-    // Rename incorrect Geode binding names
-    bool& m_isInPlayLayer = m_playEffects;
-
     if (m_isDashing)
         return;
 

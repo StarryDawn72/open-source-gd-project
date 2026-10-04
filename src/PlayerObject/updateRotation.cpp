@@ -5,10 +5,6 @@ void PlayerObject::updateRotation(float dt, float rotation)
 {
     if (m_isDashing)
         return;
-
-	// Rename bindings
-	bool m_onGround = m_isOnGround2;
-	int m_reverseTimer = m_reverseRelated
 	
     float rotationRad = CC_DEGREES_TO_RADIANS(getRotation());
     float speed = m_playerSpeed * 0.175f;
@@ -36,11 +32,6 @@ void PlayerObject::updateRotation(float dt)
 {
     if (m_isLocked || m_isDashing)
         return;
-
-	// Rename bindings
-	bool m_onGround = m_isOnGround2;
-	float m_ballRotationMultiplier = m_rotateSpeed;
-    bool& m_ballRotationMultiplierActive = m_isBallRotating;
 
     if (!m_isBall) {
 

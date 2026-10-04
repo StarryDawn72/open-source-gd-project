@@ -3,24 +3,6 @@
 */
 void PlayerObject::update(float dt)
 {
-    // rename incorrect geode bindings
-    bool& m_isInPlayLayer = m_playEffects;
-    int& m_forceTimer = m_stateForce;
-    bool& m_slopeForceLeft = m_platformerMovingLeft;
-    bool& m_slopeForceRight = m_platformerMovingRight;
-    double& m_reverseSyncOffset = m_maybeReverseSpeed;
-    double& m_reverseSyncStep = m_maybeReverseAcceleration;
-    float& m_playerScale = m_vehicleSize;
-    bool& m_onGround = m_isOnGround2;
-    bool& m_holdingJump = m_jumpBuffered;
-    bool& m_isJumping = m_maybeIsBoosted;
-    bool& m_isVelocityUncapped = m_isAccelerating;
-    float& m_positionDeltaY = m_yVelocityRelated3;
-    double& m_robotBoostCharge = m_accelerationOrSpeed;
-    bool& m_robotBoostInvalidated = m_touchedPad;
-    bool& m_wasRobotBoostInvalidated = m_wasRobotJump;
-    bool& m_didSpecialGroundHit = m_maybeSpriteRelated;
-
     if (m_flashTime >= 0) {
         double timeSinceFlash = m_totalTime - m_flashTime - m_flashDelay;
 

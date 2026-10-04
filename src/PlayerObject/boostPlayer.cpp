@@ -1,19 +1,5 @@
-/*
-	====== PlayerObject::boostPlayer ======
-	
-	Applies a boost to the player by setting upward velocity and handling
-	rotation, animation, and grounded state changes.
-
-*/
 void PlayerObject::boostPlayer(float yVelocity)
 {
-	// rename incorrect bindings
-	bool& m_isJumping = m_maybeIsBoosted;
-	bool& m_onGround = m_isOnGround2;
-	bool& m_canJump = m_isOnGround;
-	bool& m_isVelocityUncapped = m_isAccelerating;
-	float& m_playerScale = m_vehicleSize;
-    
     m_isJumping = true;
     m_onGround = false;
     m_canJump = false;
