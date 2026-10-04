@@ -54,7 +54,7 @@ void HardStreak::updateStroke(float dt)
 
             if (i >= m_pointArray->count() - 1 && stroke == 0 && m_isFlipped) {
                 if (fabsf(ccpDistance(currPoint, nextPoint)) > 10.0f) {
-                    float value = fabsf((float)(tanVal * 4.0));
+                    float value = fabsf((float)(tanVal * 4.0f));
                     if (m_isFlipped) {
                         currPoint.x += 4.0f;
                         if (currPoint.y >= nextPoint.y)
