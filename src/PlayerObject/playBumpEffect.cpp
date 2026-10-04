@@ -12,7 +12,7 @@ void PlayerObject::playBumpEffect(int objectType, GameObject *player)
 		return;
 
 
-	GameObjectType type = static_cast<GameObjectType>(objectType);
+	GameObjectType type = (GameObjectType)objectType;
 	ccColor3B effectColor;
 
 	float startRadius = (m_playerScale >= 1.0f && type == GameObjectType::RedJumpPad)

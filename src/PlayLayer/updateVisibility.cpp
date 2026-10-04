@@ -127,16 +127,16 @@ void PlayLayer::updateVisibility(float dt)
 		}
 
 		if (obj->getHasSyncedAnimation())
-			static_cast<AnimatedGameObject*>(obj)->updateSyncedAnimation(-1, m_gameState.m_totalTime);
+			((AnimatedGameObject*)obj)->updateSyncedAnimation(-1, m_gameState.m_totalTime);
 
 		if (obj->getHasRotateAction())
-			static_cast<EnhancedGameObject*>(obj)->updateRotateAction(dt);
+			((EnhancedGameObject*)obj)->updateRotateAction(dt);
 
 		if (obj->m_isAnimatedGameObject)
-            static_cast<AnimatedGameObject*>(obj)->updateChildSpriteColor(brightenedBGColor);
+            ((AnimatedGameObject*)obj)->updateChildSpriteColor(brightenedBGColor);
 
         if (obj->getType() == GameObjectType::Collectible)
-            static_cast<EffectGameObject*>(obj)->updateInteractiveHover(m_hoverNode->getPosition().y);
+            ((EffectGameObject*)obj)->updateInteractiveHover(m_hoverNode->getPosition().y);
 
 		int breakableBricksID = 143;
         if (obj->m_objectID == breakableBricksID)

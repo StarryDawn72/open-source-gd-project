@@ -3,7 +3,7 @@ void PlayerObject::spiderTestJump(bool dynamic)
 	spiderTestJumpInternal(dynamic);
 
 	if (m_gameLayer)
-		gameEventTriggered(static_cast<int>(GJGameEvent::SpiderTeleport), 0);
+		gameEventTriggered((int)GJGameEvent::SpiderTeleport, 0);
 
 	if (isInBasicMode()){
 

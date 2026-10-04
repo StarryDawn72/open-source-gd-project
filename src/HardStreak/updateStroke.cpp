@@ -16,7 +16,7 @@ void HardStreak::updateStroke(float dt)
 
     CCObject* pointNode;
     CCARRAY_FOREACH(m_pointArray, pointNode) {
-        CCPoint& point = static_cast<PointNode*>(pointNode)->m_point;
+        CCPoint& point = ((PointNode*)pointNode)->m_point;
         point -= pos;
     }
 
@@ -26,13 +26,13 @@ void HardStreak::updateStroke(float dt)
 
     for (int stroke = 0; stroke < strokeCount; stroke++) {
         for (int i = 0; i < m_pointArray->count(); i++) {
-            CCPoint currPoint = static_cast<PointNode*>(m_pointArray->objectAtIndex(i))->m_point;
+            CCPoint currPoint = ((PointNode*)(m_pointArray->objectAtIndex(i)))->m_point;
             
             CCPoint nextPoint;
             if (i >= m_pointArray->count() - 1)
                 nextPoint = m_currentPoint;
             else
-                nextPoint = static_cast<PointNode*>(m_pointArray->objectAtIndex(i + 1))->m_point;
+                nextPoint = ((PointNode*)(m_pointArray->objectAtIndex(i + 1)))->m_point;
 
             if (currPoint == nextPoint)
                 continue;
@@ -130,7 +130,7 @@ void HardStreak::updateStroke(float dt)
     }
     
     CCARRAY_FOREACH(m_pointArray, pointNode) {
-        CCPoint& point = static_cast<PointNode*>(pointNode)->m_point;
+        CCPoint& point = (PointNode*(pointNode)->m_point;
         point += pos;
     }
 

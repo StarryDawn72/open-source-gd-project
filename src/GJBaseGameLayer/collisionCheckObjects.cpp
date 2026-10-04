@@ -1,3 +1,4 @@
+#define kFESpawnTrigger 1268
 /*
 	Handles behavior for every object type when they collide with the player.
 	The main collision resolution happens in checkCollisions (where this function's called).
@@ -90,7 +91,7 @@ void GJBaseGameLayer::collisionCheckObjects(PlayerObject* object, std::vector<Ga
 			switch (obj->m_objectType) {
 				case GameObjectType::InverseGravityPortal: {
 
-					bool canBeActivated = canBeActivatedByPlayer(player, static_cast<EffectGameObject*>(obj));
+					bool canBeActivated = canBeActivatedByPlayer(player, (EffectGameObject*)obj);
 					bool noEffects = canBeActivated;
 					if (canBeActivated) {
 
@@ -113,7 +114,7 @@ void GJBaseGameLayer::collisionCheckObjects(PlayerObject* object, std::vector<Ga
 				}
 				case GameObjectType::NormalGravityPortal: {
 
-					bool canBeActivated = canBeActivatedByPlayer(player, static_cast<EffectGameObject*>(obj));
+					bool canBeActivated = canBeActivatedByPlayer(player, (EffectGameObject*)obj);
 					bool noEffects = canBeActivated;
 
 					if (canBeActivated) {
@@ -136,15 +137,15 @@ void GJBaseGameLayer::collisionCheckObjects(PlayerObject* object, std::vector<Ga
 					break;
 				}
 				case GameObjectType::ShipPortal:
-					if (canBeActivatedByPlayer(player, static_cast<EffectGameObject*>(obj))) {
+					if (canBeActivatedByPlayer(player, (EffectGameObject*)obj)) {
 						playerWillSwitchMode(player, obj);
-						switchToFlyMode(player, obj, false, static_cast<int>(GameObjectType::ShipPortal));
+						switchToFlyMode(player, obj, false, (int)GameObjectType::ShipPortal);
 						obj->playShineEffect();
 						obj->activatedByPlayer(player);
 					}
 					break;
 				case GameObjectType::CubePortal:
-					if (canBeActivatedByPlayer(player, static_cast<EffectGameObject*>(obj)))
+					if (canBeActivatedByPlayer(player, (EffectGameObject*)obj))
 					{
 						playerWillSwitchMode(player, obj);
 
@@ -161,10 +162,10 @@ void GJBaseGameLayer::collisionCheckObjects(PlayerObject* object, std::vector<Ga
 				case GameObjectType::PinkJumpPad:
 				case GameObjectType::RedJumpPad:
 				case GameObjectType::SpiderPad:
-					bumpPlayer(player, static_cast<EffectGameObject*>(obj));
+					bumpPlayer(player, (EffectGameObject*)obj);
 					break;
 				case GameObjectType::GravityPad:
-					gravBumpPlayer(player, static_cast<EffectGameObject*>(obj));
+					gravBumpPlayer(player, (EffectGameObject*)obj);
 					break;
 				case GameObjectType::YellowJumpRing:
 				case GameObjectType::PinkJumpRing:
@@ -176,10 +177,10 @@ void GJBaseGameLayer::collisionCheckObjects(PlayerObject* object, std::vector<Ga
 				case GameObjectType::DashRing:
 				case GameObjectType::GravityDashRing:
 				case GameObjectType::SpiderOrb:
-					playerTouchedRing(player, static_cast<RingObject*>(obj));
+					playerTouchedRing(player, (RingObject*)obj);
 					break;
 				case GameObjectType::InverseMirrorPortal:
-					if (!m_isEditor && canBeActivatedByPlayer(player, static_cast<EffectGameObject*>(obj))) {
+					if (!m_isEditor && canBeActivatedByPlayer(player, (EffectGameObject*)obj)) {
 						player->m_lastEffectObjectPos = obj->getPosition();
 						player->m_lastEffectObject = obj;
 
@@ -192,7 +193,7 @@ void GJBaseGameLayer::collisionCheckObjects(PlayerObject* object, std::vector<Ga
 					}
 					break;
 				case GameObjectType::NormalMirrorPortal:
-					if (!m_isEditor && canBeActivatedByPlayer(player, static_cast<EffectGameObject*>(obj))) {
+					if (!m_isEditor && canBeActivatedByPlayer(player, (EffectGameObject*)obj)) {
 						player->m_lastEffectObjectPos = obj->getPosition();
 						player->m_lastEffectObject = obj;
 
@@ -204,7 +205,7 @@ void GJBaseGameLayer::collisionCheckObjects(PlayerObject* object, std::vector<Ga
 					}
 					break;
 				case GameObjectType::BallPortal:
-					if (canBeActivatedByPlayer(player, static_cast<EffectGameObject*>(obj))) {
+					if (canBeActivatedByPlayer(player, (EffectGameObject*)obj)) {
 						playerWillSwitchMode(player, obj);
 						switchToRollMode(player, obj, false);
 						obj->playShineEffect();
@@ -212,7 +213,7 @@ void GJBaseGameLayer::collisionCheckObjects(PlayerObject* object, std::vector<Ga
 					}
 					break;
 				case GameObjectType::RegularSizePortal:
-					if (canBeActivatedByPlayer(player, static_cast<EffectGameObject*>(obj))) {
+					if (canBeActivatedByPlayer(player, (EffectGameObject*)obj)) {
 						player->m_lastEffectObjectPos = obj->getPosition();
 						player->m_lastEffectObject = obj;
 
@@ -224,7 +225,7 @@ void GJBaseGameLayer::collisionCheckObjects(PlayerObject* object, std::vector<Ga
 					}
 					break;
 				case GameObjectType::MiniSizePortal:
-					if (canBeActivatedByPlayer(player, static_cast<EffectGameObject*>(obj))) {
+					if (canBeActivatedByPlayer(player, (EffectGameObject*)obj)) {
 						player->m_lastEffectObjectPos = obj->getPosition();
 						player->m_lastEffectObject = obj;
 
@@ -236,17 +237,17 @@ void GJBaseGameLayer::collisionCheckObjects(PlayerObject* object, std::vector<Ga
 					}
 					break;
 				case GameObjectType::UfoPortal:
-					if (canBeActivatedByPlayer(player, static_cast<EffectGameObject*>(obj)))
+					if (canBeActivatedByPlayer(player, (EffectGameObject*)obj))
 					{
 						playerWillSwitchMode(player, obj);
-						switchToFlyMode(player, obj, false, static_cast<int>(GameObjectType::UfoPortal));
+						switchToFlyMode(player, obj, false, (int)GameObjectType::UfoPortal);
 						obj->playShineEffect();
 						obj->activatedByPlayer(player);
 					}
 					break;
 				case GameObjectType::Modifier:
 				case GameObjectType::EnterEffectObject:
-					playerTouchedTrigger(player, static_cast<EffectGameObject*>(obj));
+					playerTouchedTrigger(player, (EffectGameObject*)obj);
 					break;
 				case GameObjectType::SecretCoin:
 					if (!m_isPracticeMode) {
@@ -255,14 +256,14 @@ void GJBaseGameLayer::collisionCheckObjects(PlayerObject* object, std::vector<Ga
 
 						destroyObject(obj);
 
-						if (!hasUniqueCoin(static_cast<EffectGameObject*>(obj)))
-							pickupItem(static_cast<EffectGameObject*>(obj));
+						if (!hasUniqueCoin((EffectGameObject*)obj))
+							pickupItem((EffectGameObject*)obj);
 
 						gameEventTriggered(GJGameEvent::UserCoin, 0, 0);
 					}
 					break;
 				case GameObjectType::DualPortal:
-					if (canBeActivatedByPlayer(player, static_cast<EffectGameObject*>(obj))) {
+					if (canBeActivatedByPlayer(player, (EffectGameObject*)obj)) {
 						player->m_lastEffectObjectPos = obj->getPosition();
 						player->m_lastEffectObject = obj;
 
@@ -277,7 +278,7 @@ void GJBaseGameLayer::collisionCheckObjects(PlayerObject* object, std::vector<Ga
 					}
 					break;
 				case GameObjectType::SoloPortal:
-					if (canBeActivatedByPlayer(player, static_cast<EffectGameObject*>(obj))) {
+					if (canBeActivatedByPlayer(player, (EffectGameObject*)obj)) {
 						player->m_lastEffectObjectPos = obj->getPosition();
 						player->m_lastEffectObject = obj;
 
@@ -297,16 +298,16 @@ void GJBaseGameLayer::collisionCheckObjects(PlayerObject* object, std::vector<Ga
 					playerMinY = playerRect.getMinY();
 					break;
 				case GameObjectType::WavePortal:
-					if (m_isPlatformer || !canBeActivatedByPlayer(player, static_cast<EffectGameObject*>(obj)))
+					if (m_isPlatformer || !canBeActivatedByPlayer(player, (EffectGameObject*)obj))
 						break;
 					
 					playerWillSwitchMode(player, obj);
-					switchToFlyMode(player, obj, false, static_cast<int>(GameObjectType::WavePortal));
+					switchToFlyMode(player, obj, false, (int)GameObjectType::WavePortal);
 					obj->playShineEffect();
 					obj->activatedByPlayer(player);
 					break;
 				case GameObjectType::RobotPortal:
-					if (!canBeActivatedByPlayer(player, static_cast<EffectGameObject*>(obj)))
+					if (!canBeActivatedByPlayer(player, (EffectGameObject*)obj))
 						break;
 
 					playerWillSwitchMode(player, obj);
@@ -315,11 +316,11 @@ void GJBaseGameLayer::collisionCheckObjects(PlayerObject* object, std::vector<Ga
 					obj->activatedByPlayer(player);
 					break;
 				case GameObjectType::TeleportPortal:
-					if (!canBeActivatedByPlayer(player, static_cast<EffectGameObject*>(obj)))
+					if (!canBeActivatedByPlayer(player, (EffectGameObject*)obj))
 						break;
 
 					gameEventTriggered(GJGameEvent::PortalTeleport, 0, 0);
-					teleportPlayer(static_cast<TeleportPortalObject*>(obj), player);
+					teleportPlayer((TeleportPortalObject*)obj, player);
 					playerRect =  player->getObjectRect();
 					playerMaxX = playerRect.getMaxX();
 					playerMinX = playerRect.getMinX();
@@ -334,10 +335,10 @@ void GJBaseGameLayer::collisionCheckObjects(PlayerObject* object, std::vector<Ga
 					}
 
 					m_effectManager->storeTriggeredID(obj->m_uniqueID, 0);
-					if (obj->m_objectID == 1268) // spawn trigger
+					if (obj->m_objectID == kFESpawnTrigger)
 					{
 						std::vector<int> remapKeys;
-						static_cast<SpawnTriggerGameObject*>(obj)->updateRemapKeys(remapKeys);
+						((SpawnTriggerGameObject*)obj)->updateRemapKeys(remapKeys);
 					}
 
 					obj->triggerObject(this, player->m_uniqueID, nullptr);
@@ -360,15 +361,15 @@ void GJBaseGameLayer::collisionCheckObjects(PlayerObject* object, std::vector<Ga
 
 					obj->triggerObject(this, player->m_uniqueID, nullptr);
 
-					if (!hasUniqueCoin(static_cast<EffectGameObject*>(obj)))
-						pickupItem(static_cast<EffectGameObject*>(obj));
+					if (!hasUniqueCoin((EffectGameObject*)obj))
+						pickupItem((EffectGameObject*)obj);
 
 					gameEventTriggered(GJGameEvent::UserCoin, 0, 0);
 					obj->triggerActivated(0.0f);
 					destroyObject(obj);
 					break;
 				case GameObjectType::SpiderPortal:
-					if (!canBeActivatedByPlayer(player, static_cast<EffectGameObject*>(obj)))
+					if (!canBeActivatedByPlayer(player, (EffectGameObject*)obj))
 						break;
 
 					playerWillSwitchMode(player, obj);
@@ -380,17 +381,17 @@ void GJBaseGameLayer::collisionCheckObjects(PlayerObject* object, std::vector<Ga
 					player->touchedObject(obj);
 					break;
 				case GameObjectType::SwingPortal:
-					if (m_isPlatformer || !canBeActivatedByPlayer(player, static_cast<EffectGameObject*>(obj)))
+					if (m_isPlatformer || !canBeActivatedByPlayer(player, (EffectGameObject*)obj))
 						break;
 
 					playerWillSwitchMode(player, obj);
-					switchToFlyMode(player, obj, false, static_cast<int>(GameObjectType::SwingPortal));
+					switchToFlyMode(player, obj, false, (int)GameObjectType::SwingPortal);
 					obj->playShineEffect();
 					obj->activatedByPlayer(player);
 					break;
 				case GameObjectType::GravityTogglePortal: {
 
-					bool canBeActivated = canBeActivatedByPlayer(player, static_cast<EffectGameObject*>(obj));
+					bool canBeActivated = canBeActivatedByPlayer(player, (EffectGameObject*)obj);
 					bool noEffects = canBeActivated;
 					if (canBeActivated)
 					{
@@ -412,7 +413,7 @@ void GJBaseGameLayer::collisionCheckObjects(PlayerObject* object, std::vector<Ga
 					break;
 				}
 				case GameObjectType::TeleportOrb:
-					playerTouchedRing(player, static_cast<RingObject*>(obj));
+					playerTouchedRing(player, (RingObject*)obj);
 					playerRect =  player->getObjectRect();
 					playerMaxX = playerRect.getMaxX();
 					playerMinX = playerRect.getMinX();

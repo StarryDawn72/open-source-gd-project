@@ -73,7 +73,7 @@ float Slerp2D(float fromAngle, float toAngle, float t)
 
     double halfResult = atan2((sinFrom * coeff0) + (coeff1 * sinTo), (cosFrom * coeff0) + (coeff1 * cosTo));
 
-    return static_cast<float>((halfResult + halfResult));
+    return (float)(halfResult + halfResult);
 }
 
 float getFrameTimeForStreak(ShipStreak streak)
