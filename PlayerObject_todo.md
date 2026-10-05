@@ -48,7 +48,6 @@
     void spiderTestJumpInternal(bool dynamic)
     void spiderTestJumpX(bool dynamic)
     void spiderTestJumpY(bool dynamic)
-    void stopDashing()
     void stopPlatformerJumpAnimation()
     bool switchedDirTo(PlayerButton button)
     void togglePlatformerMode(bool val)
