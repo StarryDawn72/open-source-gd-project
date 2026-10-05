@@ -1,10 +1,7 @@
-#define GM (GameManager::sharedState())
+#define GM GameManager::sharedState()
 
 void PlayerObject::toggleSpiderMode(bool enable, bool noEffects)
 {
-    float& m_playerScale = m_vehicleSize;
-    double& m_robotBoostCharge = m_accelerationOrSpeed;
-
     if (m_isSpider == enable)
         return;
 
@@ -16,10 +13,10 @@ void PlayerObject::toggleSpiderMode(bool enable, bool noEffects)
         m_mainLayer->addChild(m_spiderBatchNode, 2);
         switchedToMode(GameObjectType::SpiderPortal);
         
-        m_unkAngle1 = 27.0f;
+        m_unkAngle1 = 27.0f; // TODO find name
         m_width = 27.0f;
         m_height = 27.0f;
-        m_robotBoostCharge = 1.5;
+        m_robotBoostCharge = 1.5f;
 
         stopRotation(false, 14);
         setRotation(0);

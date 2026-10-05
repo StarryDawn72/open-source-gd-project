@@ -31,8 +31,8 @@ If you are in need of a function's code that isn't already on this list, or want
 **Rules for submitting a function** through a pull request:
 - Decompilation must be done in IDA, reconstructions using Ghidra will not be accepted
 - Its behavior must be tested in-game by overriding the original using a Geode mod
-- Member variables featured in [RENAMED_BINDINGS.md](./RENAMED_BINDINGS.md) must be aliased at the top of the function with a comment saying "Renamed incorrect bindings" or similar
-- Its opening brace should be on the next line (for consistency)
+- Member variables featured in [RENAMED_BINDINGS.md](./RENAMED_BINDINGS.md) must use their new name
+- The function's opening brace should be on the next line (for consistency)
 - Always prefer C-style casts over static_cast to match RobTop's coding style (e.g. `(RingObject*)m_touchingRings->objectAtIndex(i)`)
 
 You should view the existing reconstructions on this repo to get an idea of the style before submission.
@@ -41,7 +41,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 
 ### **Shortcut links to entries per class**
 <details>
-	<summary>[ <b>AnimatedShopKeeper (Complete)</b> ] (5)</summary>
+	<summary> <b>AnimatedShopKeeper ✔️</b>  (5)</summary>
 	<ul>
 		<li><a href="./src/AnimatedShopKeeper/animationFinished.cpp">animationFinished</a></li>
 		<li><a href="./src/AnimatedShopKeeper/create.cpp">create</a></li>
@@ -51,13 +51,13 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary>[ <b>AudioEffectsLayer</b> ] (1)</summary>
+	<summary> <b>AudioEffectsLayer</b>  (1)</summary>
 	<ul>
 		<li><a href="./src/AudioEffectsLayer/audioStep.cpp">audioStep</a></li>
 	</ul>
 </details>
 <details>
-	<summary>[ <b>CCCircleWave (Complete)</b> ] (11)</summary>
+	<summary> <b>CCCircleWave ✔️</b>  (11)</summary>
 	<ul>
 		<li><a href="./src/CCCircleWave/baseSetup.cpp">baseSetup</a></li>
 		<li><a href="./src/CCCircleWave/CCCircleWave.cpp">CCCircleWave</a></li>
@@ -73,25 +73,25 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary>[ <b>CCCircleWaveDelegate (Complete)</b> ] (1)</summary>
+	<summary> <b>CCCircleWaveDelegate ✔️</b>  (1)</summary>
 	<ul>
 		<li><a href="./src/CCCircleWaveDelegate/circleWaveWillBeRemoved.cpp">circleWaveWillBeRemoved</a></li>
 	</ul>
 </details>
 <details>
-	<summary>[ <b>EditorUI</b> ] (1)</summary>
+	<summary> <b>EditorUI</b>  (1)</summary>
 	<ul>
 		<li><a href="./src/EditorUI/deselectObject.cpp">deselectObject</a></li>
 	</ul>
 </details>
 <details>
-	<summary>[ <b>GameLevelManager</b> ] (1)</summary>
+	<summary> <b>GameLevelManager</b>  (1)</summary>
 	<ul>
 		<li><a href="./src/GameLevelManager/downloadLevel.cpp">downloadLevel</a></li>
 	</ul>
 </details>
 <details>
-	<summary>[ <b>GameObject</b> ] (6)</summary>
+	<summary> <b>GameObject</b>  (6)</summary>
 	<ul>
 		<li><a href="./src/GameObject/createAndAddParticle.cpp">createAndAddParticle</a></li>
 		<li><a href="./src/GameObject/getObjectRect.cpp">getObjectRect</a></li>
@@ -102,7 +102,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary>[ <b>GJBaseGameLayer</b> ] (5)</summary>
+	<summary> <b>GJBaseGameLayer</b>  (5)</summary>
 	<ul>
 		<li><a href="./src/GJBaseGameLayer/bumpPlayer.cpp">bumpPlayer</a></li>
 		<li><a href="./src/GJBaseGameLayer/collisionCheckObjects.cpp">collisionCheckObjects</a></li>
@@ -112,14 +112,66 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary>[ <b>LevelEditorLayer</b> ] (2)</summary>
+	<summary> <b>GJFlyGroundLayer ✔️</b>  (1)</summary>
+	<ul>
+		<li><a href="./src/GJFlyGroundLayer/init.cpp">init</a></li>
+	</ul>
+</details>
+<details>
+	<summary> <b>GJGroundLayer ✔️</b>  (23)</summary>
+	<ul>
+		<li><a href="./src/GJGroundLayer/create.cpp">create</a></li>
+		<li><a href="./src/GJGroundLayer/createLine.cpp">createLine</a></li>
+		<li><a href="./src/GJGroundLayer/deactivateGround.cpp">deactivateGround</a></li>
+		<li><a href="./src/GJGroundLayer/draw.cpp">draw</a></li>
+		<li><a href="./src/GJGroundLayer/fadeInFinished.cpp">fadeInFinished</a></li>
+		<li><a href="./src/GJGroundLayer/fadeInGround.cpp">fadeInGround</a></li>
+		<li><a href="./src/GJGroundLayer/fadeOutGround.cpp">fadeOutGround</a></li>
+		<li><a href="./src/GJGroundLayer/getGroundY.cpp">getGroundY</a></li>
+		<li><a href="./src/GJGroundLayer/hideShadows.cpp">hideShadows</a></li>
+		<li><a href="./src/GJGroundLayer/init.cpp">init</a></li>
+		<li><a href="./src/GJGroundLayer/loadGroundSprites.cpp">loadGroundSprites</a></li>
+		<li><a href="./src/GJGroundLayer/positionGround.cpp">positionGround</a></li>
+		<li><a href="./src/GJGroundLayer/scaleGround.cpp">scaleGround</a></li>
+		<li><a href="./src/GJGroundLayer/showGround.cpp">showGround</a></li>
+		<li><a href="./src/GJGroundLayer/toggleVisible01.cpp">toggleVisible01</a></li>
+		<li><a href="./src/GJGroundLayer/toggleVisible02.cpp">toggleVisible02</a></li>
+		<li><a href="./src/GJGroundLayer/updateGround01Color.cpp">updateGround01Color</a></li>
+		<li><a href="./src/GJGroundLayer/updateGround02Color.cpp">updateGround02Color</a></li>
+		<li><a href="./src/GJGroundLayer/updateGroundPos.cpp">updateGroundPos</a></li>
+		<li><a href="./src/GJGroundLayer/updateGroundWidth.cpp">updateGroundWidth</a></li>
+		<li><a href="./src/GJGroundLayer/updateLineBlend.cpp">updateLineBlend</a></li>
+		<li><a href="./src/GJGroundLayer/updateShadows.cpp">updateShadows</a></li>
+		<li><a href="./src/GJGroundLayer/updateShadowXPos.cpp">updateShadowXPos</a></li>
+	</ul>
+</details>
+<details>
+	<summary> <b>HardStreak</b>  (13)</summary>
+	<ul>
+		<li><a href="./src/HardStreak/addPoint.cpp">addPoint</a></li>
+		<li><a href="./src/HardStreak/clearAboveXPos.cpp">clearAboveXPos</a></li>
+		<li><a href="./src/HardStreak/clearBehindXPos.cpp">clearBehindXPos</a></li>
+		<li><a href="./src/HardStreak/firstSetup.cpp">firstSetup</a></li>
+		<li><a href="./src/HardStreak/HardStreak.cpp">HardStreak</a></li>
+		<li><a href="./src/HardStreak/init.cpp">init</a></li>
+		<li><a href="./src/HardStreak/normalizeAngle.cpp">normalizeAngle</a></li>
+		<li><a href="./src/HardStreak/quadCornerOffset.cpp">quadCornerOffset</a></li>
+		<li><a href="./src/HardStreak/reset.cpp">reset</a></li>
+		<li><a href="./src/HardStreak/resumeStroke.cpp">resumeStroke</a></li>
+		<li><a href="./src/HardStreak/scheduleAutoUpdate.cpp">scheduleAutoUpdate</a></li>
+		<li><a href="./src/HardStreak/stopStroke.cpp">stopStroke</a></li>
+		<li><a href="./src/HardStreak/updateStroke.cpp">updateStroke</a></li>
+	</ul>
+</details>
+<details>
+	<summary> <b>LevelEditorLayer</b>  (2)</summary>
 	<ul>
 		<li><a href="./src/LevelEditorLayer/addObjectFromVector.cpp">addObjectFromVector</a></li>
 		<li><a href="./src/LevelEditorLayer/updateVisibility.cpp">updateVisibility</a></li>
 	</ul>
 </details>
 <details>
-	<summary>[ <b>LevelInfoLayer</b> ] (6)</summary>
+	<summary> <b>LevelInfoLayer</b>  (6)</summary>
 	<ul>
 		<li><a href="./src/LevelInfoLayer/loadLevelStep.cpp">loadLevelStep</a></li>
 		<li><a href="./src/LevelInfoLayer/onPlay.cpp">onPlay</a></li>
@@ -130,7 +182,11 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
+<<<<<<< HEAD
 	<summary>[ <b>PlayerObject</b> ] (141)</summary>
+=======
+	<summary> <b>PlayerObject</b>  (146)</summary>
+>>>>>>> d869569232266f677e1c264f44f030767ab0d8e8
 	<ul>
 		<li><a href="./src/PlayerObject/activateStreak.cpp">activateStreak</a></li>
 		<li><a href="./src/PlayerObject/addAllParticles.cpp">addAllParticles</a></li>
@@ -146,11 +202,13 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/collidedWithSlopeInternal.cpp">collidedWithSlopeInternal</a></li>
 		<li><a href="./src/PlayerObject/convertToClosestRotation.cpp">convertToClosestRotation</a></li>
 		<li><a href="./src/PlayerObject/create.cpp">create</a></li>
+		<li><a href="./src/PlayerObject/createFadeOutDartStreak.cpp">createFadeOutDartStreak</a></li>
 		<li><a href="./src/PlayerObject/deactivateParticle.cpp">deactivateParticle</a></li>
 		<li><a href="./src/PlayerObject/deactivateStreak.cpp">deactivateStreak</a></li>
 		<li><a href="./src/PlayerObject/destroyFromHitHead.cpp">destroyFromHitHead</a></li>
 		<li><a href="./src/PlayerObject/didHitHead.cpp">didHitHead</a></li>
 		<li><a href="./src/PlayerObject/disablePlayerControls.cpp">disablePlayerControls</a></li>
+		<li><a href="./src/PlayerObject/doReversePlayer.cpp">doReversePlayer</a></li>
 		<li><a href="./src/PlayerObject/exitPlatformerAnimateJump.cpp">exitPlatformerAnimateJump</a></li>
 		<li><a href="./src/PlayerObject/fadeOutStreak2.cpp">fadeOutStreak2</a></li>
 		<li><a href="./src/PlayerObject/flashPlayer.cpp">flashPlayer</a></li>
@@ -187,6 +245,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/placeStreakPoint.cpp">placeStreakPoint</a></li>
 		<li><a href="./src/PlayerObject/playBumpEffect.cpp">playBumpEffect</a></li>
 		<li><a href="./src/PlayerObject/playBurstEffect.cpp">playBurstEffect</a></li>
+		<li><a href="./src/PlayerObject/playDynamicSpiderRun.cpp">playDynamicSpiderRun</a></li>
 		<li><a href="./src/PlayerObject/playerDestroyed.cpp">playerDestroyed</a></li>
 		<li><a href="./src/PlayerObject/playerIsFalling.cpp">playerIsFalling</a></li>
 		<li><a href="./src/PlayerObject/playerIsFallingBugged.cpp">playerIsFallingBugged</a></li>
@@ -238,6 +297,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/stopStreak2.cpp">stopStreak2</a></li>
 		<li><a href="./src/PlayerObject/storeCollision.cpp">storeCollision</a></li>
 		<li><a href="./src/PlayerObject/switchedToMode.cpp">switchedToMode</a></li>
+		<li><a href="./src/PlayerObject/testForMoving.cpp">testForMoving</a></li>
 		<li><a href="./src/PlayerObject/toggleBirdMode.cpp">toggleBirdMode</a></li>
 		<li><a href="./src/PlayerObject/toggleDartMode.cpp">toggleDartMode</a></li>
 		<li><a href="./src/PlayerObject/toggleFlyMode.cpp">toggleFlyMode</a></li>
@@ -255,6 +315,10 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/updateCollideLeft.cpp">updateCollideLeft</a></li>
 		<li><a href="./src/PlayerObject/updateCollideRight.cpp">updateCollideRight</a></li>
 		<li><a href="./src/PlayerObject/updateCollideTop.cpp">updateCollideTop</a></li>
+<<<<<<< HEAD
+=======
+		<li><a href="./src/PlayerObject/updateDashAnimation.cpp">updateDashAnimation</a></li>
+>>>>>>> d869569232266f677e1c264f44f030767ab0d8e8
 		<li><a href="./src/PlayerObject/updateDashArt.cpp">updateDashArt</a></li>
 		<li><a href="./src/PlayerObject/updateEffects.cpp">updateEffects</a></li>
 		<li><a href="./src/PlayerObject/updateInternalActions.cpp">updateInternalActions</a></li>
@@ -276,7 +340,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary>[ <b>PlayLayer</b> ] (3)</summary>
+	<summary> <b>PlayLayer</b>  (3)</summary>
 	<ul>
 		<li><a href="./src/PlayLayer/circleWaveWillBeRemoved.cpp">circleWaveWillBeRemoved</a></li>
 		<li><a href="./src/PlayLayer/getRelativeModNew.cpp">getRelativeModNew</a></li>
@@ -284,15 +348,15 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary>[ <b>RingObject</b> ] (2)</summary>
+	<summary> <b>RingObject</b>  (2)</summary>
 	<ul>
 		<li><a href="./src/RingObject/powerOnObject.cpp">powerOnObject</a></li>
 		<li><a href="./src/RingObject/spawnCircle.cpp">spawnCircle</a></li>
 	</ul>
 </details>
 <details>
-	<summary>[ <b>Other</b> ] (1)</summary>
-	<ul>
-		<li><a href="./src/FreeFunctions.cpp">Free Functions</a></li>
-	</ul>
+    <summary> <b>Other</b> (1)</summary>
+    <ul>
+        <li><a href="./src/FreeFunctions.cpp">Free Functions</a></li>
+    </ul>
 </details>

@@ -61,23 +61,23 @@ void LevelEditorLayer::updateVisibility(float dt)
 			m_previewAnimations && obj->getHasSyncedAnimation() // 2065 = custom particle object
           	|| m_previewParticles && obj->m_objectID == 2065 && obj->getHasSyncedAnimation() )
         {
-            static_cast<EffectGameObject*>(obj)->updateSyncedAnimation(m_gameState.m_totalTime, -1);
+            ((EffectGameObject*)obj)->updateSyncedAnimation(m_gameState.m_totalTime, -1);
         }
 
         if (m_previewAnimations && obj->getHasRotateAction())
-            static_cast<EnhancedGameObject*>(obj)->updateRotateAction(dt);
+            ((EnhancedGameObject*)obj)->updateRotateAction(dt);
 
         if (m_playbackMode == PlaybackMode::Not
 			&& obj->getHasSyncedAnimation()
-			&& static_cast<EnhancedGameObject*>(obj)->m_animateOnTrigger )
+			&& ((EnhancedGameObject*)obj)->m_animateOnTrigger )
 		{
-			static_cast<EnhancedGameObject*>(obj)->previewAnimateOnTrigger();
+			((EnhancedGameObject*)obj)->previewAnimateOnTrigger();
 		}
 
         if (obj->getType() == GameObjectType::Collectible) {
 
 			float offset = isPlaytesting ? m_hoverNode->getPosition().y : 0.0f;
-            static_cast<EffectGameObject*>(obj)->updateInteractiveHover(offset);
+            ((EffectGameObject*)obj)->updateInteractiveHover(offset);
         }
 
 		float editorOpacity = 0.0f;
@@ -97,7 +97,7 @@ void LevelEditorLayer::updateVisibility(float dt)
 
             obj->m_detailColor->m_opacity = editorOpacity * 0.7f;
             if (obj->m_unk367)
-                static_cast<AnimatedGameObject*>(obj)->updateChildSpriteColor(ccc3(255, 255, 255));
+                ((AnimatedGameObject*)obj)->updateChildSpriteColor(ccc3(255, 255, 255));
         }
 
         if (!m_previewMode || obj->m_isSelected)
@@ -198,7 +198,7 @@ void LevelEditorLayer::updateVisibility(float dt)
             }
 
             if (obj->m_unk367)
-                static_cast<AnimatedGameObject*>(obj)->updateChildSpriteColor(brightenedBGColor);
+                ((AnimatedGameObject*)obj)->updateChildSpriteColor(brightenedBGColor);
         }
 
         if (!m_previewMode && obj->isColorObject())

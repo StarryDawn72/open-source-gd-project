@@ -7,7 +7,6 @@
 	color updates, and the mirror portal transition animation.
 	
 */
-float s_cameraRight = 0.0f;
 
 void PlayLayer::updateVisibility(float dt)
 {
@@ -127,27 +126,23 @@ void PlayLayer::updateVisibility(float dt)
 			finalEnterType = -14;
 		}
 
-		// Rename bindings
-		bool obj_m_isAnimatedGameObject = obj->m_unk367;
-		bool obj_m_isEndPortal = obj->m_unk3F8;
-
 		if (obj->getHasSyncedAnimation())
-			static_cast<AnimatedGameObject*>(obj)->updateSyncedAnimation(-1, m_gameState.m_totalTime);
+			((AnimatedGameObject*)obj)->updateSyncedAnimation(-1, m_gameState.m_totalTime);
 
 		if (obj->getHasRotateAction())
-			static_cast<EnhancedGameObject*>(obj)->updateRotateAction(dt);
+			((EnhancedGameObject*)obj)->updateRotateAction(dt);
 
-		if (obj_m_isAnimatedGameObject)
-            static_cast<AnimatedGameObject*>(obj)->updateChildSpriteColor(brightenedBGColor);
+		if (obj->m_isAnimatedGameObject)
+            ((AnimatedGameObject*)obj)->updateChildSpriteColor(brightenedBGColor);
 
         if (obj->getType() == GameObjectType::Collectible)
-            static_cast<EffectGameObject*>(obj)->updateInteractiveHover(m_hoverNode->getPosition().y);
+            ((EffectGameObject*)obj)->updateInteractiveHover(m_hoverNode->getPosition().y);
 
 		int breakableBricksID = 143;
         if (obj->m_objectID == breakableBricksID)
             obj->setGlowColor(m_lightBGColor);
 
-		if (obj_m_isEndPortal)
+		if (obj->m_isEndPortal)
 			continue;
 		
 		if (obj->m_usesAudioScale && !obj->m_hasNoAudioScale)

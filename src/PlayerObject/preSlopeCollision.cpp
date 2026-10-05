@@ -15,10 +15,6 @@
 */
 bool PlayerObject::preSlopeCollision(float dt, GameObject *object)
 {
-
-	std::unordered_map<int, GameObject*>& m_preSlopeObjects = m_potentialSlopeMap;
-	bool& m_shouldDisconnectSlope = m_unk669;
-
     if (object->m_uniqueID == m_collidingWithSlopeId) {
         return false;
     }

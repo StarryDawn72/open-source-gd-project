@@ -1,7 +1,5 @@
 void PlayerObject::deactivateStreak(bool stop)
 {
-	bool m_isInPlayLayer = m_playEffects; // Rename bindings
-
     if (!m_alwaysShowStreak || stop)
         m_regularTrail->stopStroke();
 

@@ -1,10 +1,5 @@
 void PlayerObject::propellPlayer(float yVelocity, bool noEffects, int objectType)
 {
-	bool& m_isJumping = m_maybeIsBoosted;
-	bool& m_onGround = m_isOnGround2;
-	bool& m_canJump = m_isOnGround;
-	float& m_playerScale = m_vehicleSize;
-
     m_isJumping = true;
     m_onGround = false;
     m_canJump = false;

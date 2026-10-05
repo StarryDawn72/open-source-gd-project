@@ -1,4 +1,4 @@
-void PlayerObject::updateEffects(float param) // say wallahi
+void PlayerObject::updateEffects(float dt)
 {
-	m_waveTrail->updateStroke(param);
+	m_waveTrail->updateStroke(dt);
 }

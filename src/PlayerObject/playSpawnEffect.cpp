@@ -1,4 +1,5 @@
 #define GM GameManager::sharedState()
+#define kTagPlayerBlink 11
 /*
 	====== PlayerObject::playSpawnEffect ======
 	
@@ -10,7 +11,7 @@ void PlayerObject::playSpawnEffect()
 {
 
 	if (m_isBeingSpawnedByDualPortal) return;
-	stopActionByTag(11);
+	stopActionByTag(kTagPlayerBlink);
 
 	float blinkDuration = 0.4f;
 	unsigned int blinks = 4;
@@ -18,7 +19,7 @@ void PlayerObject::playSpawnEffect()
 	auto blinkAction = CCBlink::create(blinkDuration, blinks);
 	auto showAction = CCShow::create();
 	auto blinkSequence = CCSequence::create((CCFiniteTimeAction *)blinkAction, showAction, nullptr);
-	blinkSequence->setTag(11);
+	blinkSequence->setTag(kTagPlayerBlink);
 	runAction(blinkSequence);
 
 	if (!GM->m_performanceMode) {

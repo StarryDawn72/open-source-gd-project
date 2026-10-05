@@ -1,17 +1,5 @@
 void PlayerObject::preCollision() 
 {
-    // Rename incorrect bindings
-    bool& m_onGround = m_isOnGround2;
-    bool& m_ringJumpingThisTick = m_ringJumpRelated;
-    int& m_slopeSlideTimer = m_maybeSlidingTime;
-    double& m_slopeForceEndTime = m_maybeSlidingStartTime;
-    GameObject*& m_preSlopeObject = m_currentPotentialSlope;
-    gd::unordered_map<int, GameObject*>& m_preSlopeObjects = m_potentialSlopeMap;
-    bool& m_slopeForceLeft = m_platformerMovingLeft;
-    bool& m_slopeForceRight = m_platformerMovingRight;
-    bool& m_shouldDisconnectSlope = m_unk669;
-    bool& m_wasOnGround = m_isOnGround4;
-
     m_wasOnGround = m_onGround;
     m_ringJumpingThisTick = false;
     m_wasOnSlope = m_isOnSlope;

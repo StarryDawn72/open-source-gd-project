@@ -1,4 +1,5 @@
 #define GM GameManager::sharedState()
+#define kGVCheckIfServerOnline "0055"
 /*
 	
 	The central vertical physics updater that handles
@@ -8,27 +9,6 @@
 */
 void PlayerObject::updateJump(float dt)
 {
-	// rename incorrect geode bindings
-	bool& m_isJumpUnused = m_stateRingJump;
-	bool& m_isJumping = m_maybeIsBoosted;
-	bool& m_isVelocityUncapped = m_isAccelerating;
-	bool& m_onGround = m_isOnGround2;
-	bool& m_canJump = m_isOnGround;
-	float& m_playerScale = m_vehicleSize;
-	bool& m_slopeForceLeft = m_platformerMovingLeft;
-	bool& m_slopeForceRight = m_platformerMovingRight;
-	int& m_slopeSlideTimer = m_maybeSlidingTime;
-	bool& m_isSlopeUphillRelative = m_slopeSlidingMaybeRotated;
-	bool& m_holdingJump = m_jumpBuffered;
-	bool& m_wasHoldingJump = m_wasJumpBuffered;
-	bool& m_isGroundTouchSideValid = m_isOnGround3;
-	double& m_slopeForceEndTime = m_maybeSlidingStartTime;
-	geode::SeedValueRSV& m_antiCheatValue = m_jumpRelatedAC2;
-    double& m_robotBoostCharge = m_accelerationOrSpeed;
-    bool& m_robotBoostInvalidated = m_touchedPad;
-    bool& m_wasRobotBoostInvalidated = m_wasRobotJump;
-    bool& m_didSpecialGroundHit = m_maybeSpriteRelated;
-
 	bool holdingLeft = m_holdingLeft;
 	bool holdingRight = m_holdingRight;
 
@@ -121,9 +101,9 @@ void PlayerObject::updateJump(float dt)
 
 			if (m_gameLayer && m_wasHoldingJump != m_holdingJump) {
 				if (m_holdingJump)
-					gameEventTriggered(static_cast<int>(GJGameEvent::ShipBoostStart), 0);
+					gameEventTriggered((int)GJGameEvent::ShipBoostStart, 0);
 				else
-					gameEventTriggered(static_cast<int>(GJGameEvent::ShipBoostEnd), 0);				
+					gameEventTriggered((int)GJGameEvent::ShipBoostEnd, 0);				
 			}
 		}
 		else if (m_isBird) {
@@ -155,7 +135,7 @@ void PlayerObject::updateJump(float dt)
 				playBurstEffect();
 
 				if (m_gameLayer)
-					gameEventTriggered(static_cast<int>(GJGameEvent::UFOJump), 0);				
+					gameEventTriggered((int)GJGameEvent::UFOJump, 0);				
 			}
 
 			float birdMod = playerIsFallingBugged() ? 0.8f : 1.2f;
@@ -175,9 +155,9 @@ void PlayerObject::updateJump(float dt)
 
 			if (m_gameLayer && m_wasHoldingJump != m_holdingJump) {
 				if (m_holdingJump)
-					gameEventTriggered(static_cast<int>(GJGameEvent::WavePush), 0);
+					gameEventTriggered((int)GJGameEvent::WavePush, 0);
 				else
-					gameEventTriggered(static_cast<int>(GJGameEvent::WaveRelease), 0);
+					gameEventTriggered((int)GJGameEvent::WaveRelease, 0);
 			}
 		}
 		else if (m_isSwing) {
@@ -190,7 +170,7 @@ void PlayerObject::updateJump(float dt)
 				flipGravity(!m_isUpsideDown, true);
 				setYVelocity(preFlipYVelocity * 0.8f, 10);
 
-				if (m_gameLayer) gameEventTriggered(static_cast<int>(GJGameEvent::SwingSwitch), 0);
+				if (m_gameLayer) gameEventTriggered((int)GJGameEvent::SwingSwitch, 0);
 			}
 
 			float swingScaleMod = (m_playerScale == 1.0f) ? 0.4 : 0.6;
@@ -205,12 +185,12 @@ void PlayerObject::updateJump(float dt)
 		// terminal velocity clamping for ship, UFO, and swing
         if (!m_isVelocityUncapped && !m_isDart) {
 			if (!m_isUpsideDown) {
-				setYVelocity(MAX(m_yVelocity, static_cast<double>(modeScale * -8.0f / scaleMod)), 13);
-				setYVelocity(MIN(m_yVelocity, static_cast<double>(8.0f / scaleMod)), 14);
+				setYVelocity(MAX(m_yVelocity, (double)modeScale * -8.0f / scaleMod), 13);
+				setYVelocity(MIN(m_yVelocity, (double)8.0f / scaleMod), 14);
 			}
 			else {
-				setYVelocity(MAX(m_yVelocity, static_cast<double>(-8.0f / scaleMod)), 15);
-				setYVelocity(MIN(m_yVelocity, static_cast<double>(modeScale * 8.0f / scaleMod)), 16);
+				setYVelocity(MAX(m_yVelocity, (double)-8.0f / scaleMod), 15);
+				setYVelocity(MIN(m_yVelocity, (double)modeScale * 8.0f / scaleMod), 16);
 			}
 		}
 		
@@ -312,7 +292,7 @@ void PlayerObject::updateJump(float dt)
 				}
 				m_shouldTryPlacingCheckpoint = true;
 
-				// WARNING: this timestamp method is not 100% equivalent. Please
+				// WARNING: this timestamp method is not likely to be 100% equivalent. Please
 				// look into _ftime64 for exactness if truly needed.
 				auto now = std::chrono::system_clock::now().time_since_epoch();
 				double seconds = std::chrono::duration<double>(now).count();
@@ -336,15 +316,14 @@ void PlayerObject::updateJump(float dt)
 				if (m_gameLayer) {
 					bool isCube = isInNormalMode();
 
-					if (isCube)           gameEventTriggered(static_cast<int>(GJGameEvent::NormalJump), 0);
-					else if (m_isRobot)   gameEventTriggered(static_cast<int>(GJGameEvent::RobotBoostStart), 0);
-					else if (m_isBall)    gameEventTriggered(static_cast<int>(GJGameEvent::BallSwitch), 0);					
+					if (isCube)           gameEventTriggered((int)GJGameEvent::NormalJump, 0);
+					else if (m_isRobot)   gameEventTriggered((int)GJGameEvent::RobotBoostStart, 0);
+					else if (m_isBall)    gameEventTriggered((int)GJGameEvent::BallSwitch, 0);					
 				}
 
-				#ifdef GEODE_IS_ANDROID
+				#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 
 				if (!triggeredAntiCheat && !couldJump) {
-					const char* kGVCheckIfServerOnline = "0055";
 					GM->setGameVariable(kGVCheckIfServerOnline, true);				
 				}
 
@@ -366,7 +345,7 @@ void PlayerObject::updateJump(float dt)
 				addToYVelocity(-(groundModeGravityScale * modifiedGravity * dt * flipMod()), 62);
 
 				if (m_isRobot && m_robotBoostInvalidated && !m_wasRobotBoostInvalidated && m_gameLayer)
-					gameEventTriggered(static_cast<int>(GJGameEvent::RobotBoostStop), m_wasRobotBoostInvalidated);
+					gameEventTriggered((int)GJGameEvent::RobotBoostStop, m_wasRobotBoostInvalidated);
 
 				if (playerIsFallingBugged() || m_isPlatformer && !playerIsMovingUp() )
 				{
@@ -379,7 +358,7 @@ void PlayerObject::updateJump(float dt)
 
 						m_robotSprite->tweenToAnimation("fall_loop", 0.1f);
 						if (!m_robotBoostInvalidated && m_gameLayer)
-						gameEventTriggered(static_cast<int>(GJGameEvent::RobotBoostStop), m_robotBoostInvalidated);
+						gameEventTriggered((int)GJGameEvent::RobotBoostStop, m_robotBoostInvalidated);
 					}
 					else if (m_isSpider) {
 

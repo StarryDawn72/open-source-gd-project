@@ -64,6 +64,7 @@ Some nasty variables I had to rename, either because they were completely incorr
 - m_wasRobotJump -> m_wasRobotBoostInvalidated
 - m_maybeSpriteRelated -> m_didSpecialGroundHit
 - m_isOnGround4 -> m_wasOnGround
+- m_spiderAnimationEnabled -> m_spiderAnimation2Enabled
 
 **GameObject**
 - m_editorEnabled -> m_isInEditor

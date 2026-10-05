@@ -5,10 +5,6 @@ void PlayerObject::toggleRobotMode(bool enable, bool noEffects)
     if (m_isRobot == enable)
         return;
 
-    // Rename bindings
-    float& m_playerScale = m_vehicleSize;
-    double& m_robotBoostCharge = m_accelerationOrSpeed;
-
     m_isRobot = enable;
     m_gameModeChangedTime = m_totalTime;
 

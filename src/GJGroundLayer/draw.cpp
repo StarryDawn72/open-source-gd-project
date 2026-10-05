@@ -1,0 +1,4 @@
+void GJGroundLayer::draw()
+{
+    
+}

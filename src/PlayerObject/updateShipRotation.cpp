@@ -7,13 +7,6 @@ void PlayerObject::updateShipRotation(float dt)
     if (m_isOnSlope || m_isDashing)
         return;
 
-    // Rename incorrect bindings
-    CCPoint& m_lastPlayerPosition = m_shipRotation;
-    bool& m_onGround = m_isOnGround2;
-    float& m_playerScale = m_vehicleSize;
-    bool& m_slopeForceLeft = m_platformerMovingLeft;
-    bool& m_slopeForceRight = m_platformerMovingRight;
-
     CCPoint pos = getPosition();
 
     bool isFlyingMode = m_isBird || m_isShip || m_isSwing || m_isDart; // wow robtop

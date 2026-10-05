@@ -2,7 +2,7 @@
 
 void PlayerObject::spawnCircle2()
 {
-	if ( !GM->m_performanceMode ) {
+	if (!GM->m_performanceMode) {
 
 		// Start radius: 5
 		// End radius:   50

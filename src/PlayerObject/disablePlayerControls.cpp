@@ -6,7 +6,7 @@ void PlayerObject::disablePlayerControls()
     releaseButton(PlayerButton::Jump);
     releaseButton(PlayerButton::Left);
     releaseButton(PlayerButton::Right);
-    releaseButton(static_cast<PlayerButton>(5));
+    releaseButton((PlayerButton)5);
 
 	m_controlsDisabled = true;
     m_inputsLocked = false;

@@ -3,17 +3,13 @@
 void PlayerObject::flipGravity(bool flip, bool noEffects)
 {
     if (m_isUpsideDown != flip) {
-		bool& m_isGoingDownSlope = m_slopeFlipGravityRelated;
-		bool& m_isRespawning = m_maybeReducedEffects;
-		CCPoint& m_lastEffectObjectPos = m_lastPortalPos;
-		bool& m_canJump = m_isOnGround;
 
         placeStreakPoint();
         m_isUpsideDown = flip;
 
         if (m_gameLayer) {
 			GJGameEvent event = flip ? GJGameEvent::GravityInverted : GJGameEvent::GravityRestored;
-            gameEventTriggered(static_cast<int>(event), 0);
+            gameEventTriggered((int)event, 0);
         }
 
         m_lastFlipTime = m_totalTime;

@@ -1,10 +1,6 @@
 void PlayerObject::bumpPlayer(float bumpMod, int objectType, bool noEffects, GameObject* object) {
 
     GameObjectType type = (GameObjectType)objectType;
-
-    // Rename incorrect bindings
-    bool& m_isVelocityUncapped = m_isAccelerating;
-    bool& m_robotBoostInvalidated = m_touchedPad;
     
     if (m_isPlatformer || !m_fixRobotJump)
         m_robotBoostInvalidated = true; // This line prevents the robot from

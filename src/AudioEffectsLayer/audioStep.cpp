@@ -16,10 +16,10 @@ void AudioEffectsLayer::audioStep(float dt)
 	CCArray* m_pulseQueue = m_unk1c0;
 
 	if (m_pulseQueue && m_pulseQueue->count()) {
-		CCString* time = static_cast<CCString*>(m_pulseQueue->objectAtIndex(0));
+		CCString* time = (CCString*)m_pulseQueue->objectAtIndex(0);
 
 		if (time->floatValue() < m_timeElapsed) {
-			CCString* pulse = static_cast<CCString*>(m_pulseQueue->objectAtIndex(1));
+			CCString* pulse = (CCString*)m_pulseQueue->objectAtIndex(1);
 			float pulseValue = pulse->floatValue();
 
 			// Remove the [time, pulse] pair

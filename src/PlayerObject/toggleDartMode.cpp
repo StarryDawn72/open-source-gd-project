@@ -1,7 +1,4 @@
 void PlayerObject::toggleDartMode(bool enable, bool noEffects) {
-    bool& m_canJump = m_isOnGround;
-    bool& m_onGround = m_isOnGround2;
-    float& m_playerScale = m_vehicleSize;
 
     if (m_isDart == enable)
         return;
