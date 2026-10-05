@@ -58,10 +58,6 @@
     void unrotateGameplayObject(GameObject* object)
     void updateCheckpointMode(bool enable)
     void updateCheckpointTest()
-<<<<<<< HEAD
-    void updateDashAnimation()
-=======
->>>>>>> d869569232266f677e1c264f44f030767ab0d8e8
     void updateGlowColor()
     void updateJumpVariables()
     void updateLastGroundObject(GameObject* object)
