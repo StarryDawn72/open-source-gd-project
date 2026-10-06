@@ -1,9 +1,11 @@
+
 #define kPlayerCommandStopSlide 543
 
 // idk what to name this
-#define kDashingLength 17.31f
+#define kMaxDashLength 17.310005f
 
-void PlayerObject::stopDashing() {
+void PlayerObject::stopDashing()
+{
     if (!m_isDashing)
         return;
 
@@ -19,7 +21,7 @@ void PlayerObject::stopDashing() {
     m_dashRing = nullptr;
     m_dashFireSprite->setVisible(false);
 
-    if (m_playEffects && !m_isRespawning) {
+    if (m_isInPlayLayer && !m_isRespawning) {
         CCSprite* dashEffect = CCSprite::createWithSpriteFrameName("playerDash2_001.png");
         dashEffect->setBlendFunc({GL_SRC_ALPHA, GL_ONE});
         PL->m_objectLayer->addChild(dashEffect, 40);
@@ -35,11 +37,10 @@ void PlayerObject::stopDashing() {
         dashEffect->setColor(m_dashFireSprite->getColor());
         dashEffect->setRotation(-m_dashAngle);
         
-        // Normally, it is CCSequence::create() but I'm having trouble with the variadic args
-        // This is the same thing anyway
-        CCSequence* sequence = CCSequence::createWithTwoActions(
+        CCSequence* sequence = CCSequence::create(
             CCScaleTo::create(0.2f, dashEffect->getScaleX() * 0.2f, dashEffect->getScaleY() * 0.2f),
-            CCCallFunc::create(dashEffect, callfunc_selector(CCSprite::removeMeAndCleanup))
+            CCCallFunc::create(dashEffect, callfunc_selector(CCSprite::removeMeAndCleanup)),
+            NULL
         );
 
         dashEffect->runAction(sequence);
@@ -67,10 +68,12 @@ void PlayerObject::stopDashing() {
         if (m_isPlatformer) {
             float length = CCPoint(m_dashX, m_dashY).getLength();
             float rotationSpeed;
-            if (length > kDashingLength)
+            
+            if (length > kMaxDashLength)
                 rotationSpeed = 2.0f;
             else
-                rotationSpeed = length / kDashingLength * 1.5f + 0.5f;
+                rotationSpeed = length / kMaxDashLength * 1.5f + 0.5f;
+            
             runNormalRotation(true, rotationSpeed);
         }
     }
