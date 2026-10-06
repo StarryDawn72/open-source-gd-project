@@ -4,6 +4,7 @@ const sizes = JSON.parse(fs.readFileSync('functionSizes.json'));
 
 let listCompleted = false;
 let listRemaining = false;
+let sortBySize = false;
 
 let filter = "";
 
@@ -12,6 +13,8 @@ for (const arg of process.argv.slice(2)) {
         listCompleted = true;
     } else if (arg == '-r') {
         listRemaining = true;
+    } else if (arg == '-s') {
+        sortBySize = true;
     } else if (filter == "")
         filter = arg;
 }
@@ -49,23 +52,30 @@ for (const [className, funcs] of Object.entries(sizes)) {
     console.log(`${className}: \x1b[1;37m${(finishedSize / totalSize * 100).toPrecision(3)}%\x1b[0m finished. (${finishedSize}b of ${totalSize}b)`);
 
     if (listCompleted) {
-        const files = fs.readdirSync(classDir).sort((a, b) => a[0].localeCompare(b[0]));
+        const files = fs.readdirSync(classDir);
 
+        let funcNames = [];
         for (const file of files) {
             if (!file.endsWith('.cpp'))
                 continue;
 
             const name = file.substring(0, file.length - 4);
 
-            if (typeof(funcs[name]) != 'number')
-                continue;
+            if (typeof(funcs[name]) == 'number')
+                funcNames.push(name);
+        }
+        
+        if (sortBySize)
+            funcNames.sort((a, b) => funcs[a] - funcs[b]);
+        else
+            funcNames.sort((a, b) => a[0].localeCompare(b[0]));
 
-            console.log(`  - ${file} is \x1b[1;37m${(funcs[name] / totalSize * 100).toPrecision(3)}%\x1b[0m of ${className} (${funcs[name]}b of ${totalSize}b)`);
+        for (const name of funcNames) {
+            console.log(`  - ${name} is \x1b[1;37m${(funcs[name] / totalSize * 100).toPrecision(3)}%\x1b[0m of ${className} (${funcs[name]}b of ${totalSize}b)`);
         }
     }
 
     if (listRemaining) {
-
         for (const file of fs.readdirSync(classDir)) {
             if (!file.endsWith('.cpp'))
                 continue;
@@ -77,7 +87,10 @@ for (const [className, funcs] of Object.entries(sizes)) {
 
         let remFuncs = Object.entries(funcs);
 
-        remFuncs.sort((a, b) => a[0].localeCompare(b[0]));
+        if (sortBySize)
+            remFuncs.sort((a, b) => a[1] - b[1]);
+        else
+            remFuncs.sort((a, b) => a[0].localeCompare(b[0]));
 
         for (const [name, size] of remFuncs) {
             console.log(`  - ${name} is \x1b[1;37m${(size / totalSize * 100).toPrecision(3)}%\x1b[0m of ${className} (${funcs[name]}b of ${totalSize}b)`);

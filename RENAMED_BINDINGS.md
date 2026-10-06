@@ -65,6 +65,9 @@ Some nasty variables I had to rename, either because they were completely incorr
 - m_maybeSpriteRelated -> m_didSpecialGroundHit
 - m_isOnGround4 -> m_wasOnGround
 - m_spiderAnimationEnabled -> m_spiderAnimation2Enabled
+- m_unk838 -> m_followPlayerYTimer
+- m_followRelated -> m_followPlayerYIndex
+- m_playerFollowFloats -> m_followPlayerYPositions
 
 **GameObject**
 - m_editorEnabled -> m_isInEditor
