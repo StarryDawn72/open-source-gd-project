@@ -217,12 +217,12 @@ void PlayerObject::update(float dt)
         if (m_isInPlayLayer) {
             if (m_isGoingLeft) {
                 CCSize winSize = CCDirector::sharedDirector()->getWinSize();
-                float camX = PL->m_gameState.m_cameraPosition2.x;
+                float lastCamX = PL->m_gameState.m_lastCameraPosition.x;
 
-                m_waveTrail->clearAboveXPos(camX + (winSize.width / PL->m_gameState.m_cameraZoom));
+                m_waveTrail->clearAboveXPos(lastCamX + (winSize.width / PL->m_gameState.m_cameraZoom));
             }
             else
-                m_waveTrail->clearBehindXPos(PL->m_gameState.m_cameraPosition2.x);
+                m_waveTrail->clearBehindXPos(PL->m_gameState.m_lastCameraPosition.x);
         }
 
         if (m_robotFire) {

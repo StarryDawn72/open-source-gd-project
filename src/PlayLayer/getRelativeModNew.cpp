@@ -12,13 +12,13 @@ float PlayLayer::getRelativeModNew(CCPoint position, float mod, float offset, bo
 	// The last two parameters are swapped
 	isRight = unused;
 
-	CCPoint cameraPos = m_gameState.m_cameraPosition2;
+	CCPoint lastCamPos = m_gameState.m_lastCameraPosition;
 	float distanceFromEdge = 0.0f;
 
 	if (isRight)
-		distanceFromEdge = ((cameraPos.x + m_cameraWidth) - position.x) + mod;
+		distanceFromEdge = ((lastCamPos.x + m_cameraWidth) - position.x) + mod;
 	else
-		distanceFromEdge = (position.x - cameraPos.x) - mod;
+		distanceFromEdge = (position.x - lastCamPos.x) - mod;
 
 	return clampf(distanceFromEdge / position.y, 0.0f, 1.0f);
 }

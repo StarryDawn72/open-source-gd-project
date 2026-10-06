@@ -11,7 +11,7 @@
 void PlayLayer::updateVisibility(float dt)
 {
 	// File-scoped/static variable. Only used in PlayLayer::applyCustomEnterEffect
-    s_cameraRight = m_gameState.m_cameraPosition2.x + m_cameraWidth;
+    s_cameraRight = m_gameState.m_lastCameraPosition.x + m_cameraWidth;
 
     preUpdateVisibility(dt);
     m_effectManager->processColors();
@@ -106,14 +106,14 @@ void PlayLayer::updateVisibility(float dt)
 		obj->activateObject();
 		m_enterEffectPosition = obj->getRealPosition();
 
-		float screenCenterX = m_gameState.m_cameraPosition2.x + m_halfCameraWidth;
+		float lastScreenCenterX = m_gameState.m_lastCameraPosition.x + m_halfCameraWidth;
 		bool isRight = false;
 		int finalEnterType = m_gameState.m_exitChannelMap[obj->m_enterChannel];
 		int objectEnterType = obj->m_exitType;
 
 		if (
 			obj->m_enterType != -1 ||
-			(obj->m_exitType == -1 && m_enterEffectPosition.x > screenCenterX)
+			(obj->m_exitType == -1 && m_enterEffectPosition.x > lastScreenCenterX)
 		) {
 			isRight = true;
 			finalEnterType = m_gameState.m_enterChannelMap[obj->m_enterChannel];
