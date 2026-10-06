@@ -182,7 +182,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary> <b>PlayerObject</b>  (146)</summary>
+	<summary> <b>PlayerObject</b>  (147)</summary>
 	<ul>
 		<li><a href="./src/PlayerObject/activateStreak.cpp">activateStreak</a></li>
 		<li><a href="./src/PlayerObject/addAllParticles.cpp">addAllParticles</a></li>
@@ -288,6 +288,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/spiderTestJump.cpp">spiderTestJump</a></li>
 		<li><a href="./src/PlayerObject/startDashing.cpp">startDashing</a></li>
 		<li><a href="./src/PlayerObject/stopBurstEffect.cpp">stopBurstEffect</a></li>
+		<li><a href="./src/PlayerObject/stopDashing.cpp">stopDashing</a></li>
 		<li><a href="./src/PlayerObject/stopParticles.cpp">stopParticles</a></li>
 		<li><a href="./src/PlayerObject/stopRotation.cpp">stopRotation</a></li>
 		<li><a href="./src/PlayerObject/stopStreak2.cpp">stopStreak2</a></li>
