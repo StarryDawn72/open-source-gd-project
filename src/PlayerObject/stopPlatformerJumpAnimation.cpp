@@ -1,3 +1,7 @@
+// TODO: Find better names
+#define kActionTagPlatformerJump0 13
+#define kActionTagPlatformerJump1 14
+
 void PlayerObject::stopPlatformerJumpAnimation() {
     if (!m_isPlatformer)
         return;
