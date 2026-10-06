@@ -102,13 +102,15 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary> <b>GJBaseGameLayer</b>  (5)</summary>
+	<summary> <b>GJBaseGameLayer</b>  (7)</summary>
 	<ul>
 		<li><a href="./src/GJBaseGameLayer/bumpPlayer.cpp">bumpPlayer</a></li>
 		<li><a href="./src/GJBaseGameLayer/collisionCheckObjects.cpp">collisionCheckObjects</a></li>
+		<li><a href="./src/GJBaseGameLayer/createBackground.cpp">createBackground</a></li>
 		<li><a href="./src/GJBaseGameLayer/objectIntersectsCircle.cpp">objectIntersectsCircle</a></li>
 		<li><a href="./src/GJBaseGameLayer/playerCircleCollision.cpp">playerCircleCollision</a></li>
 		<li><a href="./src/GJBaseGameLayer/playerIntersectsCircle.cpp">playerIntersectsCircle</a></li>
+		<li><a href="./src/GJBaseGameLayer/updateCameraBGArt.cpp">updateCameraBGArt</a></li>
 	</ul>
 </details>
 <details>

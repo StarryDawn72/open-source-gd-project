@@ -1,8 +1,5 @@
 void HardStreak::updateStroke(float dt)
 {
-    if (!re::isEnabled())
-        return HardStreak::updateStroke(dt);
-
     if (!m_drawStreak)
         return;
 
