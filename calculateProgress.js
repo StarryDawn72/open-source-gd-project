@@ -101,4 +101,5 @@ for (const [className, funcs] of Object.entries(sizes)) {
 if (filter == "" && !listRemaining && !listCompleted) {
     console.log("\x1b[90mYou can write a class name as an argument (ex. PlayerObject) and it will only show info about that class");
     console.log("\x1b[90mYou can also include options -r or -c to list remaining and completed functions and their percentages respectively\x1b[0m");
+    console.log("\x1b[90mAdd option -s to sort the functions by size\x1b[0m");
 }
