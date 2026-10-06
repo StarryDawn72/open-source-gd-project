@@ -1,17 +1,21 @@
-void PlayerObject::updatePlayerForce(cocos2d::CCPoint velocity, bool additive)
+void PlayerObject::updatePlayerForce(CCPoint velocity, bool additive)
 {
-    m_isAccelerating = true;
+    m_isVelocityUncapped = true;
 
-    double yVelocity = velocity.y;
+    double vel = velocity.y;
+    
     if (additive)
-        yVelocity += m_yVelocity;
-    m_yVelocity = yVelocity;
+        vel += m_yVelocity;
+    
+    m_yVelocity = vel;
 
     if (m_isPlatformer)
     {
         double xVelocity = velocity.x;
+        
         if (additive)
             xVelocity += m_platformerXVelocity;
+        
         m_platformerXVelocity = xVelocity;
         m_affectedByForces = true;
     }
