@@ -102,13 +102,15 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary> <b>GJBaseGameLayer</b>  (5)</summary>
+	<summary> <b>GJBaseGameLayer</b>  (7)</summary>
 	<ul>
 		<li><a href="./src/GJBaseGameLayer/bumpPlayer.cpp">bumpPlayer</a></li>
 		<li><a href="./src/GJBaseGameLayer/collisionCheckObjects.cpp">collisionCheckObjects</a></li>
+		<li><a href="./src/GJBaseGameLayer/createBackground.cpp">createBackground</a></li>
 		<li><a href="./src/GJBaseGameLayer/objectIntersectsCircle.cpp">objectIntersectsCircle</a></li>
 		<li><a href="./src/GJBaseGameLayer/playerCircleCollision.cpp">playerCircleCollision</a></li>
 		<li><a href="./src/GJBaseGameLayer/playerIntersectsCircle.cpp">playerIntersectsCircle</a></li>
+		<li><a href="./src/GJBaseGameLayer/updateCameraBGArt.cpp">updateCameraBGArt</a></li>
 	</ul>
 </details>
 <details>
@@ -182,7 +184,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary> <b>PlayerObject</b>  (147)</summary>
+	<summary> <b>PlayerObject</b>  (174)</summary>
 	<ul>
 		<li><a href="./src/PlayerObject/activateStreak.cpp">activateStreak</a></li>
 		<li><a href="./src/PlayerObject/addAllParticles.cpp">addAllParticles</a></li>
@@ -191,6 +193,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/animationFinished.cpp">animationFinished</a></li>
 		<li><a href="./src/PlayerObject/boostPlayer.cpp">boostPlayer</a></li>
 		<li><a href="./src/PlayerObject/bumpPlayer.cpp">bumpPlayer</a></li>
+		<li><a href="./src/PlayerObject/buttonDown.cpp">buttonDown</a></li>
 		<li><a href="./src/PlayerObject/canStickToGround.cpp">canStickToGround</a></li>
 		<li><a href="./src/PlayerObject/checkSnapJumpToObject.cpp">checkSnapJumpToObject</a></li>
 		<li><a href="./src/PlayerObject/collidedWithObject.cpp">collidedWithObject</a></li>
@@ -203,8 +206,11 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/deactivateStreak.cpp">deactivateStreak</a></li>
 		<li><a href="./src/PlayerObject/destroyFromHitHead.cpp">destroyFromHitHead</a></li>
 		<li><a href="./src/PlayerObject/didHitHead.cpp">didHitHead</a></li>
+		<li><a href="./src/PlayerObject/disableCustomGlowColor.cpp">disableCustomGlowColor</a></li>
 		<li><a href="./src/PlayerObject/disablePlayerControls.cpp">disablePlayerControls</a></li>
+		<li><a href="./src/PlayerObject/disableSwingFire.cpp">disableSwingFire</a></li>
 		<li><a href="./src/PlayerObject/doReversePlayer.cpp">doReversePlayer</a></li>
+		<li><a href="./src/PlayerObject/enableCustomGlowColor.cpp">enableCustomGlowColor</a></li>
 		<li><a href="./src/PlayerObject/exitPlatformerAnimateJump.cpp">exitPlatformerAnimateJump</a></li>
 		<li><a href="./src/PlayerObject/fadeOutStreak2.cpp">fadeOutStreak2</a></li>
 		<li><a href="./src/PlayerObject/flashPlayer.cpp">flashPlayer</a></li>
@@ -215,12 +221,16 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/getCurrentXVelocity.cpp">getCurrentXVelocity</a></li>
 		<li><a href="./src/PlayerObject/getModifiedSlopeYVel.cpp">getModifiedSlopeYVel</a></li>
 		<li><a href="./src/PlayerObject/getObjectRotation.cpp">getObjectRotation</a></li>
+		<li><a href="./src/PlayerObject/getOldPosition.cpp">getOldPosition</a></li>
 		<li><a href="./src/PlayerObject/getOrientedBox.cpp">getOrientedBox</a></li>
 		<li><a href="./src/PlayerObject/getRealPosition.cpp">getRealPosition</a></li>
 		<li><a href="./src/PlayerObject/getSecondColor.cpp">getSecondColor</a></li>
 		<li><a href="./src/PlayerObject/getYVelocity.cpp">getYVelocity</a></li>
 		<li><a href="./src/PlayerObject/gravityDown.cpp">gravityDown</a></li>
 		<li><a href="./src/PlayerObject/gravityUp.cpp">gravityUp</a></li>
+		<li><a href="./src/PlayerObject/handlePlayerCommand.cpp">handlePlayerCommand</a></li>
+		<li><a href="./src/PlayerObject/handleRotatedObjectCollision.cpp">handleRotatedObjectCollision</a></li>
+		<li><a href="./src/PlayerObject/handleRotatedSlopeCollision.cpp">handleRotatedSlopeCollision</a></li>
 		<li><a href="./src/PlayerObject/hardFlipGravity.cpp">hardFlipGravity</a></li>
 		<li><a href="./src/PlayerObject/hitGroundNoJump.cpp">hitGroundNoJump</a></li>
 		<li><a href="./src/PlayerObject/incrementJumps.cpp">incrementJumps</a></li>
@@ -231,6 +241,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/isSafeFlip.cpp">isSafeFlip</a></li>
 		<li><a href="./src/PlayerObject/isSafeHeadTest.cpp">isSafeHeadTest</a></li>
 		<li><a href="./src/PlayerObject/isSafeMode.cpp">isSafeMode</a></li>
+		<li><a href="./src/PlayerObject/isSafeSpiderFlip.cpp">isSafeSpiderFlip</a></li>
 		<li><a href="./src/PlayerObject/levelFlipFinished.cpp">levelFlipFinished</a></li>
 		<li><a href="./src/PlayerObject/levelFlipping.cpp">levelFlipping</a></li>
 		<li><a href="./src/PlayerObject/levelWillFlip.cpp">levelWillFlip</a></li>
@@ -255,20 +266,27 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/pushDown.cpp">pushDown</a></li>
 		<li><a href="./src/PlayerObject/pushPlayer.cpp">pushPlayer</a></li>
 		<li><a href="./src/PlayerObject/redirectDash.cpp">redirectDash</a></li>
+		<li><a href="./src/PlayerObject/releaseAllButtons.cpp">releaseAllButtons</a></li>
 		<li><a href="./src/PlayerObject/removeAllParticles.cpp">removeAllParticles</a></li>
+		<li><a href="./src/PlayerObject/removePendingCheckpoint.cpp">removePendingCheckpoint</a></li>
+		<li><a href="./src/PlayerObject/removePlacedCheckpoint.cpp">removePlacedCheckpoint</a></li>
 		<li><a href="./src/PlayerObject/resetAllParticles.cpp">resetAllParticles</a></li>
+		<li><a href="./src/PlayerObject/resetCollisionLog.cpp">resetCollisionLog</a></li>
 		<li><a href="./src/PlayerObject/resetCollisionValues.cpp">resetCollisionValues</a></li>
 		<li><a href="./src/PlayerObject/resetStreak.cpp">resetStreak</a></li>
 		<li><a href="./src/PlayerObject/resetTouchedRings.cpp">resetTouchedRings</a></li>
 		<li><a href="./src/PlayerObject/reverseMod.cpp">reverseMod</a></li>
 		<li><a href="./src/PlayerObject/reversePlayer.cpp">reversePlayer</a></li>
 		<li><a href="./src/PlayerObject/ringJump.cpp">ringJump</a></li>
+		<li><a href="./src/PlayerObject/rotateGameplayOnly.cpp">rotateGameplayOnly</a></li>
+		<li><a href="./src/PlayerObject/rotatePreSlopeObjects.cpp">rotatePreSlopeObjects</a></li>
 		<li><a href="./src/PlayerObject/runBallRotation.cpp">runBallRotation</a></li>
 		<li><a href="./src/PlayerObject/runBallRotation2.cpp">runBallRotation2</a></li>
 		<li><a href="./src/PlayerObject/runNormalRotation.cpp">runNormalRotation</a></li>
 		<li><a href="./src/PlayerObject/runRotateAction.cpp">runRotateAction</a></li>
 		<li><a href="./src/PlayerObject/setColor.cpp">setColor</a></li>
 		<li><a href="./src/PlayerObject/setFlipX.cpp">setFlipX</a></li>
+		<li><a href="./src/PlayerObject/setFlipY.cpp">setFlipY</a></li>
 		<li><a href="./src/PlayerObject/setOpacity.cpp">setOpacity</a></li>
 		<li><a href="./src/PlayerObject/setRotation.cpp">setRotation</a></li>
 		<li><a href="./src/PlayerObject/setScale.cpp">setScale</a></li>
@@ -280,6 +298,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/spawnCircle.cpp">spawnCircle</a></li>
 		<li><a href="./src/PlayerObject/spawnCircle2.cpp">spawnCircle2</a></li>
 		<li><a href="./src/PlayerObject/spawnDualCircle.cpp">spawnDualCircle</a></li>
+		<li><a href="./src/PlayerObject/spawnFromPlayer.cpp">spawnFromPlayer</a></li>
 		<li><a href="./src/PlayerObject/spawnPortalCircle.cpp">spawnPortalCircle</a></li>
 		<li><a href="./src/PlayerObject/spawnScaleCircle.cpp">spawnScaleCircle</a></li>
 		<li><a href="./src/PlayerObject/specialGroundHit.cpp">specialGroundHit</a></li>
@@ -290,6 +309,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/stopBurstEffect.cpp">stopBurstEffect</a></li>
 		<li><a href="./src/PlayerObject/stopDashing.cpp">stopDashing</a></li>
 		<li><a href="./src/PlayerObject/stopParticles.cpp">stopParticles</a></li>
+		<li><a href="./src/PlayerObject/stopPlatformerJumpAnimation.cpp">stopPlatformerJumpAnimation</a></li>
 		<li><a href="./src/PlayerObject/stopRotation.cpp">stopRotation</a></li>
 		<li><a href="./src/PlayerObject/stopStreak2.cpp">stopStreak2</a></li>
 		<li><a href="./src/PlayerObject/storeCollision.cpp">storeCollision</a></li>
@@ -307,6 +327,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/toggleVisibility.cpp">toggleVisibility</a></li>
 		<li><a href="./src/PlayerObject/unrotatePreSlopeObjects.cpp">unrotatePreSlopeObjects</a></li>
 		<li><a href="./src/PlayerObject/update.cpp">update</a></li>
+		<li><a href="./src/PlayerObject/updateCheckpointMode.cpp">updateCheckpointMode</a></li>
 		<li><a href="./src/PlayerObject/updateCollide.cpp">updateCollide</a></li>
 		<li><a href="./src/PlayerObject/updateCollideBottom.cpp">updateCollideBottom</a></li>
 		<li><a href="./src/PlayerObject/updateCollideLeft.cpp">updateCollideLeft</a></li>
@@ -317,12 +338,20 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/updateEffects.cpp">updateEffects</a></li>
 		<li><a href="./src/PlayerObject/updateInternalActions.cpp">updateInternalActions</a></li>
 		<li><a href="./src/PlayerObject/updateJump.cpp">updateJump</a></li>
+		<li><a href="./src/PlayerObject/updateJumpVariables.cpp">updateJumpVariables</a></li>
+		<li><a href="./src/PlayerObject/updateLastGroundObject.cpp">updateLastGroundObject</a></li>
+		<li><a href="./src/PlayerObject/updatePlayerForce.cpp">updatePlayerForce</a></li>
+		<li><a href="./src/PlayerObject/updatePlayerRobotFrame.cpp">updatePlayerRobotFrame</a></li>
 		<li><a href="./src/PlayerObject/updatePlayerScale.cpp">updatePlayerScale</a></li>
+		<li><a href="./src/PlayerObject/updatePlayerSpiderFrame.cpp">updatePlayerSpiderFrame</a></li>
+		<li><a href="./src/PlayerObject/updatePlayerSpriteExtra.cpp">updatePlayerSpriteExtra</a></li>
 		<li><a href="./src/PlayerObject/updateRobotAnimationSpeed.cpp">updateRobotAnimationSpeed</a></li>
 		<li><a href="./src/PlayerObject/updateRotation.cpp">updateRotation</a></li>
 		<li><a href="./src/PlayerObject/updateShipRotation.cpp">updateShipRotation</a></li>
+		<li><a href="./src/PlayerObject/updateShipSpriteExtra.cpp">updateShipSpriteExtra</a></li>
 		<li><a href="./src/PlayerObject/updateSlopeRotation.cpp">updateSlopeRotation</a></li>
 		<li><a href="./src/PlayerObject/updateSlopeYVelocity.cpp">updateSlopeYVelocity</a></li>
+		<li><a href="./src/PlayerObject/updateSpecial.cpp">updateSpecial</a></li>
 		<li><a href="./src/PlayerObject/updateStaticForce.cpp">updateStaticForce</a></li>
 		<li><a href="./src/PlayerObject/updateStreakBlend.cpp">updateStreakBlend</a></li>
 		<li><a href="./src/PlayerObject/updateStreaks.cpp">updateStreaks</a></li>
