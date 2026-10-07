@@ -265,7 +265,7 @@ void PlayerObject::collidedWithSlopeInternal(float dt, GameObject *object, bool 
 
 			knockDown = isMovingDown;
 			bool dontCrash =
-				(!object->m_slopeIsHazard && ((!slopeIntersection && (!m_isDart || m_stateDartSlide > 0)) ||
+				(!object->m_slopeIsHazard && ((!slopeIntersection && (!m_isDart || m_allowDartSlideTimer > 0)) ||
 				(m_isPlatformer || m_stateHitHead > 0))) ||
 				m_ignoreDamageEditor;
 

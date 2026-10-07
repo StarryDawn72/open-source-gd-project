@@ -72,7 +72,7 @@ void PlayerObject::update(float dt)
                         forceBlockMultiplier = 8.0f / 13.0f;
                 }
 
-                double forceVel = ((scaledDt * m_stateForceVector.y) * forceBlockMultiplier);
+                double forceVel = ((scaledDt * m_forceVector.y) * forceBlockMultiplier);
                 addToYVelocity(forceVel, 69);
 
                 if (forceVel != 0.0)
@@ -84,13 +84,13 @@ void PlayerObject::update(float dt)
                     m_robotBoostCharge += forceVel / 12.94f * 1.5;
 
                 if (m_isPlatformer) {
-                    float forceX = m_stateForceVector.x;
+                    float forceX = m_forceVector.x;
                     m_platformerXVelocity += (forceX * scaledDt);
 
                     if (forceX != 0.0)
                         m_affectedByForces = true;
 
-                    if (isInNormalMode() && !m_isRotating && fabsf(m_stateForceVector.x) > 0.1f)
+                    if (isInNormalMode() && !m_isRotating && fabsf(m_forceVector.x) > 0.1f)
                     {
                         runNormalRotation(true, 1.0);
                     }

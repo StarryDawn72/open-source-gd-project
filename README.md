@@ -184,7 +184,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary> <b>PlayerObject</b>  (174)</summary>
+	<summary> <b>PlayerObject</b>  (175)</summary>
 	<ul>
 		<li><a href="./src/PlayerObject/activateStreak.cpp">activateStreak</a></li>
 		<li><a href="./src/PlayerObject/addAllParticles.cpp">addAllParticles</a></li>
@@ -273,6 +273,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/resetAllParticles.cpp">resetAllParticles</a></li>
 		<li><a href="./src/PlayerObject/resetCollisionLog.cpp">resetCollisionLog</a></li>
 		<li><a href="./src/PlayerObject/resetCollisionValues.cpp">resetCollisionValues</a></li>
+		<li><a href="./src/PlayerObject/resetStateVariables.cpp">resetStateVariables</a></li>
 		<li><a href="./src/PlayerObject/resetStreak.cpp">resetStreak</a></li>
 		<li><a href="./src/PlayerObject/resetTouchedRings.cpp">resetTouchedRings</a></li>
 		<li><a href="./src/PlayerObject/reverseMod.cpp">reverseMod</a></li>
