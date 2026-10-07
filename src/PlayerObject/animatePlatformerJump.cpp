@@ -1,9 +1,9 @@
-#define kActionTagPlatformerJumpAnimation 13
+#define kActionTagPlatformerJumpAnimation 13 // TODO: rename
 
 void PlayerObject::animatePlatformerJump(float scale) {
     if (
         m_holdingLeft || m_holdingRight ||
-        m_platformerMovingLeft || m_platformerMovingRight ||
+        m_slopeForceLeft || m_slopeForceRight ||
         !isInNormalMode()
     ) {
         return;

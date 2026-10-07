@@ -184,7 +184,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary> <b>PlayerObject</b>  (187)</summary>
+	<summary> <b>PlayerObject</b>  (189)</summary>
 	<ul>
 		<li><a href="./src/PlayerObject/activateStreak.cpp">activateStreak</a></li>
 		<li><a href="./src/PlayerObject/addAllParticles.cpp">addAllParticles</a></li>
@@ -204,6 +204,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/copyAttributes.cpp">copyAttributes</a></li>
 		<li><a href="./src/PlayerObject/create.cpp">create</a></li>
 		<li><a href="./src/PlayerObject/createFadeOutDartStreak.cpp">createFadeOutDartStreak</a></li>
+		<li><a href="./src/PlayerObject/createRobot.cpp">createRobot</a></li>
 		<li><a href="./src/PlayerObject/deactivateParticle.cpp">deactivateParticle</a></li>
 		<li><a href="./src/PlayerObject/deactivateStreak.cpp">deactivateStreak</a></li>
 		<li><a href="./src/PlayerObject/destroyFromHitHead.cpp">destroyFromHitHead</a></li>
@@ -331,6 +332,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/toggleSpiderMode.cpp">toggleSpiderMode</a></li>
 		<li><a href="./src/PlayerObject/toggleSwingMode.cpp">toggleSwingMode</a></li>
 		<li><a href="./src/PlayerObject/toggleVisibility.cpp">toggleVisibility</a></li>
+		<li><a href="./src/PlayerObject/touchedObject.cpp">touchedObject</a></li>
 		<li><a href="./src/PlayerObject/unrotatePreSlopeObjects.cpp">unrotatePreSlopeObjects</a></li>
 		<li><a href="./src/PlayerObject/update.cpp">update</a></li>
 		<li><a href="./src/PlayerObject/updateCheckpointMode.cpp">updateCheckpointMode</a></li>
