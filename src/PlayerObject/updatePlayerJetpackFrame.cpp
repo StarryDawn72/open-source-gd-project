@@ -1,4 +1,5 @@
-void PlayerObject::updatePlayerJetpackFrame(int frameNumber) {
+void PlayerObject::updatePlayerJetpackFrame(int frameNumber)
+{
     int frame = MAX(1, MIN(frameNumber, 8));
 
     GM->loadIcon(frame, (int)IconType::Jetpack, m_iconRequestID);

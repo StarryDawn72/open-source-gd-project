@@ -1,4 +1,5 @@
-void PlayerObject::updatePlayerShipFrame(int frameNumber) {
+void PlayerObject::updatePlayerShipFrame(int frameNumber)
+{
     int frame = MAX(1, MIN(frameNumber, 169));
 
     GM->loadIcon(frame, (int)IconType::Ship, m_iconRequestID);

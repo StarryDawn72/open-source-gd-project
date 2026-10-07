@@ -1,4 +1,5 @@
-void PlayerObject::updatePlayerFrame(int frameNumber) {
+void PlayerObject::updatePlayerFrame(int frameNumber)
+{
     int frame = 0;
     if (frameNumber >= 0) {
         frame = MIN(frameNumber, 485);

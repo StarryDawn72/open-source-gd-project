@@ -1,4 +1,5 @@
-void PlayerObject::updatePlayerBirdFrame(int frameNumber) {
+void PlayerObject::updatePlayerBirdFrame(int frameNumber)
+{
     int frame = MAX(1, MIN(frameNumber, 149));
 
     GM->loadIcon(frame, (int)IconType::Ufo, m_iconRequestID);

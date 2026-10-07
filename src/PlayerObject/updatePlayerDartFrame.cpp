@@ -1,4 +1,5 @@
-void PlayerObject::updatePlayerDartFrame(int frameNumber) {
+void PlayerObject::updatePlayerDartFrame(int frameNumber)
+{
     int frame = MAX(1, MIN(frameNumber, 96));
 
     GM->loadIcon(frame, (int)IconType::Wave, m_iconRequestID);

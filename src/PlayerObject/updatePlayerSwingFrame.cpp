@@ -1,4 +1,5 @@
-void PlayerObject::updatePlayerSwingFrame(int frameNumber) {
+void PlayerObject::updatePlayerSwingFrame(int frameNumber)
+{
     int frame = MAX(1, MIN(frameNumber, 43));
 
     GM->loadIcon(frame, (int)IconType::Swing, m_iconRequestID);
