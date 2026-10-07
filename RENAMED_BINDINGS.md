@@ -68,25 +68,18 @@ Some nasty variables I had to rename, either because they were completely incorr
 - m_unk838 -> m_followPlayerYTimer
 - m_followRelated -> m_followPlayerYIndex
 - m_playerFollowFloats -> m_followPlayerYPositions
+- m_stateDartSlide -> m_allowDartSlideTimer
+- m_stateNoAutoJump -> m_noAutoJumpTimer
+- m_stateHitHead -> m_allowHeadHitTimer 
+- m_stateFlipGravity -> m_flipBlockTimer 
+- m_stateForceVector -> m_forceVector 
+- m_jumpPadRelated -> m_activeForceIDs
 
 **GameObject**
 - m_editorEnabled -> m_isInEditor
 - m_unk367 -> m_isAnimatedGameObject
 - m_unk3F8 -> m_isEndPortal
 - m_isRotationAligned -> m_hasSwappedDimensions
-
-**GJGameState**
-- m_levelFlipping -> m_levelFlipProgress
-- m_unkFloat10 -> m_backgroundWidth
-- m_unkFloat5 -> m_backgroundSpeedX
-- m_unkFloat6 -> m_backgroundSpeedY
-- m_unkFloat7 -> m_middlegroundSpeedX 
-- m_unkFloat8 -> m_middlegroundSpeedY
-- m_unkFloat4 -> m_lastCameraZoom
-- m_unkPoint4 -> m_cameraDeltaPosition 
-- m_cameraPosition2 -> m_cameraLastPosition
-- m_unkFloat9 -> m_dualAnimationProgress
-- m_unkInt11 -> m_lastModeHeight 
 
 **AudioEffectsLayer**
 - m_unk1c0 -> m_pulseQueue
