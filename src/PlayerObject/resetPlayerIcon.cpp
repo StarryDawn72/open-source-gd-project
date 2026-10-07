@@ -3,7 +3,7 @@ void PlayerObject::resetPlayerIcon()
     stopPlatformerJumpAnimation();
     m_width = 30.0f;
     m_height = 30.0f;
-    m_unkAngle1 = 30.0f;
+    m_unkAngle1 = 30.0f; // TODO: rename!!!
     
     runRotateAction(false, 5);
 
