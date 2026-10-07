@@ -42,13 +42,6 @@
     void updateGlowColor()
     void updateMove(float dt)
     void updatePlayerArt()
-    void updatePlayerBirdFrame(int frame)
-    void updatePlayerDartFrame(int frame)
-    void updatePlayerFrame(int frame)
     void updatePlayerGlow()
-    void updatePlayerJetpackFrame(int frame)
-    void updatePlayerRollFrame(int frame)
-    void updatePlayerShipFrame(int frame)
-    void updatePlayerSwingFrame(int frame)
     void updateStateVariables()
 	```

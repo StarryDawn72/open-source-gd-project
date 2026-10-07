@@ -184,7 +184,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary> <b>PlayerObject</b>  (175)</summary>
+	<summary> <b>PlayerObject</b>  (182)</summary>
 	<ul>
 		<li><a href="./src/PlayerObject/activateStreak.cpp">activateStreak</a></li>
 		<li><a href="./src/PlayerObject/addAllParticles.cpp">addAllParticles</a></li>
@@ -341,11 +341,18 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/updateJump.cpp">updateJump</a></li>
 		<li><a href="./src/PlayerObject/updateJumpVariables.cpp">updateJumpVariables</a></li>
 		<li><a href="./src/PlayerObject/updateLastGroundObject.cpp">updateLastGroundObject</a></li>
+		<li><a href="./src/PlayerObject/updatePlayerBirdFrame.cpp">updatePlayerBirdFrame</a></li>
+		<li><a href="./src/PlayerObject/updatePlayerDartFrame.cpp">updatePlayerDartFrame</a></li>
 		<li><a href="./src/PlayerObject/updatePlayerForce.cpp">updatePlayerForce</a></li>
+		<li><a href="./src/PlayerObject/updatePlayerFrame.cpp">updatePlayerFrame</a></li>
+		<li><a href="./src/PlayerObject/updatePlayerJetpackFrame.cpp">updatePlayerJetpackFrame</a></li>
 		<li><a href="./src/PlayerObject/updatePlayerRobotFrame.cpp">updatePlayerRobotFrame</a></li>
+		<li><a href="./src/PlayerObject/updatePlayerRollFrame.cpp">updatePlayerRollFrame</a></li>
 		<li><a href="./src/PlayerObject/updatePlayerScale.cpp">updatePlayerScale</a></li>
+		<li><a href="./src/PlayerObject/updatePlayerShipFrame.cpp">updatePlayerShipFrame</a></li>
 		<li><a href="./src/PlayerObject/updatePlayerSpiderFrame.cpp">updatePlayerSpiderFrame</a></li>
 		<li><a href="./src/PlayerObject/updatePlayerSpriteExtra.cpp">updatePlayerSpriteExtra</a></li>
+		<li><a href="./src/PlayerObject/updatePlayerSwingFrame.cpp">updatePlayerSwingFrame</a></li>
 		<li><a href="./src/PlayerObject/updateRobotAnimationSpeed.cpp">updateRobotAnimationSpeed</a></li>
 		<li><a href="./src/PlayerObject/updateRotation.cpp">updateRotation</a></li>
 		<li><a href="./src/PlayerObject/updateShipRotation.cpp">updateShipRotation</a></li>
