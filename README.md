@@ -184,12 +184,13 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary> <b>PlayerObject</b>  (185)</summary>
+	<summary> <b>PlayerObject</b>  (187)</summary>
 	<ul>
 		<li><a href="./src/PlayerObject/activateStreak.cpp">activateStreak</a></li>
 		<li><a href="./src/PlayerObject/addAllParticles.cpp">addAllParticles</a></li>
 		<li><a href="./src/PlayerObject/addToTouchedRings.cpp">addToTouchedRings</a></li>
 		<li><a href="./src/PlayerObject/addToYVelocity.cpp">addToYVelocity</a></li>
+		<li><a href="./src/PlayerObject/animatePlatformerJump.cpp">animatePlatformerJump</a></li>
 		<li><a href="./src/PlayerObject/animationFinished.cpp">animationFinished</a></li>
 		<li><a href="./src/PlayerObject/boostPlayer.cpp">boostPlayer</a></li>
 		<li><a href="./src/PlayerObject/bumpPlayer.cpp">bumpPlayer</a></li>
@@ -200,6 +201,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/collidedWithSlope.cpp">collidedWithSlope</a></li>
 		<li><a href="./src/PlayerObject/collidedWithSlopeInternal.cpp">collidedWithSlopeInternal</a></li>
 		<li><a href="./src/PlayerObject/convertToClosestRotation.cpp">convertToClosestRotation</a></li>
+		<li><a href="./src/PlayerObject/copyAttributes.cpp">copyAttributes</a></li>
 		<li><a href="./src/PlayerObject/create.cpp">create</a></li>
 		<li><a href="./src/PlayerObject/createFadeOutDartStreak.cpp">createFadeOutDartStreak</a></li>
 		<li><a href="./src/PlayerObject/deactivateParticle.cpp">deactivateParticle</a></li>
