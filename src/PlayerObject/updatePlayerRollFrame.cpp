@@ -4,7 +4,7 @@ void PlayerObject::updatePlayerRollFrame(int frameNumber)
 {
     int frame = 0;
     if (frameNumber >= 0) {
-        frame = MIN(frameNumber, 118);
+        frame = MIN(frameNumber, kMaxRollFrame);
         m_maybeSavedPlayerFrame = frame;
     }
 
