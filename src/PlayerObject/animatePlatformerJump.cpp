@@ -1,4 +1,4 @@
-#define kActionTagPlatformerJumpAnimation 13 // TODO: rename
+#define kTagPlatformerJumpAnimation 13
 
 void PlayerObject::animatePlatformerJump(float scale) {
     if (
@@ -36,7 +36,7 @@ void PlayerObject::animatePlatformerJump(float scale) {
             NULL
         );
 
-        action->setTag(kActionTagPlatformerJumpAnimation);
+        action->setTag(kTagPlatformerJumpAnimation);
 
         if (iconTarget == 0)
             m_iconSprite->runAction(action);
