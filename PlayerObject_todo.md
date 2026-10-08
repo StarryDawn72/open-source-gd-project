@@ -10,7 +10,6 @@
     bool init(int player, int ship, GJBaseGameLayer* gameLayer, CCLayer* layer, bool playLayer)
     void loadFromCheckpoint(PlayerCheckpoint* object)
     void performSlideCheck()
-    void playCompleteEffect(bool noEffects, bool instant)
     void playDeathEffect()
     void playSpiderDashEffect(CCPoint from, CCPoint to)
     void postCollision(float dt)
@@ -34,7 +33,6 @@
     void updateCheckpointTest()
     void updateGlowColor()
     void updateMove(float dt)
-    void updatePlayerArt()
     void updatePlayerGlow()
     void updateStateVariables()
 	```

@@ -184,7 +184,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary> <b>PlayerObject</b>  (189)</summary>
+	<summary> <b>PlayerObject</b>  (194)</summary>
 	<ul>
 		<li><a href="./src/PlayerObject/activateStreak.cpp">activateStreak</a></li>
 		<li><a href="./src/PlayerObject/addAllParticles.cpp">addAllParticles</a></li>
@@ -205,6 +205,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/create.cpp">create</a></li>
 		<li><a href="./src/PlayerObject/createFadeOutDartStreak.cpp">createFadeOutDartStreak</a></li>
 		<li><a href="./src/PlayerObject/createRobot.cpp">createRobot</a></li>
+		<li><a href="./src/PlayerObject/createSpider.cpp">createSpider</a></li>
 		<li><a href="./src/PlayerObject/deactivateParticle.cpp">deactivateParticle</a></li>
 		<li><a href="./src/PlayerObject/deactivateStreak.cpp">deactivateStreak</a></li>
 		<li><a href="./src/PlayerObject/destroyFromHitHead.cpp">destroyFromHitHead</a></li>
@@ -256,6 +257,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/placeStreakPoint.cpp">placeStreakPoint</a></li>
 		<li><a href="./src/PlayerObject/playBumpEffect.cpp">playBumpEffect</a></li>
 		<li><a href="./src/PlayerObject/playBurstEffect.cpp">playBurstEffect</a></li>
+		<li><a href="./src/PlayerObject/playCompleteEffect.cpp">playCompleteEffect</a></li>
 		<li><a href="./src/PlayerObject/playDynamicSpiderRun.cpp">playDynamicSpiderRun</a></li>
 		<li><a href="./src/PlayerObject/playerDestroyed.cpp">playerDestroyed</a></li>
 		<li><a href="./src/PlayerObject/playerIsFalling.cpp">playerIsFalling</a></li>
@@ -333,6 +335,8 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/toggleSwingMode.cpp">toggleSwingMode</a></li>
 		<li><a href="./src/PlayerObject/toggleVisibility.cpp">toggleVisibility</a></li>
 		<li><a href="./src/PlayerObject/touchedObject.cpp">touchedObject</a></li>
+		<li><a href="./src/PlayerObject/unfinished_setupStreak.cpp">unfinished_setupStreak</a></li>
+		<li><a href="./src/PlayerObject/unfinished_togglePlayerScale.cpp">unfinished_togglePlayerScale</a></li>
 		<li><a href="./src/PlayerObject/unrotatePreSlopeObjects.cpp">unrotatePreSlopeObjects</a></li>
 		<li><a href="./src/PlayerObject/update.cpp">update</a></li>
 		<li><a href="./src/PlayerObject/updateCheckpointMode.cpp">updateCheckpointMode</a></li>
@@ -348,6 +352,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/updateJump.cpp">updateJump</a></li>
 		<li><a href="./src/PlayerObject/updateJumpVariables.cpp">updateJumpVariables</a></li>
 		<li><a href="./src/PlayerObject/updateLastGroundObject.cpp">updateLastGroundObject</a></li>
+		<li><a href="./src/PlayerObject/updatePlayerArt.cpp">updatePlayerArt</a></li>
 		<li><a href="./src/PlayerObject/updatePlayerBirdFrame.cpp">updatePlayerBirdFrame</a></li>
 		<li><a href="./src/PlayerObject/updatePlayerDartFrame.cpp">updatePlayerDartFrame</a></li>
 		<li><a href="./src/PlayerObject/updatePlayerForce.cpp">updatePlayerForce</a></li>
