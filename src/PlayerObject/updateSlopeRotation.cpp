@@ -1,6 +1,5 @@
 /*
-	====== PlayerObject::updateSlopeRotation ======
-	
+	 	
 	This function runs every frame that the player is
 	riding a slope's edge. It makes the player smoothly
 	face the angle of the slope, or reset rotation entirely

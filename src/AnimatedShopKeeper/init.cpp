@@ -1,9 +1,6 @@
 /*
-	====== AnimatedShopKeeper::init ======
-	
 	Standard initialization routine for all
 	five shopkeepers.
-	
 */
 
 bool AnimatedShopKeeper::init(ShopType type)

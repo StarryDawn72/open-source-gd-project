@@ -1,11 +1,9 @@
 /*
-	====== CCCircleWave::removeMeAndCleanup ======
-	
 	Overrides CCNode::removeMeAndCleanup to call
 	its delegate's circleWaveWillBeRemoved method
 	to notify its listeners before the node is
 	destroyed.
-	
+
 */
 void CCCircleWave::removeMeAndCleanup()
 {

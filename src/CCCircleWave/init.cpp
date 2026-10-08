@@ -1,6 +1,4 @@
 /*
-	====== CCCircleWave::init ======
-	
 	Initializes the circle wave CCAction with a start radius,
 	end radius, and duration. "fadeIn" makes the circle's opacity
 	fade from 0 to 255 to 0 instead of 255 to 0. "easeOut" applies

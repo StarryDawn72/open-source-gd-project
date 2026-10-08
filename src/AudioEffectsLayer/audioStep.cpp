@@ -1,14 +1,11 @@
 #define PL GameManager::sharedState()->getPlayLayer()
 /*
-	====== AudioEffectsLayer::audioStep ======
-	
 	Called every frame while playing a level.
 	It steps through the current array of pulses and 
 	calls triggerEffect once it hits a time threshold
 	to temporarily raise the audio scale for the given
 	frequency. Used for the pulse effect on jump orbs,
 	rods, and many other decorations.
-	
 */
 void AudioEffectsLayer::audioStep(float dt)
 {

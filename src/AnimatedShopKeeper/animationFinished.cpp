@@ -1,9 +1,6 @@
 /*
-	====== AnimatedShopKeeper::animationFinished ======
-	
-	State machine that handles randomized idle animations
+    State machine that handles randomized idle animations
 	for the shopkeepers. Runs after any animation is done playing.
-	
 */
 
 void AnimatedShopKeeper::animationFinished(const char* key)

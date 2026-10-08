@@ -1,6 +1,5 @@
 /*
-	====== PlayerObject::runNormalRotation ======
-	
+	 	
 	This function is what begins the continuous visual spin of
 	the cube and ball game modes. It takes "speed" as a final modifier,
 	as well as player scale, gravity direction, movement direction, and

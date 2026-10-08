@@ -1,6 +1,4 @@
 /*
-	====== LevelEditorLayer::addObjectFromVector ======
-	
 	Adds an object to the editor from raw object string data,
 	unless it's a secret (main) coin or we are attempting to
 	exceed the maximum user coin count of 3.

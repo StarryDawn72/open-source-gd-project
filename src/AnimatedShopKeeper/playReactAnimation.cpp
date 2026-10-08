@@ -1,11 +1,8 @@
 /*
-	====== AnimatedShopKeeper::playReactAnimation ======
-	
 	This function triggers the react animation when you
 	interact with the regular shopkeeper. It does not trigger
 	on any others despite them all being instances of the same 
 	"AnimatedShopKeeper" class.
-	
 */
 void AnimatedShopKeeper::playReactAnimation()
 {

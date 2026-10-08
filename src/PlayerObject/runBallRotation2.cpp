@@ -1,6 +1,5 @@
 /*
-	====== PlayerObject::runBallRotation2 ======
-	
+	 	
 	Alternate version of runBallRotation with slower
 	rotation speed and inverted rotation direction. Called
 	in the Ball game mode when you flip gravity or perform a

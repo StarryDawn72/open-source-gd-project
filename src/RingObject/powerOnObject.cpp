@@ -1,7 +1,6 @@
 #define GM GameManager::sharedState()
 /*
-	====== RingObject::powerOnObject ======
-	
+	 	
 	Activates this jump ring, and spawns a ripple effect
 	under certain conditions.
 	

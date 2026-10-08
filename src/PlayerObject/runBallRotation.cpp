@@ -1,6 +1,5 @@
 /*
-	====== PlayerObject::runBallRotation ======
-	
+	 	
 	This function behaves as the standard rotation
 	initiator for the Ball game mode. Once invoked,
 	the new speed assigned to m_rotationSpeed will be

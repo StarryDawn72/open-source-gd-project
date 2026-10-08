@@ -1,6 +1,4 @@
 /*
-	====== CCCircleWave::updateTweenAction ======
-
 	Apply a tweened value update to the circle wave. Ran
 	every frame.
 */

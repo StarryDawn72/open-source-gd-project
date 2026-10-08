@@ -2,8 +2,7 @@
 #define kPlayerTouchToggleBlock 3643
 
 /*
-	====== RingObject::spawnCircle ======
-	
+	 	
 	Spawns the expanding ripple effect when the player
 	touches an orb, unless it's a player touch toggle block.
 	

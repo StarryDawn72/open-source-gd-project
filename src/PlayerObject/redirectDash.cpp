@@ -1,6 +1,5 @@
 /*
-	====== PlayerObject::redirectDash ======
-	
+	 	
 	This feature is part of the "Redirect Dash" option in the
 	Edit Special menu for teleport portals. In platformer mode,
 	enabling this setting will cause the angle of the player to

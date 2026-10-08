@@ -1,13 +1,10 @@
 /*
-	====== PlayerObject::playerIsFallingBugged ======
-	
 	Determines if the player is falling. Returns true if
 	the player's vertical velocity is inferior (or superior if
 	upside down) to double the current gravity value (usually around ~1.9).
 	This is where to famous pre-2.2 upside-down physics are split,
 	although sideways mode, Platformer, and Swing all bypass this
 	and force the game to use the new physics.
-	
 */
 bool PlayerObject::playerIsFallingBugged()
 {

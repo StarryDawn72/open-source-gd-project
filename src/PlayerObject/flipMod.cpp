@@ -1,8 +1,5 @@
 /*
-	====== PlayerObject::flipMod ======
-	
 	Returns the gravity direction as an integer.
-	
 */
 int PlayerObject::flipMod()
 {

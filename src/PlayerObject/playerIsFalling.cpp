@@ -1,8 +1,5 @@
 /*
-	====== PlayerObject::playerIsFalling ======
-	
 	Returns true if the player is falling past a given threshold.
-	
 */
 bool PlayerObject::playerIsFalling(float yVelocity)
 {
