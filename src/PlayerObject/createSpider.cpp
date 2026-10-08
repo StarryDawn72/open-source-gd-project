@@ -2,7 +2,9 @@ void PlayerObject::createSpider(int frame)
 {
     bool spiderAlreadyExists = m_spiderSprite != nullptr;
 
-    ccColor3B color, secondColor;
+    ccColor3B color;
+    ccColor3B secondColor;
+    
     std::string currentAnimation;
     bool isGlowSpriteVisible;
 
@@ -12,8 +14,10 @@ void PlayerObject::createSpider(int frame)
         secondColor = m_spiderSprite->m_secondColor;
         isGlowSpriteVisible = m_spiderSprite->m_glowSprite->isVisible();
         currentAnimation = m_spiderSprite->m_animationManager->m_currentAnimation;
+        
         m_spiderBatchNode->removeMeAndCleanup();
         m_spiderBatchNode->release();
+        
         m_spiderSprite = nullptr;
     }
 
@@ -27,11 +31,13 @@ void PlayerObject::createSpider(int frame)
     {
         if (m_isSpider)
             m_mainLayer->addChild(m_spiderBatchNode, 2);
+        
         m_spiderSprite->m_color = color;
         m_spiderSprite->m_secondColor = secondColor;
         m_spiderSprite->updateColors();
         m_spiderSprite->updateGlowColor(m_playerColor2, false);
         m_spiderSprite->runAnimation(currentAnimation);
+        
         if (isGlowSpriteVisible)
             m_spiderSprite->showGlow();
     }
