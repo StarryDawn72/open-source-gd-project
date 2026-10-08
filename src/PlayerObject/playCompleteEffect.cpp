@@ -4,8 +4,8 @@ void PlayerObject::playCompleteEffect(bool noEffects, bool instant)
 {
     if (m_isDart)
         fadeOutStreak2(0.2f);
+    
     stopDashing();
-
     deactivateParticle();
     m_trailingParticles->stopSystem();
     m_shipClickParticles->stopSystem();
@@ -56,20 +56,21 @@ void PlayerObject::playCompleteEffect(bool noEffects, bool instant)
 
     explodeEffect->resetSystem();
 
-    auto wave1 = CCCircleWave::create(20.0f, 80.0f, 0.72f, false);
-    wave1->m_color = m_playerColor1;
-    wave1->setPosition(getPosition());
-    parentLayer->addChild(wave1, 99);
+    auto ripple1 = CCCircleWave::create(20.0f, 80.0f, 0.72f, false);
+    ripple1->m_color = m_playerColor1;
+    ripple1->setPosition(getPosition());
+    parentLayer->addChild(ripple1, 99);
 
-    auto wave2 = CCCircleWave::create(30.0f, 50.0f, 0.84000003f, false);
-    wave2->m_color = m_playerColor2;
-    wave2->setPosition(getPosition());
-    wave2->m_opacityMod = 0.8f;
-    m_parentLayer->addChild(wave2, 1000);
-
-    auto wave3 = CCCircleWave::create(30.0f, 20.0f, 0.96000004f, false);
-    wave3->m_color = m_playerColor1;
-    wave3->setPosition(getPosition());
-    wave3->m_opacityMod = 0.8f;
-    m_parentLayer->addChild(wave3, 1000);
+                                             // TODO: fix this
+    auto ripple2 = CCCircleWave::create(30.0f, 50.0f, 0.84000003f, false);
+    ripple2->m_color = m_playerColor2;
+    ripple2->setPosition(getPosition());
+    ripple2->m_opacityMod = 0.8f;
+    m_parentLayer->addChild(ripple2, 1000);
+                                             // TODO: fix this too
+    auto ripple3 = CCCircleWave::create(30.0f, 20.0f, 0.96000004f, false);
+    ripple3->m_color = m_playerColor1;
+    ripple3->setPosition(getPosition());
+    ripple3->m_opacityMod = 0.8f;
+    m_parentLayer->addChild(ripple3, 1000);
 }
