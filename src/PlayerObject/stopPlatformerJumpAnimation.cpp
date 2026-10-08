@@ -1,15 +1,14 @@
-// TODO: Find better names
-#define kActionTagPlatformerJumpAnimation 13
-#define kActionTagPlatformerJumpUnk 14
+#define kTagPlatformerJumpAnimation 13
+#define kTagPlatformerJumpUnk 14 // TODO: find usage and name
 
 void PlayerObject::stopPlatformerJumpAnimation() {
     if (!m_isPlatformer)
         return;
 
-    m_iconSprite->stopActionByTag(kActionTagPlatformerJumpAnimation);
-    m_iconSprite->stopActionByTag(kActionTagPlatformerJumpUnk);
+    m_iconSprite->stopActionByTag(kTagPlatformerJumpAnimation);
+    m_iconSprite->stopActionByTag(kTagPlatformerJumpUnk);
     m_iconSprite->setScale(1.0f);
-    m_iconGlow->stopActionByTag(kActionTagPlatformerJumpAnimation);
-    m_iconGlow->stopActionByTag(kActionTagPlatformerJumpUnk);
+    m_iconGlow->stopActionByTag(kTagPlatformerJumpAnimation);
+    m_iconGlow->stopActionByTag(kTagPlatformerJumpUnk);
     m_iconGlow->setScale(1.0f);
 }

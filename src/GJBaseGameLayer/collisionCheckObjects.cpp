@@ -1,4 +1,4 @@
-#define kFESpawnTrigger 1268
+#define kObjectSpawnTrigger 1268
 /*
 	Handles behavior for every object type when they collide with the player.
 	The main collision resolution happens in checkCollisions (where this function's called).
@@ -335,7 +335,7 @@ void GJBaseGameLayer::collisionCheckObjects(PlayerObject* object, std::vector<Ga
 					}
 
 					m_effectManager->storeTriggeredID(obj->m_uniqueID, 0);
-					if (obj->m_objectID == kFESpawnTrigger)
+					if (obj->m_objectID == kObjectSpawnTrigger)
 					{
 						std::vector<int> remapKeys;
 						((SpawnTriggerGameObject*)obj)->updateRemapKeys(remapKeys);
