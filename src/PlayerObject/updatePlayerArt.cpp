@@ -1,3 +1,12 @@
+/*
+    Depending on whether the player is upsideDown or
+    sideways. It flips/rotates the players icon and
+    also flips/rotates the gravity, angle and posVar of
+    that certain particles from the player.
+    
+    This usually only gets called if the player changes
+    gravity (sideways as well) or changes gamemode.
+*/
 void PlayerObject::updatePlayerArt()
 {
     m_mainLayer->setScaleX(reverseMod());
