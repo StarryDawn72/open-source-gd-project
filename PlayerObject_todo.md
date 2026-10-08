@@ -4,7 +4,6 @@
     virtual void setPosition(CCPoint const& position)
     virtual void resetObject()
     bool collidedWithObjectInternal(float dt, GameObject* object, CCRect rect, bool skipCheck)
-    void createSpider(int frame)
     void enablePlayerControls()
     void hitGround(GameObject* object, bool notFlipped)
     bool init(int player, int ship, GJBaseGameLayer* gameLayer, CCLayer* layer, bool playLayer)
