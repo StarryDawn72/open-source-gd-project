@@ -74,6 +74,7 @@ Some nasty variables I had to rename, either because they were completely incorr
 - m_stateFlipGravity -> m_flipBlockTimer 
 - m_stateForceVector -> m_forceVector 
 - m_jumpPadRelated -> m_activeForceIDs
+- m_stateScale -> m_scaleChangeTimer 
 
 **GameObject**
 - m_editorEnabled -> m_isInEditor

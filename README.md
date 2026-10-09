@@ -302,6 +302,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/setScaleX.cpp">setScaleX</a></li>
 		<li><a href="./src/PlayerObject/setScaleY.cpp">setScaleY</a></li>
 		<li><a href="./src/PlayerObject/setSecondColor.cpp">setSecondColor</a></li>
+		<li><a href="./src/PlayerObject/setupStreak.cpp">setupStreak</a></li>
 		<li><a href="./src/PlayerObject/setVisible.cpp">setVisible</a></li>
 		<li><a href="./src/PlayerObject/setYVelocity.cpp">setYVelocity</a></li>
 		<li><a href="./src/PlayerObject/spawnCircle.cpp">spawnCircle</a></li>
@@ -329,14 +330,13 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/toggleFlyMode.cpp">toggleFlyMode</a></li>
 		<li><a href="./src/PlayerObject/toggleGhostEffect.cpp">toggleGhostEffect</a></li>
 		<li><a href="./src/PlayerObject/togglePlatformerMode.cpp">togglePlatformerMode</a></li>
+		<li><a href="./src/PlayerObject/togglePlayerScale.cpp">togglePlayerScale</a></li>
 		<li><a href="./src/PlayerObject/toggleRobotMode.cpp">toggleRobotMode</a></li>
 		<li><a href="./src/PlayerObject/toggleRollMode.cpp">toggleRollMode</a></li>
 		<li><a href="./src/PlayerObject/toggleSpiderMode.cpp">toggleSpiderMode</a></li>
 		<li><a href="./src/PlayerObject/toggleSwingMode.cpp">toggleSwingMode</a></li>
 		<li><a href="./src/PlayerObject/toggleVisibility.cpp">toggleVisibility</a></li>
 		<li><a href="./src/PlayerObject/touchedObject.cpp">touchedObject</a></li>
-		<li><a href="./src/PlayerObject/unfinished_setupStreak.cpp">unfinished_setupStreak</a></li>
-		<li><a href="./src/PlayerObject/unfinished_togglePlayerScale.cpp">unfinished_togglePlayerScale</a></li>
 		<li><a href="./src/PlayerObject/unrotatePreSlopeObjects.cpp">unrotatePreSlopeObjects</a></li>
 		<li><a href="./src/PlayerObject/update.cpp">update</a></li>
 		<li><a href="./src/PlayerObject/updateCheckpointMode.cpp">updateCheckpointMode</a></li>

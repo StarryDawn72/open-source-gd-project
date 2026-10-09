@@ -134,12 +134,8 @@ void PlayerObject::update(float dt)
 
             float finalDeltaX = deltaX + m_reverseSyncStep;
 
-            if (m_isSideways) {
-                double y = deltaY;
-                deltaY = finalDeltaX;
-                finalDeltaX = y;
-            }
-
+            if (m_isSideways) CC_SWAP(deltaY, finalDeltaX, double)
+            
             // Set the final player position this tick
             setPosition(getPosition() + ccp(finalDeltaX, deltaY));
 

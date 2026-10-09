@@ -26,7 +26,7 @@ void PlayerObject::redirectDash(float rotation)
 
 	newAngle = (newAngle + m_isSideways ? -90.0f : 0.0f) % 360;
 	if (newAngle < 0) newAngle += 360;
-	if (m_isSideways) CC_SWAP(dashPos.x, dashPos.y, float);
+	if (m_isSideways) CC_SWAP(dashPos.y, dashPos.x, float);
 
 	m_dashAngle = -newAngle;
 	m_dashX = dashPos.x;

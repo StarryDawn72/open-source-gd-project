@@ -263,7 +263,7 @@ void updateStreakSettings(CCMotionStreak* streak, int streakType, PlayerObject* 
     float fadeTime = 0.0f;
     float strokeWidth = 0.0f;
 
-    getSettingsForStreak(streakType, player, &fadeTime, &strokeWidth);
+    getSettingsForStreak(streakType, player, fadeTime, strokeWidth);
     
     streak->updateFade(fadeTime);
     streak->setStroke(strokeWidth);
