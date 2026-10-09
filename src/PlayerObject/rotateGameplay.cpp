@@ -1,3 +1,5 @@
+#define kPlayerCommandStopSlide 543
+
 void PlayerObject::rotateGameplay(int moveDirection, int groundDirection, bool editVelocity, float velocityModX, float velocityModY, bool overrideVelocity, bool dontSlide)
 {
     bool wasUpsideDown = m_isUpsideDown;
@@ -37,11 +39,13 @@ void PlayerObject::rotateGameplay(int moveDirection, int groundDirection, bool e
             }
             velocity.x = velocityModX;
             velocity.y = velocityModY;
-        } else
+        }
+        else {
             CC_SWAP(velocity.x, velocity.y, float);
+        }
 
         updatePlayerForce(velocity, false);
-        m_maybeIsBoosted = true;
+        m_isJumping = true;
         playerTeleported();
 
         if (dontSlide)
