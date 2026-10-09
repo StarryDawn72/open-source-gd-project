@@ -1,6 +1,5 @@
 /*
-	====== PlayLayer::getRelativeModNew ======
-	
+	 	
 	This function calculates how close the given position
 	is to the edges of the screen, normalized to a [0, 1] range.
 	It's used in enter effects and invisible block calculations.

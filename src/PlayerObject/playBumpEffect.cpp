@@ -1,10 +1,7 @@
 #define PL GameManager::sharedState()->getPlayLayer()
 /*
-	====== PlayerObject::playBumpEffect ======
-	
 	Spawns the expanding circle effect upon touching
 	a jump pad.
-	
 */
 void PlayerObject::playBumpEffect(int objectType, GameObject *player)
 {

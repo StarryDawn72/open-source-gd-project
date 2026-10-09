@@ -2,8 +2,6 @@
 #define kStickDistancePlatformer 10.0f
 #define PL GameManager::sharedState()->getPlayLayer()
 /*
-	====== PlayerObject::collidedWithSlopeInternal ======
-	
 	This function is the responsible for the entirety of 
 	Geometry Dash's slope physics. It runs every frame that
 	the player is considered close enough to a slope, handling

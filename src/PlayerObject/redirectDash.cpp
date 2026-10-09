@@ -1,6 +1,5 @@
 /*
-	====== PlayerObject::redirectDash ======
-	
+	 	
 	This feature is part of the "Redirect Dash" option in the
 	Edit Special menu for teleport portals. In platformer mode,
 	enabling this setting will cause the angle of the player to
@@ -27,7 +26,7 @@ void PlayerObject::redirectDash(float rotation)
 
 	newAngle = (newAngle + m_isSideways ? -90.0f : 0.0f) % 360;
 	if (newAngle < 0) newAngle += 360;
-	if (m_isSideways) CC_SWAP(dashPos.x, dashPos.y, float);
+	if (m_isSideways) CC_SWAP(dashPos.y, dashPos.x, float);
 
 	m_dashAngle = -newAngle;
 	m_dashX = dashPos.x;

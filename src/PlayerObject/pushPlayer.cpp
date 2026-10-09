@@ -1,6 +1,5 @@
 /*
-	====== PlayerObject::pushPlayer ======
-	
+	 	
 	This function acts as a wrapper around addToYVelocity.
 	It existed before update 2.2, while setYVelocity and
 	addToYVelocity did not.

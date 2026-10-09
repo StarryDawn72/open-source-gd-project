@@ -1,9 +1,7 @@
 /*
-	====== CCCircleWave::followObject ======
-	
 	Schedules updatePosition every frame to follow
 	a given node unless staticPosition is true.
-	
+
 */
 void CCCircleWave::followObject(CCNode *newTarget, bool staticPosition)
 {

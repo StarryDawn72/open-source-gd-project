@@ -1,8 +1,7 @@
 #define GM GameManager::sharedState()
 #define kTagPlayerBlink 11
 /*
-	====== PlayerObject::playSpawnEffect ======
-	
+	 	
 	This function handles the player blink and ripple
 	effects when respawning.
 	

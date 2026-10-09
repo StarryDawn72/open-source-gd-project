@@ -109,3 +109,162 @@ gd::string getFrameForStreak(ShipStreak streak, float totalTime)
     // Same behavior.
     return fmt::format("shipfire{:02}_{:03}.png", (int)streak, frame);
 }
+
+int getSettingsForStreak(int streakType, float playerSpeed, float playerScale, float& fadeTimeOut, float& strokeWidthOut)
+{
+    float scaleMod = (playerScale != 1.0f) ? 0.5f : 1.0f;
+
+    switch ((ShipStreak)streakType) {
+        case ShipStreak::ShipFire2:
+            if (playerSpeed == 0.7f) {
+                fadeTimeOut = (scaleMod * 0.12f) * 0.6f;
+                strokeWidthOut = scaleMod * 14.0f;
+            }
+            else if (playerSpeed == 0.9f) {
+                fadeTimeOut = (scaleMod * 0.115f) * 0.6f;
+                strokeWidthOut = scaleMod * 16.0f;
+            }
+            else if (playerSpeed == 1.1f) {
+                fadeTimeOut = (scaleMod * 0.11f) * 0.6f;
+                strokeWidthOut = scaleMod * 18.0f;
+            }
+            else if (playerSpeed == 1.3f) {
+                fadeTimeOut = (scaleMod * 0.108f) * 0.6f;
+                strokeWidthOut = scaleMod * 20.0f;
+            }
+            else if (playerSpeed == 1.6f) {
+                fadeTimeOut = (scaleMod * 0.106f) * 0.6f;
+                strokeWidthOut = scaleMod * 22.0f;
+            }
+            break;
+        case ShipStreak::ShipFire3:
+            if (playerSpeed == 0.7f) {
+                fadeTimeOut = (scaleMod * 0.15f) * 0.9f;
+                strokeWidthOut = (scaleMod * 12.0f) * 1.3f;
+            }
+            else if (playerSpeed == 0.9f) {
+                fadeTimeOut = (scaleMod * 0.148f) * 0.9f;
+                strokeWidthOut = (scaleMod * 14.0f) * 1.3f;
+            }
+            else if (playerSpeed == 1.1f) {
+                fadeTimeOut = (scaleMod * 0.146f) * 0.9f;
+                strokeWidthOut = (scaleMod * 16.0f) * 1.3f;
+            }
+            else if (playerSpeed == 1.3f) {
+                fadeTimeOut = (scaleMod * 0.144f) * 0.9f;
+                strokeWidthOut = (scaleMod * 18.0f) * 1.3f;
+            }
+            else if (playerSpeed == 1.6f) {
+                fadeTimeOut = (scaleMod * 0.142f) * 0.9f;
+                strokeWidthOut = (scaleMod * 22.0f) * 1.3f;
+            }
+            break;
+        case ShipStreak::ShipFire4:
+            if (playerSpeed == 0.7f) {
+                fadeTimeOut = (scaleMod * 0.145f) * 0.7f;
+                strokeWidthOut = (scaleMod * 12.0f) * 1.3f;
+            }
+            else if (playerSpeed == 0.9f) {
+                fadeTimeOut = (scaleMod * 0.152f) * 0.7f;
+                strokeWidthOut = (scaleMod * 14.0f) * 1.3f;
+            }
+            else if (playerSpeed == 1.1f) {
+                fadeTimeOut = (scaleMod * 0.155f) * 0.7f;
+                strokeWidthOut = (scaleMod * 16.0f) * 1.3f;
+            }
+            else if (playerSpeed == 1.3f) {
+                fadeTimeOut = (scaleMod * 0.151f) * 0.7f;
+                strokeWidthOut = (scaleMod * 18.0f) * 1.3f;
+            }
+            else if (playerSpeed == 1.6f) {
+                fadeTimeOut = (scaleMod * 0.15f) * 0.7f;
+                strokeWidthOut = (scaleMod * 22.0f) * 1.3f;
+            }
+            break;
+        case ShipStreak::ShipFire5:
+            if (playerSpeed == 0.7f) {
+                fadeTimeOut = (scaleMod * 0.15f) * 0.6f;
+                strokeWidthOut = (scaleMod * 12.0f) * 1.1f;
+            }
+            else if (playerSpeed == 0.9f) {
+                fadeTimeOut = (scaleMod * 0.15f) * 0.6f;
+                strokeWidthOut = (scaleMod * 14.0f) * 1.1f;
+            }
+            else if (playerSpeed == 1.1f) {
+                fadeTimeOut = (scaleMod * 0.15f) * 0.6f;
+                strokeWidthOut = (scaleMod * 15.0f) * 1.1f;
+            }
+            else if (playerSpeed == 1.3f) {
+                fadeTimeOut = (scaleMod * 0.15f) * 0.6f;
+                strokeWidthOut = (scaleMod * 16.0f) * 1.1f;
+            }
+            else if (playerSpeed == 1.6f) {
+                fadeTimeOut = (scaleMod * 0.15f) * 0.6f;
+                strokeWidthOut = (scaleMod * 17.0f) * 1.1f;
+            }
+            break;
+        case ShipStreak::ShipFire6:
+            if (playerSpeed == 0.7f) {
+                fadeTimeOut = (scaleMod * 0.15f) * 0.6f;
+                strokeWidthOut = (scaleMod * 12.0f) * 1.5f;
+            }
+            else if (playerSpeed == 0.9f) {
+                fadeTimeOut = (scaleMod * 0.151f) * 0.6f;
+                strokeWidthOut = (scaleMod * 14.0f) * 1.5f;
+            }
+            else if (playerSpeed == 1.1f) {
+                fadeTimeOut = (scaleMod * 0.152f) * 0.6f;
+                strokeWidthOut = (scaleMod * 15.0f) * 1.5f;
+            }
+            else if (playerSpeed == 1.3f) {
+                fadeTimeOut = (scaleMod * 0.155f) * 0.6f;
+                strokeWidthOut = (scaleMod * 16.0f) * 1.5f;
+            }
+            else if (playerSpeed == 1.6f) {
+                fadeTimeOut = (scaleMod * 0.16f) * 0.6f;
+                strokeWidthOut = (scaleMod * 18.0f) * 1.5f;
+            }
+            break;
+    }
+
+    if (playerSpeed == 0.7f)
+    {
+        fadeTimeOut *= 1.3f;
+        strokeWidthOut *= 1.3f;
+    }
+    else if (playerSpeed == 0.9f)
+    {
+        fadeTimeOut *= 1.2f;
+        strokeWidthOut *= 1.2f;
+    }
+    else if (playerSpeed == 1.1f)
+    {
+        fadeTimeOut *= 1.1f;
+        strokeWidthOut *= 1.1f;
+    }
+    else if (playerSpeed == 1.3f)
+    {
+        fadeTimeOut *= 1.05f;
+        strokeWidthOut *= 1.05f;
+    }
+
+    // What is this? I don't know.
+    // Why is this? I don't know.
+    return streakType - 2;
+}
+
+int getSettingsForStreak(int streakType, PlayerObject* player, float& fadeTimeOut, float& strokeWidthOut)
+{
+    return getSettingsForStreak(streakType, player->m_playerSpeed, player->m_vehicleSize, fadeTimeOut, strokeWidthOut);
+}
+
+void updateStreakSettings(CCMotionStreak* streak, int streakType, PlayerObject* player)
+{
+    float fadeTime = 0.0f;
+    float strokeWidth = 0.0f;
+
+    getSettingsForStreak(streakType, player, fadeTime, strokeWidth);
+    
+    streak->updateFade(fadeTime);
+    streak->setStroke(strokeWidth);
+}

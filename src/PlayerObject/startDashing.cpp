@@ -49,11 +49,7 @@ void PlayerObject::startDashing(DashRingObject* object)
 
         CCPoint dashPos = dashVector * speedMod;
 
-        if (m_isSideways) {
-            float y = dashPos.y;
-            dashPos.y = dashPos.x;
-            dashPos.x = y;
-        }
+        if (m_isSideways) CC_SWAP(dashPos.y, dashPos.x, float)
 
         m_dashX = dashPos.x;
         m_dashY = dashPos.y;

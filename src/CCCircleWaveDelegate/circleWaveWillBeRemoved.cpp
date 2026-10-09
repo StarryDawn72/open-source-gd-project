@@ -1,6 +1,4 @@
 /*
-	====== CCCircleWaveDelegate::circleWaveWillBeRemoved ======
-	
 	Virtual function extended by PlayLayer. Does nothing in here.
 	
 */

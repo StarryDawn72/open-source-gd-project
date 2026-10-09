@@ -1,6 +1,4 @@
 /*
-	====== GameObject::slopeYPos ======
-	
 	Calculates the Y-coordinate of the angled
 	face of a slope with a given X-coordinate.
 	

@@ -1,6 +1,5 @@
 /*
-	====== PlayLayer::updateVisibility ======
-	
+	 	
 	This function iterates through every object that
 	is currently visible on the player's screen. It is
 	responsable for triggering enter effects, audio scale,

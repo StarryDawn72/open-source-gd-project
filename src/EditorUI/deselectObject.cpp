@@ -1,6 +1,4 @@
 /*
-	====== EditorUI::deselectObject ======
-	
 	Removes the given object from the selection
 	in the editor.
 	

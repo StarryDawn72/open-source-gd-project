@@ -1,6 +1,4 @@
 /*
-	====== PlayerObject::checkSnapJumpToObject ======
-	
 	Runs every frame when the player is colliding with a solid
 	object. It determines if you're going off sync when climbing or
 	descending a specific set of staircases to nudge you back towards

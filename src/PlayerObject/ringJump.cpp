@@ -3,8 +3,7 @@
 #define kPlayerTouchToggleBlock 3643
 
 /*
-	====== PlayerObject::ringJump ======
-	
+	 	
 	Ahh, good ol' ringJump...
 
 	This function runs every frame that the player

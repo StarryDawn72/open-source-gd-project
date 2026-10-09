@@ -1,8 +1,5 @@
 /*
-	====== AnimatedShopKeeper::create ======
-	
-	Create factory for all five shopkeepers.
-	
+    Create factory for all five shopkeepers.
 */
 
 AnimatedShopKeeper *AnimatedShopKeeper::create(ShopType type)
