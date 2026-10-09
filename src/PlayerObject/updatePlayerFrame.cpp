@@ -10,9 +10,9 @@ void PlayerObject::updatePlayerFrame(int frameNumber)
 
     GM->loadIcon(frame, (int)IconType::Cube, m_iconRequestID);
 
-    const char* primaryName    = CCString::createWithFormat("player_%02d_001.png", frame)->getCString();
-    const char* secondaryName    = CCString::createWithFormat("player_%02d_2_001.png", frame)->getCString();
-    const char* iconGlowName = CCString::createWithFormat("player_%02d_glow_001.png", frame)->getCString();
+    const char* primaryName   = CCString::createWithFormat("player_%02d_001.png", frame)->getCString();
+    const char* secondaryName = CCString::createWithFormat("player_%02d_2_001.png", frame)->getCString();
+    const char* iconGlowName  = CCString::createWithFormat("player_%02d_glow_001.png", frame)->getCString();
 
     m_iconSprite->setDisplayFrame(CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName(primaryName));
     m_iconSpriteSecondary->setDisplayFrame(CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName(secondaryName));
