@@ -184,7 +184,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary> <b>PlayerObject</b>  (197)</summary>
+	<summary> <b>PlayerObject</b>  (198)</summary>
 	<ul>
 		<li><a href="./src/PlayerObject/activateStreak.cpp">activateStreak</a></li>
 		<li><a href="./src/PlayerObject/addAllParticles.cpp">addAllParticles</a></li>
@@ -299,6 +299,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/setFlipX.cpp">setFlipX</a></li>
 		<li><a href="./src/PlayerObject/setFlipY.cpp">setFlipY</a></li>
 		<li><a href="./src/PlayerObject/setOpacity.cpp">setOpacity</a></li>
+		<li><a href="./src/PlayerObject/setPosition.cpp">setPosition</a></li>
 		<li><a href="./src/PlayerObject/setRotation.cpp">setRotation</a></li>
 		<li><a href="./src/PlayerObject/setScale.cpp">setScale</a></li>
 		<li><a href="./src/PlayerObject/setScaleX.cpp">setScaleX</a></li>

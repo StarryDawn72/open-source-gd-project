@@ -15,7 +15,7 @@ void PlayerObject::flipGravity(bool flip, bool noEffects)
         m_lastFlipTime = m_totalTime;
         m_collidedBottomMaxY = 0.0;
         m_collidedTopMinY = 0.0;
-        m_unkA29 = false; // TODO: find name
+        m_hasHitGroundAfterGravityChange = false;
 
         if (m_wasOnSlope || m_isOnSlope)
             m_isGoingDownSlope = !m_isGoingDownSlope;

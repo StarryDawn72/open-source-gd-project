@@ -268,3 +268,16 @@ void updateStreakSettings(CCMotionStreak* streak, int streakType, PlayerObject* 
     streak->updateFade(fadeTime);
     streak->setStroke(strokeWidth);
 }
+
+CCPoint offsetForStreak(ShipStreak streak, float playerSpeed)
+{
+    switch (streak) {
+    case ShipStreak::ShipFire2: return ccp(-8.0f, -3.0f);
+    case ShipStreak::ShipFire3: return ccp(-8.0f, -3.5f);
+    case ShipStreak::ShipFire4:
+    case ShipStreak::ShipFire5: return ccp(-14.0f, -3.0f);
+    case ShipStreak::ShipFire6: return ccp(-14.0f, -2.5f);
+    default:
+        return ccp(0.0f, 0.0f);
+    }
+}
