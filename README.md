@@ -184,7 +184,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary> <b>PlayerObject</b>  (194)</summary>
+	<summary> <b>PlayerObject</b>  (197)</summary>
 	<ul>
 		<li><a href="./src/PlayerObject/activateStreak.cpp">activateStreak</a></li>
 		<li><a href="./src/PlayerObject/addAllParticles.cpp">addAllParticles</a></li>
@@ -287,6 +287,8 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/reverseMod.cpp">reverseMod</a></li>
 		<li><a href="./src/PlayerObject/reversePlayer.cpp">reversePlayer</a></li>
 		<li><a href="./src/PlayerObject/ringJump.cpp">ringJump</a></li>
+		<li><a href="./src/PlayerObject/rotateGameplay.cpp">rotateGameplay</a></li>
+		<li><a href="./src/PlayerObject/rotateGameplayObject.cpp">rotateGameplayObject</a></li>
 		<li><a href="./src/PlayerObject/rotateGameplayOnly.cpp">rotateGameplayOnly</a></li>
 		<li><a href="./src/PlayerObject/rotatePreSlopeObjects.cpp">rotatePreSlopeObjects</a></li>
 		<li><a href="./src/PlayerObject/runBallRotation.cpp">runBallRotation</a></li>
@@ -337,6 +339,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/toggleSwingMode.cpp">toggleSwingMode</a></li>
 		<li><a href="./src/PlayerObject/toggleVisibility.cpp">toggleVisibility</a></li>
 		<li><a href="./src/PlayerObject/touchedObject.cpp">touchedObject</a></li>
+		<li><a href="./src/PlayerObject/unrotateGameplayObject.cpp">unrotateGameplayObject</a></li>
 		<li><a href="./src/PlayerObject/unrotatePreSlopeObjects.cpp">unrotatePreSlopeObjects</a></li>
 		<li><a href="./src/PlayerObject/update.cpp">update</a></li>
 		<li><a href="./src/PlayerObject/updateCheckpointMode.cpp">updateCheckpointMode</a></li>
