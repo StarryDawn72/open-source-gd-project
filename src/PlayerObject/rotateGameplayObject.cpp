@@ -6,8 +6,8 @@ void PlayerObject::rotateGameplayObject(GameObject* object)
     CCPoint objPos = object->getRealPosition();
     CCPoint plrPos = getPosition();
 
-    float offsetX = (objPos.x - plrPos.x) * kWierdFactor - (objPos.y - plrPos.y) + plrPos.x - objPos.x;
-    float offsetY = (objPos.x - plrPos.x) + (objPos.y - plrPos.y) * kWierdFactor + plrPos.y - objPos.y;
+    float offsetX = (objPos.x - plrPos.x) * cosf(CC_DEGREES_TO_RADIANS(90.0f)) - (objPos.y - plrPos.y) + plrPos.x - objPos.x;
+    float offsetY = (objPos.x - plrPos.x) + (objPos.y - plrPos.y) * cosf(CC_DEGREES_TO_RADIANS(90.0f)) + plrPos.y - objPos.y;
 
     object->addToTempOffset(offsetX, offsetY);
     object->setLastPosition(object->getLastPosition() + ccp(offsetX, offsetY));
