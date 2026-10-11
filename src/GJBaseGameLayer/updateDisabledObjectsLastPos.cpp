@@ -1,0 +1,1 @@
+void GJBaseGameLayer::updateDisabledObjectsLastPos(cocos2d::CCArray* objects) {}

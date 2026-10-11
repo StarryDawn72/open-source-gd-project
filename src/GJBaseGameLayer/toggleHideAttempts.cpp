@@ -1,0 +1,1 @@
+void GJBaseGameLayer::toggleHideAttempts(bool hide) {}

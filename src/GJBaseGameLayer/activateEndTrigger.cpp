@@ -1,0 +1,1 @@
+void GJBaseGameLayer::activateEndTrigger(int targetID, bool reverse, bool lockPlayerY) {}
