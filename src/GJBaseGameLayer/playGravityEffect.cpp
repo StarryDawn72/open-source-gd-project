@@ -1,0 +1,1 @@
+void GJBaseGameLayer::playGravityEffect(bool flip) {}

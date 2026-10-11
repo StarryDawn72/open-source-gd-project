@@ -1,7 +1,6 @@
     ```cpp
 	PlayerObject::PlayerObject()
 	PlayerObject::~PlayerObject()
-    virtual void setPosition(CCPoint const& position)
     virtual void resetObject()
     bool collidedWithObjectInternal(float dt, GameObject* object, CCRect rect, bool skipCheck)
     void enablePlayerControls()

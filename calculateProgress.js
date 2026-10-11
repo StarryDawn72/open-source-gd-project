@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 
 const sizes = JSON.parse(fs.readFileSync('functionSizes.json'));
 
@@ -19,6 +20,52 @@ for (const arg of process.argv.slice(2)) {
         filter = arg;
 }
 
+const identifierChars = "azertyuiopqsdfghjklmwxcvbnAZERTYUIOPQSDFGHJKLMWXCVBN1234567890_";
+
+function isIdentifierChar(ch) {
+    return identifierChars.indexOf(ch) != -1;
+}
+
+function fetchEmptyFunctionNames(filePath, className, out) {
+    const code = fs.readFileSync(filePath).toString();
+
+    let i = 0;
+    while (i < code.length) {
+        if (code.substring(i, i + className.length + 2) != (className + '::')) {
+            i++;
+            continue;
+        }
+
+        i += className.length + 2;
+
+        let start = i;
+
+        while (i < code.length && isIdentifierChar(code[i]))
+            i++;
+
+        let name = code.substring(start, i);
+        out.push(name);
+    }
+}
+
+function fetchCompletedFunctionsFromClassDir(classDir, className) {
+    let completedFuncs = [];
+
+    for (const file of fs.readdirSync(classDir)) {
+        if (!file.endsWith('.cpp'))
+            continue;
+
+        if (file == "_empty_functions.cpp") {
+            fetchEmptyFunctionNames(path.join(classDir, file), className, completedFuncs);
+            continue;
+        }
+
+        completedFuncs.push(file.substring(0, file.length - 4));
+    }
+
+    return completedFuncs;
+}
+
 for (const [className, funcs] of Object.entries(sizes)) {
     if (filter != "" && className != filter)
         continue;
@@ -33,57 +80,37 @@ for (const [className, funcs] of Object.entries(sizes)) {
         totalSize += s;
     }
 
-    let finishedSize = 0;
+    let completedSize = 0;
+    let completedCount = 0;
 
-    for (const file of fs.readdirSync(classDir)) {
-        if (!file.endsWith('.cpp'))
-            continue;
+    const completedFuncs = fetchCompletedFunctionsFromClassDir(classDir, className);
 
-        const name = file.substring(0, file.length - 4);
-
+    for (const name of completedFuncs) {
         if (typeof(funcs[name]) != 'number') {
-            console.log(`\x1b[0;33mCould not get the function for ${className}/${file}! Is it named correctly?\x1b[0m`);
+            console.log(`\x1b[0;33mCould not get the function for ${className}::${name}! Is it named correctly?\x1b[0m`);
             continue;
         }
 
-        finishedSize += funcs[name];
+        completedSize += funcs[name];
+        completedCount++;
     }
 
-    console.log(`${className}: \x1b[1;37m${(finishedSize / totalSize * 100).toPrecision(3)}%\x1b[0m finished. (${finishedSize}b of ${totalSize}b)`);
+    console.log(`${className}: \x1b[1;37m${(completedSize / totalSize * 100).toPrecision(3)}%\x1b[0m finished. (${completedCount}/${Object.entries(funcs).length}) (${completedSize}b of ${totalSize}b)`);
 
     if (listCompleted) {
-        const files = fs.readdirSync(classDir);
-
-        let funcNames = [];
-        for (const file of files) {
-            if (!file.endsWith('.cpp'))
-                continue;
-
-            const name = file.substring(0, file.length - 4);
-
-            if (typeof(funcs[name]) == 'number')
-                funcNames.push(name);
-        }
-        
         if (sortBySize)
-            funcNames.sort((a, b) => funcs[a] - funcs[b]);
+            completedFuncs.sort((a, b) => funcs[a] - funcs[b]);
         else
-            funcNames.sort((a, b) => a[0].localeCompare(b[0]));
+            completedFuncs.sort((a, b) => a[0].localeCompare(b[0]));
 
-        for (const name of funcNames) {
+        for (const name of completedFuncs) {
             console.log(`  - ${name} is \x1b[1;37m${(funcs[name] / totalSize * 100).toPrecision(3)}%\x1b[0m of ${className} (${funcs[name]}b of ${totalSize}b)`);
         }
     }
 
     if (listRemaining) {
-        for (const file of fs.readdirSync(classDir)) {
-            if (!file.endsWith('.cpp'))
-                continue;
-
-            const name = file.substring(0, file.length - 4);
-
+        for (const name of completedFuncs)
             delete funcs[name];
-        }
 
         let remFuncs = Object.entries(funcs);
 

@@ -102,15 +102,67 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary> <b>GJBaseGameLayer</b>  (7)</summary>
+	<summary> <b>GJBaseGameLayer</b>  (59)</summary>
 	<ul>
+		<li><a href="./src/GJBaseGameLayer/activateEndTrigger.cpp">activateEndTrigger</a></li>
+		<li><a href="./src/GJBaseGameLayer/activateObjectControlTrigger.cpp">activateObjectControlTrigger</a></li>
+		<li><a href="./src/GJBaseGameLayer/activatePlatformerEndTrigger.cpp">activatePlatformerEndTrigger</a></li>
+		<li><a href="./src/GJBaseGameLayer/addPoints.cpp">addPoints</a></li>
+		<li><a href="./src/GJBaseGameLayer/addToSpeedObjects.cpp">addToSpeedObjects</a></li>
+		<li><a href="./src/GJBaseGameLayer/animateInGroundNew.cpp">animateInGroundNew</a></li>
+		<li><a href="./src/GJBaseGameLayer/asyncBGLoaded.cpp">asyncBGLoaded</a></li>
+		<li><a href="./src/GJBaseGameLayer/asyncMGLoaded.cpp">asyncMGLoaded</a></li>
 		<li><a href="./src/GJBaseGameLayer/bumpPlayer.cpp">bumpPlayer</a></li>
+		<li><a href="./src/GJBaseGameLayer/checkForEnd.cpp">checkForEnd</a></li>
+		<li><a href="./src/GJBaseGameLayer/checkSnapshot.cpp">checkSnapshot</a></li>
+		<li><a href="./src/GJBaseGameLayer/checkSpawnAbuse.cpp">checkSpawnAbuse</a></li>
+		<li><a href="./src/GJBaseGameLayer/clearPickedUpItems.cpp">clearPickedUpItems</a></li>
 		<li><a href="./src/GJBaseGameLayer/collisionCheckObjects.cpp">collisionCheckObjects</a></li>
+		<li><a href="./src/GJBaseGameLayer/controlDynamicMoveCommand.cpp">controlDynamicMoveCommand</a></li>
+		<li><a href="./src/GJBaseGameLayer/controlDynamicRotateCommand.cpp">controlDynamicRotateCommand</a></li>
 		<li><a href="./src/GJBaseGameLayer/createBackground.cpp">createBackground</a></li>
+		<li><a href="./src/GJBaseGameLayer/destroyPlayer.cpp">destroyPlayer</a></li>
+		<li><a href="./src/GJBaseGameLayer/didRotateGameplay.cpp">didRotateGameplay</a></li>
+		<li><a href="./src/GJBaseGameLayer/flipArt.cpp">flipArt</a></li>
+		<li><a href="./src/GJBaseGameLayer/getGroupParent.cpp">getGroupParent</a></li>
+		<li><a href="./src/GJBaseGameLayer/getPlayTimerFullSeconds.cpp">getPlayTimerFullSeconds</a></li>
+		<li><a href="./src/GJBaseGameLayer/getStickyGroup.cpp">getStickyGroup</a></li>
+		<li><a href="./src/GJBaseGameLayer/isPlayer2Button.cpp">isPlayer2Button</a></li>
+		<li><a href="./src/GJBaseGameLayer/manualUpdateObjectColors.cpp">manualUpdateObjectColors</a></li>
 		<li><a href="./src/GJBaseGameLayer/objectIntersectsCircle.cpp">objectIntersectsCircle</a></li>
+		<li><a href="./src/GJBaseGameLayer/objectsCollided.cpp">objectsCollided</a></li>
 		<li><a href="./src/GJBaseGameLayer/playerCircleCollision.cpp">playerCircleCollision</a></li>
 		<li><a href="./src/GJBaseGameLayer/playerIntersectsCircle.cpp">playerIntersectsCircle</a></li>
+		<li><a href="./src/GJBaseGameLayer/playerTookDamage.cpp">playerTookDamage</a></li>
+		<li><a href="./src/GJBaseGameLayer/playGravityEffect.cpp">playGravityEffect</a></li>
+		<li><a href="./src/GJBaseGameLayer/postUpdate.cpp">postUpdate</a></li>
+		<li><a href="./src/GJBaseGameLayer/preResumeGame.cpp">preResumeGame</a></li>
+		<li><a href="./src/GJBaseGameLayer/processCheckpoints.cpp">processCheckpoints</a></li>
+		<li><a href="./src/GJBaseGameLayer/processReplayCheckpoint.cpp">processReplayCheckpoint</a></li>
+		<li><a href="./src/GJBaseGameLayer/queueTimeWarp.cpp">queueTimeWarp</a></li>
+		<li><a href="./src/GJBaseGameLayer/removeAllCheckpoints.cpp">removeAllCheckpoints</a></li>
+		<li><a href="./src/GJBaseGameLayer/resetLevel.cpp">resetLevel</a></li>
+		<li><a href="./src/GJBaseGameLayer/restoreDefaultGameplayOffsetX.cpp">restoreDefaultGameplayOffsetX</a></li>
+		<li><a href="./src/GJBaseGameLayer/restoreDefaultGameplayOffsetY.cpp">restoreDefaultGameplayOffsetY</a></li>
+		<li><a href="./src/GJBaseGameLayer/setupReplay.cpp">setupReplay</a></li>
+		<li><a href="./src/GJBaseGameLayer/stopCameraShake.cpp">stopCameraShake</a></li>
+		<li><a href="./src/GJBaseGameLayer/testTime.cpp">testTime</a></li>
+		<li><a href="./src/GJBaseGameLayer/toggleGlitter.cpp">toggleGlitter</a></li>
+		<li><a href="./src/GJBaseGameLayer/toggleGroundVisibility.cpp">toggleGroundVisibility</a></li>
+		<li><a href="./src/GJBaseGameLayer/toggleHideAttempts.cpp">toggleHideAttempts</a></li>
+		<li><a href="./src/GJBaseGameLayer/toggleInfoLabel.cpp">toggleInfoLabel</a></li>
+		<li><a href="./src/GJBaseGameLayer/toggleMGVisibility.cpp">toggleMGVisibility</a></li>
+		<li><a href="./src/GJBaseGameLayer/toggleMusicInPractice.cpp">toggleMusicInPractice</a></li>
+		<li><a href="./src/GJBaseGameLayer/toggleProgressbar.cpp">toggleProgressbar</a></li>
+		<li><a href="./src/GJBaseGameLayer/updateAttemptTime.cpp">updateAttemptTime</a></li>
 		<li><a href="./src/GJBaseGameLayer/updateCameraBGArt.cpp">updateCameraBGArt</a></li>
+		<li><a href="./src/GJBaseGameLayer/updateDisabledObjectsLastPos.cpp">updateDisabledObjectsLastPos</a></li>
+		<li><a href="./src/GJBaseGameLayer/updateGameplayOffsetX.cpp">updateGameplayOffsetX</a></li>
+		<li><a href="./src/GJBaseGameLayer/updateGameplayOffsetY.cpp">updateGameplayOffsetY</a></li>
+		<li><a href="./src/GJBaseGameLayer/updateReplay.cpp">updateReplay</a></li>
+		<li><a href="./src/GJBaseGameLayer/updateTimeLabel.cpp">updateTimeLabel</a></li>
+		<li><a href="./src/GJBaseGameLayer/updateVerifyDamage.cpp">updateVerifyDamage</a></li>
+		<li><a href="./src/GJBaseGameLayer/updateVisibility.cpp">updateVisibility</a></li>
 	</ul>
 </details>
 <details>
@@ -184,7 +236,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary> <b>PlayerObject</b>  (197)</summary>
+	<summary> <b>PlayerObject</b>  (198)</summary>
 	<ul>
 		<li><a href="./src/PlayerObject/activateStreak.cpp">activateStreak</a></li>
 		<li><a href="./src/PlayerObject/addAllParticles.cpp">addAllParticles</a></li>
@@ -299,6 +351,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./src/PlayerObject/setFlipX.cpp">setFlipX</a></li>
 		<li><a href="./src/PlayerObject/setFlipY.cpp">setFlipY</a></li>
 		<li><a href="./src/PlayerObject/setOpacity.cpp">setOpacity</a></li>
+		<li><a href="./src/PlayerObject/setPosition.cpp">setPosition</a></li>
 		<li><a href="./src/PlayerObject/setRotation.cpp">setRotation</a></li>
 		<li><a href="./src/PlayerObject/setScale.cpp">setScale</a></li>
 		<li><a href="./src/PlayerObject/setScaleX.cpp">setScaleX</a></li>

@@ -76,6 +76,7 @@ Some nasty variables I had to rename, either because they were completely incorr
 - m_jumpPadRelated -> m_activeForceIDs
 - m_stateScale -> m_scaleChangeTimer 
 - m_rotateObjectsRelated -> m_storedRotatedObjectOffsets
+- m_unkA29 -> m_hasHitGroundAfterGravityChange
 
 **GameObject**
 - m_editorEnabled -> m_isInEditor
