@@ -1,6 +1,6 @@
 bool PlayerObject::releaseButton(PlayerButton button)
 {
-    if ((int)button == 5)
+    if ((int)button == 5) // TODO: add 5 to enum
     {
         releaseButton(PlayerButton::Left);
         releaseButton(PlayerButton::Right);
@@ -28,12 +28,12 @@ bool PlayerObject::releaseButton(PlayerButton button)
         case PlayerButton::Left:
             m_holdingLeft = false;
             if (m_platformerXVelocity < 0.0f)
-                m_isMoving = false;
+                m_forceLowFriction = false;
             break;
         case PlayerButton::Right:
             m_holdingRight = false;
             if (m_platformerXVelocity > 0.0f)
-                m_isMoving = false;
+                m_forceLowFriction = false;
             break;
     }
     return true;

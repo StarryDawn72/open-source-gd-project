@@ -256,7 +256,8 @@ void PlayerObject::updateJump(float dt)
 
 				if (m_isPlatformer && isSlopeForcedMovement) {
 
-					if (m_isMoving) {
+					if (m_forceLowFriction)
+                    {
 						double xVelocity = m_playerSpeed * m_speedMultiplier;
 						if (fabs(m_platformerXVelocity) > xVelocity) {
 							jumpVelocity += fabs(m_platformerXVelocity) / xVelocity;
