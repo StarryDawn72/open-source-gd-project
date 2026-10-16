@@ -1,4 +1,7 @@
 
+# **NOTICE** 🚨
+**Since a new update (2.209) has released, I plan to update the functions in this repository as soon as I can. Until they are done, I recommend you wait or decompile functions yourself if you're sensitive about version changes. This might take a while...**
+
 # Open Source GD Project (work in progress)
 
 <p align="center">
