@@ -1,3 +1,4 @@
+// @version 2.2081
 bool GJFlyGroundLayer::init()
 {
     if (!GJGroundLayer::init()) {

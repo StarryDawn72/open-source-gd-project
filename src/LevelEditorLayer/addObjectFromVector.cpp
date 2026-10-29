@@ -1,3 +1,4 @@
+// @version 2.2081
 /*
 	Adds an object to the editor from raw object string data,
 	unless it's a secret (main) coin or we are attempting to

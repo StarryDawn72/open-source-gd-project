@@ -1,3 +1,4 @@
+// @version 2.2081
 #define kMaxShipFrame 169
 
 void PlayerObject::updatePlayerShipFrame(int frameNumber)

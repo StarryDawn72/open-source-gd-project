@@ -1,3 +1,4 @@
+// @version 2.2081
 void PlayerObject::updateStreakBlend(bool blend)
 {
 	ccBlendFunc blendFunc;

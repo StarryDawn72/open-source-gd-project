@@ -1,3 +1,4 @@
+// @version 2.2081
 bool PlayerObject::testForMoving(float dt, GameObject* object)
 {
     CCPoint lastPos = object->getLastPosition();

@@ -1,3 +1,4 @@
+// @version 2.2081
 #define kMaxRobotFrame 68
 
 void PlayerObject::updatePlayerRobotFrame(int frame)

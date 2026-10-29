@@ -1,3 +1,4 @@
+// @version 2.2081
 void GJGroundLayer::updateGroundPos(CCPoint pos)
 {
     m_ground1Sprite->setPosition(pos);

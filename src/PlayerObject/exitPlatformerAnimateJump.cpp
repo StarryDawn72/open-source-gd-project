@@ -1,3 +1,4 @@
+// @version 2.2081
 void PlayerObject::exitPlatformerAnimateJump()
 {
 	if (m_iconSprite->getActionByTag(13)) {

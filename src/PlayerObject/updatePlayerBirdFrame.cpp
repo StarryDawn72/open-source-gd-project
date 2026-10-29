@@ -1,3 +1,4 @@
+// @version 2.2081
 #define kMaxBirdFrame 149
 #define GM GameManager::sharedState()
 

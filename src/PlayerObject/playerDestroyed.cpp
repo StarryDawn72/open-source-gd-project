@@ -1,3 +1,4 @@
+// @version 2.2081
 void PlayerObject::playerDestroyed(bool noEffects)
 {
     if (m_isDart)

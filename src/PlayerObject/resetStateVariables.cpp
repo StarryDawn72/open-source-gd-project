@@ -1,3 +1,4 @@
+// @version 2.2081
 void PlayerObject::resetStateVariables() {
     m_noAutoJumpTimer = 0;
     m_allowDartSlideTimer = 0;

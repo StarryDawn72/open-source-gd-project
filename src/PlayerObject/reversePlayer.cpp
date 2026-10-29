@@ -1,3 +1,4 @@
+// @version 2.2081
 /*
     Only for jump rings/pads with the "Reverse" option enabled.
     Not for the reverse trigger or platformer mode.

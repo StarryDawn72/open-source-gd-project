@@ -1,3 +1,4 @@
+// @version 2.2081
 #define GM GameManager::sharedState()
 #define PL GameManager::sharedState()->getPlayLayer()
 

@@ -1,3 +1,4 @@
+// @version 2.2081
 #define kTagPlatformerJumpAnimation 13
 
 void PlayerObject::animatePlatformerJump(float scale) {

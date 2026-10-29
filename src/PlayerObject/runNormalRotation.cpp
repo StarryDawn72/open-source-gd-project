@@ -1,3 +1,4 @@
+// @version 2.2081
 /*
 	 	
 	This function is what begins the continuous visual spin of

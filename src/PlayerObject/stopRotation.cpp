@@ -1,3 +1,4 @@
+// @version 2.2081
 /*
 	 	
 	Resets all rotation flags and freezes the player spin

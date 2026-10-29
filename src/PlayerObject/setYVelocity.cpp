@@ -1,3 +1,4 @@
+// @version 2.2081
 /*
 	 	
 	This function sets the current player's vertical velocity

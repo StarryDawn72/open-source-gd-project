@@ -1,3 +1,4 @@
+// @version 2.2081
 void LevelInfoLayer::loadLevelStep()
 {
     PlayLayer* playLayer = (PlayLayer*)m_playScene->getChildren()->objectAtIndex(0);

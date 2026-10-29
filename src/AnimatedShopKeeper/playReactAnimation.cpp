@@ -1,3 +1,4 @@
+// @version 2.2081
 /*
 	This function triggers the react animation when you
 	interact with the regular shopkeeper. It does not trigger

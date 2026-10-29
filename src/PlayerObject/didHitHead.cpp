@@ -1,3 +1,4 @@
+// @version 2.2081
 void PlayerObject::didHitHead()
 {
 	if (m_flipBlockTimer > 0)

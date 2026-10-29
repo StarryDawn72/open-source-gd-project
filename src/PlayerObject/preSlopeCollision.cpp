@@ -1,3 +1,4 @@
+// @version 2.2081
 /*
 	 
 	This function acts as the pre-validator for slope collisions before 

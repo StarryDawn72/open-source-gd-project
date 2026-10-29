@@ -1,3 +1,4 @@
+// @version 2.2081
 void PlayerObject::toggleVisibility(bool visible)
 {
     if (m_isHidden == visible) {

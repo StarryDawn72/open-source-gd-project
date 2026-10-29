@@ -1,3 +1,4 @@
+// @version 2.2081
 /*
     State machine that handles randomized idle animations
 	for the shopkeepers. Runs after any animation is done playing.

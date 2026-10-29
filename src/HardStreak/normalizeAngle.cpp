@@ -1,3 +1,4 @@
+// @version 2.2081
 double HardStreak::normalizeAngle(double angle) {
     if (angle > 360.0f)
         return angle - 360.0f;

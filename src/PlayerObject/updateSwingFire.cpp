@@ -1,3 +1,4 @@
+// @version 2.2081
 void PlayerObject::updateSwingFire()
 {
     CCParticleSystemQuad* burstParticles1 = m_swingBurstParticles1;

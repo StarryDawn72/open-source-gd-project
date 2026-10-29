@@ -1,3 +1,4 @@
+// @version 2.2081
 #define kPlayerCommandStopSlide 543
 
 void PlayerObject::handlePlayerCommand(int command)

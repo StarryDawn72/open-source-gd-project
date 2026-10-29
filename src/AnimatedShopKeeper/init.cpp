@@ -1,3 +1,4 @@
+// @version 2.2081
 /*
 	Standard initialization routine for all
 	five shopkeepers.

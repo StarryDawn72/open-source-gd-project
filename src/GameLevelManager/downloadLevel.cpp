@@ -1,3 +1,4 @@
+// @version 2.2081
 #define GM GameManager::sharedState()
 /*
 	Makes a POST request to downloadGJLevel22.php to

@@ -1,3 +1,4 @@
+// @version 2.2081
 /*
 	Schedules updatePosition every frame to follow
 	a given node unless staticPosition is true.

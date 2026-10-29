@@ -1,3 +1,4 @@
+// @version 2.2081
 /*
     Used to make the wave trail fade out when reversing or
     changing gameplay orientation.

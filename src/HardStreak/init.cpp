@@ -1,3 +1,4 @@
+// @version 2.2081
 bool HardStreak::init()
 {
     if (!CCDrawNode::init())

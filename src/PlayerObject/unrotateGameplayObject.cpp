@@ -1,3 +1,4 @@
+// @version 2.2081
 void PlayerObject::unrotateGameplayObject(GameObject* object)
 {
     if (m_storedRotatedObjectOffsets.count(object->m_uniqueID) == 0)

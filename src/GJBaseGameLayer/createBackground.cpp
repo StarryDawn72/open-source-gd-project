@@ -1,3 +1,4 @@
+// @version 2.2081
 void GJBaseGameLayer::createBackground(int index)
 {
     if (m_background && m_background->getTag() == index)

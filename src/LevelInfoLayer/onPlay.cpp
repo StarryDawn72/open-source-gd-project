@@ -1,3 +1,4 @@
+// @version 2.2081
 #define GM GameManager::sharedState()
 #define kGVDisableSongAlert "0083"
 #define kGVShownCoinDisclaimer "0063"

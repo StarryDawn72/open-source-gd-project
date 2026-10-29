@@ -1,3 +1,4 @@
+// @version 2.2081
 /*
 	Wrapper around CCNode::setPosition in order to
 	update the class's own m_position member as well.

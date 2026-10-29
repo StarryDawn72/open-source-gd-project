@@ -1,3 +1,4 @@
+// @version 2.2081
 void PlayerObject::deactivateParticle()
 {
     if (m_hasGroundParticles)

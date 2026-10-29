@@ -1,3 +1,4 @@
+// @version 2.2081
 void PlayerObject::resetCollisionValues()
 {
     m_collidedTopMinY = 0.0;

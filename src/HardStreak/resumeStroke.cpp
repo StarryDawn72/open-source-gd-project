@@ -1,3 +1,4 @@
+// @version 2.2081
 void HardStreak::resumeStroke() {
     m_drawStreak = true;
     updateStroke(0.0f);

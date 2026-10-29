@@ -1,3 +1,4 @@
+// @version 2.2081
 void PlayerObject::flashPlayer(float flashDuration, float flashDelay, ccColor3B mainColor, ccColor3B secondColor)
 {
     m_flashMainColor = mainColor;

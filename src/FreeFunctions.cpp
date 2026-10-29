@@ -1,7 +1,7 @@
 // Here you will find a list of free functions
 // RobTop used that don't belong to any class.
 
-
+// @version 2.2081
 /*
 	Normalizes the given rotation to a -180 to 180 degree
 	range. It's used exclusively in limitDashRotation and
@@ -19,11 +19,13 @@ void snapRotation360(float& rotation)
 	}
 }
 
+// @version 2.2081
 float SquareDistance(float x1, float y1, float x2, float y2)
 {
     return ((y2 - y1) * (y2 - y1)) + ((x2 - x1) * (x2 - x1));
 }
 
+// @version 2.2081
 gd::string gen_random(int length)
 {
 	static const char characters[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
@@ -41,6 +43,7 @@ gd::string gen_random(int length)
 	return gd::string(out->getCString());	
 }
 
+// @version 2.2081
 float Slerp2D(float fromAngle, float toAngle, float t)
 {
     float halfFrom = fromAngle * 0.5f;
@@ -76,6 +79,7 @@ float Slerp2D(float fromAngle, float toAngle, float t)
     return (float)(halfResult + halfResult);
 }
 
+// @version 2.2081
 float getFrameTimeForStreak(ShipStreak streak)
 {
     if (streak == ShipStreak::ShipFire5)
@@ -86,6 +90,7 @@ float getFrameTimeForStreak(ShipStreak streak)
         return 1.0f / 32.0f; // 32fps
 }
 
+// @version 2.2081
 int getFramesForStreak(ShipStreak streak)
 {
     switch(streak) {
@@ -98,6 +103,7 @@ int getFramesForStreak(ShipStreak streak)
     }
 }
 
+// @version 2.2081
 gd::string getFrameForStreak(ShipStreak streak, float totalTime)
 {
     float frameTime = getFrameTimeForStreak(streak);
@@ -110,6 +116,7 @@ gd::string getFrameForStreak(ShipStreak streak, float totalTime)
     return fmt::format("shipfire{:02}_{:03}.png", (int)streak, frame);
 }
 
+// @version 2.2081
 int getSettingsForStreak(int streakType, float playerSpeed, float playerScale, float& fadeTimeOut, float& strokeWidthOut)
 {
     float scaleMod = (playerScale != 1.0f) ? 0.5f : 1.0f;
@@ -253,11 +260,13 @@ int getSettingsForStreak(int streakType, float playerSpeed, float playerScale, f
     return streakType - 2;
 }
 
+// @version 2.2081
 int getSettingsForStreak(int streakType, PlayerObject* player, float& fadeTimeOut, float& strokeWidthOut)
 {
     return getSettingsForStreak(streakType, player->m_playerSpeed, player->m_vehicleSize, fadeTimeOut, strokeWidthOut);
 }
 
+// @version 2.2081
 void updateStreakSettings(CCMotionStreak* streak, int streakType, PlayerObject* player)
 {
     float fadeTime = 0.0f;

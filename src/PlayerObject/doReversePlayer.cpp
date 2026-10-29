@@ -1,3 +1,4 @@
+// @version 2.2081
 void PlayerObject::doReversePlayer(bool reverse)
 {
     bool directionChanged = m_isGoingLeft != reverse;

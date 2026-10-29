@@ -1,3 +1,4 @@
+// @version 2.2081
 #define PL GameManager::sharedState()->getPlayLayer()
 /*
 	Called every frame while playing a level.
@@ -10,7 +11,6 @@
 void AudioEffectsLayer::audioStep(float dt)
 {
 	m_timeElapsed += dt;
-	CCArray* m_pulseQueue = m_unk1c0;
 
 	if (m_pulseQueue && m_pulseQueue->count()) {
 		CCString* time = (CCString*)m_pulseQueue->objectAtIndex(0);

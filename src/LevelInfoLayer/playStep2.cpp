@@ -1,3 +1,4 @@
+// @version 2.2081
 void LevelInfoLayer::playStep2()
 {
     FMODAudioEngine::sharedEngine()->loadMusic(

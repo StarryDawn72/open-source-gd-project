@@ -1,3 +1,4 @@
+// @version 2.2081
 GameObjectType PlayerObject::getActiveMode()
 {
     if (isFlying())

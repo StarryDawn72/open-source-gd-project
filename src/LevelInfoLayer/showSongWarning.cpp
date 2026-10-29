@@ -1,3 +1,4 @@
+// @version 2.2081
 #define kTagAlertSongWarning 9
 
 void LevelInfoLayer::showSongWarning()

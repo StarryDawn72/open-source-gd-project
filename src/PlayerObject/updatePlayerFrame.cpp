@@ -1,3 +1,4 @@
+// @version 2.2081
 #define kMaxPlayerFrame 485
 
 void PlayerObject::updatePlayerFrame(int frameNumber)

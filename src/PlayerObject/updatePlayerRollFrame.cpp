@@ -1,3 +1,4 @@
+// @version 2.2081
 #define kMaxRollFrame 118
 
 void PlayerObject::updatePlayerRollFrame(int frameNumber)

@@ -1,3 +1,4 @@
+// @version 2.2081
 double PlayerObject::getCurrentXVelocity()
 {
 	if (m_isPlatformer)

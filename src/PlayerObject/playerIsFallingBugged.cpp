@@ -1,3 +1,4 @@
+// @version 2.2081
 /*
 	Determines if the player is falling. Returns true if
 	the player's vertical velocity is inferior (or superior if

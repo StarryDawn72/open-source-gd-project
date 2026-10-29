@@ -1,3 +1,4 @@
+// @version 2.2081
 void PlayerObject::preCollision() 
 {
     m_wasOnGround = m_onGround;

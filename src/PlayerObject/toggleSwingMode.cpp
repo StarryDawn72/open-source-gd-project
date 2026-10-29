@@ -1,3 +1,4 @@
+// @version 2.2081
 #define GM GameManager::sharedState()
 
 void PlayerObject::toggleSwingMode(bool enable, bool noEffects)

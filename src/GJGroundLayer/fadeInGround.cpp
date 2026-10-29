@@ -1,3 +1,4 @@
+// @version 2.2081
 #define kTagGroundFade 3
 
 void GJGroundLayer::fadeInGround(float duration)

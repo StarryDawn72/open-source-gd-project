@@ -1,3 +1,4 @@
+// @version 2.2081
 void PlayerObject::animationFinished(const char* key)
 	{
 		gd::string keyString = gd::string(key);

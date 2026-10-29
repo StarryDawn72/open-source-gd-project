@@ -1,3 +1,4 @@
+// @version 2.2081
 /*
 	Updates the effect's position to match the object
 	it is following.

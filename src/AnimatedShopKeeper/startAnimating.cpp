@@ -1,3 +1,4 @@
+// @version 2.2081
 /*
 	Begins the idle animation for the shopkeeper.
 */

@@ -1,3 +1,4 @@
+// @version 2.2081
 void GJGroundLayer::updateLineBlend(bool blend)
 {
     if (m_blendLine != blend) {

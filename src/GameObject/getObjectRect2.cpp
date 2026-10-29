@@ -1,3 +1,4 @@
+// @version 2.2081
 const cocos2d::CCRect& GameObject::getObjectRect2(float width, float height)
 {
     CCRect rect;

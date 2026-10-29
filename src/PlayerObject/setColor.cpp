@@ -1,3 +1,4 @@
+// @version 2.2081
 void PlayerObject::setColor(const ccColor3B& color)
 {
 	setColor(color);

@@ -1,3 +1,4 @@
+// @version 2.2081
 void PlayerObject::hitGroundNoJump(GameObject *object, bool noParticle)
 {
     bool prevCanJump = m_canJump;

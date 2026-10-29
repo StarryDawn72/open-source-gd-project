@@ -1,3 +1,4 @@
+// @version 2.2081
 void GJGroundLayer::updateGround02Color(ccColor3B color)
 {
     if (m_ground2Sprite) {

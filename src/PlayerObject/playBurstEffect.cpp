@@ -1,3 +1,4 @@
+// @version 2.2081
 #define kTagBirdParticles 7
 
 void PlayerObject::playBurstEffect()

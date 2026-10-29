@@ -1,3 +1,4 @@
+// @version 2.2081
 float GJGroundLayer::scaleGround(float scale)
 {
     setScaleX(scale);

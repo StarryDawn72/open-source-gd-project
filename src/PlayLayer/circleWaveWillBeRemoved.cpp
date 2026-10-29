@@ -1,3 +1,4 @@
+// @version 2.2081
 /*
 	 	
 	Removes the given CCCircleWave instance from the list

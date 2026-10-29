@@ -1,3 +1,4 @@
+// @version 2.2081
 #define kTagGroundLine 2
 
 void GJGroundLayer::createLine(int lineType)

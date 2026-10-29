@@ -1,3 +1,4 @@
+// @version 2.2081
 void PlayerObject::collidedWithSlope(float dt, GameObject *object, bool skipPre)
 {
     if (m_isSideways)

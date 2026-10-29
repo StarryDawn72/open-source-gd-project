@@ -1,3 +1,4 @@
+// @version 2.2081
 #define kMaxJetpackFrame 8
 
 void PlayerObject::updatePlayerJetpackFrame(int frameNumber)

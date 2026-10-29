@@ -1,3 +1,4 @@
+// @version 2.2081
 #define kMiddlegroundBaseSpeed 0.3f
 #define kMiddlegroundBaseScale 1.2f
 

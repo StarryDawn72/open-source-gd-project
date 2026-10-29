@@ -1,3 +1,4 @@
+// @version 2.2081
 #define kStickDistance 5.0f
 #define kStickDistancePlatformer 10.0f
 #define PL GameManager::sharedState()->getPlayLayer()

@@ -1,3 +1,4 @@
+// @version 2.2081
 void PlayerObject::deactivateStreak(bool stop)
 {
     if (!m_alwaysShowStreak || stop)

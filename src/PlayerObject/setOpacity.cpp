@@ -1,3 +1,4 @@
+// @version 2.2081
 void PlayerObject::setOpacity(unsigned char opacity)
 {
 	GameObject::setOpacity(opacity);

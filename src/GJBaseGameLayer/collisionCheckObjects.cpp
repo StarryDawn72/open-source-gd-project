@@ -1,3 +1,4 @@
+// @version 2.2081
 #define kObjectSpawnTrigger 1268
 /*
 	Handles behavior for every object type when they collide with the player.

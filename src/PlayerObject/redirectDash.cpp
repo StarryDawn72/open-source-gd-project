@@ -1,3 +1,4 @@
+// @version 2.2081
 /*
 	 	
 	This feature is part of the "Redirect Dash" option in the

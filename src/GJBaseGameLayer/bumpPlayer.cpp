@@ -1,3 +1,4 @@
+// @version 2.2081
 void GJBaseGameLayer::bumpPlayer(PlayerObject* player, EffectGameObject* object) {
 
     if (canBeActivatedByPlayer(player, object)) {

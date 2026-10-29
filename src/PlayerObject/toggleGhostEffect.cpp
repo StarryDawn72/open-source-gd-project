@@ -1,3 +1,4 @@
+// @version 2.2081
 void PlayerObject::toggleGhostEffect(GhostType type)
 {
     if (m_ghostType != type) {

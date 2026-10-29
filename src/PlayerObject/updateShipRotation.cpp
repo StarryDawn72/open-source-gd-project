@@ -1,3 +1,4 @@
+// @version 2.2081
 /*
     Applies to all four flying game modes (Ship, Wave, UFO, Swing),
     not just ship.

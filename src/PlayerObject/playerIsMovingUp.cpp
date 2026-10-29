@@ -1,3 +1,4 @@
+// @version 2.2081
 bool PlayerObject::playerIsMovingUp()
 {
     if (m_isUpsideDown)

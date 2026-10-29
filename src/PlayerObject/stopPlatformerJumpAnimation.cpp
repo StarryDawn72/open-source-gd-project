@@ -1,3 +1,4 @@
+// @version 2.2081
 #define kTagPlatformerJumpAnimation 13
 #define kTagPlatformerJumpUnk 14 // TODO: find usage and name
 

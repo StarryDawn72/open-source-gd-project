@@ -1,3 +1,4 @@
+// @version 2.2081
 /*
     Standard overlap test against the player's circular hitbox and an object's circular hitbox.
 */

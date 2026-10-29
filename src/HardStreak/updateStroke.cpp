@@ -1,3 +1,4 @@
+// @version 2.2081
 void HardStreak::updateStroke(float dt)
 {
     if (!m_drawStreak)

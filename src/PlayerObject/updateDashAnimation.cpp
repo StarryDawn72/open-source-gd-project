@@ -1,3 +1,4 @@
+// @version 2.2081
 void PlayerObject::updateDashAnimation()
 {
     float frameDuration = (0.04f / m_playerSpeed) * (1.0f - fabsf(m_dashFireSprite->getRotation()) / 70.0 * 0.4f);

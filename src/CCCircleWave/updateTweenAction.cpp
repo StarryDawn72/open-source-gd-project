@@ -1,3 +1,4 @@
+// @version 2.2081
 /*
 	Apply a tweened value update to the circle wave. Ran
 	every frame.

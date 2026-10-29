@@ -1,3 +1,4 @@
+// @version 2.2081
 CCCircleWave::CCCircleWave()
 {
 	m_target = nullptr;

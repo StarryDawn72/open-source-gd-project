@@ -1,3 +1,4 @@
+// @version 2.2081
 /*
 	Returns true if the player is falling past a given threshold.
 */

@@ -1,3 +1,4 @@
+// @version 2.2081
 /*
 	Use spherical lerp to smoothly face the target angle.
 */

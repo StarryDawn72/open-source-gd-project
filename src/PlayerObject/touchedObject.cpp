@@ -1,3 +1,4 @@
+// @version 2.2081
 #define kObjectAllowDartSlideModifier 1755
 #define kObjectNoAutoJumpModifier 1813
 #define kObjectDashStopModifier 1829

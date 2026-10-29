@@ -1,3 +1,4 @@
+// @version 2.2081
 void CCCircleWave::baseSetup(float radius)
 {
     m_color.r = 255;

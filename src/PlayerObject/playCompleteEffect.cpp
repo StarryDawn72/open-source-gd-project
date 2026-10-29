@@ -1,3 +1,4 @@
+// @version 2.2081
 #define kTagActionCompletionPlayerFadeOut 4
 
 void PlayerObject::playCompleteEffect(bool noEffects, bool instant)

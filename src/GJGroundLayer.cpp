@@ -1,3 +1,4 @@
+// @version 2.2081
 #include "GJGroundLayer.h"
 
 #define kTagGroundShadowLeft 0

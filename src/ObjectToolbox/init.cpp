@@ -1,3 +1,4 @@
+// @version 2.2081
 /*
     A mapping of object ID's to their sprite frame name.
 */

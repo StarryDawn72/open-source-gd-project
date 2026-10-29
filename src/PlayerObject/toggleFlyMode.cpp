@@ -1,3 +1,4 @@
+// @version 2.2081
 void PlayerObject::toggleFlyMode(bool enable, bool noEffects)
 {
     if (m_isShip == enable)

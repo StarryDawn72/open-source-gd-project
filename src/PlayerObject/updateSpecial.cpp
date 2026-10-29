@@ -1,3 +1,4 @@
+// @version 2.2081
 #define kFollowPlayerYStoreTimeInterval 0.01f
 
 void PlayerObject::updateSpecial(float dt)

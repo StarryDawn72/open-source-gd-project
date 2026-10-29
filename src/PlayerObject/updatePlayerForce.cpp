@@ -1,3 +1,4 @@
+// @version 2.2081
 void PlayerObject::updatePlayerForce(CCPoint velocity, bool additive)
 {
     m_isVelocityUncapped = true;

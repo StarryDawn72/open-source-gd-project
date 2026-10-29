@@ -1,3 +1,4 @@
+// @version 2.2081
 #define GM GameManager::sharedState()
 
 void LevelInfoLayer::playStep4()

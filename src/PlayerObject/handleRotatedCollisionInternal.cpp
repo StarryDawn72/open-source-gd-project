@@ -1,3 +1,4 @@
+// @version 2.2081
 bool PlayerObject::handleRotatedCollisionInternal(float dt, GameObject* object, CCRect rect, bool skipCheck, bool skipPre, bool slope)
 {
     CCPoint oldPos = getPosition();

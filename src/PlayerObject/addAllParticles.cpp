@@ -1,3 +1,4 @@
+// @version 2.2081
 void PlayerObject::addAllParticles()
 {
 	m_parentLayer->addChild(m_playerGroundParticles, 39);

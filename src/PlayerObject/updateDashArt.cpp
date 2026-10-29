@@ -1,3 +1,4 @@
+// @version 2.2081
 #define kTagDashRotate 12
 
 void PlayerObject::updateDashArt()

@@ -1,3 +1,4 @@
+// @version 2.2081
 void PlayerObject::updateCollideLeft(float x, GameObject* object)
 {
     int uniqueId = 0;

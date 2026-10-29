@@ -1,3 +1,4 @@
+// @version 2.2081
 /*
 	Returns true if the time since the last gravity
 	switch is less than the given time.

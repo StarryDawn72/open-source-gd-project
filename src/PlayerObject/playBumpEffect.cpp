@@ -1,3 +1,4 @@
+// @version 2.2081
 #define PL GameManager::sharedState()->getPlayLayer()
 /*
 	Spawns the expanding circle effect upon touching

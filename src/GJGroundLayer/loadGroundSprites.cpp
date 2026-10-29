@@ -1,3 +1,4 @@
+// @version 2.2081
 void GJGroundLayer::loadGroundSprites(int count, bool floor)
 {
     CCSprite* ground = floor ? m_ground1Sprite : m_ground2Sprite;
