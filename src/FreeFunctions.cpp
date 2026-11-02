@@ -277,3 +277,48 @@ void updateStreakSettings(CCMotionStreak* streak, int streakType, PlayerObject* 
     streak->updateFade(fadeTime);
     streak->setStroke(strokeWidth);
 }
+
+
+/*
+    Quicksort comparison functions for spider jump.
+*/
+
+// @version 2.2091
+int boxCompMin(const void* a, const void* b)
+{
+    GameObject* objA = *(GameObject**)a;
+    GameObject* objB = *(GameObject**)b;
+
+    return (objA->getObjectRect().getMinY() * 10.0f) -
+           (objB->getObjectRect().getMinY() * 10.0f);
+}
+
+// @version 2.2091
+int boxCompMax(const void* a, const void* b)
+{
+    GameObject* objA = *(GameObject**)a;
+    GameObject* objB = *(GameObject**)b;
+
+    return (objB->getObjectRect().getMaxY() * 10.0f) -
+           (objA->getObjectRect().getMaxY() * 10.0f);
+}
+
+// @version 2.2091
+int boxCompMinX(const void* a, const void* b)
+{
+    GameObject* objA = *(GameObject**)a;
+    GameObject* objB = *(GameObject**)b;
+
+    return (objA->getObjectRect().getMinX() * 10.0f) -
+           (objB->getObjectRect().getMinX() * 10.0f);
+}
+
+// @version 2.2091
+int boxCompMaxX(const void* a, const void* b)
+{
+    GameObject* objA = *(GameObject**)a;
+    GameObject* objB = *(GameObject**)b;
+
+    return (objB->getObjectRect().getMaxX() * 10.0f) -
+           (objA->getObjectRect().getMaxX() * 10.0f);
+}
