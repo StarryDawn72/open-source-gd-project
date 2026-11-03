@@ -8,7 +8,7 @@ void AnimatedShopKeeper::animationFinished(const char* key)
 {
 	m_idleInt1--;
 	m_idleInt2--;
-	gd::string keyString = gd::string(key);
+	std::string keyString = std::string(key);
 
 	if (keyString == "react01")
 		m_reacting = false;

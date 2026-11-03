@@ -55,7 +55,7 @@ void CCCircleWave::removeMeAndCleanup()
 
 void CCCircleWave::updateTweenAction(float value, const char *key)
 {
-	gd::string keyString = gd::string(key);
+	std::string keyString = std::string(key);
 
 	if (keyString == "opacity") m_opacity = value;
 	else if (keyString == "radius") m_radius = value;

@@ -14,7 +14,7 @@ void GameLevelManager::downloadLevel(int id, bool gauntletLevel, int dailyID)
         addDLToActive(levelDownloadKey);
         bool isFirstDownload = !hasDownloadedLevel(id);
 		
-        gd::string postString = getBasePostString();
+        std::string postString = getBasePostString();
 
 		// Wmfd2893gb7
         const char* commonSecret = CCString::createWithFormat("%c%s%s%c%c%s", 'W', "mfd", "2893", 'g', 'b', "7")->getCString();
@@ -23,7 +23,7 @@ void GameLevelManager::downloadLevel(int id, bool gauntletLevel, int dailyID)
 		
         if (isFirstDownload) {
 
-            gd::string random = gen_random(10); // Randomized string of characters
+            std::string random = gen_random(10); // Randomized string of characters
             postString += "&rs=";
             postString += random;
 
@@ -32,7 +32,7 @@ void GameLevelManager::downloadLevel(int id, bool gauntletLevel, int dailyID)
 
 			// xI25fpAapCQg
             const char* chkSecret = CCString::createWithFormat("%c%s%s%c%c%s", 'x', "I25", "fpAa", 'p', 'C', "Qg")->getCString();
-            gd::string toHash = CCString::createWithFormat("%i%i%s%i%s%i%s", id, isFirstDownload, random, accountID, GM->m_playerUDID, GM->m_playerUserID, chkSecret)->getCString();
+            std::string toHash = CCString::createWithFormat("%i%i%s%i%s%i%s", id, isFirstDownload, random, accountID, GM->m_playerUDID, GM->m_playerUserID, chkSecret)->getCString();
 
 			unsigned char hash[20];
             rtsha1::calc(toHash.c_str(), toHash.size(), hash);
@@ -40,14 +40,14 @@ void GameLevelManager::downloadLevel(int id, bool gauntletLevel, int dailyID)
 			char hashHex[41];
 			rtsha1::toHexString(hash, hashHex);
 
-        	gd::string xorKey = "41274";
-			gd::string chk = ZipUtils::base64EncodeEnc(gd::string(hashHex), xorKey);
+        	std::string xorKey = "41274";
+			std::string chk = ZipUtils::base64EncodeEnc(std::string(hashHex), xorKey);
 
 			postString += "&chk=";
 			postString += chk;
         }
 
-        gd::string endpoint = "https://www.boomlings.com/database/downloadGJLevel22.php";
-        ProcessHttpRequest(endpoint, postString, gd::string(levelDownloadKey), GJHttpType::DownloadLevel);
+        std::string endpoint = "https://www.boomlings.com/database/downloadGJLevel22.php";
+        ProcessHttpRequest(endpoint, postString, std::string(levelDownloadKey), GJHttpType::DownloadLevel);
     }
 }

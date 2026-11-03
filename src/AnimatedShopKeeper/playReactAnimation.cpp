@@ -12,7 +12,7 @@ void AnimatedShopKeeper::playReactAnimation()
 		m_gruntIndex++;
 		if (m_gruntIndex > 3) m_gruntIndex = 1;
 
-		gd::string path = CCString::createWithFormat("grunt0%i.ogg", m_gruntIndex)->getCString();
+		std::string path = CCString::createWithFormat("grunt0%i.ogg", m_gruntIndex)->getCString();
 		FMODAudioEngine::sharedEngine()->playEffect(path, 1.0f, 0.0f, 0.65f);
 
 		runAnimationForced("react01");

@@ -1,7 +1,7 @@
 // @version 2.2081
-void PlayerObject::animationFinished(const char* key)
+void PlayerObject::animationFinished(const char *key)
 	{
-		gd::string keyString = gd::string(key);
+		std::string keyString = std::string(key);
 
 		if (keyString == "jump_start") {
 			m_robotSprite->runAnimation("jump_loop");

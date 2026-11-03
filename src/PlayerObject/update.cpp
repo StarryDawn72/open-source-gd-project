@@ -321,7 +321,7 @@ void PlayerObject::update(float dt)
         updateStateVariables();
 
         if (m_shipStreak) {
-            gd::string streakFrameName = getFrameForStreak(m_shipStreakType, m_totalTime);
+            std::string streakFrameName = getFrameForStreak(m_shipStreakType, m_totalTime);
             CCTexture2D* texture = CCTextureCache::sharedTextureCache()->addImage(streakFrameName.c_str(), false);
             m_shipStreak->setTexture(texture);
         }

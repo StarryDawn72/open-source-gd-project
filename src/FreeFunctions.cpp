@@ -26,7 +26,7 @@ float SquareDistance(float x1, float y1, float x2, float y2)
 }
 
 // @version 2.2081
-gd::string gen_random(int length)
+std::string gen_random(int length)
 {
 	static const char characters[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
@@ -40,7 +40,7 @@ gd::string gen_random(int length)
 		);
 	}
 
-	return gd::string(out->getCString());	
+	return std::string(out->getCString());	
 }
 
 // @version 2.2081
@@ -104,7 +104,7 @@ int getFramesForStreak(ShipStreak streak)
 }
 
 // @version 2.2081
-gd::string getFrameForStreak(ShipStreak streak, float totalTime)
+std::string getFrameForStreak(ShipStreak streak, float totalTime)
 {
     float frameTime = getFrameTimeForStreak(streak);
     int frameCount = getFramesForStreak(streak);

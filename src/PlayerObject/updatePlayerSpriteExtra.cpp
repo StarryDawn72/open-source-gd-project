@@ -1,5 +1,5 @@
 // @version 2.2081
-void PlayerObject::updatePlayerSpriteExtra(gd::string frameName)
+void PlayerObject::updatePlayerSpriteExtra(std::string frameName)
 {
     CCSpriteFrame* frame = CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName(frameName.c_str());
     if (frame)
