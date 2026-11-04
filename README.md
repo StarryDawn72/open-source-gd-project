@@ -37,10 +37,17 @@ You should view the existing reconstructions on this repo to get an idea of the 
 ### 2.2091
 
 <details>
-	<summary> <b>GJBaseGameLayer</b>  (2)</summary>
+	<summary> <b>GJBaseGameLayer</b>  (3)</summary>
 	<ul>
+		<li><a href="./versions/2.2091/GJBaseGameLayer/activateCustomRing.cpp">activateCustomRing</a></li>
 		<li><a href="./versions/2.2091/GJBaseGameLayer/getBumpMod.cpp">getBumpMod</a></li>
 		<li><a href="./versions/2.2091/GJBaseGameLayer/gravBumpPlayer.cpp">gravBumpPlayer</a></li>
+	</ul>
+</details>
+<details>
+	<summary> <b>PlayerObject</b>  (1)</summary>
+	<ul>
+		<li><a href="./versions/2.2091/PlayerObject/spiderTestJumpInternal.cpp">spiderTestJumpInternal</a></li>
 	</ul>
 </details>
 <details>

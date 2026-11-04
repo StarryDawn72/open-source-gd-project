@@ -10,7 +10,7 @@ FORBIDDEN_MACROS = [
 ########## SETTINGS ##########
 
 FOLDER     = "GJFlyGroundLayer"
-CPP_NAME   = "" # Optional, sometimes output folder need a different name (e.g. PlayLayer->PlayScene)
+CPP_NAME   = "" # Optional, sometimes output folder needs a different name (e.g. PlayLayer->PlayScene)
 INCLUDES   = [
     "GJFlyGroundLayer.h"
 ]

@@ -18,7 +18,6 @@
     void resetCollisionValues()
     void saveToCheckpoint(PlayerCheckpoint* checkpoint)
     void setSecondColor(ccColor3B const& color)
-    void spiderTestJumpInternal(bool dynamic)
     void spiderTestJumpX(bool dynamic)
     void spiderTestJumpY(bool dynamic)
     bool switchedDirTo(PlayerButton button)
@@ -29,4 +28,5 @@
     void updateMove(float dt)
     void updatePlayerGlow()
     void updateStateVariables()
+    uhh the two or three new ones too yeah
 	```
