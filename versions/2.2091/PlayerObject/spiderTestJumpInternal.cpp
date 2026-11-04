@@ -7,7 +7,7 @@ void PlayerObject::spiderTestJumpInternal(bool isRetry)
     if (m_isDead || m_isLocked || m_isRespawning)
         return;
 
-    float damageCheckWidth = m_playerScale * 8.0f;
+    float hazardRectWidth = m_playerScale * 8.0f;
     bool notAffectedByDualGrounds = m_isSideways || m_gameLayer->m_gameState.m_isFreeMode || isInBasicMode();
 
     CCRect playerRect = getObjectRect();
@@ -38,7 +38,7 @@ void PlayerObject::spiderTestJumpInternal(bool isRetry)
     // The solidCheckRect is used for the hit test.
     // In normal orientation, the rect stretches from 2 points
     // below the player's head to the max teleport Y,
-    // and spans half the player's width - 1.   
+    // and spans half the player's width + 1.   
 
     if (!m_isUpsideDown) {
         if (!m_isSideways) {
@@ -54,13 +54,13 @@ void PlayerObject::spiderTestJumpInternal(bool isRetry)
     }
     else {
         if (!m_isSideways) {
-            float y = solidCheckRect.origin.y;
+            float bottomEdge = solidCheckRect.origin.y;
             solidCheckRect.origin.y = minTeleport;
-            solidCheckRect.size.height = (y - minTeleport) + tolerance;
+            solidCheckRect.size.height = (bottomEdge - minTeleport) + tolerance;
         } else {
-            float x = solidCheckRect.origin.x;
+            float leftEdge = solidCheckRect.origin.x;
             solidCheckRect.origin.x = minTeleport;
-            solidCheckRect.size.width = (x - minTeleport) + tolerance;
+            solidCheckRect.size.width = (leftEdge - minTeleport) + tolerance;
         }
     }
 
@@ -94,20 +94,20 @@ void PlayerObject::spiderTestJumpInternal(bool isRetry)
     double extraTolerance = 4.0f;
 
     if (!m_isSideways)
-        extraCheckRect.size.width = extraCheckRect.size.width + extraTolerance;        
+        extraCheckRect.size.width += extraTolerance;        
     else
-        extraCheckRect.size.height = extraCheckRect.size.height + extraTolerance;
+        extraCheckRect.size.height += extraTolerance;
 
     if (!m_isSideways) {
-        hazardRect.size.width = damageCheckWidth;
-        hazardRect.origin.x += (solidCheckRect.size.width - damageCheckWidth) * 0.5f;
+        hazardRect.size.width = hazardRectWidth;
+        hazardRect.origin.x += (solidCheckRect.size.width - hazardRectWidth) * 0.5f;
     }
     else {
-        hazardRect.size.height = damageCheckWidth;
-        hazardRect.origin.y += (solidCheckRect.size.height - damageCheckWidth) * 0.5f;
+        hazardRect.size.height = hazardRectWidth;
+        hazardRect.origin.y += (solidCheckRect.size.height - hazardRectWidth) * 0.5f;
     }
 
-    // more reassigning because robtop is weird and likes messy code
+    // more reassigning because robtop is weird and likes messy code (joke)
     if (m_isPlatformer) {
         if (!m_isSideways) {
             solidCheckRect.size.width -= 2.0f;
