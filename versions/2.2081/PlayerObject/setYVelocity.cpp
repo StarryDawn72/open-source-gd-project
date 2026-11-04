@@ -1,0 +1,17 @@
+ 
+/*
+	 	
+	This function sets the current player's vertical velocity
+	with a rounding to the third decimal place. The second parameter is
+	unused. This function was added in update 2.2.
+	
+*/
+void PlayerObject::setYVelocity(double velocity, int unknown)
+{
+    double intPart = (int)velocity;
+
+    if ( intPart != velocity )
+        velocity = intPart + std::round((velocity - intPart) * 1000.0) / 1000.0;
+
+    m_yVelocity = velocity;
+}

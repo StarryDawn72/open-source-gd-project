@@ -1,32 +1,24 @@
 
-# **NOTICE** 🚨
-**Since a new update (2.209) has released, I plan to update the functions in this repository as soon as I can. Until they are done, I recommend you wait or decompile functions yourself if you're sensitive about version changes. This might take a while...**
-
-# Open Source GD Project (work in progress)
-
 <p align="center">
-  <img src="logo.png" alt="Logo">
+  <img src="banner.png" alt="Logo">
 </p>
 
-### **Manually verified reconstructions of Geometry Dash functions for modders**
+<h1 align="center">Manually verified reconstructions of Geometry Dash functions for modders</h1>
 
 Welcome to the Open Source Geometry Dash Project. This is (hopefully) what I plan to be the most reliable source of information for reverse-engineered function implementations. Basically, I like wasting hours of my spare time and making myself suffer just so I can help the GD modding community.
 
-**About my work**
-- I manually verify every function with minimal use of AI
-- I override the original and test my reconstruction in-game as proof
-- I don't post a bunch of slop
+## Verified for accuracy
 
-*Note: you often see me renaming member variables from bindings - thats' because some of them are incorrectly named. A list of renamed variables can be found in [the markdown file](./RENAMED_BINDINGS.md)*.
+Complex functions are verified by overriding the original and testing the behavior in-game.
 
----
-**Info:**
-- Game version: 2.2081
+*Note: if you see member variables that don't exist in the Geode bindings, that's because some of were renamed. A list of them can be found in [the markdown file](./RENAMED_BINDINGS.md)*.
+
+## Information
+
+- Game versions: 2.2081, 2.2091
 - Software used for reversing: [Hex-Rays IDA Professional 9.3](https://hex-rays.com/ida-pro) with [BromaIDA for symbols](https://github.com/Stazzical/BromaIDA)
 
----
-
-### **Contribution (please read)**
+## Contribution (please read)
 
 If you are in need of a function's code that isn't already on this list, or want to simply request an addition, please open a PR or message me on discord at @starrydawn72. All pull requests will go through manual confirmation before being added to the repository.
 <br>
@@ -40,380 +32,396 @@ If you are in need of a function's code that isn't already on this list, or want
 
 You should view the existing reconstructions on this repo to get an idea of the style before submission.
 
----
+## Shortcut links to entries per class
 
-### **Shortcut links to entries per class**
+## 2.2091
+
+<details>
+	<summary> <b>GJBaseGameLayer</b>  (2)</summary>
+	<ul>
+		<li><a href="./versions/2.2091/GJBaseGameLayer/getBumpMod.cpp">getBumpMod</a></li>
+		<li><a href="./versions/2.2091/GJBaseGameLayer/gravBumpPlayer.cpp">gravBumpPlayer</a></li>
+	</ul>
+</details>
+<details>
+        <summary> <b>Other</b> (1)</summary>
+        <ul>
+            <li><a href="./versions/2.2091/FreeFunctions.cpp">Free Functions</a></li>
+        </ul>
+    </details>
+    
+## 2.2081
+
 <details>
 	<summary> <b>AnimatedShopKeeper ✔️</b>  (5)</summary>
 	<ul>
-		<li><a href="./src/AnimatedShopKeeper/animationFinished.cpp">animationFinished</a></li>
-		<li><a href="./src/AnimatedShopKeeper/create.cpp">create</a></li>
-		<li><a href="./src/AnimatedShopKeeper/init.cpp">init</a></li>
-		<li><a href="./src/AnimatedShopKeeper/playReactAnimation.cpp">playReactAnimation</a></li>
-		<li><a href="./src/AnimatedShopKeeper/startAnimating.cpp">startAnimating</a></li>
+		<li><a href="./versions/2.2081/AnimatedShopKeeper/animationFinished.cpp">animationFinished</a></li>
+		<li><a href="./versions/2.2081/AnimatedShopKeeper/create.cpp">create</a></li>
+		<li><a href="./versions/2.2081/AnimatedShopKeeper/init.cpp">init</a></li>
+		<li><a href="./versions/2.2081/AnimatedShopKeeper/playReactAnimation.cpp">playReactAnimation</a></li>
+		<li><a href="./versions/2.2081/AnimatedShopKeeper/startAnimating.cpp">startAnimating</a></li>
 	</ul>
 </details>
 <details>
 	<summary> <b>AudioEffectsLayer</b>  (1)</summary>
 	<ul>
-		<li><a href="./src/AudioEffectsLayer/audioStep.cpp">audioStep</a></li>
+		<li><a href="./versions/2.2081/AudioEffectsLayer/audioStep.cpp">audioStep</a></li>
 	</ul>
 </details>
 <details>
 	<summary> <b>CCCircleWave ✔️</b>  (11)</summary>
 	<ul>
-		<li><a href="./src/CCCircleWave/baseSetup.cpp">baseSetup</a></li>
-		<li><a href="./src/CCCircleWave/CCCircleWave.cpp">CCCircleWave</a></li>
-		<li><a href="./src/CCCircleWave/create.cpp">create</a></li>
-		<li><a href="./src/CCCircleWave/draw.cpp">draw</a></li>
-		<li><a href="./src/CCCircleWave/followObject.cpp">followObject</a></li>
-		<li><a href="./src/CCCircleWave/init.cpp">init</a></li>
-		<li><a href="./src/CCCircleWave/removeMeAndCleanup.cpp">removeMeAndCleanup</a></li>
-		<li><a href="./src/CCCircleWave/setPosition.cpp">setPosition</a></li>
-		<li><a href="./src/CCCircleWave/updatePosition.cpp">updatePosition</a></li>
-		<li><a href="./src/CCCircleWave/updateTweenAction.cpp">updateTweenAction</a></li>
-		<li><a href="./src/CCCircleWave/~CCCircleWave.cpp">~CCCircleWave</a></li>
+		<li><a href="./versions/2.2081/CCCircleWave/baseSetup.cpp">baseSetup</a></li>
+		<li><a href="./versions/2.2081/CCCircleWave/CCCircleWave.cpp">CCCircleWave</a></li>
+		<li><a href="./versions/2.2081/CCCircleWave/create.cpp">create</a></li>
+		<li><a href="./versions/2.2081/CCCircleWave/draw.cpp">draw</a></li>
+		<li><a href="./versions/2.2081/CCCircleWave/followObject.cpp">followObject</a></li>
+		<li><a href="./versions/2.2081/CCCircleWave/init.cpp">init</a></li>
+		<li><a href="./versions/2.2081/CCCircleWave/removeMeAndCleanup.cpp">removeMeAndCleanup</a></li>
+		<li><a href="./versions/2.2081/CCCircleWave/setPosition.cpp">setPosition</a></li>
+		<li><a href="./versions/2.2081/CCCircleWave/updatePosition.cpp">updatePosition</a></li>
+		<li><a href="./versions/2.2081/CCCircleWave/updateTweenAction.cpp">updateTweenAction</a></li>
+		<li><a href="./versions/2.2081/CCCircleWave/~CCCircleWave.cpp">~CCCircleWave</a></li>
 	</ul>
 </details>
 <details>
 	<summary> <b>CCCircleWaveDelegate ✔️</b>  (1)</summary>
 	<ul>
-		<li><a href="./src/CCCircleWaveDelegate/circleWaveWillBeRemoved.cpp">circleWaveWillBeRemoved</a></li>
+		<li><a href="./versions/2.2081/CCCircleWaveDelegate/circleWaveWillBeRemoved.cpp">circleWaveWillBeRemoved</a></li>
 	</ul>
 </details>
 <details>
 	<summary> <b>EditorUI</b>  (1)</summary>
 	<ul>
-		<li><a href="./src/EditorUI/deselectObject.cpp">deselectObject</a></li>
+		<li><a href="./versions/2.2081/EditorUI/deselectObject.cpp">deselectObject</a></li>
 	</ul>
 </details>
 <details>
 	<summary> <b>GameLevelManager</b>  (1)</summary>
 	<ul>
-		<li><a href="./src/GameLevelManager/downloadLevel.cpp">downloadLevel</a></li>
+		<li><a href="./versions/2.2081/GameLevelManager/downloadLevel.cpp">downloadLevel</a></li>
 	</ul>
 </details>
 <details>
 	<summary> <b>GameObject</b>  (6)</summary>
 	<ul>
-		<li><a href="./src/GameObject/createAndAddParticle.cpp">createAndAddParticle</a></li>
-		<li><a href="./src/GameObject/getObjectRect.cpp">getObjectRect</a></li>
-		<li><a href="./src/GameObject/getObjectRect2.cpp">getObjectRect2</a></li>
-		<li><a href="./src/GameObject/getObjectRectDirty.cpp">getObjectRectDirty</a></li>
-		<li><a href="./src/GameObject/getObjectRectPointer.cpp">getObjectRectPointer</a></li>
-		<li><a href="./src/GameObject/slopeYPos.cpp">slopeYPos</a></li>
+		<li><a href="./versions/2.2081/GameObject/createAndAddParticle.cpp">createAndAddParticle</a></li>
+		<li><a href="./versions/2.2081/GameObject/getObjectRect.cpp">getObjectRect</a></li>
+		<li><a href="./versions/2.2081/GameObject/getObjectRect2.cpp">getObjectRect2</a></li>
+		<li><a href="./versions/2.2081/GameObject/getObjectRectDirty.cpp">getObjectRectDirty</a></li>
+		<li><a href="./versions/2.2081/GameObject/getObjectRectPointer.cpp">getObjectRectPointer</a></li>
+		<li><a href="./versions/2.2081/GameObject/slopeYPos.cpp">slopeYPos</a></li>
 	</ul>
 </details>
 <details>
-	<summary> <b>GJBaseGameLayer</b>  (9)</summary>
+	<summary> <b>GJBaseGameLayer</b>  (7)</summary>
 	<ul>
-		<li><a href="./src/GJBaseGameLayer/bumpPlayer.cpp">bumpPlayer</a></li>
-		<li><a href="./src/GJBaseGameLayer/collisionCheckObjects.cpp">collisionCheckObjects</a></li>
-		<li><a href="./src/GJBaseGameLayer/createBackground.cpp">createBackground</a></li>
-		<li><a href="./src/GJBaseGameLayer/getBumpMod.cpp">getBumpMod</a></li>
-		<li><a href="./src/GJBaseGameLayer/gravBumpPlayer.cpp">gravBumpPlayer</a></li>
-		<li><a href="./src/GJBaseGameLayer/objectIntersectsCircle.cpp">objectIntersectsCircle</a></li>
-		<li><a href="./src/GJBaseGameLayer/playerCircleCollision.cpp">playerCircleCollision</a></li>
-		<li><a href="./src/GJBaseGameLayer/playerIntersectsCircle.cpp">playerIntersectsCircle</a></li>
-		<li><a href="./src/GJBaseGameLayer/updateCameraBGArt.cpp">updateCameraBGArt</a></li>
+		<li><a href="./versions/2.2081/GJBaseGameLayer/bumpPlayer.cpp">bumpPlayer</a></li>
+		<li><a href="./versions/2.2081/GJBaseGameLayer/collisionCheckObjects.cpp">collisionCheckObjects</a></li>
+		<li><a href="./versions/2.2081/GJBaseGameLayer/createBackground.cpp">createBackground</a></li>
+		<li><a href="./versions/2.2081/GJBaseGameLayer/objectIntersectsCircle.cpp">objectIntersectsCircle</a></li>
+		<li><a href="./versions/2.2081/GJBaseGameLayer/playerCircleCollision.cpp">playerCircleCollision</a></li>
+		<li><a href="./versions/2.2081/GJBaseGameLayer/playerIntersectsCircle.cpp">playerIntersectsCircle</a></li>
+		<li><a href="./versions/2.2081/GJBaseGameLayer/updateCameraBGArt.cpp">updateCameraBGArt</a></li>
 	</ul>
 </details>
 <details>
 	<summary> <b>GJFlyGroundLayer ✔️</b>  (1)</summary>
 	<ul>
-		<li><a href="./src/GJFlyGroundLayer/init.cpp">init</a></li>
+		<li><a href="./versions/2.2081/GJFlyGroundLayer/init.cpp">init</a></li>
 	</ul>
 </details>
 <details>
 	<summary> <b>GJGroundLayer ✔️</b>  (23)</summary>
 	<ul>
-		<li><a href="./src/GJGroundLayer/create.cpp">create</a></li>
-		<li><a href="./src/GJGroundLayer/createLine.cpp">createLine</a></li>
-		<li><a href="./src/GJGroundLayer/deactivateGround.cpp">deactivateGround</a></li>
-		<li><a href="./src/GJGroundLayer/draw.cpp">draw</a></li>
-		<li><a href="./src/GJGroundLayer/fadeInFinished.cpp">fadeInFinished</a></li>
-		<li><a href="./src/GJGroundLayer/fadeInGround.cpp">fadeInGround</a></li>
-		<li><a href="./src/GJGroundLayer/fadeOutGround.cpp">fadeOutGround</a></li>
-		<li><a href="./src/GJGroundLayer/getGroundY.cpp">getGroundY</a></li>
-		<li><a href="./src/GJGroundLayer/hideShadows.cpp">hideShadows</a></li>
-		<li><a href="./src/GJGroundLayer/init.cpp">init</a></li>
-		<li><a href="./src/GJGroundLayer/loadGroundSprites.cpp">loadGroundSprites</a></li>
-		<li><a href="./src/GJGroundLayer/positionGround.cpp">positionGround</a></li>
-		<li><a href="./src/GJGroundLayer/scaleGround.cpp">scaleGround</a></li>
-		<li><a href="./src/GJGroundLayer/showGround.cpp">showGround</a></li>
-		<li><a href="./src/GJGroundLayer/toggleVisible01.cpp">toggleVisible01</a></li>
-		<li><a href="./src/GJGroundLayer/toggleVisible02.cpp">toggleVisible02</a></li>
-		<li><a href="./src/GJGroundLayer/updateGround01Color.cpp">updateGround01Color</a></li>
-		<li><a href="./src/GJGroundLayer/updateGround02Color.cpp">updateGround02Color</a></li>
-		<li><a href="./src/GJGroundLayer/updateGroundPos.cpp">updateGroundPos</a></li>
-		<li><a href="./src/GJGroundLayer/updateGroundWidth.cpp">updateGroundWidth</a></li>
-		<li><a href="./src/GJGroundLayer/updateLineBlend.cpp">updateLineBlend</a></li>
-		<li><a href="./src/GJGroundLayer/updateShadows.cpp">updateShadows</a></li>
-		<li><a href="./src/GJGroundLayer/updateShadowXPos.cpp">updateShadowXPos</a></li>
+		<li><a href="./versions/2.2081/GJGroundLayer/create.cpp">create</a></li>
+		<li><a href="./versions/2.2081/GJGroundLayer/createLine.cpp">createLine</a></li>
+		<li><a href="./versions/2.2081/GJGroundLayer/deactivateGround.cpp">deactivateGround</a></li>
+		<li><a href="./versions/2.2081/GJGroundLayer/draw.cpp">draw</a></li>
+		<li><a href="./versions/2.2081/GJGroundLayer/fadeInFinished.cpp">fadeInFinished</a></li>
+		<li><a href="./versions/2.2081/GJGroundLayer/fadeInGround.cpp">fadeInGround</a></li>
+		<li><a href="./versions/2.2081/GJGroundLayer/fadeOutGround.cpp">fadeOutGround</a></li>
+		<li><a href="./versions/2.2081/GJGroundLayer/getGroundY.cpp">getGroundY</a></li>
+		<li><a href="./versions/2.2081/GJGroundLayer/hideShadows.cpp">hideShadows</a></li>
+		<li><a href="./versions/2.2081/GJGroundLayer/init.cpp">init</a></li>
+		<li><a href="./versions/2.2081/GJGroundLayer/loadGroundSprites.cpp">loadGroundSprites</a></li>
+		<li><a href="./versions/2.2081/GJGroundLayer/positionGround.cpp">positionGround</a></li>
+		<li><a href="./versions/2.2081/GJGroundLayer/scaleGround.cpp">scaleGround</a></li>
+		<li><a href="./versions/2.2081/GJGroundLayer/showGround.cpp">showGround</a></li>
+		<li><a href="./versions/2.2081/GJGroundLayer/toggleVisible01.cpp">toggleVisible01</a></li>
+		<li><a href="./versions/2.2081/GJGroundLayer/toggleVisible02.cpp">toggleVisible02</a></li>
+		<li><a href="./versions/2.2081/GJGroundLayer/updateGround01Color.cpp">updateGround01Color</a></li>
+		<li><a href="./versions/2.2081/GJGroundLayer/updateGround02Color.cpp">updateGround02Color</a></li>
+		<li><a href="./versions/2.2081/GJGroundLayer/updateGroundPos.cpp">updateGroundPos</a></li>
+		<li><a href="./versions/2.2081/GJGroundLayer/updateGroundWidth.cpp">updateGroundWidth</a></li>
+		<li><a href="./versions/2.2081/GJGroundLayer/updateLineBlend.cpp">updateLineBlend</a></li>
+		<li><a href="./versions/2.2081/GJGroundLayer/updateShadows.cpp">updateShadows</a></li>
+		<li><a href="./versions/2.2081/GJGroundLayer/updateShadowXPos.cpp">updateShadowXPos</a></li>
 	</ul>
 </details>
 <details>
 	<summary> <b>HardStreak</b>  (13)</summary>
 	<ul>
-		<li><a href="./src/HardStreak/addPoint.cpp">addPoint</a></li>
-		<li><a href="./src/HardStreak/clearAboveXPos.cpp">clearAboveXPos</a></li>
-		<li><a href="./src/HardStreak/clearBehindXPos.cpp">clearBehindXPos</a></li>
-		<li><a href="./src/HardStreak/firstSetup.cpp">firstSetup</a></li>
-		<li><a href="./src/HardStreak/HardStreak.cpp">HardStreak</a></li>
-		<li><a href="./src/HardStreak/init.cpp">init</a></li>
-		<li><a href="./src/HardStreak/normalizeAngle.cpp">normalizeAngle</a></li>
-		<li><a href="./src/HardStreak/quadCornerOffset.cpp">quadCornerOffset</a></li>
-		<li><a href="./src/HardStreak/reset.cpp">reset</a></li>
-		<li><a href="./src/HardStreak/resumeStroke.cpp">resumeStroke</a></li>
-		<li><a href="./src/HardStreak/scheduleAutoUpdate.cpp">scheduleAutoUpdate</a></li>
-		<li><a href="./src/HardStreak/stopStroke.cpp">stopStroke</a></li>
-		<li><a href="./src/HardStreak/updateStroke.cpp">updateStroke</a></li>
+		<li><a href="./versions/2.2081/HardStreak/addPoint.cpp">addPoint</a></li>
+		<li><a href="./versions/2.2081/HardStreak/clearAboveXPos.cpp">clearAboveXPos</a></li>
+		<li><a href="./versions/2.2081/HardStreak/clearBehindXPos.cpp">clearBehindXPos</a></li>
+		<li><a href="./versions/2.2081/HardStreak/firstSetup.cpp">firstSetup</a></li>
+		<li><a href="./versions/2.2081/HardStreak/HardStreak.cpp">HardStreak</a></li>
+		<li><a href="./versions/2.2081/HardStreak/init.cpp">init</a></li>
+		<li><a href="./versions/2.2081/HardStreak/normalizeAngle.cpp">normalizeAngle</a></li>
+		<li><a href="./versions/2.2081/HardStreak/quadCornerOffset.cpp">quadCornerOffset</a></li>
+		<li><a href="./versions/2.2081/HardStreak/reset.cpp">reset</a></li>
+		<li><a href="./versions/2.2081/HardStreak/resumeStroke.cpp">resumeStroke</a></li>
+		<li><a href="./versions/2.2081/HardStreak/scheduleAutoUpdate.cpp">scheduleAutoUpdate</a></li>
+		<li><a href="./versions/2.2081/HardStreak/stopStroke.cpp">stopStroke</a></li>
+		<li><a href="./versions/2.2081/HardStreak/updateStroke.cpp">updateStroke</a></li>
 	</ul>
 </details>
 <details>
 	<summary> <b>LevelEditorLayer</b>  (2)</summary>
 	<ul>
-		<li><a href="./src/LevelEditorLayer/addObjectFromVector.cpp">addObjectFromVector</a></li>
-		<li><a href="./src/LevelEditorLayer/updateVisibility.cpp">updateVisibility</a></li>
+		<li><a href="./versions/2.2081/LevelEditorLayer/addObjectFromVector.cpp">addObjectFromVector</a></li>
+		<li><a href="./versions/2.2081/LevelEditorLayer/updateVisibility.cpp">updateVisibility</a></li>
 	</ul>
 </details>
 <details>
 	<summary> <b>LevelInfoLayer</b>  (6)</summary>
 	<ul>
-		<li><a href="./src/LevelInfoLayer/loadLevelStep.cpp">loadLevelStep</a></li>
-		<li><a href="./src/LevelInfoLayer/onPlay.cpp">onPlay</a></li>
-		<li><a href="./src/LevelInfoLayer/playStep2.cpp">playStep2</a></li>
-		<li><a href="./src/LevelInfoLayer/playStep3.cpp">playStep3</a></li>
-		<li><a href="./src/LevelInfoLayer/playStep4.cpp">playStep4</a></li>
-		<li><a href="./src/LevelInfoLayer/showSongWarning.cpp">showSongWarning</a></li>
+		<li><a href="./versions/2.2081/LevelInfoLayer/loadLevelStep.cpp">loadLevelStep</a></li>
+		<li><a href="./versions/2.2081/LevelInfoLayer/onPlay.cpp">onPlay</a></li>
+		<li><a href="./versions/2.2081/LevelInfoLayer/playStep2.cpp">playStep2</a></li>
+		<li><a href="./versions/2.2081/LevelInfoLayer/playStep3.cpp">playStep3</a></li>
+		<li><a href="./versions/2.2081/LevelInfoLayer/playStep4.cpp">playStep4</a></li>
+		<li><a href="./versions/2.2081/LevelInfoLayer/showSongWarning.cpp">showSongWarning</a></li>
 	</ul>
 </details>
 <details>
 	<summary> <b>ObjectToolbox</b>  (1)</summary>
 	<ul>
-		<li><a href="./src/ObjectToolbox/init.cpp">init</a></li>
+		<li><a href="./versions/2.2081/ObjectToolbox/init.cpp">init</a></li>
 	</ul>
 </details>
 <details>
 	<summary> <b>PlayerObject</b>  (197)</summary>
 	<ul>
-		<li><a href="./src/PlayerObject/activateStreak.cpp">activateStreak</a></li>
-		<li><a href="./src/PlayerObject/addAllParticles.cpp">addAllParticles</a></li>
-		<li><a href="./src/PlayerObject/addToTouchedRings.cpp">addToTouchedRings</a></li>
-		<li><a href="./src/PlayerObject/addToYVelocity.cpp">addToYVelocity</a></li>
-		<li><a href="./src/PlayerObject/animatePlatformerJump.cpp">animatePlatformerJump</a></li>
-		<li><a href="./src/PlayerObject/animationFinished.cpp">animationFinished</a></li>
-		<li><a href="./src/PlayerObject/boostPlayer.cpp">boostPlayer</a></li>
-		<li><a href="./src/PlayerObject/bumpPlayer.cpp">bumpPlayer</a></li>
-		<li><a href="./src/PlayerObject/buttonDown.cpp">buttonDown</a></li>
-		<li><a href="./src/PlayerObject/canStickToGround.cpp">canStickToGround</a></li>
-		<li><a href="./src/PlayerObject/checkSnapJumpToObject.cpp">checkSnapJumpToObject</a></li>
-		<li><a href="./src/PlayerObject/collidedWithObject.cpp">collidedWithObject</a></li>
-		<li><a href="./src/PlayerObject/collidedWithSlope.cpp">collidedWithSlope</a></li>
-		<li><a href="./src/PlayerObject/collidedWithSlopeInternal.cpp">collidedWithSlopeInternal</a></li>
-		<li><a href="./src/PlayerObject/convertToClosestRotation.cpp">convertToClosestRotation</a></li>
-		<li><a href="./src/PlayerObject/copyAttributes.cpp">copyAttributes</a></li>
-		<li><a href="./src/PlayerObject/create.cpp">create</a></li>
-		<li><a href="./src/PlayerObject/createFadeOutDartStreak.cpp">createFadeOutDartStreak</a></li>
-		<li><a href="./src/PlayerObject/createRobot.cpp">createRobot</a></li>
-		<li><a href="./src/PlayerObject/createSpider.cpp">createSpider</a></li>
-		<li><a href="./src/PlayerObject/deactivateParticle.cpp">deactivateParticle</a></li>
-		<li><a href="./src/PlayerObject/deactivateStreak.cpp">deactivateStreak</a></li>
-		<li><a href="./src/PlayerObject/destroyFromHitHead.cpp">destroyFromHitHead</a></li>
-		<li><a href="./src/PlayerObject/didHitHead.cpp">didHitHead</a></li>
-		<li><a href="./src/PlayerObject/disableCustomGlowColor.cpp">disableCustomGlowColor</a></li>
-		<li><a href="./src/PlayerObject/disablePlayerControls.cpp">disablePlayerControls</a></li>
-		<li><a href="./src/PlayerObject/disableSwingFire.cpp">disableSwingFire</a></li>
-		<li><a href="./src/PlayerObject/doReversePlayer.cpp">doReversePlayer</a></li>
-		<li><a href="./src/PlayerObject/enableCustomGlowColor.cpp">enableCustomGlowColor</a></li>
-		<li><a href="./src/PlayerObject/exitPlatformerAnimateJump.cpp">exitPlatformerAnimateJump</a></li>
-		<li><a href="./src/PlayerObject/fadeOutStreak2.cpp">fadeOutStreak2</a></li>
-		<li><a href="./src/PlayerObject/flashPlayer.cpp">flashPlayer</a></li>
-		<li><a href="./src/PlayerObject/flipGravity.cpp">flipGravity</a></li>
-		<li><a href="./src/PlayerObject/flipMod.cpp">flipMod</a></li>
-		<li><a href="./src/PlayerObject/gameEventTriggered.cpp">gameEventTriggered</a></li>
-		<li><a href="./src/PlayerObject/getActiveMode.cpp">getActiveMode</a></li>
-		<li><a href="./src/PlayerObject/getCurrentXVelocity.cpp">getCurrentXVelocity</a></li>
-		<li><a href="./src/PlayerObject/getModifiedSlopeYVel.cpp">getModifiedSlopeYVel</a></li>
-		<li><a href="./src/PlayerObject/getObjectRotation.cpp">getObjectRotation</a></li>
-		<li><a href="./src/PlayerObject/getOldPosition.cpp">getOldPosition</a></li>
-		<li><a href="./src/PlayerObject/getOrientedBox.cpp">getOrientedBox</a></li>
-		<li><a href="./src/PlayerObject/getRealPosition.cpp">getRealPosition</a></li>
-		<li><a href="./src/PlayerObject/getSecondColor.cpp">getSecondColor</a></li>
-		<li><a href="./src/PlayerObject/getYVelocity.cpp">getYVelocity</a></li>
-		<li><a href="./src/PlayerObject/gravityDown.cpp">gravityDown</a></li>
-		<li><a href="./src/PlayerObject/gravityUp.cpp">gravityUp</a></li>
-		<li><a href="./src/PlayerObject/handlePlayerCommand.cpp">handlePlayerCommand</a></li>
-		<li><a href="./src/PlayerObject/handleRotatedCollisionInternal.cpp">handleRotatedCollisionInternal</a></li>
-		<li><a href="./src/PlayerObject/handleRotatedObjectCollision.cpp">handleRotatedObjectCollision</a></li>
-		<li><a href="./src/PlayerObject/handleRotatedSlopeCollision.cpp">handleRotatedSlopeCollision</a></li>
-		<li><a href="./src/PlayerObject/hardFlipGravity.cpp">hardFlipGravity</a></li>
-		<li><a href="./src/PlayerObject/hitGroundNoJump.cpp">hitGroundNoJump</a></li>
-		<li><a href="./src/PlayerObject/incrementJumps.cpp">incrementJumps</a></li>
-		<li><a href="./src/PlayerObject/isBoostValid.cpp">isBoostValid</a></li>
-		<li><a href="./src/PlayerObject/isFlying.cpp">isFlying</a></li>
-		<li><a href="./src/PlayerObject/isInBasicMode.cpp">isInBasicMode</a></li>
-		<li><a href="./src/PlayerObject/isInNormalMode.cpp">isInNormalMode</a></li>
-		<li><a href="./src/PlayerObject/isSafeFlip.cpp">isSafeFlip</a></li>
-		<li><a href="./src/PlayerObject/isSafeHeadTest.cpp">isSafeHeadTest</a></li>
-		<li><a href="./src/PlayerObject/isSafeMode.cpp">isSafeMode</a></li>
-		<li><a href="./src/PlayerObject/isSafeSpiderFlip.cpp">isSafeSpiderFlip</a></li>
-		<li><a href="./src/PlayerObject/levelFlipFinished.cpp">levelFlipFinished</a></li>
-		<li><a href="./src/PlayerObject/levelFlipping.cpp">levelFlipping</a></li>
-		<li><a href="./src/PlayerObject/levelWillFlip.cpp">levelWillFlip</a></li>
-		<li><a href="./src/PlayerObject/limitDashRotation.cpp">limitDashRotation</a></li>
-		<li><a href="./src/PlayerObject/lockPlayer.cpp">lockPlayer</a></li>
-		<li><a href="./src/PlayerObject/logValues.cpp">logValues</a></li>
-		<li><a href="./src/PlayerObject/modeDidChange.cpp">modeDidChange</a></li>
-		<li><a href="./src/PlayerObject/placeStreakPoint.cpp">placeStreakPoint</a></li>
-		<li><a href="./src/PlayerObject/playBumpEffect.cpp">playBumpEffect</a></li>
-		<li><a href="./src/PlayerObject/playBurstEffect.cpp">playBurstEffect</a></li>
-		<li><a href="./src/PlayerObject/playCompleteEffect.cpp">playCompleteEffect</a></li>
-		<li><a href="./src/PlayerObject/playDynamicSpiderRun.cpp">playDynamicSpiderRun</a></li>
-		<li><a href="./src/PlayerObject/playerDestroyed.cpp">playerDestroyed</a></li>
-		<li><a href="./src/PlayerObject/playerIsFalling.cpp">playerIsFalling</a></li>
-		<li><a href="./src/PlayerObject/playerIsFallingBugged.cpp">playerIsFallingBugged</a></li>
-		<li><a href="./src/PlayerObject/playerIsMovingUp.cpp">playerIsMovingUp</a></li>
-		<li><a href="./src/PlayerObject/playerTeleported.cpp">playerTeleported</a></li>
-		<li><a href="./src/PlayerObject/playingEndEffect.cpp">playingEndEffect</a></li>
-		<li><a href="./src/PlayerObject/playSpawnEffect.cpp">playSpawnEffect</a></li>
-		<li><a href="./src/PlayerObject/preCollision.cpp">preCollision</a></li>
-		<li><a href="./src/PlayerObject/preSlopeCollision.cpp">preSlopeCollision</a></li>
-		<li><a href="./src/PlayerObject/propellPlayer.cpp">propellPlayer</a></li>
-		<li><a href="./src/PlayerObject/pushDown.cpp">pushDown</a></li>
-		<li><a href="./src/PlayerObject/pushPlayer.cpp">pushPlayer</a></li>
-		<li><a href="./src/PlayerObject/redirectDash.cpp">redirectDash</a></li>
-		<li><a href="./src/PlayerObject/releaseAllButtons.cpp">releaseAllButtons</a></li>
-		<li><a href="./src/PlayerObject/releaseButton.cpp">releaseButton</a></li>
-		<li><a href="./src/PlayerObject/removeAllParticles.cpp">removeAllParticles</a></li>
-		<li><a href="./src/PlayerObject/removePendingCheckpoint.cpp">removePendingCheckpoint</a></li>
-		<li><a href="./src/PlayerObject/removePlacedCheckpoint.cpp">removePlacedCheckpoint</a></li>
-		<li><a href="./src/PlayerObject/resetAllParticles.cpp">resetAllParticles</a></li>
-		<li><a href="./src/PlayerObject/resetCollisionLog.cpp">resetCollisionLog</a></li>
-		<li><a href="./src/PlayerObject/resetCollisionValues.cpp">resetCollisionValues</a></li>
-		<li><a href="./src/PlayerObject/resetPlayerIcon.cpp">resetPlayerIcon</a></li>
-		<li><a href="./src/PlayerObject/resetStateVariables.cpp">resetStateVariables</a></li>
-		<li><a href="./src/PlayerObject/resetStreak.cpp">resetStreak</a></li>
-		<li><a href="./src/PlayerObject/resetTouchedRings.cpp">resetTouchedRings</a></li>
-		<li><a href="./src/PlayerObject/reverseMod.cpp">reverseMod</a></li>
-		<li><a href="./src/PlayerObject/reversePlayer.cpp">reversePlayer</a></li>
-		<li><a href="./src/PlayerObject/ringJump.cpp">ringJump</a></li>
-		<li><a href="./src/PlayerObject/rotateGameplay.cpp">rotateGameplay</a></li>
-		<li><a href="./src/PlayerObject/rotateGameplayObject.cpp">rotateGameplayObject</a></li>
-		<li><a href="./src/PlayerObject/rotateGameplayOnly.cpp">rotateGameplayOnly</a></li>
-		<li><a href="./src/PlayerObject/rotatePreSlopeObjects.cpp">rotatePreSlopeObjects</a></li>
-		<li><a href="./src/PlayerObject/runBallRotation.cpp">runBallRotation</a></li>
-		<li><a href="./src/PlayerObject/runBallRotation2.cpp">runBallRotation2</a></li>
-		<li><a href="./src/PlayerObject/runNormalRotation.cpp">runNormalRotation</a></li>
-		<li><a href="./src/PlayerObject/runRotateAction.cpp">runRotateAction</a></li>
-		<li><a href="./src/PlayerObject/setColor.cpp">setColor</a></li>
-		<li><a href="./src/PlayerObject/setFlipX.cpp">setFlipX</a></li>
-		<li><a href="./src/PlayerObject/setFlipY.cpp">setFlipY</a></li>
-		<li><a href="./src/PlayerObject/setOpacity.cpp">setOpacity</a></li>
-		<li><a href="./src/PlayerObject/setRotation.cpp">setRotation</a></li>
-		<li><a href="./src/PlayerObject/setScale.cpp">setScale</a></li>
-		<li><a href="./src/PlayerObject/setScaleX.cpp">setScaleX</a></li>
-		<li><a href="./src/PlayerObject/setScaleY.cpp">setScaleY</a></li>
-		<li><a href="./src/PlayerObject/setSecondColor.cpp">setSecondColor</a></li>
-		<li><a href="./src/PlayerObject/setupStreak.cpp">setupStreak</a></li>
-		<li><a href="./src/PlayerObject/setVisible.cpp">setVisible</a></li>
-		<li><a href="./src/PlayerObject/setYVelocity.cpp">setYVelocity</a></li>
-		<li><a href="./src/PlayerObject/spawnCircle.cpp">spawnCircle</a></li>
-		<li><a href="./src/PlayerObject/spawnCircle2.cpp">spawnCircle2</a></li>
-		<li><a href="./src/PlayerObject/spawnDualCircle.cpp">spawnDualCircle</a></li>
-		<li><a href="./src/PlayerObject/spawnFromPlayer.cpp">spawnFromPlayer</a></li>
-		<li><a href="./src/PlayerObject/spawnPortalCircle.cpp">spawnPortalCircle</a></li>
-		<li><a href="./src/PlayerObject/spawnScaleCircle.cpp">spawnScaleCircle</a></li>
-		<li><a href="./src/PlayerObject/specialGroundHit.cpp">specialGroundHit</a></li>
-		<li><a href="./src/PlayerObject/speedDown.cpp">speedDown</a></li>
-		<li><a href="./src/PlayerObject/speedUp.cpp">speedUp</a></li>
-		<li><a href="./src/PlayerObject/spiderTestJump.cpp">spiderTestJump</a></li>
-		<li><a href="./src/PlayerObject/startDashing.cpp">startDashing</a></li>
-		<li><a href="./src/PlayerObject/stopBurstEffect.cpp">stopBurstEffect</a></li>
-		<li><a href="./src/PlayerObject/stopDashing.cpp">stopDashing</a></li>
-		<li><a href="./src/PlayerObject/stopParticles.cpp">stopParticles</a></li>
-		<li><a href="./src/PlayerObject/stopPlatformerJumpAnimation.cpp">stopPlatformerJumpAnimation</a></li>
-		<li><a href="./src/PlayerObject/stopRotation.cpp">stopRotation</a></li>
-		<li><a href="./src/PlayerObject/stopStreak2.cpp">stopStreak2</a></li>
-		<li><a href="./src/PlayerObject/storeCollision.cpp">storeCollision</a></li>
-		<li><a href="./src/PlayerObject/switchedToMode.cpp">switchedToMode</a></li>
-		<li><a href="./src/PlayerObject/testForMoving.cpp">testForMoving</a></li>
-		<li><a href="./src/PlayerObject/toggleBirdMode.cpp">toggleBirdMode</a></li>
-		<li><a href="./src/PlayerObject/toggleDartMode.cpp">toggleDartMode</a></li>
-		<li><a href="./src/PlayerObject/toggleFlyMode.cpp">toggleFlyMode</a></li>
-		<li><a href="./src/PlayerObject/toggleGhostEffect.cpp">toggleGhostEffect</a></li>
-		<li><a href="./src/PlayerObject/togglePlatformerMode.cpp">togglePlatformerMode</a></li>
-		<li><a href="./src/PlayerObject/togglePlayerScale.cpp">togglePlayerScale</a></li>
-		<li><a href="./src/PlayerObject/toggleRobotMode.cpp">toggleRobotMode</a></li>
-		<li><a href="./src/PlayerObject/toggleRollMode.cpp">toggleRollMode</a></li>
-		<li><a href="./src/PlayerObject/toggleSpiderMode.cpp">toggleSpiderMode</a></li>
-		<li><a href="./src/PlayerObject/toggleSwingMode.cpp">toggleSwingMode</a></li>
-		<li><a href="./src/PlayerObject/toggleVisibility.cpp">toggleVisibility</a></li>
-		<li><a href="./src/PlayerObject/touchedObject.cpp">touchedObject</a></li>
-		<li><a href="./src/PlayerObject/unrotateGameplayObject.cpp">unrotateGameplayObject</a></li>
-		<li><a href="./src/PlayerObject/unrotatePreSlopeObjects.cpp">unrotatePreSlopeObjects</a></li>
-		<li><a href="./src/PlayerObject/update.cpp">update</a></li>
-		<li><a href="./src/PlayerObject/updateCheckpointMode.cpp">updateCheckpointMode</a></li>
-		<li><a href="./src/PlayerObject/updateCollide.cpp">updateCollide</a></li>
-		<li><a href="./src/PlayerObject/updateCollideBottom.cpp">updateCollideBottom</a></li>
-		<li><a href="./src/PlayerObject/updateCollideLeft.cpp">updateCollideLeft</a></li>
-		<li><a href="./src/PlayerObject/updateCollideRight.cpp">updateCollideRight</a></li>
-		<li><a href="./src/PlayerObject/updateCollideTop.cpp">updateCollideTop</a></li>
-		<li><a href="./src/PlayerObject/updateDashAnimation.cpp">updateDashAnimation</a></li>
-		<li><a href="./src/PlayerObject/updateDashArt.cpp">updateDashArt</a></li>
-		<li><a href="./src/PlayerObject/updateEffects.cpp">updateEffects</a></li>
-		<li><a href="./src/PlayerObject/updateInternalActions.cpp">updateInternalActions</a></li>
-		<li><a href="./src/PlayerObject/updateJump.cpp">updateJump</a></li>
-		<li><a href="./src/PlayerObject/updateJumpVariables.cpp">updateJumpVariables</a></li>
-		<li><a href="./src/PlayerObject/updateLastGroundObject.cpp">updateLastGroundObject</a></li>
-		<li><a href="./src/PlayerObject/updatePlayerArt.cpp">updatePlayerArt</a></li>
-		<li><a href="./src/PlayerObject/updatePlayerBirdFrame.cpp">updatePlayerBirdFrame</a></li>
-		<li><a href="./src/PlayerObject/updatePlayerDartFrame.cpp">updatePlayerDartFrame</a></li>
-		<li><a href="./src/PlayerObject/updatePlayerForce.cpp">updatePlayerForce</a></li>
-		<li><a href="./src/PlayerObject/updatePlayerFrame.cpp">updatePlayerFrame</a></li>
-		<li><a href="./src/PlayerObject/updatePlayerJetpackFrame.cpp">updatePlayerJetpackFrame</a></li>
-		<li><a href="./src/PlayerObject/updatePlayerRobotFrame.cpp">updatePlayerRobotFrame</a></li>
-		<li><a href="./src/PlayerObject/updatePlayerRollFrame.cpp">updatePlayerRollFrame</a></li>
-		<li><a href="./src/PlayerObject/updatePlayerScale.cpp">updatePlayerScale</a></li>
-		<li><a href="./src/PlayerObject/updatePlayerShipFrame.cpp">updatePlayerShipFrame</a></li>
-		<li><a href="./src/PlayerObject/updatePlayerSpiderFrame.cpp">updatePlayerSpiderFrame</a></li>
-		<li><a href="./src/PlayerObject/updatePlayerSpriteExtra.cpp">updatePlayerSpriteExtra</a></li>
-		<li><a href="./src/PlayerObject/updatePlayerSwingFrame.cpp">updatePlayerSwingFrame</a></li>
-		<li><a href="./src/PlayerObject/updateRobotAnimationSpeed.cpp">updateRobotAnimationSpeed</a></li>
-		<li><a href="./src/PlayerObject/updateRotation.cpp">updateRotation</a></li>
-		<li><a href="./src/PlayerObject/updateShipRotation.cpp">updateShipRotation</a></li>
-		<li><a href="./src/PlayerObject/updateShipSpriteExtra.cpp">updateShipSpriteExtra</a></li>
-		<li><a href="./src/PlayerObject/updateSlopeRotation.cpp">updateSlopeRotation</a></li>
-		<li><a href="./src/PlayerObject/updateSlopeYVelocity.cpp">updateSlopeYVelocity</a></li>
-		<li><a href="./src/PlayerObject/updateSpecial.cpp">updateSpecial</a></li>
-		<li><a href="./src/PlayerObject/updateStaticForce.cpp">updateStaticForce</a></li>
-		<li><a href="./src/PlayerObject/updateStreakBlend.cpp">updateStreakBlend</a></li>
-		<li><a href="./src/PlayerObject/updateStreaks.cpp">updateStreaks</a></li>
-		<li><a href="./src/PlayerObject/updateSwingFire.cpp">updateSwingFire</a></li>
-		<li><a href="./src/PlayerObject/updateTimeMod.cpp">updateTimeMod</a></li>
-		<li><a href="./src/PlayerObject/usingWallLimitedMode.cpp">usingWallLimitedMode</a></li>
-		<li><a href="./src/PlayerObject/yStartDown.cpp">yStartDown</a></li>
-		<li><a href="./src/PlayerObject/yStartUp.cpp">yStartUp</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/activateStreak.cpp">activateStreak</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/addAllParticles.cpp">addAllParticles</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/addToTouchedRings.cpp">addToTouchedRings</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/addToYVelocity.cpp">addToYVelocity</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/animatePlatformerJump.cpp">animatePlatformerJump</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/animationFinished.cpp">animationFinished</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/boostPlayer.cpp">boostPlayer</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/bumpPlayer.cpp">bumpPlayer</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/buttonDown.cpp">buttonDown</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/canStickToGround.cpp">canStickToGround</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/checkSnapJumpToObject.cpp">checkSnapJumpToObject</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/collidedWithObject.cpp">collidedWithObject</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/collidedWithSlope.cpp">collidedWithSlope</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/collidedWithSlopeInternal.cpp">collidedWithSlopeInternal</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/convertToClosestRotation.cpp">convertToClosestRotation</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/copyAttributes.cpp">copyAttributes</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/create.cpp">create</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/createFadeOutDartStreak.cpp">createFadeOutDartStreak</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/createRobot.cpp">createRobot</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/createSpider.cpp">createSpider</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/deactivateParticle.cpp">deactivateParticle</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/deactivateStreak.cpp">deactivateStreak</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/destroyFromHitHead.cpp">destroyFromHitHead</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/didHitHead.cpp">didHitHead</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/disableCustomGlowColor.cpp">disableCustomGlowColor</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/disablePlayerControls.cpp">disablePlayerControls</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/disableSwingFire.cpp">disableSwingFire</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/doReversePlayer.cpp">doReversePlayer</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/enableCustomGlowColor.cpp">enableCustomGlowColor</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/exitPlatformerAnimateJump.cpp">exitPlatformerAnimateJump</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/fadeOutStreak2.cpp">fadeOutStreak2</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/flashPlayer.cpp">flashPlayer</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/flipGravity.cpp">flipGravity</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/flipMod.cpp">flipMod</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/gameEventTriggered.cpp">gameEventTriggered</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/getActiveMode.cpp">getActiveMode</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/getCurrentXVelocity.cpp">getCurrentXVelocity</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/getModifiedSlopeYVel.cpp">getModifiedSlopeYVel</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/getObjectRotation.cpp">getObjectRotation</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/getOldPosition.cpp">getOldPosition</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/getOrientedBox.cpp">getOrientedBox</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/getRealPosition.cpp">getRealPosition</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/getSecondColor.cpp">getSecondColor</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/getYVelocity.cpp">getYVelocity</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/gravityDown.cpp">gravityDown</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/gravityUp.cpp">gravityUp</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/handlePlayerCommand.cpp">handlePlayerCommand</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/handleRotatedCollisionInternal.cpp">handleRotatedCollisionInternal</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/handleRotatedObjectCollision.cpp">handleRotatedObjectCollision</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/handleRotatedSlopeCollision.cpp">handleRotatedSlopeCollision</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/hardFlipGravity.cpp">hardFlipGravity</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/hitGroundNoJump.cpp">hitGroundNoJump</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/incrementJumps.cpp">incrementJumps</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/isBoostValid.cpp">isBoostValid</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/isFlying.cpp">isFlying</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/isInBasicMode.cpp">isInBasicMode</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/isInNormalMode.cpp">isInNormalMode</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/isSafeFlip.cpp">isSafeFlip</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/isSafeHeadTest.cpp">isSafeHeadTest</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/isSafeMode.cpp">isSafeMode</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/isSafeSpiderFlip.cpp">isSafeSpiderFlip</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/levelFlipFinished.cpp">levelFlipFinished</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/levelFlipping.cpp">levelFlipping</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/levelWillFlip.cpp">levelWillFlip</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/limitDashRotation.cpp">limitDashRotation</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/lockPlayer.cpp">lockPlayer</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/logValues.cpp">logValues</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/modeDidChange.cpp">modeDidChange</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/placeStreakPoint.cpp">placeStreakPoint</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/playBumpEffect.cpp">playBumpEffect</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/playBurstEffect.cpp">playBurstEffect</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/playCompleteEffect.cpp">playCompleteEffect</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/playDynamicSpiderRun.cpp">playDynamicSpiderRun</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/playerDestroyed.cpp">playerDestroyed</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/playerIsFalling.cpp">playerIsFalling</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/playerIsFallingBugged.cpp">playerIsFallingBugged</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/playerIsMovingUp.cpp">playerIsMovingUp</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/playerTeleported.cpp">playerTeleported</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/playingEndEffect.cpp">playingEndEffect</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/playSpawnEffect.cpp">playSpawnEffect</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/preCollision.cpp">preCollision</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/preSlopeCollision.cpp">preSlopeCollision</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/propellPlayer.cpp">propellPlayer</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/pushDown.cpp">pushDown</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/pushPlayer.cpp">pushPlayer</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/redirectDash.cpp">redirectDash</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/releaseAllButtons.cpp">releaseAllButtons</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/releaseButton.cpp">releaseButton</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/removeAllParticles.cpp">removeAllParticles</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/removePendingCheckpoint.cpp">removePendingCheckpoint</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/removePlacedCheckpoint.cpp">removePlacedCheckpoint</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/resetAllParticles.cpp">resetAllParticles</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/resetCollisionLog.cpp">resetCollisionLog</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/resetCollisionValues.cpp">resetCollisionValues</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/resetPlayerIcon.cpp">resetPlayerIcon</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/resetStateVariables.cpp">resetStateVariables</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/resetStreak.cpp">resetStreak</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/resetTouchedRings.cpp">resetTouchedRings</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/reverseMod.cpp">reverseMod</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/reversePlayer.cpp">reversePlayer</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/ringJump.cpp">ringJump</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/rotateGameplay.cpp">rotateGameplay</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/rotateGameplayObject.cpp">rotateGameplayObject</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/rotateGameplayOnly.cpp">rotateGameplayOnly</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/rotatePreSlopeObjects.cpp">rotatePreSlopeObjects</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/runBallRotation.cpp">runBallRotation</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/runBallRotation2.cpp">runBallRotation2</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/runNormalRotation.cpp">runNormalRotation</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/runRotateAction.cpp">runRotateAction</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/setColor.cpp">setColor</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/setFlipX.cpp">setFlipX</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/setFlipY.cpp">setFlipY</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/setOpacity.cpp">setOpacity</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/setRotation.cpp">setRotation</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/setScale.cpp">setScale</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/setScaleX.cpp">setScaleX</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/setScaleY.cpp">setScaleY</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/setSecondColor.cpp">setSecondColor</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/setupStreak.cpp">setupStreak</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/setVisible.cpp">setVisible</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/setYVelocity.cpp">setYVelocity</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/spawnCircle.cpp">spawnCircle</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/spawnCircle2.cpp">spawnCircle2</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/spawnDualCircle.cpp">spawnDualCircle</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/spawnFromPlayer.cpp">spawnFromPlayer</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/spawnPortalCircle.cpp">spawnPortalCircle</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/spawnScaleCircle.cpp">spawnScaleCircle</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/specialGroundHit.cpp">specialGroundHit</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/speedDown.cpp">speedDown</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/speedUp.cpp">speedUp</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/spiderTestJump.cpp">spiderTestJump</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/startDashing.cpp">startDashing</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/stopBurstEffect.cpp">stopBurstEffect</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/stopDashing.cpp">stopDashing</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/stopParticles.cpp">stopParticles</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/stopPlatformerJumpAnimation.cpp">stopPlatformerJumpAnimation</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/stopRotation.cpp">stopRotation</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/stopStreak2.cpp">stopStreak2</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/storeCollision.cpp">storeCollision</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/switchedToMode.cpp">switchedToMode</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/testForMoving.cpp">testForMoving</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/toggleBirdMode.cpp">toggleBirdMode</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/toggleDartMode.cpp">toggleDartMode</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/toggleFlyMode.cpp">toggleFlyMode</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/toggleGhostEffect.cpp">toggleGhostEffect</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/togglePlatformerMode.cpp">togglePlatformerMode</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/togglePlayerScale.cpp">togglePlayerScale</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/toggleRobotMode.cpp">toggleRobotMode</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/toggleRollMode.cpp">toggleRollMode</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/toggleSpiderMode.cpp">toggleSpiderMode</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/toggleSwingMode.cpp">toggleSwingMode</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/toggleVisibility.cpp">toggleVisibility</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/touchedObject.cpp">touchedObject</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/unrotateGameplayObject.cpp">unrotateGameplayObject</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/unrotatePreSlopeObjects.cpp">unrotatePreSlopeObjects</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/update.cpp">update</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updateCheckpointMode.cpp">updateCheckpointMode</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updateCollide.cpp">updateCollide</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updateCollideBottom.cpp">updateCollideBottom</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updateCollideLeft.cpp">updateCollideLeft</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updateCollideRight.cpp">updateCollideRight</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updateCollideTop.cpp">updateCollideTop</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updateDashAnimation.cpp">updateDashAnimation</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updateDashArt.cpp">updateDashArt</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updateEffects.cpp">updateEffects</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updateInternalActions.cpp">updateInternalActions</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updateJump.cpp">updateJump</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updateJumpVariables.cpp">updateJumpVariables</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updateLastGroundObject.cpp">updateLastGroundObject</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updatePlayerArt.cpp">updatePlayerArt</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updatePlayerBirdFrame.cpp">updatePlayerBirdFrame</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updatePlayerDartFrame.cpp">updatePlayerDartFrame</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updatePlayerForce.cpp">updatePlayerForce</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updatePlayerFrame.cpp">updatePlayerFrame</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updatePlayerJetpackFrame.cpp">updatePlayerJetpackFrame</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updatePlayerRobotFrame.cpp">updatePlayerRobotFrame</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updatePlayerRollFrame.cpp">updatePlayerRollFrame</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updatePlayerScale.cpp">updatePlayerScale</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updatePlayerShipFrame.cpp">updatePlayerShipFrame</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updatePlayerSpiderFrame.cpp">updatePlayerSpiderFrame</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updatePlayerSpriteExtra.cpp">updatePlayerSpriteExtra</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updatePlayerSwingFrame.cpp">updatePlayerSwingFrame</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updateRobotAnimationSpeed.cpp">updateRobotAnimationSpeed</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updateRotation.cpp">updateRotation</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updateShipRotation.cpp">updateShipRotation</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updateShipSpriteExtra.cpp">updateShipSpriteExtra</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updateSlopeRotation.cpp">updateSlopeRotation</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updateSlopeYVelocity.cpp">updateSlopeYVelocity</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updateSpecial.cpp">updateSpecial</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updateStaticForce.cpp">updateStaticForce</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updateStreakBlend.cpp">updateStreakBlend</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updateStreaks.cpp">updateStreaks</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updateSwingFire.cpp">updateSwingFire</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/updateTimeMod.cpp">updateTimeMod</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/usingWallLimitedMode.cpp">usingWallLimitedMode</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/yStartDown.cpp">yStartDown</a></li>
+		<li><a href="./versions/2.2081/PlayerObject/yStartUp.cpp">yStartUp</a></li>
 	</ul>
 </details>
 <details>
 	<summary> <b>PlayLayer</b>  (3)</summary>
 	<ul>
-		<li><a href="./src/PlayLayer/circleWaveWillBeRemoved.cpp">circleWaveWillBeRemoved</a></li>
-		<li><a href="./src/PlayLayer/getRelativeModNew.cpp">getRelativeModNew</a></li>
-		<li><a href="./src/PlayLayer/updateVisibility.cpp">updateVisibility</a></li>
+		<li><a href="./versions/2.2081/PlayLayer/circleWaveWillBeRemoved.cpp">circleWaveWillBeRemoved</a></li>
+		<li><a href="./versions/2.2081/PlayLayer/getRelativeModNew.cpp">getRelativeModNew</a></li>
+		<li><a href="./versions/2.2081/PlayLayer/updateVisibility.cpp">updateVisibility</a></li>
 	</ul>
 </details>
 <details>
 	<summary> <b>RingObject</b>  (2)</summary>
 	<ul>
-		<li><a href="./src/RingObject/powerOnObject.cpp">powerOnObject</a></li>
-		<li><a href="./src/RingObject/spawnCircle.cpp">spawnCircle</a></li>
+		<li><a href="./versions/2.2081/RingObject/powerOnObject.cpp">powerOnObject</a></li>
+		<li><a href="./versions/2.2081/RingObject/spawnCircle.cpp">spawnCircle</a></li>
 	</ul>
 </details>
 <details>
-    <summary> <b>Other</b> (1)</summary>
-    <ul>
-        <li><a href="./src/FreeFunctions.cpp">Free Functions</a></li>
-    </ul>
-</details>
+        <summary> <b>Other</b> (1)</summary>
+        <ul>
+            <li><a href="./versions/2.2081/FreeFunctions.cpp">Free Functions</a></li>
+        </ul>
+    </details>
+    

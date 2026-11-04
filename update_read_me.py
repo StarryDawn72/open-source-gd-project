@@ -2,34 +2,26 @@
 from pathlib import Path
 
 start_string = """
-# **NOTICE** 🚨
-**Since a new update (2.209) has released, I plan to update the functions in this repository as soon as I can. Until they are done, I recommend you wait or decompile functions yourself if you're sensitive about version changes. This might take a while...**
-
-# Open Source GD Project (work in progress)
-
 <p align="center">
-  <img src="logo.png" alt="Logo">
+  <img src="banner.png" alt="Logo">
 </p>
 
-### **Manually verified reconstructions of Geometry Dash functions for modders**
+<h1 align="center">Manually verified reconstructions of Geometry Dash functions for modders</h1>
 
 Welcome to the Open Source Geometry Dash Project. This is (hopefully) what I plan to be the most reliable source of information for reverse-engineered function implementations. Basically, I like wasting hours of my spare time and making myself suffer just so I can help the GD modding community.
 
-**About my work**
-- I manually verify every function with minimal use of AI
-- I override the original and test my reconstruction in-game as proof
-- I don't post a bunch of slop
+## Verified for accuracy
 
-*Note: you often see me renaming member variables from bindings - thats' because some of them are incorrectly named. A list of renamed variables can be found in [the markdown file](./RENAMED_BINDINGS.md)*.
+Complex functions are verified by overriding the original and testing the behavior in-game.
 
----
-**Info:**
-- Game version: 2.2081
+*Note: if you see member variables that don't exist in the Geode bindings, that's because some of were renamed. A list of them can be found in [the markdown file](./RENAMED_BINDINGS.md)*.
+
+## Information
+
+- Game versions: 2.2081, 2.2091
 - Software used for reversing: [Hex-Rays IDA Professional 9.3](https://hex-rays.com/ida-pro) with [BromaIDA for symbols](https://github.com/Stazzical/BromaIDA)
 
----
-
-### **Contribution (please read)**
+## Contribution (please read)
 
 If you are in need of a function's code that isn't already on this list, or want to simply request an addition, please open a PR or message me on discord at @starrydawn72. All pull requests will go through manual confirmation before being added to the repository.
 <br>
@@ -43,13 +35,12 @@ If you are in need of a function's code that isn't already on this list, or want
 
 You should view the existing reconstructions on this repo to get an idea of the style before submission.
 
----
+## Shortcut links to entries per class
 
-### **Shortcut links to entries per class**
 """
 
 ROOT_DIR = Path(__file__).resolve().parent
-SCRIPT_DIR = ROOT_DIR / "src"
+VERSIONS_DIR = ROOT_DIR / "versions"
 README_PATH = ROOT_DIR / "README.md"
 
 HTML_START = "<details>\n"
@@ -59,28 +50,33 @@ SUMMARY_MID = "</b>  ("
 SUMMARY_END = ")</summary>\n"
 UL_START = "\t<ul>\n"
 UL_END = "\t</ul>\n"
-LI_START = "\t\t<li><a href=\"./src/"
+LI_START = "\t\t<li><a href=\"./versions/"
 LI_MID = ".cpp\">"
 LI_END = "</a></li>\n"
 LI_SLASH = "/"
 
-OTHERS_STRING = """<details>
-    <summary> <b>Other</b> (1)</summary>
-    <ul>
-        <li><a href="./src/FreeFunctions.cpp">Free Functions</a></li>
-    </ul>
-</details>
-"""
+FINISHED_CLASSES = {
+    "2.2081": {
+        "AnimatedShopKeeper",
+        "CCCircleWaveDelegate",
+        "CCCircleWave",
+        "GJFlyGroundLayer",
+        "GJGroundLayer"
+    },
+    "2.2091": {}
+}
 
-FINISHED_CLASSES = [
-    "AnimatedShopKeeper",
-    "CCCircleWaveDelegate",
-    "CCCircleWave",
-    "GJFlyGroundLayer",
-    "GJGroundLayer"
-]
+def get_others_string(version):
+    return f"""<details>
+        <summary> <b>Other</b> (1)</summary>
+        <ul>
+            <li><a href="./versions/{version}/FreeFunctions.cpp">Free Functions</a></li>
+        </ul>
+    </details>
+    """
 
-def get_entry_string(directory):
+
+def get_entry_string(directory, version):
     directory = Path(directory)
     if not directory.exists() or not directory.is_dir():
         return "[!ERR_1]"
@@ -97,11 +93,7 @@ def get_entry_string(directory):
 
             if item.name == ".git": continue
             
-            complete = False
-            for finished_class in FINISHED_CLASSES:
-                if (finished_class == item.name):
-                    complete = True
-                    break
+            complete = item.name in FINISHED_CLASSES[version]
 
             complete_string = " ✔️" if complete else ""
             
@@ -111,17 +103,25 @@ def get_entry_string(directory):
             for cpp_file in item.iterdir():
                 if cpp_file.is_file() and cpp_file.suffix.lower() == ".cpp":
                     trimmed_name = cpp_file.name.replace(".cpp", "")
-                    current_li = LI_START + item.name + LI_SLASH + trimmed_name + LI_MID + trimmed_name + LI_END
+                    current_li = LI_START + version + "/" + item.name + LI_SLASH + trimmed_name + LI_MID + trimmed_name + LI_END
                     li_strings += current_li
 
             entry += li_strings + UL_END + HTML_END
             result.append(entry)
 
-    return ''.join(result) + OTHERS_STRING if result else "[!ERR_2]"
-
+    return ''.join(result) + get_others_string(version) if result else "[!ERR_2]"
 
 def update():
-    final_string = start_string + get_entry_string(SCRIPT_DIR)
+    version_entries = []
+
+    for item in sorted(VERSIONS_DIR.iterdir()):
+        if item.is_dir():
+            version_entries.append("## " + item.name + "\n\n" + get_entry_string(item, item.name) + "\n")
+
+    version_entries.reverse()
+
+    final_string = start_string + "".join(version_entries)
+
     with README_PATH.open("w", encoding="utf-8") as file:
         file.write(final_string)
 

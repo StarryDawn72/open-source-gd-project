@@ -5,7 +5,7 @@
 #define GM GameManager::sharedState()
 #define PL GameManager::sharedState()->getPlayLayer()
 #define kBlockInset 0.3f
-#define kGVRandomOption001 "0095" // In EndLevelLayer, "Game Variable"
+#define kGVRandomOption001 "0095" // In EndLevelLayer, meaning "Game Variable"
 #define kTagScaleSpider 10 // In PlayerObject::resetObject
 #define bgOpacity 100 // In EndLevelLayer
 #define kFEInstantCollisionTrigger 3609 // Object ID, probably "Frame Editor"
