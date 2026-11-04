@@ -34,7 +34,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 
 ## Shortcut links to entries per class
 
-## 2.2091
+### 2.2091
 
 <details>
 	<summary> <b>GJBaseGameLayer</b>  (2)</summary>
@@ -50,7 +50,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
         </ul>
     </details>
     
-## 2.2081
+### 2.2081
 
 <details>
 	<summary> <b>AnimatedShopKeeper ✔️</b>  (5)</summary>

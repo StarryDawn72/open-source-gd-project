@@ -116,9 +116,9 @@ def update():
 
     for item in sorted(VERSIONS_DIR.iterdir()):
         if item.is_dir():
-            version_entries.append("## " + item.name + "\n\n" + get_entry_string(item, item.name) + "\n")
+            version_entries.append("### " + item.name + "\n\n" + get_entry_string(item, item.name) + "\n")
 
-    version_entries.reverse()
+    version_entries.reverse() # latest version first
 
     final_string = start_string + "".join(version_entries)
 
