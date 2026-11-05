@@ -91,7 +91,7 @@ void LevelEditorLayer::updateVisibility(float dt)
         if (gvHideInvisible && obj->m_isHide && !obj->m_isSelected)
             editorOpacity = 0.0f;
                                  // keyframe point object
-        else if (obj->m_objectID == 3032 && m_playbackMode == PlaybackMode::Playing)
+        else if (obj->m_objectID == 3032 && m_playbackMode != PlaybackMode::Not)
             editorOpacity = 50.0f;
 
         if (!m_previewMode && obj->hasSecondaryColor()) {
