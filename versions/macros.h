@@ -9,6 +9,7 @@
 #define kGVDisableHighObjectAlert "0082"
 #define kGVDisableSongAlert "0083"
 #define kGVShownCoinDisclaimer "0063"
+#define kGVCheckIfServerOnline "0055"
 
 #define kMaxBirdFrame 149
 #define kMaxDartFrame 96
@@ -20,6 +21,7 @@
 #define kMaxRollFrame 118
 #define kMaxShipFrame 169
 #define kMaxSwingFrame 43
+#define kFollowPlayerYStoreTimeInterval 0.01f
 
 #define kMiddlegroundBaseScale 1.2f
 #define kMiddlegroundBaseSpeed 0.3f
@@ -49,3 +51,4 @@
 #define kTagPlatformerJumpAnimation 13
 #define kTagPlatformerJumpUnk 14 // TODO: find usage and name
 #define kTagPlayerBlink 11
+#define kTagPlayerScaleEffect 6
