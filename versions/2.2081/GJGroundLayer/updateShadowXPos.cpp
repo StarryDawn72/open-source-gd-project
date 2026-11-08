@@ -1,7 +1,3 @@
- 
-#define kTagGroundShadowLeft 0
-#define kTagGroundShadowRight 1
-
 void GJGroundLayer::updateShadowXPos(float leftX, float rightX)
 {
 

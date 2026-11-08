@@ -1,4 +1,3 @@
- 
 void PlayerObject::setSecondColor(const ccColor3B& color)
 {
 	m_iconSpriteSecondary->setColor(color);

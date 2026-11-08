@@ -1,7 +1,3 @@
- 
-#define kMiddlegroundBaseSpeed 0.3f
-#define kMiddlegroundBaseScale 1.2f
-
 /*
     Updates the ground, background, and middleground
     parallax based on camera position every frame.

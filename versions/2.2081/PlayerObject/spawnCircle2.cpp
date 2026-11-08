@@ -1,6 +1,3 @@
- 
-#define GM GameManager::sharedState()
-
 void PlayerObject::spawnCircle2()
 {
 	if (!GM->m_performanceMode) {

@@ -1,4 +1,3 @@
- 
 void PlayerObject::copyAttributes(PlayerObject* player) {
     m_isRespawning = true;
     m_totalTime = player->m_totalTime;

@@ -1,6 +1,3 @@
- 
-#define PL GameManager::sharedState()->getPlayLayer()
-
 void PlayerObject::flipGravity(bool flip, bool noEffects)
 {
     if (m_isUpsideDown != flip) {

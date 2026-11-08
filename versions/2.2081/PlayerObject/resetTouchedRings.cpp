@@ -1,4 +1,3 @@
- 
 void PlayerObject::resetTouchedRings(bool removeAll)
 {
     if (removeAll)

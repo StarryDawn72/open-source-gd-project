@@ -1,4 +1,3 @@
- 
 void PlayerObject::switchedToMode(GameObjectType type) {
     if (type != GameObjectType::ShipPortal)
         toggleFlyMode(false, false);

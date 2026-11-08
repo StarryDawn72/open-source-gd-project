@@ -1,4 +1,3 @@
- 
 void PlayerObject::toggleDartMode(bool enable, bool noEffects) {
 
     if (m_isDart == enable)

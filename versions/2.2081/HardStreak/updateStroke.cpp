@@ -1,4 +1,3 @@
- 
 void HardStreak::updateStroke(float dt)
 {
     if (!m_drawStreak)

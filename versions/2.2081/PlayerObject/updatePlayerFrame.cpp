@@ -1,6 +1,3 @@
- 
-#define kMaxPlayerFrame 485
-
 void PlayerObject::updatePlayerFrame(int frameNumber)
 {
     int frame = 0;

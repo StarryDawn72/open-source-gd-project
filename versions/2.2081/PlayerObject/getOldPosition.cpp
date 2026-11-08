@@ -1,6 +1,3 @@
- 
-#define kFollowPlayerYStoreTimeInterval 0.01f
-
 float PlayerObject::getOldPosition(float timeAgo)
 {
     if (timeAgo <= 0.0f)

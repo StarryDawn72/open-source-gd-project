@@ -1,4 +1,3 @@
- 
 /*
     No call sites for this function. It's unused.
 */

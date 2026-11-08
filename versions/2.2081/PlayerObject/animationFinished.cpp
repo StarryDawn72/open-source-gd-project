@@ -1,4 +1,3 @@
- 
 void PlayerObject::animationFinished(const char *key)
 	{
 		std::string keyString = std::string(key);

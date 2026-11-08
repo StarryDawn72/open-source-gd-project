@@ -1,4 +1,3 @@
- 
 /*
 	Begins the idle animation for the shopkeeper.
 */

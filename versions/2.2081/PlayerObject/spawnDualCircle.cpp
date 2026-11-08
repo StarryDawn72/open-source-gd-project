@@ -1,7 +1,3 @@
- 
-#define GM GameManager::sharedState()
-#define PL GameManager::sharedState()->getPlayLayer()
-
 void PlayerObject::spawnDualCircle()
 {
 	if (!m_isRespawning && !PL->m_skipArtReload) {

@@ -1,4 +1,3 @@
- 
 double PlayerObject::getCurrentXVelocity()
 {
 	if (m_isPlatformer)

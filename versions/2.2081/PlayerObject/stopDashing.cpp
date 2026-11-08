@@ -1,9 +1,4 @@
- 
-
-#define kPlayerCommandStopSlide 543
-
 // idk what to name this
-#define kMaxDashLength 17.310005f
 
 void PlayerObject::stopDashing()
 {

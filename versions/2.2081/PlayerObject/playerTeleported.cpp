@@ -1,4 +1,3 @@
- 
 void PlayerObject::playerTeleported()
 {
     m_onGround = false;

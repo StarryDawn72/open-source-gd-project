@@ -1,4 +1,3 @@
- 
 void PlayerObject::removeAllParticles()
 {
 	for (int i = 0; i < m_particleSystems->count(); i++)

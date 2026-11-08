@@ -1,4 +1,3 @@
- 
 void PlayerObject::deactivateParticle()
 {
     if (m_hasGroundParticles)

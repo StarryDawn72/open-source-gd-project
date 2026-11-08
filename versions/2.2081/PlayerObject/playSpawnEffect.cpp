@@ -1,6 +1,3 @@
- 
-#define GM GameManager::sharedState()
-#define kTagPlayerBlink 11
 /*
 	 	
 	This function handles the player blink and ripple

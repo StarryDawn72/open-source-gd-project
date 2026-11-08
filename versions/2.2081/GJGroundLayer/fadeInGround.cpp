@@ -1,6 +1,3 @@
- 
-#define kTagGroundFade 3
-
 void GJGroundLayer::fadeInGround(float duration)
 {
     stopActionByTag(kTagGroundFade);

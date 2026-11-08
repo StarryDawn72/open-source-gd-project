@@ -1,4 +1,3 @@
- 
 /*
     Depending on whether the player is upsideDown or
     sideways. It flips/rotates the players icon and

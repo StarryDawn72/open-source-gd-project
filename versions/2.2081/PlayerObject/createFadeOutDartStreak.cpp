@@ -1,4 +1,3 @@
- 
 /*
     Used to make the wave trail fade out when reversing or
     changing gameplay orientation.

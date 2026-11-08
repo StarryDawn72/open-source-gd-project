@@ -1,4 +1,3 @@
- 
 void PlayerObject::disablePlayerControls()
 {
     m_controlsDisabled = false;

@@ -1,6 +1,3 @@
- 
-#define kTagGroundShadowRight 1
-
 void GJGroundLayer::updateShadows()
 {
     CCSize winSize = CCDirector::sharedDirector()->getWinSize();

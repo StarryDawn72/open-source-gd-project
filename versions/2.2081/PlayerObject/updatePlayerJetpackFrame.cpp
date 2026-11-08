@@ -1,6 +1,3 @@
- 
-#define kMaxJetpackFrame 8
-
 void PlayerObject::updatePlayerJetpackFrame(int frameNumber)
 {
     int frame = MIN(MAX(frameNumber, 1), kMaxJetpackFrame);

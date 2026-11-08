@@ -1,6 +1,3 @@
- 
-#define GM GameManager::sharedState()
-
 void LevelInfoLayer::playStep4()
 {
     dwTickEnd = clock();

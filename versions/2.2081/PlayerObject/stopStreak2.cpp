@@ -1,4 +1,3 @@
- 
 void PlayerObject::stopStreak2()
 {
 	m_waveTrail->stopActionByTag(8);

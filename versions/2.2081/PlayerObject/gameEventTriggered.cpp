@@ -1,4 +1,3 @@
- 
 void PlayerObject::gameEventTriggered(int gameEvent, int material)
 {
 	if (m_gameLayer)

@@ -1,4 +1,3 @@
- 
 void PlayerObject::updatePlayerSpriteExtra(std::string frameName)
 {
     CCSpriteFrame* frame = CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName(frameName.c_str());

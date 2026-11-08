@@ -1,4 +1,3 @@
- 
 float PlayerObject::convertToClosestRotation(float rotation)
 {
     if (!isFlying() && !m_isRobot && !m_isSpider && !m_isDashing)

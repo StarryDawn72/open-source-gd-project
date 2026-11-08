@@ -1,4 +1,3 @@
- 
 bool GJFlyGroundLayer::init()
 {
     if (!GJGroundLayer::init()) {

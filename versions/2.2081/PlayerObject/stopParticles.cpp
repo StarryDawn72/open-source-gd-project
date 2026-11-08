@@ -1,4 +1,3 @@
- 
 void PlayerObject::stopParticles()
 {
     deactivateParticle();

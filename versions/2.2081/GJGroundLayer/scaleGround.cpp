@@ -1,4 +1,3 @@
- 
 float GJGroundLayer::scaleGround(float scale)
 {
     setScaleX(scale);

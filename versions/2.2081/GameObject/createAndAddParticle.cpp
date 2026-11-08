@@ -1,6 +1,3 @@
- 
-#define GM GameManager::sharedState()
-#define PL GameManager::sharedState()->getPlayLayer()
 /*
 	Creates a new particle system with the given parameters,
 	adds it to the game layer, and returns it.

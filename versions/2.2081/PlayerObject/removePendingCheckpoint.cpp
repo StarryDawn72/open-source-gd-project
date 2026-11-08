@@ -1,4 +1,3 @@
- 
 void PlayerObject::removePendingCheckpoint()
 {
     if (m_pendingCheckpoint)

@@ -1,4 +1,3 @@
- 
 void PlayerObject::updateLastGroundObject(GameObject* object)
 {
     if (!object)

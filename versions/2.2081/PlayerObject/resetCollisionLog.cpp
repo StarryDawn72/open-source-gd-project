@@ -1,4 +1,3 @@
- 
 void PlayerObject::resetCollisionLog(bool full)
 {
     m_collisionLogTop->removeAllObjects();

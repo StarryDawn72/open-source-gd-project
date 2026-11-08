@@ -1,5 +1,3 @@
- 
-#define GM GameManager::sharedState()
 /*
 	 	
 	Activates this jump ring, and spawns a ripple effect

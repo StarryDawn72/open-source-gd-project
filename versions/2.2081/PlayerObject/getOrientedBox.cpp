@@ -1,4 +1,3 @@
- 
 OBB2D* PlayerObject::getOrientedBox()
 {
 	updateOrientedBox();

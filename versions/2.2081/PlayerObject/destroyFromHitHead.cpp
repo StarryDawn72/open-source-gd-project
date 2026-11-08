@@ -1,4 +1,3 @@
- 
 bool PlayerObject::destroyFromHitHead()
 {
     if (isFlying() || m_isBall || m_isSpider)

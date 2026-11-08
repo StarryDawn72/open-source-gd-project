@@ -1,4 +1,3 @@
- 
 CCRect* getObjectRectPointer()
 {
     if (m_isObjectRectDirty)

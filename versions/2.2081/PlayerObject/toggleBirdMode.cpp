@@ -1,4 +1,3 @@
- 
 void PlayerObject::toggleBirdMode(bool enable, bool noEffects)
 {
     if (m_isBird == enable)

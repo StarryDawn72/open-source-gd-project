@@ -1,4 +1,3 @@
- 
 void GJGroundLayer::updateGroundWidth(bool scaled)
 {
     if (!getParent())

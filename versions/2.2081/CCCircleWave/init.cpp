@@ -1,4 +1,3 @@
- 
 /*
 	Initializes the circle wave CCAction with a start radius,
 	end radius, and duration. "fadeIn" makes the circle's opacity

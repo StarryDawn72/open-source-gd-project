@@ -1,4 +1,3 @@
- 
 /*
 	Overrides CCNode::removeMeAndCleanup to call
 	its delegate's circleWaveWillBeRemoved method

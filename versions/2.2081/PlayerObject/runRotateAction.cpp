@@ -1,4 +1,3 @@
- 
 void PlayerObject::runRotateAction(bool ground, int unknown)
 {
     if (!m_isLocked && !m_isDashing)

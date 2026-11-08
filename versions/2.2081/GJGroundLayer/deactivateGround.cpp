@@ -1,4 +1,3 @@
- 
 void GJGroundLayer::deactivateGround()
 {
     stopAllActions();

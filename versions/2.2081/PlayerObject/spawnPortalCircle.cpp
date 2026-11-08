@@ -1,7 +1,3 @@
- 
-#define GM GameManager::sharedState()
-#define PL GameManager::sharedState()->getPlayLayer()
-
 void PlayerObject::spawnPortalCircle(ccColor3B color, float startRadius)
 {
 	if (

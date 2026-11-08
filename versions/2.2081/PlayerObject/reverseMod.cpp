@@ -1,4 +1,3 @@
- 
 /*
 	 	
 	Returns the movement direction as an integer.

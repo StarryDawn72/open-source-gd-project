@@ -1,8 +1,3 @@
- 
-#define GM GameManager::sharedState()
-#define PL GameManager::sharedState()->getPlayLayer()
-#define kPlayerTouchToggleBlock 3643
-
 /*
 	 	
 	Ahh, good ol' ringJump...

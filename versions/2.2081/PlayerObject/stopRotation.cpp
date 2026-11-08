@@ -1,4 +1,3 @@
- 
 /*
 	 	
 	Resets all rotation flags and freezes the player spin

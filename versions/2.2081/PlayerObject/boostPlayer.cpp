@@ -1,4 +1,3 @@
- 
 void PlayerObject::boostPlayer(float yVelocity)
 {
     m_isJumping = true;

@@ -1,4 +1,3 @@
- 
 /*
 	 	
 	This function iterates through every object that

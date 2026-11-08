@@ -1,4 +1,3 @@
- 
 void PlayerObject::fadeOutStreak2(float duration)
 {
     if (!m_waveTrail->getActionByTag(8))

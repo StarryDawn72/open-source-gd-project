@@ -1,6 +1,3 @@
- 
-#define PL GameManager::sharedState()->getPlayLayer()
-
 bool PlayerObject::levelFlipping()
 {
 	if (m_isInPlayLayer) {

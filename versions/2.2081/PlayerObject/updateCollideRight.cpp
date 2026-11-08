@@ -1,4 +1,3 @@
- 
 void PlayerObject::updateCollideRight(float x, GameObject* object)
 {
     int uniqueId = 0;

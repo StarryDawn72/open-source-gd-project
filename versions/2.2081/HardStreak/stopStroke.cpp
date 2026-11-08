@@ -1,4 +1,3 @@
- 
 void HardStreak::stopStroke()
 {
     unschedule(schedule_selector(HardStreak::updateStroke));

@@ -1,4 +1,3 @@
- 
 void PlayerObject::playDynamicSpiderRun()
 {
     if (m_isDashing) return;

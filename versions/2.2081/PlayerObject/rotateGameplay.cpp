@@ -1,6 +1,3 @@
- 
-#define kPlayerCommandStopSlide 543
-
 void PlayerObject::rotateGameplay(int moveDirection, int groundDirection, bool editVelocity, float velocityModX, float velocityModY, bool overrideVelocity, bool dontSlide)
 {
     bool wasUpsideDown = m_isUpsideDown;

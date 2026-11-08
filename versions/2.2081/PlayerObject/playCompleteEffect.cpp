@@ -1,6 +1,3 @@
- 
-#define kTagActionCompletionPlayerFadeOut 4
-
 void PlayerObject::playCompleteEffect(bool noEffects, bool instant)
 {
     if (m_isDart)

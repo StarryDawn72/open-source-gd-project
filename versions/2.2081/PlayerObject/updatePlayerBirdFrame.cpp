@@ -1,7 +1,3 @@
- 
-#define kMaxBirdFrame 149
-#define GM GameManager::sharedState()
-
 void PlayerObject::updatePlayerBirdFrame(int frameNumber)
 {
     int frame = MIN(MAX(frameNumber, 1), kMaxBirdFrame);

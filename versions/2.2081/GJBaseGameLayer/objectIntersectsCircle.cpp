@@ -1,4 +1,3 @@
- 
 /*
     Overlap test used in pre-2.2 levels against the object's circle and the player's axis-aligned bounding box.
 */

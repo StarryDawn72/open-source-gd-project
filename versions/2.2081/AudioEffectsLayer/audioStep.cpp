@@ -1,5 +1,3 @@
- 
-#define PL GameManager::sharedState()->getPlayLayer()
 /*
 	Called every frame while playing a level.
 	It steps through the current array of pulses and 

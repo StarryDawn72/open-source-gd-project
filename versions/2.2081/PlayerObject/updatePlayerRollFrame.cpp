@@ -1,6 +1,3 @@
- 
-#define kMaxRollFrame 118
-
 void PlayerObject::updatePlayerRollFrame(int frameNumber)
 {
     int frame = 0;

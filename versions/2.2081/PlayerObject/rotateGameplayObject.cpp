@@ -1,4 +1,3 @@
- 
 void PlayerObject::rotateGameplayObject(GameObject* object)
 {
     if (m_storedRotatedObjectOffsets.count(object->m_uniqueID) != 0)

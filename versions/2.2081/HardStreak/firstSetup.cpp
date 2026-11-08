@@ -1,4 +1,3 @@
- 
 void HardStreak::firstSetup()
 {
     addPoint(CCPointZero);

@@ -1,4 +1,3 @@
- 
 void PlayerObject::spiderTestJump(bool dynamic)
 {
 	spiderTestJumpInternal(dynamic);

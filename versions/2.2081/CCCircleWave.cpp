@@ -1,4 +1,3 @@
- 
 #include "CCCircleWave.h"
 
 void CCCircleWave::updatePosition(float dt)

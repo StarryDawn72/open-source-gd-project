@@ -1,4 +1,3 @@
- 
 void PlayerObject::preCollision() 
 {
     m_wasOnGround = m_onGround;

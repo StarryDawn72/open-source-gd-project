@@ -1,4 +1,3 @@
- 
 /*
 	 	
 	This function behaves as the standard rotation

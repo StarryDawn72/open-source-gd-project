@@ -1,4 +1,3 @@
- 
 bool PlayerObject::collidedWithObject(float dt, GameObject* object)
 {
     return collidedWithObject(dt, object, CCRectZero, false);

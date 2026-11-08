@@ -1,4 +1,3 @@
- 
 void PlayerObject::disableSwingFire()
 {
     m_swingFireMiddle->setVisible(false);

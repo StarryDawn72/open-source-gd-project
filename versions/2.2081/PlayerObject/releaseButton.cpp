@@ -1,4 +1,3 @@
- 
 bool PlayerObject::releaseButton(PlayerButton button)
 {
     if ((int)button == 5) // TODO: add 5 to enum

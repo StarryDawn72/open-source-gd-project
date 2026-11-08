@@ -1,4 +1,3 @@
- 
 void PlayerObject::setColor(const ccColor3B& color)
 {
 	setColor(color);

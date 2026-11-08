@@ -1,5 +1,3 @@
- 
-#define kObjectSpawnTrigger 1268
 /*
 	Handles behavior for every object type when they collide with the player.
 	The main collision resolution happens in checkCollisions (where this function's called).

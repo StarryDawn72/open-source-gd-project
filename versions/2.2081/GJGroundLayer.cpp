@@ -1,10 +1,8 @@
+#include "../macros.h"
+
  
 #include "GJGroundLayer.h"
 
-#define kTagGroundShadowLeft 0
-#define kTagGroundShadowRight 1
-#define kTagGroundLine 2
-#define kTagGroundFade 3
 
 void GJGroundLayer::showGround()
 {

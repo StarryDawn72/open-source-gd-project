@@ -1,7 +1,3 @@
- 
-#define kStickDistance 5.0f
-#define kStickDistancePlatformer 10.0f
-#define PL GameManager::sharedState()->getPlayLayer()
 /*
 	This function is the responsible for the entirety of 
 	Geometry Dash's slope physics. It runs every frame that

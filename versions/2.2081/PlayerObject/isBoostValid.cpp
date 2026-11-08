@@ -1,4 +1,3 @@
- 
 bool PlayerObject::isBoostValid(float yVelocity)
 {
 	bool m_isGoingDownSlope = m_slopeFlipGravityRelated;

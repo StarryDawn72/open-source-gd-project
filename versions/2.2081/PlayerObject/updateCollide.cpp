@@ -1,4 +1,3 @@
- 
 void PlayerObject::updateCollide(PlayerCollisionDirection direction, GameObject *object)
 {
 	float halfHeight = getObjectRect().size.height / 2;

@@ -1,0 +1,12 @@
+/*
+    No call sites for this function. It's unused.
+*/
+void PlayerObject::specialGroundHit()
+{
+    setYVelocity(double(-5 * flipMod()), 47);
+
+    if (!m_isBall && !isFlying())
+        stopRotation(false, 21);
+
+    m_didSpecialGroundHit = true;
+}

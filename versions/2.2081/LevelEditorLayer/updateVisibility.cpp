@@ -1,5 +1,3 @@
- 
-#define GM GameManager::sharedState()
 /*
 	
 	Per frame object visibility pass exclusive to the editor.

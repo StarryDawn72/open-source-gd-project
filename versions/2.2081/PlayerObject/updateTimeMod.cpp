@@ -1,6 +1,3 @@
- 
-#define GM GameManager::sharedState()
-
 /*
 	 
 	This function is the core speed engine of Geometry Dash. it takes

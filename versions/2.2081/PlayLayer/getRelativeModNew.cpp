@@ -1,4 +1,3 @@
- 
 /*
 	 	
 	This function calculates how close the given position

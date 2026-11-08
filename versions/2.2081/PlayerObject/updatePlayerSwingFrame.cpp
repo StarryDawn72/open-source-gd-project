@@ -1,6 +1,3 @@
- 
-#define kMaxSwingFrame 43
-
 void PlayerObject::updatePlayerSwingFrame(int frameNumber)
 {
     int frame = MIN(MAX(frameNumber, 1), kMaxSwingFrame);

@@ -1,6 +1,3 @@
- 
-#define GM GameManager::sharedState()
-
 void LevelInfoLayer::playStep3()
 {
     GM->m_sceneEnum = 3; // what

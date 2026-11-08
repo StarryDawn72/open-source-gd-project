@@ -1,4 +1,3 @@
- 
 /*
     A mapping of object ID's to their sprite frame name.
 */

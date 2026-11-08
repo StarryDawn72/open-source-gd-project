@@ -1,4 +1,3 @@
- 
 void GJGroundLayer::updateGround01Color(ccColor3B color)
 {
     CCArray* children = this->m_ground1Sprite->getChildren();

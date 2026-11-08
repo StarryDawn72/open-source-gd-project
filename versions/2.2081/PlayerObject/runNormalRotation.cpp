@@ -1,4 +1,3 @@
- 
 /*
 	 	
 	This function is what begins the continuous visual spin of

@@ -1,4 +1,3 @@
- 
 bool HardStreak::init()
 {
     if (!CCDrawNode::init())

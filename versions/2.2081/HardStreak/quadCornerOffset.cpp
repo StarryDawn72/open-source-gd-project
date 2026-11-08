@@ -1,4 +1,3 @@
- 
 CCPoint HardStreak::quadCornerOffset(CCPoint start, CCPoint end, float width) {
     if (width < 1.0f)
         return CCPointZero;

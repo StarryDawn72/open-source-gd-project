@@ -1,5 +1,3 @@
- 
-#define GM GameManager::sharedState()
 /*
 	Makes a POST request to downloadGJLevel22.php to
 	download a user level, daily level, or gauntlet level.

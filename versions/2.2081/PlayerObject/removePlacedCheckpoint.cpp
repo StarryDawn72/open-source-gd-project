@@ -1,6 +1,3 @@
- 
-#define PL GameManager::sharedState()->getPlayLayer()
-
 void PlayerObject::removePlacedCheckpoint()
 {
     if (m_checkpointTimeout)

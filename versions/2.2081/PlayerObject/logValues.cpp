@@ -1,4 +1,3 @@
- 
 /*
 	In version 1.0, this used to be a function that logged gravity,
 	movement speed, and jump velocity using CCLog. RobTop

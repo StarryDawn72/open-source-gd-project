@@ -1,7 +1,3 @@
- 
-#define GM GameManager::sharedState()
-#define kMaxPlayerStreak 7
-
 void PlayerObject::setupStreak()
 {
     m_playerStreak = MIN(MAX(GM->m_playerStreak.value(), 1), kMaxPlayerStreak);

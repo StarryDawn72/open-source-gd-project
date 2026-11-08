@@ -1,6 +1,3 @@
- 
-#define GM (GameManager::sharedState())
-
 void PlayerObject::toggleRobotMode(bool enable, bool noEffects)
 {
     if (m_isRobot == enable)

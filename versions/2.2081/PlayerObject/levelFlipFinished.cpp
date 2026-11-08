@@ -1,4 +1,3 @@
- 
 void levelFlipFinished()
 {
     m_trailingParticles->setLife(m_trailingParticleLife);

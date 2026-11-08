@@ -1,4 +1,3 @@
- 
 void PlayerObject::updateStaticForce(float rotation, float staticForce, bool additive)
 {
     if (staticForce != 0.0 || additive) {

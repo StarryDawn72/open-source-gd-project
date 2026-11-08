@@ -1,4 +1,3 @@
- 
 HardStreak::HardStreak()
 {
     m_pointArray = nullptr;

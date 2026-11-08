@@ -1,4 +1,3 @@
- 
 void PlayerObject::setOpacity(unsigned char opacity)
 {
 	GameObject::setOpacity(opacity);

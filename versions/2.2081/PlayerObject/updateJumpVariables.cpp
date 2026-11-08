@@ -1,4 +1,3 @@
- 
 void PlayerObject::updateJumpVariables()
 {
     m_holdingJumpReleaseDelayed = m_holdingJump;

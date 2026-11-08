@@ -1,12 +1,3 @@
- 
-#define kObjectAllowDartSlideModifier 1755
-#define kObjectNoAutoJumpModifier 1813
-#define kObjectDashStopModifier 1829
-#define kObjectAllowHeadHitModifier 1859
-#define kObjectForceCircle 3645
-#define kObjectForceBlock 2069
-#define kObjectFlipModifier 2866
-
 void PlayerObject::touchedObject(GameObject* object)
 {
     int id = object->m_objectID;

@@ -1,4 +1,3 @@
- 
 void PlayerObject::spawnFromPlayer(PlayerObject* player, bool flip)
 {
     setVisible(true);

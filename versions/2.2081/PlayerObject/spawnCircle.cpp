@@ -1,7 +1,3 @@
- 
-#define GM GameManager::sharedState()
-#define PL GameManager::sharedState()->getPlayLayer()
-
 void PlayerObject::spawnCircle()
 {
 	if (!GM->m_performanceMode)

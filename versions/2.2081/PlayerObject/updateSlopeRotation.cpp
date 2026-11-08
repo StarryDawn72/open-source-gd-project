@@ -1,4 +1,3 @@
- 
 /*
 	 	
 	This function runs every frame that the player is

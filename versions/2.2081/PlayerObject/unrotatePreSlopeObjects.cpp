@@ -1,4 +1,3 @@
- 
 void PlayerObject::unrotatePreSlopeObjects()
 {
     for (auto& object : m_preSlopeObjects) {

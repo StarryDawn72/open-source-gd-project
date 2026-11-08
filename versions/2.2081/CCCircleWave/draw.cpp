@@ -1,4 +1,3 @@
- 
 /*
 	CCNode::draw override. Uses the current drawn
 	radius to choose from a set of hard coded LOD's

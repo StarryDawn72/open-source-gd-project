@@ -1,7 +1,3 @@
- 
-#define PL GameManager::sharedState()->getPlayLayer()
-#define kPlayerTouchToggleBlock 3643
-
 /*
 	 	
 	Spawns the expanding ripple effect when the player

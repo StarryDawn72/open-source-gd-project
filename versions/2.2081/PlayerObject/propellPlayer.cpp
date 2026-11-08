@@ -1,4 +1,3 @@
- 
 void PlayerObject::propellPlayer(float yVelocity, bool noEffects, int objectType)
 {
     m_isJumping = true;

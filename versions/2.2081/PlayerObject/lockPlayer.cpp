@@ -1,4 +1,3 @@
- 
 void PlayerObject::lockPlayer()
 {
 	if (m_isDart)

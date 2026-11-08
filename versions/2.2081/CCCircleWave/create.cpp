@@ -1,4 +1,3 @@
- 
 CCCircleWave* CCCircleWave::create(float startRadius, float endRadius, float duration, bool fadeIn, bool easeOut)
 {
     CCCircleWave* ret = new CCCircleWave();

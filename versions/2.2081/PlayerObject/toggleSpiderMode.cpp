@@ -1,6 +1,3 @@
- 
-#define GM GameManager::sharedState()
-
 void PlayerObject::toggleSpiderMode(bool enable, bool noEffects)
 {
     if (m_isSpider == enable)

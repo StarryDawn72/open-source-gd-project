@@ -1,4 +1,3 @@
- 
 void PlayerObject::releaseAllButtons()
 {
     releaseButton(PlayerButton::Jump);

@@ -1,4 +1,3 @@
- 
 GJGroundLayer* GJGroundLayer::create(int groundID, int lineType)
 {
     GJGroundLayer* ret = new GJGroundLayer();

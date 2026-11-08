@@ -1,4 +1,3 @@
- 
 void PlayerObject::storeCollision(PlayerCollisionDirection direction, int id) {
     switch (direction)
     {

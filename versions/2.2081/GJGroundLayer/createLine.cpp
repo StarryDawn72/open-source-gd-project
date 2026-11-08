@@ -1,6 +1,3 @@
- 
-#define kTagGroundLine 2
-
 void GJGroundLayer::createLine(int lineType)
 {
     if (m_lineSprite) {

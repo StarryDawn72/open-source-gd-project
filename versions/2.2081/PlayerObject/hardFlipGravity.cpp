@@ -1,4 +1,3 @@
- 
 void PlayerObject::hardFlipGravity()
 {
     flipGravity(!m_isUpsideDown, true);

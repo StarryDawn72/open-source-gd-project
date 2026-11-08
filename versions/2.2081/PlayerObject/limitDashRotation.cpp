@@ -1,4 +1,3 @@
- 
 /*
 	Limits the dash angle in classic mode to ±70 degrees, preventing
 	the player from shooting up into the world ceiling from a near-vertical

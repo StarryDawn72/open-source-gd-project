@@ -1,4 +1,3 @@
- 
 void HardStreak::reset()
 {
     CCDrawNode::clear();

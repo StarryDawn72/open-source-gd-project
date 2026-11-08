@@ -1,4 +1,3 @@
- 
 void PlayerObject::didHitHead()
 {
 	if (m_flipBlockTimer > 0)

@@ -1,6 +1,3 @@
- 
-#define kMaxShipFrame 169
-
 void PlayerObject::updatePlayerShipFrame(int frameNumber)
 {
     int frame = MIN(MAX(frameNumber, 1), kMaxShipFrame);

@@ -1,4 +1,3 @@
- 
 /*
     Create factory for all five shopkeepers.
 */

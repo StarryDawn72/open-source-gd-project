@@ -1,4 +1,3 @@
- 
 CCRect GameObject::getObjectRect(float width, float height)
 {
     if (m_isMirroredByScale) {

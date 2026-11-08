@@ -1,6 +1,3 @@
- 
-#define kTagBirdParticles 7
-
 void PlayerObject::playBurstEffect()
 {
     if (!levelFlipping() && !m_isHidden) {

@@ -1,6 +1,3 @@
- 
-#define kTagAlertSongWarning 9
-
 void LevelInfoLayer::showSongWarning()
 {
     FLAlertLayer* warning = FLAlertLayer::create(

@@ -1,4 +1,3 @@
- 
 void PlayerObject::toggleFlyMode(bool enable, bool noEffects)
 {
     if (m_isShip == enable)

@@ -1,6 +1,3 @@
- 
-#define GM GameManager::sharedState()
-
 void PlayerObject::toggleRollMode(bool enable, bool noEffects) {
     if (m_isBall == enable)
         return;

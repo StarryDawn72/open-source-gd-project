@@ -1,4 +1,3 @@
- 
 /*
 	 
 	This function acts as the pre-validator for slope collisions before 

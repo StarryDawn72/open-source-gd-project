@@ -1,6 +1,3 @@
- 
-#define kMaxDartFrame 96
-
 void PlayerObject::updatePlayerDartFrame(int frameNumber)
 {
     int frame = MIN(MAX(frameNumber, 1), kMaxDartFrame);

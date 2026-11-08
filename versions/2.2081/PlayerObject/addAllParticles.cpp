@@ -1,4 +1,3 @@
- 
 void PlayerObject::addAllParticles()
 {
 	m_parentLayer->addChild(m_playerGroundParticles, 39);

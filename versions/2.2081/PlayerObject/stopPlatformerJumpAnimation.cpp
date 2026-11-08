@@ -1,7 +1,3 @@
- 
-#define kTagPlatformerJumpAnimation 13
-#define kTagPlatformerJumpUnk 14 // TODO: find usage and name
-
 void PlayerObject::stopPlatformerJumpAnimation() {
     if (!m_isPlatformer)
         return;

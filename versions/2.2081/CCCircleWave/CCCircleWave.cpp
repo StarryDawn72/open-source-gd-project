@@ -1,4 +1,3 @@
- 
 CCCircleWave::CCCircleWave()
 {
 	m_target = nullptr;

@@ -1,6 +1,3 @@
- 
-#define GM GameManager::sharedState()
-
 void PlayerObject::toggleSwingMode(bool enable, bool noEffects)
 {
     if (m_isSwing == enable)

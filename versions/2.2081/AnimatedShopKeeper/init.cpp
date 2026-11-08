@@ -1,4 +1,3 @@
- 
 /*
 	Standard initialization routine for all
 	five shopkeepers.

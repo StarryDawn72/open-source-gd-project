@@ -1,4 +1,3 @@
- 
 void PlayerObject::toggleGhostEffect(GhostType type)
 {
     if (m_ghostType != type) {

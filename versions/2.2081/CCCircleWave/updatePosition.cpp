@@ -1,4 +1,3 @@
- 
 /*
 	Updates the effect's position to match the object
 	it is following.

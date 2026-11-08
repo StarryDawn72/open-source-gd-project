@@ -1,9 +1,3 @@
- 
-#define GM GameManager::sharedState()
-#define kGVDisableSongAlert "0083"
-#define kGVShownCoinDisclaimer "0063"
-#define kGVDisableHighObjectAlert "0082"
-
 void LevelInfoLayer::onPlay(CCObject *sender)
 {
     int kMaxDailyID = 100000;

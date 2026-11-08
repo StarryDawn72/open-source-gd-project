@@ -1,4 +1,3 @@
- 
 void PlayerObject::playingEndEffect()
 {
     if (m_isSpider)

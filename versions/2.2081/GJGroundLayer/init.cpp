@@ -1,8 +1,3 @@
- 
-#define GM GameManager::sharedState()
-#define kTagGroundShadowLeft 0
-#define kTagGroundShadowRight 1
-
 bool GJGroundLayer::init(int groundID, int lineType)
 {
     if (!CCLayer::init()) {

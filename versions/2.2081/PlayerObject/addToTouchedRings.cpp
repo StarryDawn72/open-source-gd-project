@@ -1,4 +1,3 @@
- 
 void PlayerObject::addToTouchedRings(RingObject* object)
 {
     if (!m_touchingRings->containsObject(object))

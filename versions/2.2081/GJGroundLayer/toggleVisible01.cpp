@@ -1,4 +1,3 @@
- 
 void GJGroundLayer::toggleVisible01(bool visible)
 {
     if (m_showGround1 != visible) {

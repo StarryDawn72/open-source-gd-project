@@ -1,4 +1,3 @@
- 
 PlayerObject* PlayerObject::create(int player, int ship, GJBaseGameLayer *gameLayer, CCLayer *layer, bool playLayer)
 {
     PlayerObject* ret = new PlayerObject();

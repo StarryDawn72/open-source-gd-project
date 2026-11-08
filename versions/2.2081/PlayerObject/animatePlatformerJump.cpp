@@ -1,6 +1,3 @@
- 
-#define kTagPlatformerJumpAnimation 13
-
 void PlayerObject::animatePlatformerJump(float scale) {
     if (
         m_holdingLeft || m_holdingRight ||

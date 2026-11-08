@@ -1,4 +1,3 @@
- 
 void PlayerObject::exitPlatformerAnimateJump()
 {
 	if (m_iconSprite->getActionByTag(13)) {

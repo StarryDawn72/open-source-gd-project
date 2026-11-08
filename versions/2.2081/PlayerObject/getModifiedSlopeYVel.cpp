@@ -1,4 +1,3 @@
- 
 /*
 	This function calculates the final Y velocity that the
 	player needs to launch when exiting a slope. If it

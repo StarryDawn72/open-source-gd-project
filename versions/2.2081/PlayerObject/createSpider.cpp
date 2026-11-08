@@ -1,4 +1,3 @@
- 
 void PlayerObject::createSpider(int frame)
 {
     bool spiderAlreadyExists = m_spiderSprite != nullptr;

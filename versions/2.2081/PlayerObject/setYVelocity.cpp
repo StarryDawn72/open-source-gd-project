@@ -1,4 +1,3 @@
- 
 /*
 	 	
 	This function sets the current player's vertical velocity

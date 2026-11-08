@@ -1,4 +1,3 @@
- 
 void PlayerObject::updateRobotAnimationSpeed()
 {
     float baseSpeed = 1.0f;

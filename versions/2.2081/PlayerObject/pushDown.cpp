@@ -1,4 +1,3 @@
- 
 /*
 	 	
 	Cancels vertical velocity, resets grounded state
