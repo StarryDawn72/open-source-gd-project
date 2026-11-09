@@ -52,3 +52,4 @@
 #define kTagPlatformerJumpUnk 14 // TODO: find usage and name
 #define kTagPlayerBlink 11
 #define kTagPlayerScaleEffect 6
+#define kTagScaleSpider 10

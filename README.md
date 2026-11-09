@@ -45,7 +45,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary> <b>PlayerObject</b>  (186)</summary>
+	<summary> <b>PlayerObject</b>  (187)</summary>
 	<ul>
 		<li><a href="./versions/2.2091/PlayerObject/addAllParticles.cpp">addAllParticles</a></li>
 		<li><a href="./versions/2.2091/PlayerObject/addToTouchedRings.cpp">addToTouchedRings</a></li>
@@ -125,6 +125,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./versions/2.2091/PlayerObject/playerTeleported.cpp">playerTeleported</a></li>
 		<li><a href="./versions/2.2091/PlayerObject/playingEndEffect.cpp">playingEndEffect</a></li>
 		<li><a href="./versions/2.2091/PlayerObject/playSpawnEffect.cpp">playSpawnEffect</a></li>
+		<li><a href="./versions/2.2091/PlayerObject/playSpiderDashEffect.cpp">playSpiderDashEffect</a></li>
 		<li><a href="./versions/2.2091/PlayerObject/preCollision.cpp">preCollision</a></li>
 		<li><a href="./versions/2.2091/PlayerObject/preSlopeCollision.cpp">preSlopeCollision</a></li>
 		<li><a href="./versions/2.2091/PlayerObject/propellPlayer.cpp">propellPlayer</a></li>

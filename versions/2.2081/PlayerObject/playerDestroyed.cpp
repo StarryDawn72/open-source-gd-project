@@ -20,7 +20,7 @@ void PlayerObject::playerDestroyed(bool noEffects)
     toggleGhostEffect(GhostType::Disabled);
     disableSwingFire();
 
-    if (!m_playEffects || noEffects || m_isHidden)
+    if (!m_isInPlayLayer || noEffects || m_isHidden)
         setOpacity(0);
     else
         playDeathEffect();

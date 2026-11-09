@@ -42,7 +42,7 @@ void PlayerObject::toggleDartMode(bool enable, bool noEffects) {
         placeStreakPoint();
 
         if (
-            m_playEffects &&
+            m_isInPlayLayer &&
             !m_maybeReducedEffects &&
             !GameManager::get()->m_playLayer->m_skipArtReload &&
             !noEffects

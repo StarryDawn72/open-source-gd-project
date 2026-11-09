@@ -28,5 +28,8 @@
     void updateMove(float dt)
     void updatePlayerGlow()
     void updateStateVariables()
-    uhh the two or three new ones too yeah
+
+    void refreshStreakState()
+    bool streakDisabledForCurrentMode()
+    void placeStreakPoint(CCPoint)
 	```
