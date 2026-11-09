@@ -37,11 +37,48 @@ You should view the existing reconstructions on this repo to get an idea of the 
 ### 2.2091
 
 <details>
+	<summary> <b>CCCircleWave ✔️</b>  (11)</summary>
+	<ul>
+		<li><a href="./versions/2.2091/CCCircleWave/baseSetup.cpp">baseSetup</a></li>
+		<li><a href="./versions/2.2091/CCCircleWave/CCCircleWave.cpp">CCCircleWave</a></li>
+		<li><a href="./versions/2.2091/CCCircleWave/create.cpp">create</a></li>
+		<li><a href="./versions/2.2091/CCCircleWave/draw.cpp">draw</a></li>
+		<li><a href="./versions/2.2091/CCCircleWave/followObject.cpp">followObject</a></li>
+		<li><a href="./versions/2.2091/CCCircleWave/init.cpp">init</a></li>
+		<li><a href="./versions/2.2091/CCCircleWave/removeMeAndCleanup.cpp">removeMeAndCleanup</a></li>
+		<li><a href="./versions/2.2091/CCCircleWave/setPosition.cpp">setPosition</a></li>
+		<li><a href="./versions/2.2091/CCCircleWave/updatePosition.cpp">updatePosition</a></li>
+		<li><a href="./versions/2.2091/CCCircleWave/updateTweenAction.cpp">updateTweenAction</a></li>
+		<li><a href="./versions/2.2091/CCCircleWave/~CCCircleWave.cpp">~CCCircleWave</a></li>
+	</ul>
+</details>
+<details>
+	<summary> <b>CCCircleWaveDelegate ✔️</b>  (1)</summary>
+	<ul>
+		<li><a href="./versions/2.2091/CCCircleWaveDelegate/circleWaveWillBeRemoved.cpp">circleWaveWillBeRemoved</a></li>
+	</ul>
+</details>
+<details>
 	<summary> <b>GJBaseGameLayer</b>  (3)</summary>
 	<ul>
 		<li><a href="./versions/2.2091/GJBaseGameLayer/activateCustomRing.cpp">activateCustomRing</a></li>
 		<li><a href="./versions/2.2091/GJBaseGameLayer/getBumpMod.cpp">getBumpMod</a></li>
 		<li><a href="./versions/2.2091/GJBaseGameLayer/gravBumpPlayer.cpp">gravBumpPlayer</a></li>
+	</ul>
+</details>
+<details>
+	<summary> <b>GJFlyGroundLayer ✔️</b>  (1)</summary>
+	<ul>
+		<li><a href="./versions/2.2091/GJFlyGroundLayer/init.cpp">init</a></li>
+	</ul>
+</details>
+<details>
+	<summary> <b>PlayerFireBoostSprite ✔️</b>  (4)</summary>
+	<ul>
+		<li><a href="./versions/2.2091/PlayerFireBoostSprite/animateFireIn.cpp">animateFireIn</a></li>
+		<li><a href="./versions/2.2091/PlayerFireBoostSprite/animateFireOut.cpp">animateFireOut</a></li>
+		<li><a href="./versions/2.2091/PlayerFireBoostSprite/init.cpp">init</a></li>
+		<li><a href="./versions/2.2091/PlayerFireBoostSprite/loopFireAnimation.cpp">loopFireAnimation</a></li>
 	</ul>
 </details>
 <details>

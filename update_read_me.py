@@ -63,7 +63,12 @@ FINISHED_CLASSES = {
         "GJFlyGroundLayer",
         "GJGroundLayer"
     },
-    "2.2091": {}
+    "2.2091": {
+        "PlayerFireBoostSprite",
+        "CCCircleWave",
+        "CCCircleWaveDelegate",
+        "GJFlyGroundLayer"
+    }
 }
 
 def get_others_string(version):
