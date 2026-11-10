@@ -8,7 +8,8 @@ Some nasty variables I had to rename, either because they were completely incorr
 - m_stateJumpBuffered -> m_holdingJumpReleaseDelayed
 - m_isOnGround -> m_canJump
 - m_isOnGround2 -> m_onGround
-- m_isOnGround3 -> m_isGroundTouchSideValid (I couldn't find a better name 😭)
+- m_isOnGround3 -> m_isGroundedSinceLastFlip
+- m_isOnGround4 -> m_wasOnGround
 - m_maybeChangedDirectionAngle -> m_lastPlatformerSlopeAngle
 - m_platformerMovingRight -> m_slopeForceRight
 - m_platformerMovingLeft -> m_slopeForceLeft
@@ -63,7 +64,6 @@ Some nasty variables I had to rename, either because they were completely incorr
 - m_touchedPad -> m_robotBoostInvalidated
 - m_wasRobotJump -> m_wasRobotBoostInvalidated
 - m_maybeSpriteRelated -> m_didSpecialGroundHit
-- m_isOnGround4 -> m_wasOnGround
 - m_spiderAnimationEnabled -> m_spiderAnimation2Enabled
 - m_unk838 -> m_followPlayerYTimer
 - m_followRelated -> m_followPlayerYIndex
@@ -77,6 +77,9 @@ Some nasty variables I had to rename, either because they were completely incorr
 - m_stateScale -> m_scaleChangeTimer 
 - m_rotateObjectsRelated -> m_storedRotatedObjectOffsets
 - m_currentSlopeYVelocity -> m_lastSlopeYVelocity (confirmed from stream)
+- m_landParticleRelatedY -> m_landParticlesInitialGravityY
+- m_unkA29 -> m_hasLandedSinceGravityFlip
+- m_stateOnGround -> m_groundHitTimer 
 
 **GameObject**
 - m_editorEnabled -> m_isInEditor

@@ -348,7 +348,7 @@ void PlayerObject::spiderTestJumpInternal(bool isRetry)
     flipGravity(!m_isUpsideDown, true);
     setYVelocity(-flipMod(), 36); // velocity becomes +1/-1
 
-    m_isGroundTouchSideValid = false; // TODO: find better rename (particle related I think)
+    m_isGroundedSinceLastFlip = false; // TODO: find better rename (particle related I think)
     m_holdingJump = false;
 
     resetCollisionLog(true);

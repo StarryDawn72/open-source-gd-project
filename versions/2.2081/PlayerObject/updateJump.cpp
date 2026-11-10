@@ -303,7 +303,7 @@ void PlayerObject::updateJump(float dt)
 
 					flipGravity(!m_isUpsideDown, true);
 					m_yVelocity *= 0.6f;
-					m_isGroundTouchSideValid = false;
+					m_isGroundedSinceLastFlip = false;
 					m_holdingJump = false;
 				}
 				else if (!m_isRobot && !m_isSpider)

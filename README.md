@@ -82,7 +82,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary> <b>PlayerObject</b>  (187)</summary>
+	<summary> <b>PlayerObject</b>  (188)</summary>
 	<ul>
 		<li><a href="./versions/2.2091/PlayerObject/addAllParticles.cpp">addAllParticles</a></li>
 		<li><a href="./versions/2.2091/PlayerObject/addToTouchedRings.cpp">addToTouchedRings</a></li>
@@ -134,6 +134,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./versions/2.2091/PlayerObject/handleRotatedObjectCollision.cpp">handleRotatedObjectCollision</a></li>
 		<li><a href="./versions/2.2091/PlayerObject/handleRotatedSlopeCollision.cpp">handleRotatedSlopeCollision</a></li>
 		<li><a href="./versions/2.2091/PlayerObject/hardFlipGravity.cpp">hardFlipGravity</a></li>
+		<li><a href="./versions/2.2091/PlayerObject/hitGround.cpp">hitGround</a></li>
 		<li><a href="./versions/2.2091/PlayerObject/hitGroundNoJump.cpp">hitGroundNoJump</a></li>
 		<li><a href="./versions/2.2091/PlayerObject/incrementJumps.cpp">incrementJumps</a></li>
 		<li><a href="./versions/2.2091/PlayerObject/isBoostValid.cpp">isBoostValid</a></li>

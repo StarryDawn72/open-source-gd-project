@@ -10,7 +10,6 @@
     void loadFromCheckpoint(PlayerCheckpoint* object)
     void performSlideCheck()
     void playDeathEffect()
-    void playSpiderDashEffect(CCPoint from, CCPoint to)
     void postCollision(float dt)
     bool pushButton(PlayerButton button)
     void redirectPlayerForce(float rotation, float modifier, float minimum, float maximum)
