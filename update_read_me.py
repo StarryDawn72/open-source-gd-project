@@ -67,7 +67,8 @@ FINISHED_CLASSES = {
         "PlayerFireBoostSprite",
         "CCCircleWave",
         "CCCircleWaveDelegate",
-        "GJFlyGroundLayer"
+        "GJFlyGroundLayer",
+        "GravityEffectSprite"
     }
 }
 

@@ -73,6 +73,14 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
+	<summary> <b>GravityEffectSprite ✔️</b>  (3)</summary>
+	<ul>
+		<li><a href="./versions/2.2091/GravityEffectSprite/draw.cpp">draw</a></li>
+		<li><a href="./versions/2.2091/GravityEffectSprite/init.cpp">init</a></li>
+		<li><a href="./versions/2.2091/GravityEffectSprite/updateSpritesColor.cpp">updateSpritesColor</a></li>
+	</ul>
+</details>
+<details>
 	<summary> <b>PlayerFireBoostSprite ✔️</b>  (4)</summary>
 	<ul>
 		<li><a href="./versions/2.2091/PlayerFireBoostSprite/animateFireIn.cpp">animateFireIn</a></li>

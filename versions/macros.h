@@ -53,3 +53,4 @@
 #define kTagPlayerBlink 11
 #define kTagPlayerScaleEffect 6
 #define kTagScaleSpider 10
+#define kTagGravityEffectBatch 1
