@@ -12,8 +12,7 @@ FORBIDDEN_MACROS = [
 
 FOLDER     = "CCLightning"
 CPP_NAME   = "" # Optional, sometimes output folder needs a different name (e.g. PlayLayer->PlayScene)
-INCLUDES   = [
-    "CCLightning.h"
+INCLUDES   = [  # Additional headers (with '.h' and quotes/brackets) other than the class itself
 ]
 CPP_ORDER  = [
     "getOpacity",
@@ -47,8 +46,11 @@ def build_macros_string(macros) -> str:
 
 def build_includes_string() -> str:
     includes_string = ""
+
+    includes_string += f'#include "{FOLDER}.h"\n\n'
+
     for include in INCLUDES:
-        includes_string += '#include "' + include + '"' + "\n"
+        includes_string += f'#include {include}\n'
 
     if includes_string != "": includes_string += "\n"
     return includes_string
