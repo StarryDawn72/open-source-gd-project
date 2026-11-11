@@ -2,41 +2,40 @@
 
 #include "cocos2d.h"
 
-NS_CC_BEGIN
+namespace cocos2d 
+{ 
 
 class CCLightning : public CCNode, public CCRGBAProtocol {
 public:
 
+    ~CCLightning();
+
+    static CCLightning* lightningWithStrikePoint(CCPoint strikePoint1, CCPoint strikePoint2, float duration);
+    static CCLightning* lightningWithStrikePoint(CCPoint strikePoint);
+
+    void strikeFinished();
+    void draw();
+    void strike();
+    bool initWithStrikePoint(CCPoint strikePoint1, CCPoint strikePoint2, float duration);
+    bool initWithStrikePoint(CCPoint strikePoint);
+    void strikeRandom();
+    void strikeWithSeed(uint64_t seed);
+
+    // CCRGBAProtocol
     GLubyte getOpacity();
     GLubyte getDisplayedOpacity();
     void setOpacity(GLubyte opacity);
-
     const ccColor3B& getColor();
-
     void setColor(const ccColor3B& color);
     bool isOpacityModifyRGB();
     void setOpacityModifyRGB(bool bValue);
     void updateDisplayedOpacity(GLubyte opacity);
     bool isCascadeOpacityEnabled();
     void setCascadeOpacityEnabled(bool cascadeOpacityEnabled);
-
     const ccColor3B& getDisplayedColor();
-
     void updateDisplayedColor(const ccColor3B& color);
     bool isCascadeColorEnabled();
     void setCascadeColorEnabled(bool cascadeColorEnabled);
-    void strikeFinished();
-    void draw();
-    void strike();
-
-    bool initWithStrikePoint(CCPoint strikePoint1, CCPoint strikePoint2, float duration);
-    bool initWithStrikePoint(CCPoint strikePoint);
-
-    CCLightning* lightningWithStrikePoint(CCPoint strikePoint1, CCPoint strikePoint2, float duration);
-    CCLightning* lightningWithStrikePoint(CCPoint strikePoint);
-
-    void strikeRandom();
-    void strikeWithSeed(uint64_t seed);
 
 private:
     CCPoint m_strikePoint = CCPointZero;
@@ -66,4 +65,4 @@ private:
     bool m_opacityModifyEnabled = false;
 };
 
-NS_CC_END
+}

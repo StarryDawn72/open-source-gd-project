@@ -6,29 +6,26 @@
 */
 unsigned int getNextRandom(unsigned long long* seed)
 {
-    *seed = *seed * 1103515245 + 12345;
-    return (unsigned)(*seed / 65536) % 32768;
+    (*seed) = (*seed) * 1103515245 + 12345;
+    return (unsigned)((*seed) / 65536) % 32768;
 }
 
-CCPoint drawLightning(CCPoint strikePoint1, CCPoint strikePoint2, int displacement, int minDisplacement, unsigned long long seed, CCPoint* points, unsigned int* numPoints)
+CCPoint drawLightning(CCPoint pt1, CCPoint pt2, int displacement, int minDisplacement, unsigned long long seed, CCPoint* points, unsigned int* numPoints)
 {
-    CCPoint sum = strikePoint1 + strikePoint2;
+    CCPoint sum = pt1 + pt2;
     CCPoint midPoint = sum * 0.5f;
 
-    if (displacement >= minDisplacement) {
-
-        int displacement2 = displacement / 2;
-
+    if (displacement < minDisplacement) {
+        points[*numPoints] = pt1;
+        points[*numPoints + 1] = pt2;
+        *numPoints += 2;        
+    }
+    else {
         midPoint.x += ((getNextRandom(&seed) % 101) / 100.0f - 0.5f) * displacement;
         midPoint.y += ((getNextRandom(&seed) % 101) / 100.0f - 0.5f) * displacement;
 
-        drawLightning(strikePoint1, midPoint, displacement2, minDisplacement, seed, points, numPoints);
-        drawLightning(strikePoint2, midPoint, displacement2, minDisplacement, seed, points, numPoints);
-    }
-    else {
-        points[*numPoints] = strikePoint1;
-        points[*numPoints + 1] = strikePoint2;
-        *numPoints += 2;
+        drawLightning(pt1, midPoint, displacement / 2, minDisplacement, seed, points, numPoints);
+        drawLightning(pt2, midPoint, displacement / 2, minDisplacement, seed, points, numPoints);        
     }
     
     return midPoint;
