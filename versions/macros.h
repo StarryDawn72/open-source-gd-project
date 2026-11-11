@@ -3,7 +3,7 @@
 // A list of all macros used in this repository
 
 #define GM (GameManager::sharedState())
-#define PL GameManager::sharedState()->getPlayLayer()
+#define PL (GameManager::sharedState()->getPlayLayer())
 
 #define kFollowPlayerYStoreTimeInterval 0.01f
 #define kGVDisableHighObjectAlert "0082"
