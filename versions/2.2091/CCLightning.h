@@ -7,36 +7,36 @@ NS_CC_BEGIN
 class CCLightning : public CCNode, public CCRGBAProtocol {
 public:
 
-    GLubyte CCLightning::getOpacity();
-    GLubyte CCLightning::getDisplayedOpacity();
-    void CCLightning::setOpacity(GLubyte opacity);
+    GLubyte getOpacity();
+    GLubyte getDisplayedOpacity();
+    void setOpacity(GLubyte opacity);
 
-    const ccColor3B& CCLightning::getColor();
+    const ccColor3B& getColor();
 
-    void CCLightning::setColor(const ccColor3B& color);
-    bool CCLightning::isOpacityModifyRGB();
-    void CCLightning::setOpacityModifyRGB(bool bValue);
-    void CCLightning::updateDisplayedOpacity(GLubyte opacity);
-    bool CCLightning::isCascadeOpacityEnabled();
-    void CCLightning::setCascadeOpacityEnabled(bool cascadeOpacityEnabled);
+    void setColor(const ccColor3B& color);
+    bool isOpacityModifyRGB();
+    void setOpacityModifyRGB(bool bValue);
+    void updateDisplayedOpacity(GLubyte opacity);
+    bool isCascadeOpacityEnabled();
+    void setCascadeOpacityEnabled(bool cascadeOpacityEnabled);
 
-    const ccColor3B& CCLightning::getDisplayedColor();
+    const ccColor3B& getDisplayedColor();
 
-    void CCLightning::updateDisplayedColor(const ccColor3B& color);
-    bool CCLightning::isCascadeColorEnabled();
-    void CCLightning::setCascadeColorEnabled(bool cascadeColorEnabled);
-    void CCLightning::strikeFinished();
-    void CCLightning::draw();
-    void CCLightning::strike();
+    void updateDisplayedColor(const ccColor3B& color);
+    bool isCascadeColorEnabled();
+    void setCascadeColorEnabled(bool cascadeColorEnabled);
+    void strikeFinished();
+    void draw();
+    void strike();
 
-    bool CCLightning::initWithStrikePoint(CCPoint strikePoint1, CCPoint strikePoint2, float duration);
-    bool CCLightning::initWithStrikePoint(CCPoint strikePoint);
+    bool initWithStrikePoint(CCPoint strikePoint1, CCPoint strikePoint2, float duration);
+    bool initWithStrikePoint(CCPoint strikePoint);
 
-    CCLightning* CCLightning::lightningWithStrikePoint(CCPoint strikePoint1, CCPoint strikePoint2, float duration);
-    CCLightning* CCLightning::lightningWithStrikePoint(CCPoint strikePoint);
+    CCLightning* lightningWithStrikePoint(CCPoint strikePoint1, CCPoint strikePoint2, float duration);
+    CCLightning* lightningWithStrikePoint(CCPoint strikePoint);
 
-    void CCLightning::strikeRandom();
-    void CCLightning::strikeWithSeed(uint64_t seed);
+    void strikeRandom();
+    void strikeWithSeed(uint64_t seed);
 
 private:
     CCPoint m_strikePoint = CCPointZero;
