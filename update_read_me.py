@@ -68,7 +68,8 @@ FINISHED_CLASSES = {
         "CCCircleWave",
         "CCCircleWaveDelegate",
         "GJFlyGroundLayer",
-        "GravityEffectSprite"
+        "GravityEffectSprite",
+        "CCLightning"
     }
 }
 

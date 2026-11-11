@@ -59,6 +59,32 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
+	<summary> <b>CCLightning ✔️</b>  (21)</summary>
+	<ul>
+		<li><a href="./versions/2.2091/CCLightning/draw.cpp">draw</a></li>
+		<li><a href="./versions/2.2091/CCLightning/getColor.cpp">getColor</a></li>
+		<li><a href="./versions/2.2091/CCLightning/getDisplayedColor.cpp">getDisplayedColor</a></li>
+		<li><a href="./versions/2.2091/CCLightning/getDisplayedOpacity.cpp">getDisplayedOpacity</a></li>
+		<li><a href="./versions/2.2091/CCLightning/getOpacity.cpp">getOpacity</a></li>
+		<li><a href="./versions/2.2091/CCLightning/initWithStrikePoint.cpp">initWithStrikePoint</a></li>
+		<li><a href="./versions/2.2091/CCLightning/isCascadeColorEnabled.cpp">isCascadeColorEnabled</a></li>
+		<li><a href="./versions/2.2091/CCLightning/isCascadeOpacityEnabled.cpp">isCascadeOpacityEnabled</a></li>
+		<li><a href="./versions/2.2091/CCLightning/isOpacityModifyRGB.cpp">isOpacityModifyRGB</a></li>
+		<li><a href="./versions/2.2091/CCLightning/lightningWithStrikePoint.cpp">lightningWithStrikePoint</a></li>
+		<li><a href="./versions/2.2091/CCLightning/setCascadeColorEnabled.cpp">setCascadeColorEnabled</a></li>
+		<li><a href="./versions/2.2091/CCLightning/setCascadeOpacityEnabled.cpp">setCascadeOpacityEnabled</a></li>
+		<li><a href="./versions/2.2091/CCLightning/setColor.cpp">setColor</a></li>
+		<li><a href="./versions/2.2091/CCLightning/setOpacity.cpp">setOpacity</a></li>
+		<li><a href="./versions/2.2091/CCLightning/setOpacityModifyRGB.cpp">setOpacityModifyRGB</a></li>
+		<li><a href="./versions/2.2091/CCLightning/strike.cpp">strike</a></li>
+		<li><a href="./versions/2.2091/CCLightning/strikeFinished.cpp">strikeFinished</a></li>
+		<li><a href="./versions/2.2091/CCLightning/strikeRandom.cpp">strikeRandom</a></li>
+		<li><a href="./versions/2.2091/CCLightning/strikeWithSeed.cpp">strikeWithSeed</a></li>
+		<li><a href="./versions/2.2091/CCLightning/updateDisplayedColor.cpp">updateDisplayedColor</a></li>
+		<li><a href="./versions/2.2091/CCLightning/updateDisplayedOpacity.cpp">updateDisplayedOpacity</a></li>
+	</ul>
+</details>
+<details>
 	<summary> <b>GJBaseGameLayer</b>  (3)</summary>
 	<ul>
 		<li><a href="./versions/2.2091/GJBaseGameLayer/activateCustomRing.cpp">activateCustomRing</a></li>

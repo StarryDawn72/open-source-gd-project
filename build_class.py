@@ -1,7 +1,8 @@
 from pathlib import Path
 
-SCRIPT_DIR = Path(__file__).resolve().parent
-SRC_DIR  = SCRIPT_DIR / "src"
+ROOT_DIR = Path(__file__).resolve().parent
+VERSIONS_DIR = ROOT_DIR / "versions" / "2.2091" # change version number if needed
+
 FORBIDDEN_MACROS = [
     "GM GameManager::sharedState()",
     "PL GameManager::sharedState()->getPlayLayer()"
@@ -9,13 +10,33 @@ FORBIDDEN_MACROS = [
 
 ########## SETTINGS ##########
 
-FOLDER     = "GJFlyGroundLayer"
+FOLDER     = "CCLightning"
 CPP_NAME   = "" # Optional, sometimes output folder needs a different name (e.g. PlayLayer->PlayScene)
 INCLUDES   = [
-    "GJFlyGroundLayer.h"
+    "CCLightning.h"
 ]
 CPP_ORDER  = [
-    "init"
+    "getOpacity",
+    "getDisplayedOpacity",
+    "setOpacity",
+    "getColor",
+    "setColor",
+    "isOpacityModifyRGB",
+    "setOpacityModifyRGB",
+    "updateDisplayedOpacity",
+    "isCascadeOpacityEnabled",
+    "setCascadeOpacityEnabled",
+    "getDisplayedColor",
+    "updateDisplayedColor",
+    "isCascadeColorEnabled",
+    "setCascadeColorEnabled",
+    "strikeFinished",
+    "draw",
+    "strike",
+    "initWithStrikePoint",
+    "lightningWithStrikePoint",
+    "strikeRandom",
+    "strikeWithSeed"
 ]
 
 ##############################
@@ -63,7 +84,7 @@ def verify_syntax(dir: Path) -> bool:
     return success
 
 def main():
-    dir: Path = SRC_DIR / FOLDER
+    dir: Path = VERSIONS_DIR / FOLDER
     func_string = ""
     function_dict: dict[str, str] = {} # func name, func body
     macros: list[str] = []
@@ -78,7 +99,7 @@ def main():
         cpp_count += 1
 
     if len(CPP_ORDER) != cpp_count:
-        print("[ERR] Length of C++ order functions does not match directory. Aborting.")
+        print(f"[ERR] Length of C++ order functions ({len(CPP_ORDER)}) does not match directory ({cpp_count}). Aborting.")
         return
 
     if not verify_syntax(dir):
@@ -126,7 +147,7 @@ def main():
 
     cpp_name = CPP_NAME if CPP_NAME != "" else FOLDER
     name = cpp_name + ".cpp"
-    file_path = SRC_DIR / name
+    file_path = VERSIONS_DIR / name
 
     with open(file_path, "w", encoding="utf-8") as file:
         file.write(final_string)
