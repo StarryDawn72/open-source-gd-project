@@ -1,0 +1,3 @@
+void GJBaseGameLayer::destroyPlayer(PlayerObject* player, GameObject* object)
+{
+}

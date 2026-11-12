@@ -1,0 +1,3 @@
+void GJBaseGameLayer::manualUpdateObjectColors(GameObject* object)
+{
+}

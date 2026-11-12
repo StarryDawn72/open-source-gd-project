@@ -1,0 +1,3 @@
+void GJBaseGameLayer::flipArt(bool flip)
+{
+}

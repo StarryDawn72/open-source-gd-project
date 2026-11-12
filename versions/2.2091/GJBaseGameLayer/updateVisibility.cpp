@@ -1,0 +1,3 @@
+void GJBaseGameLayer::updateVisibility(float dt)
+{
+}

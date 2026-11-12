@@ -85,11 +85,42 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary> <b>GJBaseGameLayer</b>  (3)</summary>
+	<summary> <b>GJBaseGameLayer</b>  (34)</summary>
 	<ul>
 		<li><a href="./versions/2.2091/GJBaseGameLayer/activateCustomRing.cpp">activateCustomRing</a></li>
+		<li><a href="./versions/2.2091/GJBaseGameLayer/activateEndTrigger.cpp">activateEndTrigger</a></li>
+		<li><a href="./versions/2.2091/GJBaseGameLayer/activateObjectControlTrigger.cpp">activateObjectControlTrigger</a></li>
+		<li><a href="./versions/2.2091/GJBaseGameLayer/activatePlatformerEndTrigger.cpp">activatePlatformerEndTrigger</a></li>
+		<li><a href="./versions/2.2091/GJBaseGameLayer/addToSpeedObjects.cpp">addToSpeedObjects</a></li>
+		<li><a href="./versions/2.2091/GJBaseGameLayer/animateInGroundNew.cpp">animateInGroundNew</a></li>
+		<li><a href="./versions/2.2091/GJBaseGameLayer/checkForEnd.cpp">checkForEnd</a></li>
+		<li><a href="./versions/2.2091/GJBaseGameLayer/checkSnapshot.cpp">checkSnapshot</a></li>
+		<li><a href="./versions/2.2091/GJBaseGameLayer/destroyPlayer.cpp">destroyPlayer</a></li>
+		<li><a href="./versions/2.2091/GJBaseGameLayer/didRotateGameplay.cpp">didRotateGameplay</a></li>
+		<li><a href="./versions/2.2091/GJBaseGameLayer/flipArt.cpp">flipArt</a></li>
 		<li><a href="./versions/2.2091/GJBaseGameLayer/getBumpMod.cpp">getBumpMod</a></li>
 		<li><a href="./versions/2.2091/GJBaseGameLayer/gravBumpPlayer.cpp">gravBumpPlayer</a></li>
+		<li><a href="./versions/2.2091/GJBaseGameLayer/manualUpdateObjectColors.cpp">manualUpdateObjectColors</a></li>
+		<li><a href="./versions/2.2091/GJBaseGameLayer/playerTookDamage.cpp">playerTookDamage</a></li>
+		<li><a href="./versions/2.2091/GJBaseGameLayer/playGravityEffect.cpp">playGravityEffect</a></li>
+		<li><a href="./versions/2.2091/GJBaseGameLayer/postUpdate.cpp">postUpdate</a></li>
+		<li><a href="./versions/2.2091/GJBaseGameLayer/processCheckpoints.cpp">processCheckpoints</a></li>
+		<li><a href="./versions/2.2091/GJBaseGameLayer/processReplayCheckpoint.cpp">processReplayCheckpoint</a></li>
+		<li><a href="./versions/2.2091/GJBaseGameLayer/removeAllCheckpoints.cpp">removeAllCheckpoints</a></li>
+		<li><a href="./versions/2.2091/GJBaseGameLayer/resetLevel.cpp">resetLevel</a></li>
+		<li><a href="./versions/2.2091/GJBaseGameLayer/testTime.cpp">testTime</a></li>
+		<li><a href="./versions/2.2091/GJBaseGameLayer/toggleGlitter.cpp">toggleGlitter</a></li>
+		<li><a href="./versions/2.2091/GJBaseGameLayer/toggleGroundVisibility.cpp">toggleGroundVisibility</a></li>
+		<li><a href="./versions/2.2091/GJBaseGameLayer/toggleHideAttempts.cpp">toggleHideAttempts</a></li>
+		<li><a href="./versions/2.2091/GJBaseGameLayer/toggleInfoLabel.cpp">toggleInfoLabel</a></li>
+		<li><a href="./versions/2.2091/GJBaseGameLayer/toggleMGVisibility.cpp">toggleMGVisibility</a></li>
+		<li><a href="./versions/2.2091/GJBaseGameLayer/toggleMusicInPractice.cpp">toggleMusicInPractice</a></li>
+		<li><a href="./versions/2.2091/GJBaseGameLayer/toggleProgressbar.cpp">toggleProgressbar</a></li>
+		<li><a href="./versions/2.2091/GJBaseGameLayer/updateAttemptTime.cpp">updateAttemptTime</a></li>
+		<li><a href="./versions/2.2091/GJBaseGameLayer/updateDisabledObjectsLastPos.cpp">updateDisabledObjectsLastPos</a></li>
+		<li><a href="./versions/2.2091/GJBaseGameLayer/updateTimeLabel.cpp">updateTimeLabel</a></li>
+		<li><a href="./versions/2.2091/GJBaseGameLayer/updateVerifyDamage.cpp">updateVerifyDamage</a></li>
+		<li><a href="./versions/2.2091/GJBaseGameLayer/updateVisibility.cpp">updateVisibility</a></li>
 	</ul>
 </details>
 <details>

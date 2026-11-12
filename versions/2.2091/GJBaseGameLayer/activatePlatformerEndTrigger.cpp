@@ -1,0 +1,3 @@
+void GJBaseGameLayer::activatePlatformerEndTrigger(EndTriggerGameObject* object, const std::vector<int>& remapKeys)
+{
+}
