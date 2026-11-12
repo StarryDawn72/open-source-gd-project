@@ -1,3 +1,1 @@
-void GJBaseGameLayer::activateObjectControlTrigger(ObjectControlGameObject* object)
-{
-}
+void GJBaseGameLayer::activateObjectControlTrigger(ObjectControlGameObject* object) {}

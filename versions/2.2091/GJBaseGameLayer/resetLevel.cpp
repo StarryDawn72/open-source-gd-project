@@ -1,3 +1,1 @@
-void GJBaseGameLayer::resetLevel()
-{
-}
+void GJBaseGameLayer::resetLevel() {}

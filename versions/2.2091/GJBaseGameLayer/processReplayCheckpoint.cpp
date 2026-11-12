@@ -1,3 +1,1 @@
-void GJBaseGameLayer::processReplayCheckpoint(int id)
-{
-}
+void GJBaseGameLayer::processReplayCheckpoint(int id) {}

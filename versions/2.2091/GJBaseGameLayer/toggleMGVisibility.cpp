@@ -1,3 +1,1 @@
-void GJBaseGameLayer::toggleMGVisibility(bool visible)
-{
-}
+void GJBaseGameLayer::toggleMGVisibility(bool visible) {}

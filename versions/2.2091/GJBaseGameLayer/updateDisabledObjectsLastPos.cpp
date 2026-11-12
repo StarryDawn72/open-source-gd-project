@@ -1,3 +1,1 @@
-void GJBaseGameLayer::updateDisabledObjectsLastPos(CCArray* objects)
-{
-}
+void GJBaseGameLayer::updateDisabledObjectsLastPos(CCArray* objects) {}

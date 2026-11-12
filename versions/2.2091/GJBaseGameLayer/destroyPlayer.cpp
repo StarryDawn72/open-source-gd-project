@@ -1,3 +1,1 @@
-void GJBaseGameLayer::destroyPlayer(PlayerObject* player, GameObject* object)
-{
-}
+void GJBaseGameLayer::destroyPlayer(PlayerObject* player, GameObject* object) {}

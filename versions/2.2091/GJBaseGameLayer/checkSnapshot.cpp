@@ -1,3 +1,1 @@
-void GJBaseGameLayer::checkSnapshot()
-{
-}
+void GJBaseGameLayer::checkSnapshot() {}

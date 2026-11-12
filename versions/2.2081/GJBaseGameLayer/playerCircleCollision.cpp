@@ -1,4 +1,4 @@
-bool GJBaseGameLayer::playerCircleCollision(PlayerObject *player, GameObject *object)
+bool GJBaseGameLayer::playerCircleCollision(PlayerObject* player, GameObject* object)
 {
     if (m_levelSettings->m_fixRadiusCollision)
         return playerIntersectsCircle(player, object);

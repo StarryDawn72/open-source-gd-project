@@ -1,3 +1,1 @@
-void GJBaseGameLayer::checkForEnd()
-{
-}
+void GJBaseGameLayer::checkForEnd() {}

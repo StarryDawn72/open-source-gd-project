@@ -1,3 +1,1 @@
-void GJBaseGameLayer::didRotateGameplay()
-{
-}
+void GJBaseGameLayer::didRotateGameplay() {}

@@ -1,3 +1,1 @@
-void GJBaseGameLayer::updateTimeLabel(int seconds, int centiseconds, bool decimals)
-{
-}
+void GJBaseGameLayer::updateTimeLabel(int seconds, int centiseconds, bool decimals) {}

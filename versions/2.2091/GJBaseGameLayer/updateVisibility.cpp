@@ -1,3 +1,1 @@
-void GJBaseGameLayer::updateVisibility(float dt)
-{
-}
+void GJBaseGameLayer::updateVisibility(float dt) {}

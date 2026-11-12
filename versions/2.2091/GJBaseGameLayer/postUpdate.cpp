@@ -1,3 +1,1 @@
-void GJBaseGameLayer::postUpdate(float dt)
-{
-}
+void GJBaseGameLayer::postUpdate(float dt) {}

@@ -1,3 +1,1 @@
-void GJBaseGameLayer::processCheckpoints()
-{
-}
+void GJBaseGameLayer::processCheckpoints() {}

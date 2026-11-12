@@ -1,3 +1,1 @@
-void GJBaseGameLayer::toggleGlitter(bool visible)
-{
-}
+void GJBaseGameLayer::toggleGlitter(bool visible) {}

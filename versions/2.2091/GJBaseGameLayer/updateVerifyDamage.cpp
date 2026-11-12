@@ -1,3 +1,1 @@
-void GJBaseGameLayer::updateVerifyDamage()
-{
-}
+void GJBaseGameLayer::updateVerifyDamage() {}

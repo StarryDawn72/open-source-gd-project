@@ -1,3 +1,1 @@
-void GJBaseGameLayer::testTime()
-{
-}
+void GJBaseGameLayer::testTime() {}

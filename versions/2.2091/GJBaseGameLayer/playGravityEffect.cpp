@@ -1,3 +1,1 @@
-void GJBaseGameLayer::playGravityEffect(bool flip)
-{
-}
+void GJBaseGameLayer::playGravityEffect(bool flip) {}

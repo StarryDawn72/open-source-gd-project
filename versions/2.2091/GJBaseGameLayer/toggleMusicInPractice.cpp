@@ -1,3 +1,1 @@
-void GJBaseGameLayer::toggleMusicInPractice()
-{
-}
+void GJBaseGameLayer::toggleMusicInPractice() {}

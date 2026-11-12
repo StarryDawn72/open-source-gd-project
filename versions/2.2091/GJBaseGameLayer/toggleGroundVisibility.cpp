@@ -1,3 +1,1 @@
-void GJBaseGameLayer::toggleGroundVisibility(bool visible)
-{
-}
+void GJBaseGameLayer::toggleGroundVisibility(bool visible) {}

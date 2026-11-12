@@ -1,3 +1,1 @@
-void GJBaseGameLayer::addToSpeedObjects(EffectGameObject* object)
-{
-}
+void GJBaseGameLayer::addToSpeedObjects(EffectGameObject* object) {}

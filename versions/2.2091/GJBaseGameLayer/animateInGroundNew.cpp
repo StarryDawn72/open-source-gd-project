@@ -1,6 +1,4 @@
 /*
     Unused.
 */
-void GJBaseGameLayer::animateInGroundNew(bool unk1, float unk2, bool unk3)
-{
-}
+void GJBaseGameLayer::animateInGroundNew(bool unk1, float unk2, bool unk3) {}

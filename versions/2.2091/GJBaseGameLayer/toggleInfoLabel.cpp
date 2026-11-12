@@ -1,3 +1,1 @@
-void GJBaseGameLayer::toggleInfoLabel()
-{
-}
+void GJBaseGameLayer::toggleInfoLabel() {}

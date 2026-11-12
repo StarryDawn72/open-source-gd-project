@@ -1,3 +1,1 @@
-void GJBaseGameLayer::updateAttemptTime(float attemptTime)
-{
-}
+void GJBaseGameLayer::updateAttemptTime(float attemptTime) {}

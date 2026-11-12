@@ -1,3 +1,1 @@
-void GJBaseGameLayer::toggleProgressbar()
-{
-}
+void GJBaseGameLayer::toggleProgressbar() {}

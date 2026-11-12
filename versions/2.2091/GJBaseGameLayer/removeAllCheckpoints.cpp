@@ -1,3 +1,1 @@
-void GJBaseGameLayer::removeAllCheckpoints()
-{
-}
+void GJBaseGameLayer::removeAllCheckpoints() {}

@@ -1,3 +1,1 @@
-void GJBaseGameLayer::playerTookDamage(PlayerObject* player)
-{
-}
+void GJBaseGameLayer::playerTookDamage(PlayerObject* player) {}
