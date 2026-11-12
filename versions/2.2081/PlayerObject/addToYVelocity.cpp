@@ -1,4 +1,4 @@
-void PlayerObject::addToYVelocity(double yVelocity, int unknown)
+void PlayerObject::addToYVelocity(double yVelocity, int unused)
 {
-    setYVelocity(yVelocity + m_yVelocity, unknown);
+    setYVelocity(yVelocity + m_yVelocity, unused);
 }

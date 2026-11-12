@@ -1,4 +1,4 @@
-void PlayerObject::runRotateAction(bool ground, int unknown)
+void PlayerObject::runRotateAction(bool ground, int unused)
 {
     if (!m_isLocked && !m_isDashing)
     {

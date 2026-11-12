@@ -4,7 +4,7 @@
 	instantly.
 	
 */
-void PlayerObject::stopRotation(bool ground, int unknown)
+void PlayerObject::stopRotation(bool ground, int unused)
 {
 	m_isRotating = false;
 	m_isBallRotating2 = false;

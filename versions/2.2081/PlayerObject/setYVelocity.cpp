@@ -5,12 +5,12 @@
 	unused. This function was added in update 2.2.
 	
 */
-void PlayerObject::setYVelocity(double velocity, int unknown)
+void PlayerObject::setYVelocity(double velocity, int unused)
 {
-    double intPart = (int)velocity;
+    double truncated = (int)velocity;
 
-    if ( intPart != velocity )
-        velocity = intPart + std::round((velocity - intPart) * 1000.0) / 1000.0;
+    if (velocity != truncated)
+        velocity = truncated + round((velocity - truncated) * 1000.0f) / 1000.0f;
 
     m_yVelocity = velocity;
 }
