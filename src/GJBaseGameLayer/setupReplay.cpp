@@ -1,1 +1,0 @@
-void GJBaseGameLayer::setupReplay(gd::string inputs) {}
