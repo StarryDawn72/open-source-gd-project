@@ -177,10 +177,9 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary> <b>PlayerObject</b>  (188)</summary>
+	<summary> <b>PlayerObject</b>  (187)</summary>
 	<ul>
 		<li><a href="./versions/2.2091/PlayerObject/addAllParticles.cpp">addAllParticles</a></li>
-		<li><a href="./versions/2.2091/PlayerObject/addToTouchedRings.cpp">addToTouchedRings</a></li>
 		<li><a href="./versions/2.2091/PlayerObject/addToYVelocity.cpp">addToYVelocity</a></li>
 		<li><a href="./versions/2.2091/PlayerObject/animatePlatformerJump.cpp">animatePlatformerJump</a></li>
 		<li><a href="./versions/2.2091/PlayerObject/animationFinished.cpp">animationFinished</a></li>
