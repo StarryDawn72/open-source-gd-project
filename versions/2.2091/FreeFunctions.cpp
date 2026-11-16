@@ -74,7 +74,7 @@ int boxCompMaxX(const void* a, const void* b)
 /*
     Camera position clamping in GJBaseGameLayer::updateCamera.
 */
-void limitCamera(CCPoint& pos, CCPoint& max, CCPoint& min)
+void limitCamera(CCPoint& pos, CCPoint max, CCPoint min)
 {
     if (max.x > 0) pos.x = MIN(pos.x, max.x);
     if (max.y > 0) pos.y = MIN(pos.y, max.y);
