@@ -85,7 +85,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary> <b>GJBaseGameLayer</b>  (66)</summary>
+	<summary> <b>GJBaseGameLayer</b>  (67)</summary>
 	<ul>
 		<li><a href="./versions/2.2091/GJBaseGameLayer/activateCustomRing.cpp">activateCustomRing</a></li>
 		<li><a href="./versions/2.2091/GJBaseGameLayer/activatedAudioTrigger.cpp">activatedAudioTrigger</a></li>
@@ -148,6 +148,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./versions/2.2091/GJBaseGameLayer/toggleMusicInPractice.cpp">toggleMusicInPractice</a></li>
 		<li><a href="./versions/2.2091/GJBaseGameLayer/togglePlayerVisibility.cpp">togglePlayerVisibility</a></li>
 		<li><a href="./versions/2.2091/GJBaseGameLayer/toggleProgressbar.cpp">toggleProgressbar</a></li>
+		<li><a href="./versions/2.2091/GJBaseGameLayer/triggerGravityChange.cpp">triggerGravityChange</a></li>
 		<li><a href="./versions/2.2091/GJBaseGameLayer/updateAttemptTime.cpp">updateAttemptTime</a></li>
 		<li><a href="./versions/2.2091/GJBaseGameLayer/updateDisabledObjectsLastPos.cpp">updateDisabledObjectsLastPos</a></li>
 		<li><a href="./versions/2.2091/GJBaseGameLayer/updateTimeLabel.cpp">updateTimeLabel</a></li>
