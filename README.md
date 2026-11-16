@@ -85,7 +85,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary> <b>GJBaseGameLayer</b>  (64)</summary>
+	<summary> <b>GJBaseGameLayer</b>  (66)</summary>
 	<ul>
 		<li><a href="./versions/2.2091/GJBaseGameLayer/activateCustomRing.cpp">activateCustomRing</a></li>
 		<li><a href="./versions/2.2091/GJBaseGameLayer/activatedAudioTrigger.cpp">activatedAudioTrigger</a></li>
@@ -95,6 +95,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./versions/2.2091/GJBaseGameLayer/addPoints.cpp">addPoints</a></li>
 		<li><a href="./versions/2.2091/GJBaseGameLayer/addToSpeedObjects.cpp">addToSpeedObjects</a></li>
 		<li><a href="./versions/2.2091/GJBaseGameLayer/animateInGroundNew.cpp">animateInGroundNew</a></li>
+		<li><a href="./versions/2.2091/GJBaseGameLayer/applyShake.cpp">applyShake</a></li>
 		<li><a href="./versions/2.2091/GJBaseGameLayer/asyncBGLoaded.cpp">asyncBGLoaded</a></li>
 		<li><a href="./versions/2.2091/GJBaseGameLayer/asyncGLoaded.cpp">asyncGLoaded</a></li>
 		<li><a href="./versions/2.2091/GJBaseGameLayer/asyncMGLoaded.cpp">asyncMGLoaded</a></li>
@@ -135,6 +136,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./versions/2.2091/GJBaseGameLayer/resetLevel.cpp">resetLevel</a></li>
 		<li><a href="./versions/2.2091/GJBaseGameLayer/restoreDefaultGameplayOffsetX.cpp">restoreDefaultGameplayOffsetX</a></li>
 		<li><a href="./versions/2.2091/GJBaseGameLayer/restoreDefaultGameplayOffsetY.cpp">restoreDefaultGameplayOffsetY</a></li>
+		<li><a href="./versions/2.2091/GJBaseGameLayer/shakeCamera.cpp">shakeCamera</a></li>
 		<li><a href="./versions/2.2091/GJBaseGameLayer/stopAllGroundActions.cpp">stopAllGroundActions</a></li>
 		<li><a href="./versions/2.2091/GJBaseGameLayer/stopCameraShake.cpp">stopCameraShake</a></li>
 		<li><a href="./versions/2.2091/GJBaseGameLayer/testTime.cpp">testTime</a></li>
