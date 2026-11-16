@@ -40,8 +40,8 @@ int boxCompMin(const void* a, const void* b)
     GameObject* objA = *(GameObject**)a;
     GameObject* objB = *(GameObject**)b;
 
-    return (int)(objA->getObjectRect().getMinY() * 10.0f) -
-           (int)(objB->getObjectRect().getMinY() * 10.0f);
+    return (int)(objA->getObjectRect().getMinY() * 10.f) -
+           (int)(objB->getObjectRect().getMinY() * 10.f);
 }
 
 int boxCompMax(const void* a, const void* b)
@@ -49,8 +49,8 @@ int boxCompMax(const void* a, const void* b)
     GameObject* objA = *(GameObject**)a;
     GameObject* objB = *(GameObject**)b;
 
-    return (int)(objB->getObjectRect().getMaxY() * 10.0f) -
-           (int)(objA->getObjectRect().getMaxY() * 10.0f);
+    return (int)(objB->getObjectRect().getMaxY() * 10.f) -
+           (int)(objA->getObjectRect().getMaxY() * 10.f);
 }
 
 int boxCompMinX(const void* a, const void* b)
@@ -58,8 +58,8 @@ int boxCompMinX(const void* a, const void* b)
     GameObject* objA = *(GameObject**)a;
     GameObject* objB = *(GameObject**)b;
 
-    return (int)(objA->getObjectRect().getMinX() * 10.0f) -
-           (int)(objB->getObjectRect().getMinX() * 10.0f);
+    return (int)(objA->getObjectRect().getMinX() * 10.f) -
+           (int)(objB->getObjectRect().getMinX() * 10.f);
 }
 
 int boxCompMaxX(const void* a, const void* b)
@@ -67,6 +67,18 @@ int boxCompMaxX(const void* a, const void* b)
     GameObject* objA = *(GameObject**)a;
     GameObject* objB = *(GameObject**)b;
 
-    return (int)(objB->getObjectRect().getMaxX() * 10.0f) -
-           (int)(objA->getObjectRect().getMaxX() * 10.0f);
+    return (int)(objB->getObjectRect().getMaxX() * 10.f) -
+           (int)(objA->getObjectRect().getMaxX() * 10.f);
+}
+
+/*
+    Camera position clamping in GJBaseGameLayer::updateCamera.
+*/
+void limitCamera(CCPoint& pos, CCPoint& max, CCPoint& min)
+{
+    if (max.x > 0) pos.x = MIN(pos.x, max.x);
+    if (max.y > 0) pos.y = MIN(pos.y, max.y);
+
+    pos.x = MAX(pos.x, min.x);
+    pos.y = MAX(pos.y, min.y);
 }
