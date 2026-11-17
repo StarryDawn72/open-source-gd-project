@@ -7,10 +7,6 @@
 */
 float PlayLayer::getRelativeModNew(CCPoint position, float mod, float offset, bool unused, bool isRight)
 {
-	// Incorrect Geode bindings lol
-	// The last two parameters are swapped
-	isRight = unused;
-
 	CCPoint lastCamPos = m_gameState.m_lastCameraPosition;
 	float distanceFromEdge = 0.0f;
 
