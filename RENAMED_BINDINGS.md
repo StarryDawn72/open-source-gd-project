@@ -79,6 +79,8 @@ Some nasty variables I had to rename, either because they were completely incorr
 - m_landParticleRelatedY -> m_landParticlesInitialGravityY
 - m_unkA29 -> m_hasLandedSinceGravityFlip
 - m_stateOnGround -> m_groundHitTimer 
+- m_boostXTimer -> m_boostXTimer
+- m_boostYTimer -> m_boostYTimer
 
 **GameObject**
 - m_editorEnabled -> m_isInEditor

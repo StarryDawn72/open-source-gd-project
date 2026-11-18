@@ -180,7 +180,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary> <b>PlayerObject</b>  (189)</summary>
+	<summary> <b>PlayerObject</b>  (190)</summary>
 	<ul>
 		<li><a href="./versions/2.2091/PlayerObject/addAllParticles.cpp">addAllParticles</a></li>
 		<li><a href="./versions/2.2091/PlayerObject/addToYVelocity.cpp">addToYVelocity</a></li>
@@ -364,6 +364,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./versions/2.2091/PlayerObject/updateShipSpriteExtra.cpp">updateShipSpriteExtra</a></li>
 		<li><a href="./versions/2.2091/PlayerObject/updateSlopeRotation.cpp">updateSlopeRotation</a></li>
 		<li><a href="./versions/2.2091/PlayerObject/updateSlopeYVelocity.cpp">updateSlopeYVelocity</a></li>
+		<li><a href="./versions/2.2091/PlayerObject/updateStateVariables.cpp">updateStateVariables</a></li>
 		<li><a href="./versions/2.2091/PlayerObject/updateStaticForce.cpp">updateStaticForce</a></li>
 		<li><a href="./versions/2.2091/PlayerObject/updateStreaks.cpp">updateStreaks</a></li>
 		<li><a href="./versions/2.2091/PlayerObject/updateSwingFire.cpp">updateSwingFire</a></li>
