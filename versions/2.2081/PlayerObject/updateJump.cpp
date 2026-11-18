@@ -398,10 +398,10 @@ void PlayerObject::updateJump(float dt)
 
 					if (m_isUpsideDown ? m_yVelocity > 4.0f : m_yVelocity < -4.0f) {
                         
-						if (m_isRobot && m_onGround && !m_didSpecialGroundHit) {
+						if (m_isRobot && m_onGround && !m_specialGroundHit) {
 							m_robotSprite->tweenToAnimation("fall_loop", 0.1f);
 						}
-						else if (m_isSpider && m_onGround && !m_didSpecialGroundHit)
+						else if (m_isSpider && m_onGround && !m_specialGroundHit)
 							m_spiderSprite->tweenToAnimation("fall_loop", 0.1f);
 						m_onGround = false;
 					} 

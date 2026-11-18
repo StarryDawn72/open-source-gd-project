@@ -8,5 +8,5 @@ void PlayerObject::specialGroundHit()
     if (!m_isBall && !isFlying())
         stopRotation(false, 21);
 
-    m_didSpecialGroundHit = true;
+    m_specialGroundHit = true;
 }

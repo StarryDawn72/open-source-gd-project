@@ -180,7 +180,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 	</ul>
 </details>
 <details>
-	<summary> <b>PlayerObject</b>  (187)</summary>
+	<summary> <b>PlayerObject</b>  (189)</summary>
 	<ul>
 		<li><a href="./versions/2.2091/PlayerObject/addAllParticles.cpp">addAllParticles</a></li>
 		<li><a href="./versions/2.2091/PlayerObject/addToYVelocity.cpp">addToYVelocity</a></li>
@@ -249,6 +249,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./versions/2.2091/PlayerObject/lockPlayer.cpp">lockPlayer</a></li>
 		<li><a href="./versions/2.2091/PlayerObject/logValues.cpp">logValues</a></li>
 		<li><a href="./versions/2.2091/PlayerObject/modeDidChange.cpp">modeDidChange</a></li>
+		<li><a href="./versions/2.2091/PlayerObject/performSlideCheck.cpp">performSlideCheck</a></li>
 		<li><a href="./versions/2.2091/PlayerObject/playBumpEffect.cpp">playBumpEffect</a></li>
 		<li><a href="./versions/2.2091/PlayerObject/playBurstEffect.cpp">playBurstEffect</a></li>
 		<li><a href="./versions/2.2091/PlayerObject/playCompleteEffect.cpp">playCompleteEffect</a></li>
@@ -319,6 +320,7 @@ You should view the existing reconstructions on this repo to get an idea of the 
 		<li><a href="./versions/2.2091/PlayerObject/stopRotation.cpp">stopRotation</a></li>
 		<li><a href="./versions/2.2091/PlayerObject/stopStreak2.cpp">stopStreak2</a></li>
 		<li><a href="./versions/2.2091/PlayerObject/storeCollision.cpp">storeCollision</a></li>
+		<li><a href="./versions/2.2091/PlayerObject/switchedDirTo.cpp">switchedDirTo</a></li>
 		<li><a href="./versions/2.2091/PlayerObject/switchedToMode.cpp">switchedToMode</a></li>
 		<li><a href="./versions/2.2091/PlayerObject/testForMoving.cpp">testForMoving</a></li>
 		<li><a href="./versions/2.2091/PlayerObject/toggleBirdMode.cpp">toggleBirdMode</a></li>

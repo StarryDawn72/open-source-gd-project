@@ -284,7 +284,7 @@ void PlayerObject::update(float dt)
         else if (m_robotBurstParticles->isActive())
             m_robotBurstParticles->stopSystem();
 
-        m_didSpecialGroundHit = false; // Never set to true, dead weight.
+        m_specialGroundHit = false; // Never set to true, dead weight.
 
         if (m_ghostTrail) {
             float yOffset;

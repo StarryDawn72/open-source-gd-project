@@ -63,7 +63,6 @@ Some nasty variables I had to rename, either because they were completely incorr
 - m_accelerationOrSpeed -> m_robotBoostCharge
 - m_touchedPad -> m_robotBoostInvalidated
 - m_wasRobotJump -> m_wasRobotBoostInvalidated
-- m_maybeSpriteRelated -> m_didSpecialGroundHit
 - m_spiderAnimationEnabled -> m_spiderAnimation2Enabled
 - m_unk838 -> m_followPlayerYTimer
 - m_followRelated -> m_followPlayerYIndex
